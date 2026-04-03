@@ -33,6 +33,8 @@ Each substantive item should normally pass through:
 2. `discussion-2`
 3. `deliberation`
 
+Each stage should include an invitation for questions and constructive improvement proposals before closing the stage.
+
 ## Exception
 
 The chair may compress the cycle only when urgency is recorded, prior written discussion already exists, and no higher-order review is skipped.

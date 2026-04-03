@@ -27,6 +27,16 @@ updated_at: 2026-04-03
 - receive committee reports
 - issue confidence or no-confidence findings
 
+## Chair expectation
+
+The assembly chair should actively invite:
+
+- questions
+- reasoned opinions
+- constructive improvement proposals
+
+when agenda items are recognized.
+
 ## Quorum
 
 The assembly requires majority attendance to act.

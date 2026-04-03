@@ -28,11 +28,22 @@ Substantive matters should normally move through two discussions and one deliber
 ## Allowed speaking order
 
 - sponsor statement
+- chair invitation for questions and constructive improvement proposals
 - seconder statement
 - committee recommendation if any
 - member debate
 - amendment statements
 - closing summary
+
+## Chair prompt rule
+
+When an agenda item is opened, the chair should explicitly ask for:
+
+- clarifying questions
+- reasoned opinions
+- constructive improvement proposals
+
+This applies to `discussion` and `deliberation`, and may also be used for `report` items when clarification helps the next loop.
 
 ## Record duty
 

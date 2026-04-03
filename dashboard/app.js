@@ -1,5 +1,5 @@
 // ============================================================
-// app.js — Company OS  ゲームUI メインロジック（v3 - Live Git Activity対応）
+// app.js — Company OS  ゲームUI メインロジック（v4 - Movement & News）
 // ============================================================
 
 import {
@@ -8,13 +8,10 @@ import {
 } from "./map.js";
 
 // ======================================================
-// タスク統計（進捗カウンター用）
+// タスク統計・ステート
 // ======================================================
 const TASK_STATS = {
-  total: 12,
-  done: 5,
-  inProgress: 3,
-  pending: 4,
+  total: 12, done: 5, inProgress: 3, pending: 4,
   items: [
     { label: "初回議会を開く", status: "done" },
     { label: "Assembly Chair を選ぶ", status: "done" },
@@ -31,12 +28,45 @@ const TASK_STATS = {
   ]
 };
 
-// ライブGitステータス保存用
 let liveCommits = [];
-let lastGeneratedAt = "";
+let lastHash = ""; // 最新のコミットハッシュを保持
 
 // ======================================================
-// タイル・マップ描画
+// ユーティリティ: パスファインディング (BFS)
+// ======================================================
+function isRoad(c, r) {
+  const t = MAP_TILES[r]?.[c];
+  return t >= TILE.ROAD_H && t <= TILE.ROAD_BR; // 道路タイルかどうか
+}
+
+function findPath(start, end) {
+  const queue = [[start]];
+  const visited = new Set([`${start.x},${start.y}`]);
+
+  while (queue.length > 0) {
+    const path = queue.shift();
+    const { x, y } = path[path.length - 1];
+
+    if (x === end.x && y === end.y) return path;
+
+    const nexts = [
+      { x: x + 1, y: y }, { x: x - 1, y: y }, { x: x, y: y + 1 }, { x: x, y: y - 1 }
+    ];
+
+    for (const n of nexts) {
+      if (n.x >= 0 && n.x < MAP_COLS && n.y >= 0 && n.y < MAP_ROWS) {
+        if (isRoad(n.x, n.y) && !visited.has(`${n.x},${n.y}`)) {
+          visited.add(`${n.x},${n.y}`);
+          queue.push([...path, n]);
+        }
+      }
+    }
+  }
+  return null;
+}
+
+// ======================================================
+// マップ描画
 // ======================================================
 const TILE_CLASS = {
   [TILE.GRASS]: "tile-grass",
@@ -77,11 +107,9 @@ function renderMap() {
 }
 
 // ======================================================
-// 建物・キャラ 描画
+// キャラクタースプライト
 // ======================================================
-const CHAR_SPRITE_W = 200;
-const CHAR_SPRITE_H = 300;
-const SPRITE_OFFSETS = { active: 0, pending: 1, ready: 2 };
+const SPRITE_OFFSETS = { active: 0, pending: 1, ready: 2, walking: 1 };
 
 function createCharacter(status, bubbleText, size = 48) {
   const wrap = document.createElement("div");
@@ -95,16 +123,15 @@ function createCharacter(status, bubbleText, size = 48) {
   }
 
   const spriteIndex = SPRITE_OFFSETS[status] ?? 0;
-  const totalW = CHAR_SPRITE_W * 3;
-  const scale = size / CHAR_SPRITE_H;
+  const scale = size / 300; // Original height 300
 
   const img = document.createElement("div");
   img.className = `char-sprite char-anim-${status}`;
   img.style.width = size + "px";
   img.style.height = size + "px";
   img.style.backgroundImage = "url('./chars.png')";
-  img.style.backgroundSize = `${totalW * scale * (CHAR_SPRITE_H / CHAR_SPRITE_W)}px ${size}px`;
-  img.style.backgroundPosition = `-${spriteIndex * size * (CHAR_SPRITE_W / CHAR_SPRITE_H)}px 0`;
+  img.style.backgroundSize = `${600 * scale}px ${size}px`;
+  img.style.backgroundPosition = `-${spriteIndex * (200 * scale)}px 0`;
   img.style.imageRendering = "pixelated";
   img.style.backgroundRepeat = "no-repeat";
   wrap.appendChild(img);
@@ -112,14 +139,46 @@ function createCharacter(status, bubbleText, size = 48) {
   return wrap;
 }
 
+// ======================================================
+// キャラクター移動演出 (Messenger)
+// ======================================================
+async function spawnMessenger(startCol, startRow, endCol, endRow) {
+  const canvas = document.getElementById("mapCanvas");
+  const char = createCharacter("ready", "お届け物です！", 40);
+  char.className += " messenger-wrap";
+  char.querySelector(".char-sprite").className = "char-sprite char-anim-walking";
+  char.style.left = startCol * TILE_SIZE + "px";
+  char.style.top = startRow * TILE_SIZE + "px";
+  canvas.appendChild(char);
+
+  const path = findPath({ x: startCol, y: startRow }, { x: endCol, y: endRow });
+  if (!path) {
+    setTimeout(() => char.remove(), 2000);
+    return;
+  }
+
+  for (const step of path) {
+    char.style.transition = "all 0.3s linear";
+    char.style.left = step.x * TILE_SIZE + "px";
+    char.style.top = step.y * TILE_SIZE + "px";
+    await new Promise(r => setTimeout(r, 300));
+  }
+
+  // 目的地到着
+  char.querySelector(".char-bubble").textContent = "到着！";
+  char.querySelector(".char-sprite").className = "char-sprite char-anim-ready";
+  setTimeout(() => char.remove(), 2000);
+}
+
+// ======================================================
+// 建物・HUD 描画
+// ======================================================
 function buildingStatusLabel(status) { return { active: "稼働", pending: "待機", ready: "準備OK" }[status] || status; }
 function getBubbleText(status) { return { active: "カタカタ", pending: "うーん…", ready: "準備OK!" }[status] || ""; }
 
 function renderBuildings() {
-  // 既存の建物を保持していれば削除（再描画用）
   document.querySelectorAll(".building").forEach(e => e.remove());
   const canvas = document.getElementById("mapCanvas");
-
   BUILDINGS.forEach(b => {
     const el = document.createElement("div");
     el.className = `building ${b.color}`;
@@ -145,178 +204,107 @@ function renderBuildings() {
     floor.className = "building-floor";
 
     const charCount = b.w >= 4 ? 2 : 1;
-    const charSize = b.w >= 4 ? 48 : 40;
     for (let i = 0; i < charCount; i++) {
-      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : "", charSize));
+      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : "", b.w >= 4 ? 48 : 40));
     }
     wall.appendChild(floor);
     el.appendChild(wall);
-
     el.addEventListener("click", () => openDialog(b));
     canvas.appendChild(el);
   });
 }
 
-// ======================================================
-// HUD / パネル 描画系
-// ======================================================
 function renderHud() {
   const statsEl = document.getElementById("hudStats");
-  if (!statsEl) return;
   const activeCount = BUILDINGS.filter(b => b.status === "active").length;
   const pendingCount = BUILDINGS.filter(b => b.status === "pending").length;
   const readyCount = BUILDINGS.filter(b => b.status === "ready").length;
-
-  statsEl.innerHTML = [
-    ["🏢", BUILDINGS.length, "建物"],
-    ["🔴", activeCount, "稼働"],
-    ["🔵", pendingCount, "待機"],
-    ["🟢", readyCount, "準備"],
-  ].map(([icon, val, label]) =>
-    `<div class="hud-stat"><span>${icon}</span><strong>${val}</strong><span>${label}</span></div>`
-  ).join("");
-}
-
-function renderLayers() {
-  const el = document.getElementById("layerList");
-  if (el) el.innerHTML = LAYERS.map(l => `<div class="layer-item"><span class="layer-rank">${l.rank}</span>${l.name}</div>`).join("");
-}
-
-const FLOWS = [
-  { icon: "📝", text: "上申を起票" },
-  { icon: "🗣️", text: "討論と修正" },
-  { icon: "✅", text: "採決と裁定" },
-  { icon: "⚙️", text: "執行と監査" },
-];
-function renderFlows() {
-  const el = document.getElementById("flowSteps");
-  if (el) el.innerHTML = FLOWS.map((f, i) => `<div class="flow-step">${f.icon} ${f.text}</div>` + (i < FLOWS.length - 1 ? `<div class="flow-step-arrow">↓</div>` : "")).join("");
+  statsEl.innerHTML = [["🏢", BUILDINGS.length, "建物"], ["🔴", activeCount, "稼働"], ["🔵", pendingCount, "待機"], ["🟢", readyCount, "準備"]].map(([icon, val, label]) => `<div class="hud-stat"><span>${icon}</span><strong>${val}</strong><span>${label}</span></div>`).join("");
 }
 
 function renderTaskProgress() {
   const el = document.getElementById("taskProgress");
-  if (!el) return;
   const { total, done, inProgress, items } = TASK_STATS;
   const pct = Math.round((done / total) * 100);
-
   el.innerHTML = `
     <div class="progress-header"><span class="progress-title">📋 タスク進捗</span><span class="progress-count">${done}/${total} 完了</span></div>
     <div class="progress-bar-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
     <div class="progress-legend"><span class="legend-done">✅ 完了 ${done}</span><span class="legend-wip">⚡ 進行中 ${inProgress}</span><span class="legend-pending">⏳ 予定 ${TASK_STATS.pending}</span></div>
-    <div class="task-list-mini">
-      ${items.map(item => `<div class="task-mini-item task-${item.status}">
-        <span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span>
-        <span class="task-mini-label">${item.label}</span>
-      </div>`).join("")}
-    </div>
+    <div class="task-list-mini">${items.map(item => `<div class="task-mini-item task-${item.status}"><span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span><span class="task-mini-label">${item.label}</span></div>`).join("")}</div>
   `;
 }
 
-function renderActors() {
-  const el = document.getElementById("actorList");
-  if (!el) return;
-  el.innerHTML = BUILDINGS.map(b => `
-    <div class="actor-item" data-id="${b.id}">
-      <div class="actor-name">${b.label}</div>
-      <div class="actor-status-row">
-        <div class="status-dot ${b.status}"></div>
-        <span class="actor-current">${b.current.length > 22 ? b.current.slice(0, 22) + "…" : b.current}</span>
-      </div>
-    </div>
-  `).join("");
-
-  el.querySelectorAll(".actor-item").forEach(item => {
-    item.addEventListener("click", () => {
-      const b = BUILDINGS.find(x => x.id === item.dataset.id);
-      if (b) openDialog(b);
-    });
-  });
-}
-
-function renderGitLog() {
-  const el = document.getElementById("gitLog");
-  if (!el) return;
-  if (!liveCommits.length) {
-    el.innerHTML = `<div class="log-item" style="color:var(--ui-muted)">ログがありません</div>`;
-    return;
-  }
-
-  el.innerHTML = liveCommits.slice(0, 8).map(c => {
-    const d = new Date(c.date);
-    const timeStr = `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
-    return `
-    <div class="log-item">
-      <div class="log-header">
-        <span class="log-author">${c.author}</span>
-        <span class="log-time">${timeStr}</span>
-      </div>
-      <div class="log-hash">${c.hash} @ ${c.dept}</div>
-      <div class="log-msg">${c.message}</div>
-    </div>
-    `;
-  }).join("");
-}
-
 // ======================================================
-// リアルタイム Github Sync
+// リアルタイム Github Sync & News
 // ======================================================
 async function fetchLiveStatus() {
   try {
     const res = await fetch("./status.json?t=" + new Date().getTime());
-    if (!res.ok) throw new Error("status.json not found");
-    const data = await res.json();
-    return data;
-  } catch (err) {
-    console.log("No live status found, falling back to mock data.");
-    return null;
-  }
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) { return null; }
 }
 
 async function syncWithLiveStatus() {
   const liveData = await fetchLiveStatus();
-  if (!liveData || !liveData.commits || !liveData.commits.length) {
-    document.getElementById("liveText").textContent = "準備完了";
-    return;
+  if (!liveData || !liveData.commits || !liveData.commits.length) return;
+
+  const latest = liveData.commits[0];
+  if (lastHash && latest.hash !== lastHash) {
+    // 【新着あり！】号外ニュースを表示
+    showNewsPopup(latest);
+    // メッセンジャーを派遣（FounderOfficeから該当部署へ）
+    const targetB = BUILDINGS.find(b => b.id === latest.dept) || BUILDINGS[0];
+    spawnMessenger(2, 2, targetB.col, targetB.row);
   }
-
+  lastHash = latest.hash;
   liveCommits = liveData.commits;
-  lastGeneratedAt = liveData.generated_at;
 
-  document.getElementById("liveText").textContent = "Syncing Git...";
+  document.getElementById("liveText").textContent = "Live Syncing...";
 
-  // コミットログに基づいてBUILDINGSの状態を上書き更新
-  // 最新のコミットを行っている部署を active にし、メッセージを反映
   const deptLatestCommit = {};
-  liveCommits.forEach(c => {
-    if (!deptLatestCommit[c.dept]) deptLatestCommit[c.dept] = c;
-  });
-
-  const recentThreshold = new Date().getTime() - 24 * 60 * 60 * 1000; // 24時間以内のコミットはactive
+  liveCommits.forEach(c => { if (!deptLatestCommit[c.dept]) deptLatestCommit[c.dept] = c; });
+  const recentThreshold = new Date().getTime() - 24 * 60 * 60 * 1000;
 
   BUILDINGS.forEach(b => {
-    const latest = deptLatestCommit[b.id];
-    if (latest) {
-      const commitDate = new Date(latest.date).getTime();
-      b.current = latest.message;
-      if (commitDate > recentThreshold) {
-        b.status = "active";
-      } else {
-        b.status = "ready";
-      }
+    const c = deptLatestCommit[b.id];
+    if (c) {
+      b.current = c.message;
+      b.status = (new Date(c.date).getTime() > recentThreshold) ? "active" : "ready";
     } else {
       b.status = "pending";
     }
   });
 
-  // 再レンダリング
   renderBuildings();
   renderHud();
-  renderActors();
+  renderTaskProgress();
   renderGitLog();
 }
 
+function showNewsPopup(commit) {
+  const overlay = document.getElementById("newsOverlay");
+  const body = document.getElementById("newsBody");
+  const footer = document.getElementById("newsFooter");
+  body.textContent = commit.message;
+  footer.textContent = `@${commit.dept} by ${commit.author}`;
+  overlay.className = "news-overlay active";
+  setTimeout(() => { overlay.className = "news-overlay"; }, 5000);
+}
+
+function renderGitLog() {
+  const el = document.getElementById("gitLog");
+  el.innerHTML = liveCommits.slice(0, 8).map(c => `
+    <div class="log-item">
+      <div class="log-header"><span class="log-author">${c.author}</span><span class="log-time">${c.date.slice(5, 16)}</span></div>
+      <div class="log-hash">${c.hash} @ ${c.dept}</div>
+      <div class="log-msg">${c.message}</div>
+    </div>
+  `).join("") || `<div class="log-item">ログがありません</div>`;
+}
+
 // ======================================================
-// ダイアログ & メッセージ
+// 共通初期化
 // ======================================================
 function openDialog(b) {
   const overlay = document.getElementById("dialogOverlay");
@@ -324,16 +312,7 @@ function openDialog(b) {
   const body = document.getElementById("dialogBody");
   const statusCol = b.status === "active" ? "color-active" : b.status === "pending" ? "color-pending" : "color-ready";
 
-  const charSprite = createCharacter(b.status, "", 52);
-  header.innerHTML = "";
-  const headerInner = document.createElement("div");
-  headerInner.style.display = "flex"; headerInner.style.alignItems = "center"; headerInner.style.gap = "12px";
-  headerInner.appendChild(charSprite);
-  const headerText = document.createElement("span");
-  headerText.textContent = b.label;
-  headerInner.appendChild(headerText);
-  header.appendChild(headerInner);
-
+  header.innerHTML = `<div style="display:flex;align-items:center;gap:12px;">${createCharacter(b.status, "", 52).outerHTML}<span>${b.label}</span></div>`;
   body.innerHTML = `
     <div class="dialog-row"><span class="dialog-label">種別</span><span class="dialog-value">${b.kind}</span></div>
     <div class="dialog-row"><span class="dialog-label">状態</span><span class="dialog-value ${statusCol}">● ${b.status}</span></div>
@@ -343,79 +322,36 @@ function openDialog(b) {
     <div class="dialog-tags">${(b.tags || []).map(t => `<span class="dialog-tag">${t}</span>`).join("")}</div>
   `;
   overlay.classList.add("open");
-  updateMessage(`「${b.label}」を確認中… ${b.current}`);
 }
 
 function closeDialog() { document.getElementById("dialogOverlay").classList.remove("open"); }
-
-let logIndex = 0;
-function updateMessage(text) {
-  const el = document.getElementById("messageText");
-  if (!el) return;
-  el.textContent = text;
-  el.style.animation = "none";
-  requestAnimationFrame(() => { el.style.animation = ""; });
-}
+function updateMessage(text) { const el = document.getElementById("messageText"); el.textContent = text; el.style.animation = "none"; requestAnimationFrame(() => el.style.animation = ""); }
 
 function cycleActivityLog() {
   if (liveCommits.length > 0) {
-    // ライブログがある場合はそれを流す
-    const c = liveCommits[logIndex % liveCommits.length];
-    const deptName = BUILDINGS.find(b => b.id === c.dept)?.label || c.dept;
-    updateMessage(`[Log] ${deptName}: ${c.message}`);
+    const c = liveCommits[Math.floor(Math.random() * liveCommits.length)];
+    updateMessage(`[Log] ${c.dept}: ${c.message}`);
   } else {
-    // なければモックデータ
-    const log = ACTIVITY_LOG[logIndex % ACTIVITY_LOG.length];
-    updateMessage(`[${log.time}] ${log.text}`);
+    updateMessage(`[Now] Company OS が正常に稼働しています。`);
   }
-  logIndex++;
-}
-
-// ======================================================
-// 共通バインド・初期化
-// ======================================================
-function updateClock() {
-  const now = new Date();
-  const el = document.getElementById("hudClock");
-  if (el) el.textContent = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}`;
 }
 
 function bindEvents() {
   document.getElementById("dialogClose").addEventListener("click", closeDialog);
-  document.getElementById("dialogOverlay").addEventListener("click", e => { if (e.target === document.getElementById("dialogOverlay")) closeDialog(); });
-  document.addEventListener("keydown", e => { if (e.key === "Escape") closeDialog(); });
-
-  document.querySelectorAll(".tab-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-      document.querySelectorAll(".side-panel, .map-viewport").forEach(c => c.classList.remove("active"));
-      btn.classList.add("active");
-      const tc = document.getElementById("tab-" + btn.dataset.tab);
-      if (tc) tc.classList.add("active");
-    });
-  });
+  document.getElementById("dialogOverlay").addEventListener("click", e => e.target === document.getElementById("dialogOverlay") && closeDialog());
+  document.querySelectorAll(".tab-btn").forEach(btn => btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".side-panel, .map-viewport").forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+  }));
 }
 
 function init() {
-  renderMap();
-  renderBuildings();
-  renderHud();
-  renderLayers();
-  renderFlows();
-  renderActors();
-  renderTaskProgress();
-  renderGitLog();
-  bindEvents();
-
-  updateClock();
-  setInterval(updateClock, 1000);
-
-  cycleActivityLog();
+  renderMap(); renderBuildings(); renderHud(); renderTaskProgress(); renderGitLog(); bindEvents();
+  setInterval(() => { const n = new Date(); document.getElementById("hudClock").textContent = `${String(n.getHours()).padStart(2, "0")}:${String(n.getMinutes()).padStart(2, "0")}:${String(n.getSeconds()).padStart(2, "0")}`; }, 1000);
   setInterval(cycleActivityLog, 4000);
-
-  // 初回同期と定期ポーリング(30秒ごと)
   syncWithLiveStatus();
-  setInterval(syncWithLiveStatus, 30000);
+  setInterval(syncWithLiveStatus, 15000);
 }
-
 init();

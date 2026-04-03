@@ -133,8 +133,8 @@ function createCharacter(status, bubbleText, size = 64) {
   img.style.height = size + "px";
   img.style.backgroundImage = "url('./chars_v3.png')";
   img.style.backgroundSize = `${bgSize}px ${bgSize}px`;
-  // 新しい透過キャラ（狐・猫・蛙）の配置に合わせてy軸を調整
-  img.style.backgroundPosition = `-${spriteIndex * size}px -${size * 0.4}px`;
+  // 垂直方向に中央揃え
+  img.style.backgroundPosition = `-${spriteIndex * size}px center`;
   img.style.imageRendering = "pixelated";
   img.style.backgroundRepeat = "no-repeat";
   wrap.appendChild(img);

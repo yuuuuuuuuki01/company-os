@@ -112,20 +112,22 @@ function renderQuests() {
 function renderLocations() {
   document.getElementById("locationGrid").innerHTML = locations.map(([name, type, description, papers, state]) => `
     <article class="location-card">
-      <div class="location-scene">
-        <div class="building"></div>
-        <div class="paper-stack" style="--stack-size:${Math.min(papers, 12)}"></div>
+      <div class="location-scene" style="background: transparent; border: 2px dashed #444; height: 100px;">
+        <div class="building" style="background: var(--bg); border: 2px solid var(--line);"></div>
+        <div class="paper-stack" style="--stack-size:${Math.min(papers, 12)}; right: 10px; bottom: 10px;"></div>
+        <div class="desk" style="bottom: 10px; position: absolute; left: 24px; width: 32px; height: 12px;"></div>
+        <div class="pixel-character status-ready" style="bottom: 18px; position: absolute; left: 28px; width: 16px; height: 16px;"></div>
       </div>
       <div class="location-copy">
         <div class="card-top">
           <div>
-            <div class="card-type">${type}</div>
-            <h3>${name}</h3>
+            <div class="card-type">[ AREA ] ${type}</div>
+            <h3>🪧 ${name}</h3>
           </div>
           <span class="status-chip status-active">${state}</span>
         </div>
         <p>${description}</p>
-        <p class="muted">書類束: ${papers}</p>
+        <p class="muted">📦 書類束: ${papers}</p>
       </div>
     </article>
   `).join("");
@@ -152,21 +154,32 @@ function renderRoutes() {
 }
 
 function renderActivities() {
-  document.getElementById("activityGrid").innerHTML = activities.map(([actor, layer, status, current, next]) => `
+  document.getElementById("activityGrid").innerHTML = activities.map(([actor, layer, status, current, next]) => {
+    let bubbleText = "Zzz";
+    if (status === "active") bubbleText = "カタカタ...";
+    if (status === "pending") bubbleText = "...?";
+
+    return `
     <article class="activity-card">
+      <div class="character-scene">
+        <div class="pixel-character status-${status}">
+          <div class="speech-bubble">${bubbleText}</div>
+        </div>
+        <div class="desk"></div>
+      </div>
       <div class="card-top">
         <div>
-          <div class="card-type">${layer}</div>
+          <div class="card-type">▶ ${layer}</div>
           <h3>${actor}</h3>
         </div>
         <span class="status-chip status-${status}">${status}</span>
       </div>
       <div class="activity-copy">
-        <p><strong>いま:</strong> ${current}</p>
-        <p><strong>次:</strong> ${next}</p>
+        <p><strong>[いま]</strong><br/>${current}</p>
+        <p style="color: var(--gold);"><strong>[ 次 ]</strong><br/>↓ ${next}</p>
       </div>
     </article>
-  `).join("");
+  `}).join("");
 }
 
 function renderElectionQueue() {
@@ -210,9 +223,15 @@ function renderLayers() {
 }
 
 function renderFlow() {
-  document.getElementById("flowList").innerHTML = flows.map(([index, title, body]) => `
-    <article class="flow-card">
-      <div class="flow-index">${index}</div>
+  const target = document.getElementById("flowList");
+  target.style.display = "flex";
+  target.style.flexDirection = "column";
+  target.style.gap = "0";
+
+  target.innerHTML = flows.map(([index, title, body], i) => `
+    <article class="flow-card" style="border-radius: 0; border-bottom: ${i === flows.length - 1 ? '2px solid var(--line)' : 'none'}; position: relative;">
+      ${i !== flows.length - 1 ? '<div style="position: absolute; bottom: -18px; left: 50%; font-size: 24px; font-weight: bold; color: var(--gold); z-index: 10;">⬇</div>' : ''}
+      <div class="flow-index" style="color: var(--ink); background: var(--panel); display: inline-block; padding: 2px 6px;">SEQ: ${index}</div>
       <h3>${title}</h3>
       <p>${body}</p>
     </article>

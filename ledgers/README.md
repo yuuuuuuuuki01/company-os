@@ -20,4 +20,6 @@ This directory stores active traceability ledgers.
 - `credential-request-ledger.md`: credential demand trace
 - `current-activity-board.md`: current work, status, and next handoff
 - `bootstrap-election-board.md`: vacancies, pending elections, and next seating actions
+- `parallel-operations-board.md`: multi-project lanes, owner status, and next handoff
+- `approval-desk-board.md`: approval queues, stamp waits, and escalation path
 - `officeholder-registry.md`: current lawful office occupancy

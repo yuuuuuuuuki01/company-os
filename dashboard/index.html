@@ -3,24 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Company OS Dashboard</title>
+    <title>Company OS World</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Constitutional Company OS</p>
-          <h1>いま誰が何をしているかを一画面で見る</h1>
+          <p class="eyebrow">Company OS World</p>
+          <h1>会社OSをRPG風の街として見る</h1>
           <p class="hero-text">
-            Company OS の運営状況、選任待ち、横断役職、外縁機関、ユニットの状態をまとめて確認する運転盤です。
+            会議は会議室へ、承認は承認机へ、台帳は書庫へ。今どこが動いていて、どこに紙が積まれているかを地図感覚で見られる画面です。
           </p>
           <div class="hero-pills" id="heroPills"></div>
         </div>
         <aside class="hero-panel">
-          <h2>優先監視</h2>
-          <p>制度の適正性を保ちつつ、初回選任と委譲を進めるために見るべき論点を先頭に置いています。</p>
-          <div class="mini-stack" id="miniStack"></div>
+          <h2>本日のクエスト</h2>
+          <div class="quest-list" id="questList"></div>
         </aside>
       </header>
 
@@ -28,10 +27,21 @@
         <section class="panel panel-wide">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">Current Activity</p>
-              <h2>現況一覧</h2>
+              <p class="eyebrow">World Map</p>
+              <h2>組織マップ</h2>
             </div>
-            <p class="panel-note">status / current / next</p>
+            <p class="panel-note">場所ごとに稼働と紙の量を見る</p>
+          </div>
+          <div class="location-grid" id="locationGrid"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Current Party</p>
+              <h2>いま動いている担当</h2>
+            </div>
+            <p class="panel-note">誰が何をしていて次にどこへ渡すか</p>
           </div>
           <div class="activity-grid" id="activityGrid"></div>
         </section>
@@ -39,61 +49,30 @@
         <section class="panel">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">Vacancies</p>
-              <h2>空席役職</h2>
+              <p class="eyebrow">Meeting Room</p>
+              <h2>会議室</h2>
             </div>
-            <p class="panel-note">いま埋めるべき中枢</p>
+            <p class="panel-note">審議と選任</p>
+          </div>
+          <div class="queue-list" id="electionList"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Stamp Desk</p>
+              <h2>承認机</h2>
+            </div>
+            <p class="panel-note">空席と承認待ち</p>
           </div>
           <div class="vacancy-list" id="vacancyList"></div>
         </section>
 
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Election Queue</p>
-              <h2>選任待ち</h2>
-            </div>
-            <p class="panel-note">上申の起点</p>
-          </div>
-          <div class="task-list" id="electionList"></div>
-        </section>
-
         <section class="panel panel-wide">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">Rule Stack</p>
-              <h2>規範レイヤー</h2>
-            </div>
-            <p class="panel-note">上位が下位を拘束する</p>
-          </div>
-          <div class="stack-grid" id="layerGrid"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Flow</p>
-              <h2>合意形成の流れ</h2>
-            </div>
-          </div>
-          <div class="flow-list" id="flowList"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Bootstrap</p>
-              <h2>初動タスク</h2>
-            </div>
-          </div>
-          <div class="task-list" id="taskList"></div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Departments</p>
-              <h2>部署と委譲</h2>
+              <p class="eyebrow">Guilds</p>
+              <h2>部署ギルド</h2>
             </div>
             <label class="filter-box">
               <span>絞り込み</span>
@@ -106,30 +85,32 @@
         <section class="panel">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">External Layer</p>
-              <h2>外縁機関</h2>
+              <p class="eyebrow">Archive Tower</p>
+              <h2>書庫と監査塔</h2>
             </div>
           </div>
           <div class="institution-list" id="institutionList"></div>
+          <div class="ledger-list" id="ledgerList"></div>
         </section>
 
         <section class="panel">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">Ledgers</p>
-              <h2>可視化台帳</h2>
+              <p class="eyebrow">Rule Tower</p>
+              <h2>規範の塔</h2>
             </div>
           </div>
-          <div class="ledger-list" id="ledgerList"></div>
+          <div class="stack-grid" id="layerGrid"></div>
+          <div class="flow-list" id="flowList"></div>
         </section>
 
         <section class="panel panel-wide">
           <div class="panel-head">
             <div>
-              <p class="eyebrow">Units</p>
-              <h2>事業ユニット</h2>
+              <p class="eyebrow">Unit Field</p>
+              <h2>事業ユニット平原</h2>
             </div>
-            <p class="panel-note">全ユニットは Unit Owner 選任待ち</p>
+            <p class="panel-note">各ユニットは Unit Owner 選任待ち</p>
           </div>
           <div class="unit-grid" id="unitGrid"></div>
         </section>

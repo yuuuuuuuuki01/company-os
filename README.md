@@ -30,6 +30,10 @@ The workspace also maintains non-governing institutional layers for research int
 - `institutions/`
 - `audit-layer/`
 
+Active operational tracking lives in:
+
+- `ledgers/`
+
 Lower layers may add detail but may not contradict higher layers.
 
 Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` are interpretive canons for every lower-order rule, ruling, and release.
@@ -53,6 +57,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `departments/`: capability map and delegated departmental authority
 - `institutions/`: academic and research institutions that observe and report through formal channels only
 - `audit-layer/`: independent audit entities and objective operating review protocols
+- `ledgers/`: approval, custody, and other traceable operating ledgers
 - `roles/`: office definitions
 - `committees/`: standing committee charters
 - `recruiting/`: low-context hiring and onboarding packets

@@ -29,6 +29,8 @@ Guard security posture, threat handling, compliance controls, and risk classific
 - classify security and compliance risk
 - require protective controls
 - maintain risk registers
+- maintain key custody standards and lending records
+- verify return, revocation, and compromise response
 
 ## Stop power
 

@@ -37,6 +37,8 @@ updated_at: 2026-04-03
 | partner commitments | business-development-partnerships | legal-policy and founder-office |
 | user trust and support | customer-success-support | PM office and directorate |
 | metrics, records, memory | data-knowledge | constitutional-affairs |
+| approval ledgers and trace records | data-knowledge | constitutional-affairs |
+| key custody and lending | security-risk-compliance | founder-office |
 | internal automation and tooling | internal-tools-enablement | engineering and security-risk-compliance |
 
 ## Reserved to founder or higher order

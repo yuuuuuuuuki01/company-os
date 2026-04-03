@@ -10,3 +10,6 @@ Desktop.ini
 *.log
 *.tmp
 *.bak
+
+# Sensitive local storage
+vault/keys/

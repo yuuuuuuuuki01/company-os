@@ -29,6 +29,8 @@ Preserve measurement, record integrity, summaries, memory retention rules, and i
 - maintain metrics and registries
 - curate retained lessons
 - enforce retention formats and record completeness
+- maintain approval ledgers and decision-trace indexes
+- publish compact reporting standards
 
 ## Stop power
 

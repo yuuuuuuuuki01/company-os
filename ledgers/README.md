@@ -25,4 +25,8 @@ This directory stores active traceability ledgers.
 - `department-growth-board.md`: self-growth and departmental expansion queue
 - `external-specialist-board.md`: outside specialist lanes and internal acceptance path
 - `company-os-improvement-board.md`: batched improvement agenda for ordinary sittings
+- `department-work-allocation-board.md`: current assignment and deliverable for each department
+- `audit-routing-board.md`: audit finding triage and routing
+- `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
+- `record-normalization-board.md`: readable-record normalization progress
 - `officeholder-registry.md`: current lawful office occupancy

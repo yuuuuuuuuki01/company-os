@@ -20,4 +20,4 @@ updated_at: 2026-04-03
 | lane-shift | shift | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 2 | ready to onboard |
 | lane-jouzou | jouzou | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 2 | ready to onboard |
 
-Operating note: a lane may run in parallel only when owner, handoff target, and approval path are all declared.
+Operating note: lane state is independent from unit registration and seat state. A lane may run in parallel only when owner, handoff target, and approval path are all declared.

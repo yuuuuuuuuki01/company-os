@@ -15,35 +15,31 @@ updated_at: 2026-04-03
 
 ## 対象期間
 
-2026-02-05 から 2026-03-31 の主要公開情報
+2026-02-05 から 2026-03-31 の主要更新
 
-## 変化点
+## 主な更新
 
-- OpenAI: 2026-03-05 に GPT-5.4 Thinking、2026-03-18 に GPT-5.4 mini を展開
-- Anthropic: 2026-02-05 に Opus 4.6、2026-02-17 に Sonnet 4.6。1M token beta を強調
-- Google: 2026-02-19 に Gemini 3.1 Pro、2026-03-26 に Gemini 3.1 Flash Live 公開
+- OpenAI: 2026-03-05 に GPT-5.4 Thinking、2026-03-18 に GPT-5.4 mini を公開
+- Anthropic: 2026-02-05 に Opus 4.6、2026-02-17 に Sonnet 4.6、1M token beta を案内
+- Google: 2026-02-19 に Gemini 3.1 Pro、2026-03-26 に Gemini 3.1 Flash Live を公開
 
 ## 事業影響
 
-- 長時間エージェント運用と長文脈が競争軸
-- 音声・マルチモーダル即応も重要化
+- 長文処理エージェント運用と短文高速運用の選択肢が拡大
+- 音声、マルチモーダル、長文文脈の比較検討が重要
 
 ## 組織影響
 
-- 学術機関は一次情報中心で継続監視すべき
-- 監査側はモデル更新が運用設計へ与える影響を定点観測すべき
+- 学術機関は一次情報ベースで差分を短報化し続ける
+- 監査側はモデル更新が運用設計へ与える影響を点検する
 
-## 要上申 / 不要
+## 推奨 action / 上申
 
-要上申。調査対象を「一次情報・安全資料・評価資料」に固定する運用で開始推奨。
-
-## 注意点
-
-- 本速報は公開一次情報ベース
-- 採用判断は別途ユニット要件と照合が必要
+- 調査対象を `一次情報 / 長文処理 / 推論 / 音声` に分ける
+- 運用変更は比較表と影響整理を付けて上申する
 
 ## 出典
 
 - OpenAI Model Release Notes: https://help.openai.com/en/articles/9624314-model-release-notes
-- Anthropic Newsroom / Claude Sonnet 4.6 / Claude Opus 4.6 / Economic Index: https://www.anthropic.com/news
-- Google DeepMind Model Cards / Gemini 3.1 Pro: https://deepmind.google/models/model-cards/ , https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/
+- Anthropic News: https://www.anthropic.com/news
+- Google DeepMind / Gemini: https://deepmind.google/models/model-cards/ , https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/

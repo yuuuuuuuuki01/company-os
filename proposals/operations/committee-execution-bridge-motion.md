@@ -33,3 +33,8 @@ Tighten the handoff from committee findings into execution lanes so findings do 
 - committee findings need an executor, deadline, and handoff target
 - binding findings should update the receiving lane directly
 - send to `discussion-2` with a minimal output schema
+
+## Discussion-2 note
+
+- accepted artifact set: `issue-committee-finding-handoff`
+- deliberation should only decide which committees must use the handoff pattern first

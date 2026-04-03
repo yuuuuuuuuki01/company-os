@@ -18,6 +18,7 @@ updated_at: 2026-04-03
 | Founder Office | governance | active | bootstrap closed and first ordinary sitting authorized | assembly |
 | Assembly | governance | active | fourth ordinary sitting closed and fifth ordinary sitting opened | fifth ordinary sitting |
 | Assembly Secretariat | governance | active | fifth ordinary sitting batch preparation and next-agenda trigger | improvement board |
+| Department Allocation | governance | active | all departments now carry explicit current assignments | department-work-allocation-board |
 | Independent Audit Firm | audit | active | system fitness and weekly operating audit | founder-office / constitutional-affairs |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
 | People and Talent | department | active | next unit-owner slates after bootstrap close | assembly |

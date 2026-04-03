@@ -23,9 +23,11 @@ Company OS may operate multiple units in parallel when each active lane has:
 4. a declared approval path for risky work
 5. a visible trace in the `parallel-operations-board`
 
+Registration and seat state remain governed separately by the unit registry.
+
 ## Constraints
 
-- A unit may not enter `active` lane status unless its mission packet exists or a bootstrap note explicitly permits pre-onboarding work.
+- A unit may not enter `active` lane status unless it is `registered` and its mission packet exists or a bootstrap note explicitly permits pre-onboarding work.
 - A lane with missing owner, handoff, or approval path must be marked `blocked` or `ready`, never `active`.
 - `high risk` work must still stop at human approval regardless of lane count.
 - PMO manages route conflicts; Data and Knowledge manages public visibility integrity.

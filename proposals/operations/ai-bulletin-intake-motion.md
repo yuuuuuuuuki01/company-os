@@ -33,3 +33,8 @@ Define a lighter route from AI academic bulletins to operating change or formal 
 - intake classes `monitor / trial / petition` are accepted as the base pattern
 - `trial` should route to ODL backlog review
 - send to `discussion-2` with intake ownership and reporting format
+
+## Discussion-2 note
+
+- accepted artifact set: `ai-bulletin-intake-board`
+- deliberation should decide whether assembly secretariat or research-intelligence owns the first classification pass

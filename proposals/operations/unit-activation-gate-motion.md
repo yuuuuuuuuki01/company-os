@@ -34,3 +34,8 @@ Create a stricter gate that separates unit registration from activation into liv
 - keep the gate tied to the separate unit-state model
 - add explicit check for lawful seat readiness or approved bootstrap exception
 - send to `discussion-2` with proposed gate fields
+
+## Discussion-2 note
+
+- accepted artifact set: `unit-state-model-rule` and `run-unit-activation-review`
+- deliberation should only decide adoption timing and rollout scope

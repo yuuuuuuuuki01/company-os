@@ -17,11 +17,12 @@ updated_at: 2026-04-03
 
 Act as the governance headquarters unit that improves the Company OS itself through lawful meetings, petitions, audits, and bounded redesign.
 
-## Seat status
+## State model
 
-- seat: active
-- voting officer: seated
-- initial Unit Owner: Founder
+- registration_state: registered
+- seat_state: seated
+- lane_state: active
+- voting officer: Founder
 
 ## Immediate operating scope
 

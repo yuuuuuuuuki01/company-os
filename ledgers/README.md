@@ -31,6 +31,8 @@ This directory stores active traceability ledgers.
 - `unit-onboarding-priority-board.md`: first external unit onboarding comparison and recommendation
 - `unit-onboarding-prerequisites-board.md`: activation prerequisites for the preferred and fallback unit candidates
 - `oem-onboarding-preparation-board.md`: bounded preparation work needed before `oem` activation review
+- `oem-seat-route-board.md`: proposed lawful seat route for the first `oem` unit-owner line
+- `oem-review-approval-route.md`: proposed reviewer and approval route for `oem` preparation work
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

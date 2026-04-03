@@ -16,17 +16,17 @@ updated_at: 2026-04-03
 | Department | Current assignment | Deliverable | Status | Next handoff |
 | --- | --- | --- | --- | --- |
 | founder-office | keep sovereign alignment across the active improvement batch | founder decision lane and reserved-power check | active | assembly |
-| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | thirteenth sitting packet, meeting record updates, and committee handoff watch note | active | all active owners |
+| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | fourteenth sitting packet, meeting record updates, and committee handoff watch note | active | all active owners |
 | constitutional-affairs | review unit-state and activation changes for compatibility | constitutional review note on state, gate, and rollout compliance | active | constitutional review committee |
 | portfolio-strategy | close the first external onboarding priority and hand off the chosen route | adopted priority package with `oem` first and `shift` fallback | active | founder-office / PMO |
-| project-management-office | rollout activation gate and define the first `oem` preparation packet | activation gate rollout note and `oem` prerequisite check | active | assembly-secretariat / constitutional-review-committee |
-| directorate | review coherence of current operating artifacts and prepare `oem` reviewer route | quality note on active governance artifacts and `oem` reviewer proposal | active | assembly |
+| project-management-office | rollout activation gate and narrow the first `oem` preparation packet | activation gate rollout note and `oem` packet draft | active | assembly-secretariat / constitutional-review-committee |
+| directorate | review coherence of current operating artifacts and prepare a named `oem` reviewer route | quality note on active governance artifacts and `oem` reviewer proposal | active | assembly |
 | product-service-design | maintain design capability work without owning UI implementation | next design critique lesson and brief pattern | active | directorate |
 | engineering | support executable operating artifacts and technical implementation constraints | implementation note for internal tooling and release-safe changes | ready | PMO / internal-tools-enablement |
 | quality-assurance | define how governance artifacts are checked before adoption | artifact review checklist for operational changes | ready | directorate / release-review-committee |
 | release-operations | keep release gating posture aligned with new work streams | release readiness note for high-risk changes | ready | release-review-committee |
-| security-risk-compliance | maintain key custody and define `oem` preparation approval path | risk note for activation lanes and `oem` approval route | active | founder-office / release-review-committee |
-| people-talent | reflect wave-1 steward confirmations and define first external seat prerequisites | officeholder confirmation note and `oem` seat-route check | active | personnel-committee |
+| security-risk-compliance | maintain key custody and define a concrete `oem` preparation approval path | risk note for activation lanes and `oem` approval route | active | founder-office / release-review-committee |
+| people-talent | reflect wave-1 steward confirmations and define a concrete first external seat route | officeholder confirmation note and `oem` seat-route draft | active | personnel-committee |
 | finance-treasury | keep cost and resource visibility for growing operations | resource note for active lanes and tooling load | ready | founder-office |
 | legal-policy | check that external specialist and intake rules stay within policy boundaries | policy note on external collaboration and records handling | ready | founder-office / constitutional-affairs |
 | organizational-development-learning | own structural redesign and meeting-to-work learning loop | unit-state redesign package and learning note | active | constitutional-review-committee |

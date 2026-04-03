@@ -28,3 +28,10 @@ Prepare the lawful seat and activation packet required to move `oem` from `ready
 
 - `oem` is now the first chosen external onboarding candidate
 - the gate still requires seat, packet, reviewer, and approval path before activation
+
+## Discussion-1 note
+
+- the first preparation wave should stay narrow and stop before activation
+- `oem` can use a single seat route, one bounded start packet, and one low/medium risk approval path
+- accepted artifact set: `ledgers/oem-seat-route-board.md`, `recruiting/oem-unit-owner-start-packet.md`, and `ledgers/oem-review-approval-route.md`
+- send to `discussion-2` with the minimum lawful preparation bundle only

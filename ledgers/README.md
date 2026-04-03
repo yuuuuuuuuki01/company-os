@@ -36,6 +36,11 @@ This directory stores active traceability ledgers.
 - `oem-activation-review-bundle.md`: deliberation bundle for `oem` seat, packet, reviewer, and approval route
 - `oem-activation-review-checklist.md`: minimal checklist for the first `oem` activation review path
 - `oem-activation-execution-board.md`: accepted bounded execution state for the first `oem` activation
+- `oem-first-lane-watch-board.md`: first active external lane watch snapshot for `oem`
+- `shift-onboarding-preparation-board.md`: bounded preparation work needed before `shift` activation review
+- `shift-seat-route-board.md`: proposed lawful seat route for the first `shift` unit-owner line
+- `shift-review-approval-route.md`: proposed reviewer and approval route for `shift` preparation work
+- `shift-activation-review-checklist.md`: minimal checklist for the first `shift` activation review path
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

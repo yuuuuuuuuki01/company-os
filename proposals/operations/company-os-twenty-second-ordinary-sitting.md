@@ -1,7 +1,7 @@
 ---
 id: company-os-twenty-second-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -34,3 +34,9 @@ Watch the first active external unit lane and confirm the company OS has complet
 
 - the first active external unit lane is visible in watch mode
 - the first full onboarding cycle is recorded as complete
+
+## Result
+
+- the first active external unit lane was acknowledged in watch mode
+- `shift-onboarding-preparation-motion` entered `discussion-1`
+- the twenty-third ordinary sitting was opened

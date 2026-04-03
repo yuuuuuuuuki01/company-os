@@ -17,40 +17,26 @@ jobs:
 
       - name: Generate status.json
         run: |
+          # 1. Commits history
           git log -30 --pretty=format:'{"hash":"%h","author":"%an","date":"%ci","message":"%s"}' | \
             python3 -c "
-          import sys, json
+          import sys, json, os
+
+          # --- COMMIT PARSING ---
           commits = []
           for line in sys.stdin:
               line = line.strip()
               if line:
-                  try:
-                      commits.append(json.loads(line))
-                  except:
-                      pass
+                  try: commits.append(json.loads(line))
+                  except: pass
 
           dept_map = {
-              'founder': 'founder-office',
-              'assembly': 'assembly',
-              'audit': 'audit',
-              'engineering': 'engineering',
-              'dashboard': 'data-knowledge',
-              'pmo': 'pmo',
-              'security': 'security',
-              'people': 'people-talent',
-              'talent': 'people-talent',
-              'data': 'data-knowledge',
-              'knowledge': 'data-knowledge',
-              'research': 'ai-institute',
-              'ai': 'ai-institute',
-              'ledger': 'data-knowledge',
-              'style': 'engineering',
-              'feat': 'engineering',
-              'fix': 'engineering',
-              'docs': 'assembly',
-              'law': 'assembly',
-              'rule': 'founder-office',
-              'constitution': 'founder-office',
+              'founder': 'founder-office', 'assembly': 'assembly', 'audit': 'audit',
+              'engineering': 'engineering', 'pmo': 'pmo', 'security': 'security',
+              'people': 'people-talent', 'talent': 'people-talent',
+              'data': 'data-knowledge', 'knowledge': 'data-knowledge',
+              'research': 'ai-institute', 'ai': 'ai-institute',
+              'feat': 'engineering', 'fix': 'engineering', 'docs': 'assembly'
           }
 
           for c in commits:
@@ -62,7 +48,52 @@ jobs:
                       break
               c['dept'] = dept
 
-          print(json.dumps({'commits': commits, 'generated_at': commits[0]['date'] if commits else ''}, ensure_ascii=False, indent=2))
+          # --- TASK PARSING (Improvement Board) ---
+          tasks = []
+          board_path = 'ledgers/company-os-improvement-board.md'
+          if os.path.exists(board_path):
+              with open(board_path, 'r', encoding='utf-8') as f:
+                  lines = f.readlines()
+                  table_started = False
+                  for line in lines:
+                      if '| Priority |' in line:
+                          table_started = True
+                          continue
+                      if table_started and '| --- |' in line:
+                          continue
+                      if table_started and line.strip().startswith('|'):
+                          parts = [p.strip() for p in line.split('|')]
+                          if len(parts) > 7:
+                              item = parts[2]
+                              status_raw = parts[7].lower()
+                              
+                              # Status Mapping
+                              status = 'pending'
+                              if 'closed' in status_raw or 'complete' in status_raw:
+                                  status = 'done'
+                              elif any(x in status_raw for x in ['active', 'rollout', 'deliberation', 'adopted']):
+                                  status = 'active'
+                              
+                              tasks.append({'label': item, 'status': status})
+
+          # --- STATS CALC ---
+          total = len(tasks)
+          done = len([t for t in tasks if t['status'] == 'done'])
+          active = len([t for t in tasks if t['status'] == 'active'])
+          pending = total - done - active
+
+          result = {
+              'commits': commits,
+              'tasks': {
+                  'total': total,
+                  'done': done,
+                  'active': active,
+                  'pending': pending,
+                  'items': tasks
+              },
+              'generated_at': commits[0]['date'] if commits else ''
+          }
+          print(json.dumps(result, ensure_ascii=False, indent=2))
           " > dashboard/status.json
 
       - name: Commit status.json

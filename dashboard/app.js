@@ -10,22 +10,10 @@ import {
 // ======================================================
 // タスク統計・ステート
 // ======================================================
-const TASK_STATS = {
-  total: 12, done: 5, inProgress: 3, pending: 4,
-  items: [
-    { label: "初回議会を開く", status: "done" },
-    { label: "Assembly Chair を選ぶ", status: "done" },
-    { label: "最初の Unit Owner を選ぶ", status: "done" },
-    { label: "3常設委員会を着席させる", status: "done" },
-    { label: "Constitutional Guardian 選任", status: "done" },
-    { label: "PM / Director を選任", status: "active" },
-    { label: "自律改善ループを試す", status: "active" },
-    { label: "監査定着の確認", status: "active" },
-    { label: "全ユニット onboarding", status: "pending" },
-    { label: "外縁機関レポート受理", status: "pending" },
-    { label: "承認台帳の最終整合", status: "pending" },
-    { label: "制度フェーズ完了宣言", status: "pending" },
-  ]
+// タスク統計 (デフォルト/フォールバック)
+let TASK_STATS = {
+  total: 0, done: 0, active: 0, pending: 0,
+  items: []
 };
 
 let liveCommits = [];
@@ -223,15 +211,33 @@ function renderHud() {
   statsEl.innerHTML = [["🏢", BUILDINGS.length, "建物"], ["🔴", activeCount, "稼働"], ["🔵", pendingCount, "待機"], ["🟢", readyCount, "準備"]].map(([icon, val, label]) => `<div class="hud-stat"><span>${icon}</span><strong>${val}</strong><span>${label}</span></div>`).join("");
 }
 
-function renderTaskProgress() {
+function renderTaskProgress(liveTasks) {
+  const stats = liveTasks || TASK_STATS;
   const el = document.getElementById("taskProgress");
-  const { total, done, inProgress, items } = TASK_STATS;
-  const pct = Math.round((done / total) * 100);
+  const { total, done, active, items } = stats;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
   el.innerHTML = `
-    <div class="progress-header"><span class="progress-title">📋 タスク進捗</span><span class="progress-count">${done}/${total} 完了</span></div>
-    <div class="progress-bar-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
-    <div class="progress-legend"><span class="legend-done">✅ 完了 ${done}</span><span class="legend-wip">⚡ 進行中 ${inProgress}</span><span class="legend-pending">⏳ 予定 ${TASK_STATS.pending}</span></div>
-    <div class="task-list-mini">${items.map(item => `<div class="task-mini-item task-${item.status}"><span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span><span class="task-mini-label">${item.label}</span></div>`).join("")}</div>
+    <div class="progress-header">
+      <span class="progress-title">📋 プロジェクト動向</span>
+      <span class="progress-count">${done}/${total} 完了</span>
+    </div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar" style="width:${pct}%"></div>
+    </div>
+    <div class="progress-legend">
+      <span class="legend-done">✅ 完了 ${done}</span>
+      <span class="legend-wip">⚡ 進行 ${active}</span>
+      <span class="legend-pending">⏳ 予定 ${total - done - active}</span>
+    </div>
+    <div class="task-list-mini">
+      ${(items || []).map(item => `
+        <div class="task-mini-item task-${item.status}">
+          <span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span>
+          <span class="task-mini-label">${item.label}</span>
+        </div>
+      `).join("")}
+    </div>
   `;
 }
 
@@ -279,7 +285,7 @@ async function syncWithLiveStatus() {
 
   renderBuildings();
   renderHud();
-  renderTaskProgress();
+  renderTaskProgress(liveData.tasks);
   renderGitLog();
 }
 

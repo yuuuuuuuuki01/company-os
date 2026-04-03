@@ -20,3 +20,5 @@ updated_at: 2026-04-03
 - Release review can block a high-risk release.
 - Founder veto can be recorded with a public reason and re-petition condition.
 - Project close can dissolve the roster while preserving reusable lessons.
+- The AI Academic Institute can publish reports without directly commanding the organization.
+- The Audit Layer can issue objective operating opinions without becoming line management.

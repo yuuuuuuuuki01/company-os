@@ -23,6 +23,8 @@ The Company OS is a headquarters governance layer for the full workspace and ope
 - Assembly
 - Standing Committees
 - Departments
+- Academic Institutions Layer
+- Audit Layer
 - Constitutional Guardian
 - Cross-functional PM Office
 - Cross-functional Director Office

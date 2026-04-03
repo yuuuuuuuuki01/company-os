@@ -25,6 +25,11 @@ It establishes a constitutional parliamentary model for project governance, low-
 5. `sops/`
 6. `departments/`
 
+The workspace also maintains non-governing institutional layers for research intake and independent audit:
+
+- `institutions/`
+- `audit-layer/`
+
 Lower layers may add detail but may not contradict higher layers.
 
 Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` are interpretive canons for every lower-order rule, ruling, and release.
@@ -46,6 +51,8 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `internal-rules/`: operating policies
 - `sops/`: repeatable execution procedures
 - `departments/`: capability map and delegated departmental authority
+- `institutions/`: academic and research institutions that observe and report through formal channels only
+- `audit-layer/`: independent audit entities and objective operating review protocols
 - `roles/`: office definitions
 - `committees/`: standing committee charters
 - `recruiting/`: low-context hiring and onboarding packets

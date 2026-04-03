@@ -24,9 +24,11 @@ The Department Steward leads a department, maintains its standards, and exercise
 - assign department officers
 - exercise department stop powers where granted
 - escalate matters outside the department boundary
+- sponsor department growth and redesign petitions
 
 ## Constraints
 
 - no override of higher-order rules
 - no founder-reserved actions
 - no silent exercise of blocking authority
+- no structural expansion without prior approval

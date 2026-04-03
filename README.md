@@ -70,6 +70,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 
 - Ask for keys only when a task concretely requires them.
 - Expand autonomy through bounded trials, audit, and revision.
+- Allow departments to self-improve continuously, but require approval for structural expansion.
 - Prefer short Japanese reports for recurring operations.
 
 ## Dashboard

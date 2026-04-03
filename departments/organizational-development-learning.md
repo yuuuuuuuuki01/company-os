@@ -32,6 +32,7 @@ Continuously improve institutional design using evidence from sociology, managem
 - sponsor evidence-informed governance petitions
 - operate the autonomy improvement loop
 - maintain the autonomy backlog and bounded trials
+- maintain the department growth board and redesign queue
 
 ## Stop power
 

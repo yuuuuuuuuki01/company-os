@@ -22,4 +22,5 @@ This directory stores active traceability ledgers.
 - `bootstrap-election-board.md`: vacancies, pending elections, and next seating actions
 - `parallel-operations-board.md`: multi-project lanes, owner status, and next handoff
 - `approval-desk-board.md`: approval queues, stamp waits, and escalation path
+- `department-growth-board.md`: self-growth and departmental expansion queue
 - `officeholder-registry.md`: current lawful office occupancy

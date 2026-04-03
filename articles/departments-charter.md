@@ -30,6 +30,13 @@ Departments are the durable capability structure of the Company OS. They preserv
 - Departments may assign `Department Officer` roles beneath the steward.
 - Department stewards are selected through lawful personnel process and remain subject to confidence review, discipline, and removal.
 
+## Self-growth and expansion
+
+- Departments are expected to improve their methods, training, and internal standards continuously.
+- Departments may sponsor proposals to expand, split, merge, or redesign themselves.
+- Any structural expansion of a department requires prior lawful approval.
+- Structural expansion becomes effective only after the required petition, review, and threshold are satisfied.
+
 ## Authority boundary
 
 Departments may act on routine matters inside their delegated domain, but they cannot amend higher-order rules or exercise founder-reserved powers.

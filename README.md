@@ -65,6 +65,12 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `units/`: initial registry of top-level folders
 - `memory/`: retained summaries and record hygiene
 
+## Operating posture
+
+- Ask for keys only when a task concretely requires them.
+- Expand autonomy through bounded trials, audit, and revision.
+- Prefer short Japanese reports for recurring operations.
+
 ## Amendment thresholds
 
 - `sops/` and `internal-rules/`: simple majority

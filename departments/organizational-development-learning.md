@@ -30,6 +30,8 @@ Continuously improve institutional design using evidence from sociology, managem
 - maintain organizational theory notes and institutional lessons
 - propose departmental or procedural redesign
 - sponsor evidence-informed governance petitions
+- operate the autonomy improvement loop
+- maintain the autonomy backlog and bounded trials
 
 ## Stop power
 

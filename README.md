@@ -61,6 +61,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `roles/`: office definitions
 - `committees/`: standing committee charters
 - `recruiting/`: low-context hiring and onboarding packets
+- `dashboard/`: static visual console for who moves what
 - `proposals/`, `appeals/`, `decisions/`: formal record templates
 - `units/`: initial registry of top-level folders
 - `memory/`: retained summaries and record hygiene
@@ -70,6 +71,11 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - Ask for keys only when a task concretely requires them.
 - Expand autonomy through bounded trials, audit, and revision.
 - Prefer short Japanese reports for recurring operations.
+
+## Dashboard
+
+- `dashboard/`: local source files for the visual console
+- `docs/`: GitHub Pages publishing copy
 
 ## Amendment thresholds
 

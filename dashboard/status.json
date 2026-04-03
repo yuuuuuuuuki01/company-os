@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "a212b44",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:01:40 +0900",
+      "message": "fix: center character sprites vertically and horizontally",
+      "dept": "engineering"
+    },
+    {
+      "hash": "f732667",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:53:09 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "f09f9b8",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:52:31 +0900",
@@ -195,21 +209,7 @@
       "date": "2026-04-03 15:03:30 +0900",
       "message": "Merge pull request #1 from yuuuuuuuuki01/pages-ready",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "7b3d6e8",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:01:57 +0900",
-      "message": "feat: redesign UI into animated RPG style",
-      "dept": "engineering"
-    },
-    {
-      "hash": "21d3445",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 14:45:21 +0900",
-      "message": "Turn dashboard into RPG-style world map",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 16:52:31 +0900"
+  "generated_at": "2026-04-03 17:01:40 +0900"
 }

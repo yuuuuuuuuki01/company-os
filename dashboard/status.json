@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "4289665",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:42:12 +0900",
+      "message": "feat: sync task progress with company-os-improvement-board.md",
+      "dept": "engineering"
+    },
+    {
+      "hash": "4aea5f1",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 08:39:07 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "d37431b",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 17:38:39 +0900",
@@ -195,21 +209,51 @@
       "date": "2026-04-03 16:00:19 +0900",
       "message": "feat: responsive UI, cute character sprites, and live git activity sync via GitHub Actions",
       "dept": "engineering"
-    },
-    {
-      "hash": "29ff866",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:50:03 +0900",
-      "message": "Batch company-os improvement agenda",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "0d03a47",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:45:22 +0900",
-      "message": "Run first company-os improvement sitting",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 17:38:39 +0900"
+  "tasks": {
+    "total": 9,
+    "done": 2,
+    "active": 7,
+    "pending": 0,
+    "items": [
+      {
+        "label": "record-normalization-motion",
+        "status": "done"
+      },
+      {
+        "label": "unit-state-separation-motion",
+        "status": "done"
+      },
+      {
+        "label": "unit-activation-gate-motion",
+        "status": "active"
+      },
+      {
+        "label": "committee-execution-bridge-motion",
+        "status": "active"
+      },
+      {
+        "label": "audit-fast-path-motion",
+        "status": "active"
+      },
+      {
+        "label": "ai-bulletin-intake-motion",
+        "status": "active"
+      },
+      {
+        "label": "department-steward-seating-wave-motion",
+        "status": "active"
+      },
+      {
+        "label": "decision-template-normalization-motion",
+        "status": "active"
+      },
+      {
+        "label": "unit-onboarding-priority-motion",
+        "status": "active"
+      }
+    ]
+  },
+  "generated_at": "2026-04-03 17:42:12 +0900"
 }

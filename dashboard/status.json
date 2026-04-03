@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "f09f9b8",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:52:31 +0900",
+      "message": "Run seventh sitting and open eighth agenda",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "59c0a5c",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:38:03 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "ca7ec5e",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:37:54 +0900",
@@ -195,21 +209,7 @@
       "date": "2026-04-03 14:45:21 +0900",
       "message": "Turn dashboard into RPG-style world map",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "41935f5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 14:17:24 +0900",
-      "message": "Add activity and election dashboard views",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "1188137",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 13:38:15 +0900",
-      "message": "Add dashboard and docs pages site",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 16:37:54 +0900"
+  "generated_at": "2026-04-03 16:52:31 +0900"
 }

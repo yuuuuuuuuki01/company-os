@@ -22,6 +22,7 @@ Allow the assembly to process multiple Company OS improvement items per sitting 
 - ordinary sittings should normally carry `3` to `7` agenda items
 - at least `1` structural item should be included when structural debt exists
 - at least `1` operating item should be included when active friction exists
+- at least `1` report-only item may be included when status must be surfaced without reopening a vote
 
 ## Chair authority
 
@@ -38,6 +39,14 @@ Agenda items should be grouped by:
 1. `urgent`: blocking lawful operation, readability, or safety
 2. `next`: high leverage improvements for current operation
 3. `later`: useful but non-blocking improvements
+
+## Cycle labeling
+
+Each batched item should carry:
+
+- agenda mode: `report`, `discussion`, or `deliberation`
+- cycle stage: `discussion-1`, `discussion-2`, `deliberation`, or `report`
+- next sitting target
 
 ## Safeguard
 

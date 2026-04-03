@@ -17,6 +17,14 @@ updated_at: 2026-04-03
 
 Formal debate is document-first and asynchronous unless escalated by the chair.
 
+## Agenda modes
+
+- `report`: report only, acknowledgment allowed, no vote required
+- `discussion`: shaping and coordination stage
+- `deliberation`: decision stage
+
+Substantive matters should normally move through two discussions and one deliberation.
+
 ## Allowed speaking order
 
 - sponsor statement
@@ -29,3 +37,4 @@ Formal debate is document-first and asynchronous unless escalated by the chair.
 ## Record duty
 
 Every formal debate thread must end in a vote, ruling, withdrawal, or postponement record.
+Every sitting must also leave a recorded next-agenda state.

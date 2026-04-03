@@ -16,8 +16,8 @@ updated_at: 2026-04-03
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | bootstrap closed and first ordinary sitting authorized | assembly |
-| Assembly | governance | active | second ordinary sitting closed and batch agenda activated | six active improvement motions |
-| Assembly Secretariat | governance | active | second ordinary sitting batch preparation | improvement board |
+| Assembly | governance | active | meeting loop active with reports, discussions, and next-agenda trigger | fourth ordinary sitting |
+| Assembly Secretariat | governance | active | fourth ordinary sitting batch preparation and next-agenda trigger | improvement board |
 | Independent Audit Firm | audit | active | system fitness and weekly operating audit | founder-office / constitutional-affairs |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
 | People and Talent | department | active | next unit-owner slates after bootstrap close | assembly |

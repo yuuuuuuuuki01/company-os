@@ -15,8 +15,8 @@ updated_at: 2026-04-03
 
 | Lane ID | Unit | Route | Status | Current Work | Next Handoff | Paper Load | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| lane-company-os | company-os | governance-loop | active | ordinary sitting loop, rollout watch, and `oem` activation-review deliberation prep | founder-office -> assembly-secretariat | 6 | primary live lane |
-| lane-oem | oem | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 3 | ready to onboard |
+| lane-company-os | company-os | governance-loop | active | ordinary sitting loop, rollout watch, and first external lane monitoring | founder-office -> assembly-secretariat | 6 | primary live lane |
+| lane-oem | oem | first-external-lane | active | bounded static OEM tool operation under accepted packet | oem-unit-owner -> reviewer | 4 | first external lane active and under watch |
 | lane-shift | shift | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 2 | ready to onboard |
 | lane-jouzou | jouzou | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 2 | ready to onboard |
 

@@ -35,6 +35,7 @@ This directory stores active traceability ledgers.
 - `oem-review-approval-route.md`: proposed reviewer and approval route for `oem` preparation work
 - `oem-activation-review-bundle.md`: deliberation bundle for `oem` seat, packet, reviewer, and approval route
 - `oem-activation-review-checklist.md`: minimal checklist for the first `oem` activation review path
+- `oem-activation-execution-board.md`: accepted bounded execution state for the first `oem` activation
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

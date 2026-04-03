@@ -39,3 +39,4 @@ updated_at: 2026-04-03
 | department-steward | people-talent | People and Talent Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
 | department-steward | data-knowledge | Data and Knowledge Steward (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
 | department-steward | organizational-development-learning | Organizational Development and Learning Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| unit-owner | oem | Founder Office nominee for the initial `oem` unit-owner line | 2026-04-03 | first ordinary sitting after `oem` activation review opens | seated | twenty-first-ordinary-sitting-ruling |

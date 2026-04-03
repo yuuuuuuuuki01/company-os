@@ -1,5 +1,5 @@
 ---
-id: company-os-eighteenth-ordinary-sitting
+id: company-os-twenty-first-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Company OS Eighteenth Ordinary Sitting
+# Company OS Twenty-First Ordinary Sitting
 
 ## Goal
 
-Deliberate the first `oem` activation review path while keeping active watch visible.
+Deliberate the first bounded `oem` activation execution and complete the first external unit onboarding cycle.
 
 ## Agenda
 
@@ -27,16 +27,16 @@ Deliberate the first `oem` activation review path while keeping active watch vis
 6. report: `decision-template-normalization-motion`
 7. report: `unit-onboarding-priority-motion`
 8. report: `oem-onboarding-preparation-motion`
-9. deliberation: `oem-activation-review-motion`
-10. confirm the nineteenth ordinary sitting agenda
+9. report: `oem-activation-review-motion`
+10. deliberation: `oem-activation-execution-motion`
+11. confirm the twenty-second ordinary sitting agenda
 
 ## Definition of done
 
-- the first `oem` activation review path is decided, postponed, or amended
-- active rollout watch remains visible
+- the first bounded `oem` activation execution is decided
+- the first external unit onboarding cycle is complete
 
 ## Result
 
-- `oem-activation-review-motion` was adopted
-- active rollout watch remained visible
-- the nineteenth ordinary sitting was opened
+- the first bounded `oem` activation execution was adopted
+- the twenty-second ordinary sitting was opened

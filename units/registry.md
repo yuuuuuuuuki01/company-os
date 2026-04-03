@@ -22,7 +22,7 @@ Initial top-level units registered at bootstrap:
 | FormPilot | `C:\agent\codex\FormPilot` | registered | unseated | not-activated | medium | pending-election |
 | jouzou | `C:\agent\codex\jouzou` | registered | unseated | ready | medium | pending-election |
 | kanai-kagamibiraki-proposal | `C:\agent\codex\kanai-kagamibiraki-proposal` | registered | unseated | not-activated | low | pending-election |
-| oem | `C:\agent\codex\oem` | registered | unseated | ready | medium | pending-election |
+| oem | `C:\agent\codex\oem` | registered | seated | active | medium | seated |
 | oem_release | `C:\agent\codex\oem_release` | registered | unseated | not-activated | medium | pending-election |
 | Poin-T | `C:\agent\codex\Poin-T` | registered | unseated | not-activated | high | pending-election |
 | saigai | `C:\agent\codex\saigai` | registered | unseated | not-activated | high | pending-election |

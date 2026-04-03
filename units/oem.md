@@ -20,17 +20,17 @@ Handle the static OEM estimate tool as the first bounded external onboarding wav
 ## State model
 
 - registration_state: registered
-- seat_state: unseated
-- lane_state: ready
-- voting officer: pending
+- seat_state: seated
+- lane_state: active
+- voting officer: initial `oem` unit-owner line
 
 ## Immediate operating scope
 
-- initial unit-owner seating
-- bounded start packet acceptance
-- later activation review request
+- bounded static-tool operation under the accepted start packet
+- first active lane watch and issue intake
+- later confidence review and bounded expansion motions
 
 ## Boundary
 
-- no direct activation by this record
+- active scope is limited to the static OEM estimate tool
 - no expansion beyond the static OEM estimate tool without a later motion

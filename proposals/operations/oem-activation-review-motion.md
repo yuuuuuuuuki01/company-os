@@ -1,7 +1,7 @@
 ---
 id: oem-activation-review-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -28,3 +28,21 @@ Request the first formal activation review for `oem` once the bounded preparatio
 - `oem` is the chosen first external onboarding candidate
 - the bounded preparation bundle is now available
 - the next lawful step is a formal activation review path
+
+## Discussion-1 note
+
+- the first activation review path should remain bounded and keep `oem` in `ready`
+- accepted artifact set: `units/oem.md` and `ledgers/oem-activation-review-checklist.md`
+- send to `discussion-2` with the minimum activation-review checklist only
+
+## Discussion-2 note
+
+- the first activation review path is limited to seat acceptance, packet acceptance, reviewer naming, and approval-path confirmation
+- no switch to `active` occurs inside this motion
+- deliberation should decide whether this bounded review path becomes the authorized next step
+
+## Deliberation result
+
+- adopted as the authorized first `oem` activation review path
+- `oem` remains `ready` until a separate execution motion accepts the seat and lane activation
+- supporting artifacts: `units/oem.md` and `ledgers/oem-activation-review-checklist.md`

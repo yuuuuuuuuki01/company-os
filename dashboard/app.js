@@ -151,11 +151,14 @@ async function spawnMessenger(startCol, startRow, endCol, endRow, message = "お
     return;
   }
 
+  // タイルの中心にキャラを配置するためのオフセット (タイルサイズ/2 - キャラサイズ/2)
+  const offset = (TILE_SIZE - 32) / 2;
+
   for (const step of path) {
-    char.style.transition = "all 0.4s linear";
-    char.style.left = step.x * TILE_SIZE + "px";
-    char.style.top = step.y * TILE_SIZE + "px";
-    await new Promise(r => setTimeout(r, 400));
+    char.style.transition = "all 0.45s linear"; // transition時間を少し長めに
+    char.style.left = (step.x * TILE_SIZE + offset) + "px";
+    char.style.top = (step.y * TILE_SIZE + offset) + "px";
+    await new Promise(r => setTimeout(r, 450)); // sync
   }
 
   char.querySelector(".char-bubble").textContent = "到着！";

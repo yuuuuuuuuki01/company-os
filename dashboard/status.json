@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "d37431b",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:38:39 +0900",
+      "message": "Advance onboarding priority through eleventh sitting",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "9a91a46",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 08:32:53 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "d9590e2",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 17:32:37 +0900",
@@ -195,21 +209,7 @@
       "date": "2026-04-03 15:45:22 +0900",
       "message": "Run first company-os improvement sitting",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "8e1448e",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:45:02 +0900",
-      "message": "style: cute Animal Crossing pastel reskin - round chars, warm colors, shadows",
-      "dept": "engineering"
-    },
-    {
-      "hash": "d0e2106",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:34:42 +0900",
-      "message": "Close bootstrap and open company-os ordinary sitting",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 17:32:37 +0900"
+  "generated_at": "2026-04-03 17:38:39 +0900"
 }

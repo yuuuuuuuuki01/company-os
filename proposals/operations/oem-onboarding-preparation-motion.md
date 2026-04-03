@@ -1,7 +1,7 @@
 ---
 id: oem-onboarding-preparation-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -42,3 +42,9 @@ Prepare the lawful seat and activation packet required to move `oem` from `ready
 - `oem` should remain `ready` until a later activation review confirms the gate
 - accepted artifact set: `proposals/operations/oem-unit-owner-seating-motion.md` and `ledgers/oem-activation-review-bundle.md`
 - deliberation should decide whether the bounded preparation bundle is sufficient to proceed
+
+## Deliberation result
+
+- adopted as the bounded preparation bundle for `oem`
+- `oem` remains `ready` until a later activation review is approved and the gate is satisfied
+- supporting artifacts: `proposals/operations/oem-unit-owner-seating-motion.md` and `ledgers/oem-activation-review-bundle.md`

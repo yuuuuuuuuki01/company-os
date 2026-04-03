@@ -1,7 +1,7 @@
 ---
-id: company-os-fifteenth-ordinary-sitting
+id: company-os-eighteenth-ordinary-sitting
 layer: proposal
-status: adopted
+status: motion-open
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -11,11 +11,11 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Company OS Fifteenth Ordinary Sitting
+# Company OS Eighteenth Ordinary Sitting
 
 ## Goal
 
-Deliberate the bounded `oem` preparation bundle while keeping active rollout watch visible.
+Deliberate the first `oem` activation review path while keeping active watch visible.
 
 ## Agenda
 
@@ -26,16 +26,11 @@ Deliberate the bounded `oem` preparation bundle while keeping active rollout wat
 5. report: `department-steward-seating-wave-motion`
 6. report: `decision-template-normalization-motion`
 7. report: `unit-onboarding-priority-motion`
-8. deliberation: `oem-onboarding-preparation-motion`
-9. confirm the sixteenth ordinary sitting agenda
+8. report: `oem-onboarding-preparation-motion`
+9. deliberation: `oem-activation-review-motion`
+10. confirm the nineteenth ordinary sitting agenda
 
 ## Definition of done
 
-- the bounded `oem` preparation bundle is decided, postponed, or amended
+- the first `oem` activation review path is decided, postponed, or amended
 - active rollout watch remains visible
-
-## Result
-
-- the bounded `oem` preparation bundle was adopted
-- active rollout watch remained visible
-- the sixteenth ordinary sitting was opened

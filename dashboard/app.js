@@ -85,11 +85,11 @@ function renderMap() {
 }
 
 // ======================================================
-// キャラクタースプライト (640x640 正方形, 横に3人並んでいる)
-// ======================================================
+// キャラクタースプライト (Fox:0, Cat:1, Frog:2)
+const CHAR_TYPES = [0, 1, 2];
 const SPRITE_OFFSETS = { active: 0, pending: 1, ready: 2, walking: 1 };
 
-function createCharacter(status, bubbleText, size = 64) {
+function createCharacter(status, bubbleText, size = 64, forcedType = null) {
   const wrap = document.createElement("div");
   wrap.className = `char-wrap char-${status}`;
 
@@ -100,24 +100,36 @@ function createCharacter(status, bubbleText, size = 64) {
     wrap.appendChild(bubble);
   }
 
-  const spriteIndex = SPRITE_OFFSETS[status] ?? 0;
-  // 640x640 の画像を 3x3 のグリッド（の真ん中の段）と見なしてスケーリング
-  // 1キャラの表示サイズを size とすると、画像全体は (size*3) x (size*3) になる
-  const bgSize = size * 3;
+  // キャラの種別（キツネ、ネコ、カエル）をランダム化、または固定
+  const typeIndex = (forcedType !== null) ? forcedType : CHAR_TYPES[Math.floor(Math.random() * CHAR_TYPES.length)];
+  const statusOffset = SPRITE_OFFSETS[status] ?? 0;
 
+  const bgSize = size * 3;
   const img = document.createElement("div");
   img.className = `char-sprite char-anim-${status}`;
   img.style.width = size + "px";
   img.style.height = size + "px";
   img.style.backgroundImage = "url('./chars_v3.png')";
   img.style.backgroundSize = `${bgSize}px ${bgSize}px`;
-  // 垂直方向に中央揃え
-  img.style.backgroundPosition = `-${spriteIndex * size}px center`;
+
+  // X軸: ステータス (0,1,2), Y軸: キャラ種別 (0,1,2)
+  img.style.backgroundPosition = `-${statusOffset * size}px -${typeIndex * size}px`;
   img.style.imageRendering = "pixelated";
   img.style.backgroundRepeat = "no-repeat";
   wrap.appendChild(img);
 
   return wrap;
+}
+
+// 感情表現 (Reaction) の追加
+function triggerReaction(parentEl) {
+  const emojis = ["❤️", "💡", "🍵", "💤", "✨", "🔥", "🎵"];
+  const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+  const bubble = document.createElement("div");
+  bubble.className = "char-bubble reaction";
+  bubble.textContent = emoji;
+  parentEl.appendChild(bubble);
+  setTimeout(() => bubble.remove(), 2500);
 }
 
 // ======================================================
@@ -189,6 +201,12 @@ function renderBuildings() {
 
     const wall = document.createElement("div");
     wall.className = "building-wall";
+
+    // 室内装飾を追加
+    wall.innerHTML += `<div class="office-decor decor-plant">🌿</div>`;
+    wall.innerHTML += `<div class="office-decor decor-desk">🪑</div>`;
+    if (b.w >= 4) wall.innerHTML += `<div class="office-decor decor-pc">💻</div>`;
+
     const floor = document.createElement("div");
     floor.className = "building-floor";
 
@@ -340,6 +358,13 @@ function cycleActivityLog() {
     updateMessage(`[Log] ${c.dept}: ${c.message}`);
   } else {
     updateMessage(`[Now] Company OS が正常に稼働しています。`);
+  }
+
+  // 誰かにリアクションさせる (New!)
+  const allChars = document.querySelectorAll(".building-floor .char-wrap");
+  if (allChars.length > 0) {
+    const target = allChars[Math.floor(Math.random() * allChars.length)];
+    triggerReaction(target);
   }
 }
 

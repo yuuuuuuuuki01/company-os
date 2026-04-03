@@ -269,6 +269,36 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
+  position: relative;
+  min-height: 40px;
+}
+
+/* オフィス装飾 (New!) */
+.office-decor {
+  position: absolute;
+  pointer-events: none;
+  font-size: 14px;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.decor-plant {
+  bottom: 4px;
+  left: 4px;
+  filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.2));
+}
+
+.decor-desk {
+  bottom: 2px;
+  right: 8px;
+  font-size: 16px;
+}
+
+.decor-pc {
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  opacity: 0.5;
 }
 
 /* 部屋の色分け */
@@ -474,4 +504,43 @@ body {
 
 .char-anim-walking {
   animation: char-walk 0.3s infinite;
+}
+
+/* リアクション・吹き出しアニメ (New!) */
+@keyframes reaction-float {
+  0% {
+    transform: scale(0.5) translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(1.2) translateY(-10px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale(1) translateY(-15px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.char-bubble.reaction {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: var(--ui-accent);
+  color: var(--ui-accent);
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: reaction-float 2.5s forwards;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
 }

@@ -1,6 +1,27 @@
 {
   "commits": [
     {
+      "hash": "68c7c7d",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:15:14 +0900",
+      "message": "fix: character sprite transparency and scaling",
+      "dept": "engineering"
+    },
+    {
+      "hash": "8e64e50",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:15:13 +0900",
+      "message": "Couple meetings with work and assign department loads",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "e125659",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:09:17 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "4b677da",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:09:09 +0900",
@@ -176,5 +197,5 @@
       "dept": "founder-office"
     }
   ],
-  "generated_at": "2026-04-03 16:09:09 +0900"
+  "generated_at": "2026-04-03 16:15:14 +0900"
 }

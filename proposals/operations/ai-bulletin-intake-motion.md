@@ -1,7 +1,7 @@
 ---
 id: ai-bulletin-intake-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: research-intelligence
 unit: company-os
 risk: low
@@ -38,3 +38,9 @@ Define a lighter route from AI academic bulletins to operating change or formal 
 
 - accepted artifact set: `ai-bulletin-intake-board`
 - deliberation should decide whether assembly secretariat or research-intelligence owns the first classification pass
+
+## Deliberation result
+
+- adopted with rollout owner `research-intelligence`
+- first-pass classifier: `research-intelligence`
+- supporting rule: `ai-bulletin-intake-rule`

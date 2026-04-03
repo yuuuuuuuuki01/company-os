@@ -1,7 +1,7 @@
 ---
 id: unit-activation-gate-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -39,3 +39,8 @@ Create a stricter gate that separates unit registration from activation into liv
 
 - accepted artifact set: `unit-state-model-rule` and `run-unit-activation-review`
 - deliberation should only decide adoption timing and rollout scope
+
+## Deliberation result
+
+- adopted with rollout owner `project-management-office`
+- supporting rule: `unit-activation-gate-rule`

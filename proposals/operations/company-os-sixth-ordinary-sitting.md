@@ -1,7 +1,7 @@
 ---
 id: company-os-sixth-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -31,3 +31,9 @@ Run deliberation for the four active next-priority items and adopt the ones read
 
 - deliberation results are recorded for the four active items
 - adopted items have explicit rollout owners
+
+## Result
+
+- four active items adopted
+- rollout owners assigned
+- seventh ordinary sitting opened

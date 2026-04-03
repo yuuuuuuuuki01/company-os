@@ -1,7 +1,7 @@
 ---
 id: audit-fast-path-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: independent-audit-firm
 unit: company-os
 risk: low
@@ -38,3 +38,8 @@ Shorten the route from audit finding to recognized improvement motion.
 
 - accepted artifact set: `audit-routing-board`
 - deliberation should decide auto-open timing and chair review boundary
+
+## Deliberation result
+
+- adopted with rollout owner `independent-audit-firm`
+- supporting rule: `audit-finding-routing-rule`

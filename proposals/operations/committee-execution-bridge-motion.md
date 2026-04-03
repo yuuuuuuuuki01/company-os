@@ -1,7 +1,7 @@
 ---
 id: committee-execution-bridge-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: low
@@ -38,3 +38,8 @@ Tighten the handoff from committee findings into execution lanes so findings do 
 
 - accepted artifact set: `issue-committee-finding-handoff`
 - deliberation should only decide which committees must use the handoff pattern first
+
+## Deliberation result
+
+- adopted with rollout owner `assembly-secretariat`
+- supporting rule: `committee-finding-handoff-rule`

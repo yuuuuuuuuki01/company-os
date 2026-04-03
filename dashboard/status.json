@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "4b677da",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:09:09 +0900",
+      "message": "feat: implement character pathfinding, walking animations, and world news popup system",
+      "dept": "engineering"
+    },
+    {
+      "hash": "7492a18",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:06:42 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "fede085",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:06:34 +0900",
@@ -162,5 +176,5 @@
       "dept": "founder-office"
     }
   ],
-  "generated_at": "2026-04-03 16:06:34 +0900"
+  "generated_at": "2026-04-03 16:09:09 +0900"
 }

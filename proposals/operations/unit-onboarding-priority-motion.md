@@ -34,3 +34,10 @@ Choose which non-`company-os` unit should enter the first formal activation wave
 - `shift` and `jouzou` remain viable but should follow after one activation gate pass is proven
 - accepted artifact set: `ledgers/unit-onboarding-priority-board.md`
 - send to `discussion-2` with one recommended first candidate and one fallback candidate
+
+## Discussion-2 note
+
+- `oem` stays the first candidate if seat, mission packet, reviewer, and approval path can be prepared in one bounded wave
+- `shift` remains the fallback if `oem` misses the seat or packet gate
+- accepted artifact set: `ledgers/unit-onboarding-prerequisites-board.md`
+- deliberation should decide whether `oem` is formally chosen and whether `shift` is the standing fallback

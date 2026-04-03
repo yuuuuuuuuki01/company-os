@@ -1,7 +1,7 @@
 ---
 id: company-os-eleventh-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -32,3 +32,9 @@ Run `discussion-2` for the first non-`company-os` onboarding priority while keep
 
 - rollout status is visible for active adopted items
 - onboarding priority is narrowed enough for deliberation
+
+## Result
+
+- rollout watch stayed visible for active adopted items
+- `unit-onboarding-priority-motion` reached `discussion-2`
+- the twelfth ordinary sitting was opened

@@ -29,6 +29,7 @@ This directory stores active traceability ledgers.
 - `department-steward-seating-board.md`: steward seating waves, criteria, and next committee handoff
 - `department-steward-wave-1-slate.md`: proposed first ordinary steward confirmations for wave-1
 - `unit-onboarding-priority-board.md`: first external unit onboarding comparison and recommendation
+- `unit-onboarding-prerequisites-board.md`: activation prerequisites for the preferred and fallback unit candidates
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

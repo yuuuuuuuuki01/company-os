@@ -1,7 +1,7 @@
 ---
 id: department-steward-seating-wave-motion
 layer: proposal
-status: draft
+status: motion-open
 owner: people-talent
 unit: company-os
 risk: medium
@@ -27,3 +27,10 @@ Run a structured next wave of steward seating for departments that are active in
 
 - acting arrangements are useful for bootstrap
 - ordinary operation needs cleaner stewardship over time
+
+## Discussion-1 note
+
+- immediate seating should focus on departments already carrying ordinary governance load
+- a wave model is preferred over one large staffing motion
+- accepted artifact set: `ledgers/department-steward-seating-board.md`
+- send to `discussion-2` with wave-1 criteria and confidence-review entry point

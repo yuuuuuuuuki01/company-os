@@ -27,3 +27,10 @@ Normalize short-form ruling templates so decisions stay readable and compact.
 
 - consistency in rulings improves meeting speed
 - compressed readable decisions support traceability
+
+## Discussion-1 note
+
+- keep the legal field set unchanged while shortening the visible body
+- first target is ordinary sitting and operating rulings only
+- accepted artifact set: `decisions/templates/operating-ruling-short-ja.md`
+- send to `discussion-2` with migration boundary and fallback rule

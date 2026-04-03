@@ -1,7 +1,7 @@
 ---
 id: unit-state-separation-motion
 layer: proposal
-status: motion-open
+status: superseded
 owner: organizational-development-learning
 unit: company-os
 risk: medium
@@ -34,3 +34,8 @@ Separate `registered unit` from `active operating lane` so seat status, mission-
 - registry states and lane states are distinct
 - active units are visibly narrower than registered units
 - seat readiness and execution readiness are no longer conflated
+
+## Report note
+
+- the state split is now visible in `units/registry.md` and `parallel-operations-board.md`
+- further changes should use the normal amendment path instead of keeping this bootstrap motion open

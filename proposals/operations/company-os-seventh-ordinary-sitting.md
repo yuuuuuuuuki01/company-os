@@ -1,7 +1,7 @@
 ---
 id: company-os-seventh-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -33,3 +33,10 @@ Review rollout status for the newly adopted operating rules and reopen deferred 
 
 - rollout status is visible for all adopted items
 - two deferred items enter the loop
+
+## Result
+
+- six report items were acknowledged
+- `department-steward-seating-wave-motion` entered `discussion-1` and received a wave board
+- `decision-template-normalization-motion` entered `discussion-1` and received a short Japanese ruling template draft
+- the eighth ordinary sitting was opened

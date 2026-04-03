@@ -1,7 +1,7 @@
 ---
 id: record-normalization-motion
 layer: proposal
-status: motion-open
+status: superseded
 owner: data-knowledge
 unit: company-os
 risk: low
@@ -34,3 +34,8 @@ Normalize Japanese records so short reports and operating notes remain readable 
 - priority records become readable in short Japanese
 - future short reports follow one compressed pattern
 - audit and meeting notes become easier to review
+
+## Report note
+
+- priority records were normalized and the bootstrap readability gap was closed in the seventh ordinary sitting
+- ongoing compact Japanese output now continues under `reporting-standard-rule` and live ledger upkeep

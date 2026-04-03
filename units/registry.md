@@ -1,7 +1,7 @@
 ---
 id: units-registry
 layer: registry
-status: bootstrap
+status: active
 owner: assembly
 unit: company-os
 risk: medium

@@ -20,3 +20,5 @@ founder_veto_used: false
 # Ruling Template
 
 Use this template for assembly, committee, or officer rulings that close a formal matter.
+
+For short operating rulings in Japanese, use `decisions/templates/operating-ruling-short-ja.md` as the preferred body format while preserving the same frontmatter fields.

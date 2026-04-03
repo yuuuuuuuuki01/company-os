@@ -61,6 +61,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `roles/`: office definitions
 - `committees/`: standing committee charters
 - `recruiting/`: low-context hiring and onboarding packets
+- `skills/`: reusable capability skillsets and training assets
 - `dashboard/`: static visual console for who moves what
 - `proposals/`, `appeals/`, `decisions/`: formal record templates
 - `units/`: initial registry of top-level folders

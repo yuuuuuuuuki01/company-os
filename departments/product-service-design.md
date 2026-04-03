@@ -15,7 +15,7 @@ updated_at: 2026-04-03
 
 ## Mandate
 
-Own product framing, user journey design, information architecture, interaction patterns, and service-level experience definitions.
+Own product framing, user journey design, information architecture, interaction patterns, service-level experience definitions, and design capability development.
 
 ## Core roles
 
@@ -23,12 +23,15 @@ Own product framing, user journey design, information architecture, interaction 
 - Product Designer
 - Service Designer
 - UX Writer
+- Visual Design Coach
 
 ## Delegated authority
 
 - approve routine design specifications
 - maintain design patterns and experience standards
 - request usability research
+- maintain design critique skillsets and drills
+- run design capability loops with Directorate and ODL
 
 ## Stop power
 

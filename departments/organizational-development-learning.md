@@ -33,6 +33,7 @@ Continuously improve institutional design using evidence from sociology, managem
 - operate the autonomy improvement loop
 - maintain the autonomy backlog and bounded trials
 - maintain the department growth board and redesign queue
+- support reusable skillset design for organizational learning
 
 ## Stop power
 

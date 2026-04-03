@@ -21,14 +21,12 @@ updated_at: 2026-04-03
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
-| People and Talent | department | active | reflect wave-1 confirmations and watch next confidence review | personnel-committee |
+| People and Talent | department | active | reflect wave-1 confirmations and confirm seat prerequisites for the first external activation candidate | personnel-committee / PMO |
 | Data and Knowledge | department | active | apply short ruling scope to ordinary operating decisions | assembly-secretariat |
 | Security, Risk, and Compliance | department | ready | key custody and credential request readiness | requester on demand |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
-| Project Management Office | department | active | watch first live activation gate use in future lanes | assembly-secretariat |
+| Project Management Office | department | active | watch first live activation gate use in future lanes and confirm first external lane prerequisites | assembly-secretariat |
 | Portfolio Strategy | department | active | narrow first non-company-os onboarding priority to first and fallback candidate | founder-office / PMO |
-| People and Talent | department | active | confirm seat prerequisites for the first external activation candidate | personnel-committee / PMO |
-| Project Management Office | department | active | confirm lane prerequisites for the first external activation candidate | assembly-secretariat |
 | Research Intelligence | department | active | own first-pass AI bulletin classification rollout | assembly-secretariat |
 | Directorate | department | active | review coherence of new operating artifacts | assembly |
 | Product and Service Design | department | active | design capability work outside the governance lane | directorate / founder-office |

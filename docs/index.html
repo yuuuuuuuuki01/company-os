@@ -11,9 +11,9 @@
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Company OS World</p>
-          <h1>会社OSをRPG風の街として見る</h1>
+          <h1>会社OSを並行稼働するRPGの街として見る</h1>
           <p class="hero-text">
-            会議は会議室へ、承認は承認机へ、台帳は書庫へ。今どこが動いていて、どこに紙が積まれているかを地図感覚で見られる画面です。
+            会議は会議室へ、承認は承認机へ、案件は複数のルートへ流れます。いま何本の仕事が走っているか、どこに紙が積まれているかを地図感覚で見られる画面です。
           </p>
           <div class="hero-pills" id="heroPills"></div>
         </div>
@@ -33,6 +33,17 @@
             <p class="panel-note">場所ごとに稼働と紙の量を見る</p>
           </div>
           <div class="location-grid" id="locationGrid"></div>
+        </section>
+
+        <section class="panel panel-wide">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Parallel Routes</p>
+              <h2>並行ルート</h2>
+            </div>
+            <p class="panel-note">複数案件を同時に走らせる運行表</p>
+          </div>
+          <div class="route-grid" id="routeGrid"></div>
         </section>
 
         <section class="panel panel-wide">
@@ -63,9 +74,9 @@
               <p class="eyebrow">Stamp Desk</p>
               <h2>承認机</h2>
             </div>
-            <p class="panel-note">空席と承認待ち</p>
+            <p class="panel-note">ハンコ待ちと承認行列</p>
           </div>
-          <div class="vacancy-list" id="vacancyList"></div>
+          <div class="approval-grid" id="approvalGrid"></div>
         </section>
 
         <section class="panel panel-wide">
@@ -110,7 +121,7 @@
               <p class="eyebrow">Unit Field</p>
               <h2>事業ユニット平原</h2>
             </div>
-            <p class="panel-note">各ユニットは Unit Owner 選任待ち</p>
+            <p class="panel-note">各ユニットは onboarding または active lane に接続される</p>
           </div>
           <div class="unit-grid" id="unitGrid"></div>
         </section>

@@ -41,6 +41,7 @@ This directory stores active traceability ledgers.
 - `shift-seat-route-board.md`: proposed lawful seat route for the first `shift` unit-owner line
 - `shift-review-approval-route.md`: proposed reviewer and approval route for `shift` preparation work
 - `shift-activation-review-checklist.md`: minimal checklist for the first `shift` activation review path
+- `shift-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `shift` execution motion
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

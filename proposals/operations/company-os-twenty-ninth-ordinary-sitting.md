@@ -1,5 +1,5 @@
 ---
-id: company-os-twenty-eighth-ordinary-sitting
+id: company-os-twenty-ninth-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Company OS Twenty-Eighth Ordinary Sitting
+# Company OS Twenty-Ninth Ordinary Sitting
 
 ## Goal
 
-Keep `oem` in watch mode and open `discussion-1` on the threshold for any later `shift` execution.
+Run `discussion-2` on the minimum threshold for any later `shift` execution while keeping `oem` in watch mode.
 
 ## Agenda
 
@@ -26,15 +26,15 @@ Keep `oem` in watch mode and open `discussion-1` on the threshold for any later 
 5. report: `oem-activation-execution-motion`
 6. report: `oem` first-lane watch
 7. report: `shift-activation-review-motion`
-8. discussion-1: `shift-activation-execution-threshold-motion`
-9. confirm the twenty-ninth ordinary sitting agenda
+8. discussion-2: `shift-activation-execution-threshold-motion`
+9. confirm the thirtieth ordinary sitting agenda
 
 ## Definition of done
 
-- the minimum threshold for any later `shift` execution is narrowed enough for `discussion-2`
+- the `shift` execution threshold is narrowed enough for deliberation
 - `oem` watch remains visible
 
 ## Result
 
-- `shift-activation-execution-threshold-motion` reached `discussion-1`
-- the twenty-ninth ordinary sitting was opened
+- `shift-activation-execution-threshold-motion` reached `discussion-2`
+- the thirtieth ordinary sitting was opened

@@ -17,7 +17,7 @@ updated_at: 2026-04-03
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | lane-company-os | company-os | governance-loop | active | ordinary sitting loop, rollout watch, and first external lane monitoring | founder-office -> assembly-secretariat | 6 | primary live lane |
 | lane-oem | oem | first-external-lane | active | bounded static OEM tool operation under accepted packet | oem-unit-owner -> reviewer | 4 | first external lane active and under watch |
-| lane-shift | shift | second-external-preparation | ready | bounded activation-review path is authorized; waiting for a later execution motion | project-management-office -> people-talent | 3 | ready but not active while `oem` remains the first lane |
+| lane-shift | shift | second-external-preparation | ready | execution threshold is adopted; waiting for a bounded execution bundle only | project-management-office -> people-talent | 3 | ready but not active while `oem` remains the first lane |
 | lane-jouzou | jouzou | onboarding-ready | ready | waiting for first mission packet | people-talent -> PMO | 2 | ready to onboard |
 
 Operating note: lane state is independent from unit registration and seat state. A lane may run in parallel only when owner, handoff target, and approval path are all declared.

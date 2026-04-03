@@ -25,3 +25,4 @@ updated_at: 2026-04-03
 - no critical exception is recorded at the first watch checkpoint
 - `oem` remains the reference lane for the next external onboarding wave
 - second-lane review work may proceed, but second-lane execution still needs a separate threshold decision
+- the threshold decision is now separate and adopted; `oem` watch remains the gating reference for any later second-lane execution

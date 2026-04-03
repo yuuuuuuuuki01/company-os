@@ -27,6 +27,7 @@ Handle the workforce-planning and shift-optimization MVP as the second bounded e
 ## Immediate operating scope
 
 - bounded activation-review path is authorized while the lane remains `ready`
+- a separate execution threshold is adopted, but no seat execution or lane activation is authorized yet
 - the first mission packet is limited to the MVP planning and scheduling flow
 - any later seat execution or lane activation needs a separate motion
 

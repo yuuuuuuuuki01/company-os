@@ -1,7 +1,7 @@
 ---
 id: company-os-fourth-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -32,3 +32,9 @@ Run the meeting loop with report items first and four discussion-1 items after t
 - both report items are acknowledged
 - all four discussion items receive first-round shaping
 - the fifth ordinary sitting is opened before close
+
+## Result
+
+- both report items acknowledged
+- four discussion items advanced to `discussion-2`
+- fifth ordinary sitting opened as the next loop trigger

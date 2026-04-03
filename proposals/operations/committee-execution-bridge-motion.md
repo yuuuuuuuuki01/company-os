@@ -27,3 +27,9 @@ Tighten the handoff from committee findings into execution lanes so findings do 
 
 - review authority exists, but post-review execution is still loose
 - binding findings should move work, not only describe it
+
+## Discussion-1 note
+
+- committee findings need an executor, deadline, and handoff target
+- binding findings should update the receiving lane directly
+- send to `discussion-2` with a minimal output schema

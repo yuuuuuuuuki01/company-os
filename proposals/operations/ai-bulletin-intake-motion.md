@@ -27,3 +27,9 @@ Define a lighter route from AI academic bulletins to operating change or formal 
 
 - the bulletin already contains decision-useful signals
 - intake is still ad hoc
+
+## Discussion-1 note
+
+- intake classes `monitor / trial / petition` are accepted as the base pattern
+- `trial` should route to ODL backlog review
+- send to `discussion-2` with intake ownership and reporting format

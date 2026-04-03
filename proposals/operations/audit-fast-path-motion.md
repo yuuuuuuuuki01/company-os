@@ -27,3 +27,9 @@ Shorten the route from audit finding to recognized improvement motion.
 
 - audit reports already surface useful issues
 - the conversion step into action is still too manual
+
+## Discussion-1 note
+
+- triage classes `watch / route / urgent` are accepted as the base pattern
+- `route` should open a draft motion automatically
+- send to `discussion-2` with routing ownership and timing

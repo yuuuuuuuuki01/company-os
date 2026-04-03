@@ -28,3 +28,9 @@ Create a stricter gate that separates unit registration from activation into liv
 - active status is currently too broad
 - lane readiness needs the same clarity as seat readiness
 - PMO needs a lawful gate to prevent sloppy activation
+
+## Discussion-1 note
+
+- keep the gate tied to the separate unit-state model
+- add explicit check for lawful seat readiness or approved bootstrap exception
+- send to `discussion-2` with proposed gate fields

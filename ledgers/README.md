@@ -24,4 +24,5 @@ This directory stores active traceability ledgers.
 - `approval-desk-board.md`: approval queues, stamp waits, and escalation path
 - `department-growth-board.md`: self-growth and departmental expansion queue
 - `external-specialist-board.md`: outside specialist lanes and internal acceptance path
+- `company-os-improvement-board.md`: batched improvement agenda for ordinary sittings
 - `officeholder-registry.md`: current lawful office occupancy

@@ -16,14 +16,17 @@ updated_at: 2026-04-03
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | bootstrap closed and first ordinary sitting authorized | assembly |
-| Assembly | governance | active | first ordinary sitting closed and two improvement motions routed | structural / operating motions |
+| Assembly | governance | active | second ordinary sitting closed and batch agenda activated | six active improvement motions |
+| Assembly Secretariat | governance | active | second ordinary sitting batch preparation | improvement board |
 | Independent Audit Firm | audit | active | system fitness and weekly operating audit | founder-office / constitutional-affairs |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
 | People and Talent | department | active | next unit-owner slates after bootstrap close | assembly |
 | Data and Knowledge | department | active | record readability and encoding normalization pass | assembly-secretariat |
 | Security, Risk, and Compliance | department | ready | key custody and credential request readiness | requester on demand |
 | Organizational Development and Learning | department | active | unit registration vs active-lane separation design | constitutional-review-committee |
-| Project Management Office | department | active | unit activation gate redesign coordination | constitutional-review-committee |
+| Project Management Office | department | active | unit activation gate and committee bridge motions | constitutional-review-committee / assembly-secretariat |
+| Research Intelligence | department | active | AI bulletin intake path drafting | assembly-secretariat |
+| Independent Audit Firm | audit | active | audit fast-path motion sponsorship | founder-office / assembly |
 | Directorate | department | active | review first ordinary improvement agenda | assembly |
 | Product and Service Design | department | active | design capability loop and external UI brief ownership | directorate / founder-office |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

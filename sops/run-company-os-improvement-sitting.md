@@ -13,9 +13,10 @@ updated_at: 2026-04-03
 
 # SOP: Run Company OS Improvement Sitting
 
-1. Open with the latest audit note, AI bulletin, and active backlogs.
-2. Select one structural issue and one operating issue only.
-3. Route each issue to a short motion, referral, or bounded trial.
-4. Assign owner, reviewer, and next handoff before closing.
-5. Record one accepted improvement and one deferred issue.
-6. Keep the sitting output short and in Japanese.
+1. Open with the latest audit note, AI bulletin, current activity board, and improvement board.
+2. Batch `3` to `7` agenda items using urgent / next / later priority.
+3. Ensure at least one structural and one operating issue are recognized when both exist.
+4. Route each active item to a short motion, referral, or bounded trial.
+5. Assign owner, reviewer, and next handoff before closing.
+6. Record what was activated, deferred, or closed.
+7. Keep the sitting output short and in Japanese.

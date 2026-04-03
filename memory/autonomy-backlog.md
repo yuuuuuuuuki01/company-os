@@ -24,3 +24,4 @@ updated_at: 2026-04-03
 - shorten the path from audit finding to improvement motion
 - define a lighter route from AI bulletin to operating change
 - separate registered units from active operating lanes
+- run broader agenda batches per ordinary sitting

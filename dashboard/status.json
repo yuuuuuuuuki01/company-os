@@ -1,6 +1,27 @@
 {
   "commits": [
     {
+      "hash": "d9590e2",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:32:37 +0900",
+      "message": "fix: resolve unstaged changes and finalize compact room layout",
+      "dept": "engineering"
+    },
+    {
+      "hash": "718dcbe",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:32:36 +0900",
+      "message": "feat: redesign to compact room layout with improved character movement",
+      "dept": "engineering"
+    },
+    {
+      "hash": "346f242",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 08:12:05 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "0693935",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 17:11:41 +0900",
@@ -188,28 +209,7 @@
       "date": "2026-04-03 15:34:42 +0900",
       "message": "Close bootstrap and open company-os ordinary sitting",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "23394f4",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:26:39 +0900",
-      "message": "feat: rebuild dashboard as Animal Crossing / Kairo-style game UI",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "c640748",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:24:02 +0900",
-      "message": "Add design critique skillset and loop",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "912020f",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 15:15:35 +0900",
-      "message": "feat: apply retro RPG UI design to the dashboard",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 17:11:41 +0900"
+  "generated_at": "2026-04-03 17:32:37 +0900"
 }

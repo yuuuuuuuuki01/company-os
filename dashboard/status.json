@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "ca7ec5e",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:37:54 +0900",
+      "message": "fix: finalize character transparency with chars_v3.png and wider threshold",
+      "dept": "engineering"
+    },
+    {
+      "hash": "d4fbaf5",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:24:47 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "598b334",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:24:17 +0900",
@@ -195,21 +209,7 @@
       "date": "2026-04-03 13:38:15 +0900",
       "message": "Add dashboard and docs pages site",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "4b107b8",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 12:49:41 +0900",
-      "message": "Add autonomy improvement loop",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "4bdc54c",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 11:57:14 +0900",
-      "message": "Add approval and key custody ledgers",
-      "dept": "data-knowledge"
     }
   ],
-  "generated_at": "2026-04-03 16:24:17 +0900"
+  "generated_at": "2026-04-03 16:37:54 +0900"
 }

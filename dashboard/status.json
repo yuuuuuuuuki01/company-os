@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "fec1e8b",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 20:51:33 +0900",
+      "message": "Adopt shift execution threshold",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "0b44bc4",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 11:22:16 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "d2a32ee",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 20:21:56 +0900",
@@ -195,25 +209,11 @@
       "date": "2026-04-03 17:01:40 +0900",
       "message": "fix: center character sprites vertically and horizontally",
       "dept": "engineering"
-    },
-    {
-      "hash": "f732667",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 07:53:09 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "f09f9b8",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:52:31 +0900",
-      "message": "Run seventh sitting and open eighth agenda",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 15,
-    "done": 7,
+    "total": 16,
+    "done": 8,
     "active": 8,
     "pending": 0,
     "items": [
@@ -275,9 +275,13 @@
       },
       {
         "label": "shift-activation-execution-threshold-motion",
+        "status": "done"
+      },
+      {
+        "label": "shift-execution-bundle-preparation-motion",
         "status": "active"
       }
     ]
   },
-  "generated_at": "2026-04-03 20:21:56 +0900"
+  "generated_at": "2026-04-03 20:51:33 +0900"
 }

@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "3b666f2",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 18:06:41 +0900",
+      "message": "Advance OEM preparation through thirteenth sitting",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "e2dedbc",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 08:46:03 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "27075fa",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 17:45:38 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 07:06:42 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "fede085",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:06:34 +0900",
-      "message": "ci: add workflow to generate status.json",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "6393e97",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:05:09 +0900",
-      "message": "Run fourth sitting and open fifth sitting",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -259,5 +259,5 @@
       }
     ]
   },
-  "generated_at": "2026-04-03 17:45:38 +0900"
+  "generated_at": "2026-04-03 18:06:41 +0900"
 }

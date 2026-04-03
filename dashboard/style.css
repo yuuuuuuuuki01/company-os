@@ -707,8 +707,7 @@ body {
 }
 
 .char-sprite {
-  mix-blend-mode: multiply;
-  /* 白背景を透過させる */
+  image-rendering: pixelated;
 }
 
 .char-bubble {

@@ -33,3 +33,9 @@ updated_at: 2026-04-03
 | personnel-committee-chair | none | People and Talent Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |
 | constitutional-review-committee-chair | none | Constitutional Affairs Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |
 | release-review-committee-chair | none | Security, Risk, and Compliance Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |
+| department-steward | assembly-secretariat | Assembly Secretariat Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| department-steward | constitutional-affairs | Constitutional Affairs Steward (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| department-steward | project-management-office | PMO Steward (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| department-steward | people-talent | People and Talent Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| department-steward | data-knowledge | Data and Knowledge Steward (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
+| department-steward | organizational-development-learning | Organizational Development and Learning Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |

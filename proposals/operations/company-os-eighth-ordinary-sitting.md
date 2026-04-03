@@ -1,7 +1,7 @@
 ---
 id: company-os-eighth-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -31,3 +31,10 @@ Run rollout watch reports and move the two reopened operating items through `dis
 
 - rollout watch notes stay visible for the four adopted items
 - two reopened items are narrowed enough for deliberation
+
+## Result
+
+- four rollout watch items remained visible without new exception
+- `department-steward-seating-wave-motion` reached `discussion-2`
+- `decision-template-normalization-motion` reached `discussion-2`
+- the ninth ordinary sitting was opened

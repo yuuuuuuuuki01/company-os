@@ -1,7 +1,7 @@
 ---
 id: decision-template-normalization-motion
 layer: proposal
-status: draft
+status: adopted
 owner: data-knowledge
 unit: company-os
 risk: low
@@ -34,3 +34,16 @@ Normalize short-form ruling templates so decisions stay readable and compact.
 - first target is ordinary sitting and operating rulings only
 - accepted artifact set: `decisions/templates/operating-ruling-short-ja.md`
 - send to `discussion-2` with migration boundary and fallback rule
+
+## Discussion-2 note
+
+- the short Japanese pattern should apply only to ordinary operating rulings at first
+- constitutional, founder-veto, personnel discipline, and high-risk release rulings should stay on the full template
+- accepted artifact set: `internal-rules/operating-ruling-short-ja-rule.md`
+- deliberation should decide adoption scope and fallback trigger
+
+## Deliberation result
+
+- adopted for ordinary sitting rulings, committee operating rulings, and low-risk officer rulings only
+- full ruling template remains mandatory for excluded scope and any compression risk
+- supporting artifact: `internal-rules/operating-ruling-short-ja-rule.md`

@@ -15,14 +15,15 @@ updated_at: 2026-04-03
 
 | Position or Seat | Type | Status | Needed By | Sponsor | Next Action |
 | --- | --- | --- | --- | --- | --- |
-| assembly-chair | office | pending-election | inaugural session | founder-office | nominate and second |
-| floor-clerk | office | pending-election | inaugural session | founder-office | nominate and second |
-| constitutional-guardian | office | pending-election | inaugural session | constitutional-affairs | nominate and second |
-| project-manager | horizontal-role | pending-election | inaugural session | founder-office | nominate and second |
-| director | horizontal-role | pending-election | inaugural session | founder-office | nominate and second |
-| personnel-committee | standing-committee | pending-election | first ordinary sitting | assembly-secretariat | seat 3 members |
-| constitutional-committee | standing-committee | pending-election | first ordinary sitting | assembly-secretariat | seat 3 members |
-| public-review-committee | standing-committee | pending-election | first ordinary sitting | assembly-secretariat | seat 3 members |
-| all unit-owner seats | unit-role | pending-election | before ordinary business | people-talent | run owner slate per unit |
+| assembly-chair | office | seated | inaugural session complete | founder-office | monitor first ordinary sitting |
+| floor-clerk | office | seated | inaugural session complete | founder-office | monitor first ordinary sitting |
+| constitutional-guardian | office | seated | inaugural session complete | constitutional-affairs | confirm ordinary review lane |
+| project-manager | horizontal-role | seated | inaugural session complete | founder-office | open company-os improvement lane |
+| director | horizontal-role | seated | inaugural session complete | founder-office | review first ordinary agenda |
+| personnel-committee | standing-committee | seated | inaugural session complete | assembly-secretariat | elect committee chair internally |
+| constitutional-committee | standing-committee | seated | inaugural session complete | assembly-secretariat | elect committee chair internally |
+| public-review-committee | standing-committee | seated | inaugural session complete | assembly-secretariat | elect committee chair internally |
+| company-os unit-owner seat | unit-role | seated | inaugural session complete | people-talent | carry first lawful assembly vote |
+| all other unit-owner seats | unit-role | pending-election | before parallel unit activation | people-talent | run owner slate per unit |
 
-Bootstrap note: no unit receives a voting seat until a lawful Unit Owner or voting officer is seated.
+Bootstrap note: bootstrap minimum readiness is satisfied because `company-os` now holds the initial lawful unit seat and the inaugural offices and committees are seated.

@@ -17,6 +17,7 @@ Initial top-level units registered at bootstrap:
 
 | Unit | Path | Seat status | Default risk | Owner status |
 | --- | --- | --- | --- | --- |
+| company-os | `C:\agent\codex\company-os` | active | medium | seated |
 | credential-ledger | `C:\agent\codex\credential-ledger` | active | high | pending-election |
 | FormPilot | `C:\agent\codex\FormPilot` | active | medium | pending-election |
 | jouzou | `C:\agent\codex\jouzou` | active | medium | pending-election |
@@ -31,4 +32,4 @@ Initial top-level units registered at bootstrap:
 | tumugi | `C:\agent\codex\tumugi` | active | medium | pending-election |
 | zenken | `C:\agent\codex\zenken` | active | high | pending-election |
 
-Bootstrap note: each unit receives one assembly seat once its Unit Owner or lawful voting officer is elected.
+Bootstrap note: `company-os` is the initial governance unit and holds the first seated assembly vote through its bootstrap Unit Owner. Each other unit receives one assembly seat once its Unit Owner or lawful voting officer is elected.

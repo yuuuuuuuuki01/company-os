@@ -15,8 +15,18 @@ updated_at: 2026-04-03
 
 | Office | Seat/Unit | Holder | Start | Review Point | Status | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| assembly-chair | none | pending | pending | inaugural session | vacant | bootstrap-inaugural-assembly-packet |
-| floor-clerk | none | pending | pending | inaugural session | vacant | bootstrap-inaugural-assembly-packet |
-| constitutional-guardian | none | pending | pending | inaugural session | vacant | bootstrap-inaugural-assembly-packet |
-| project-manager | none | pending | pending | inaugural session | vacant | bootstrap-inaugural-assembly-packet |
-| director | none | pending | pending | inaugural session | vacant | bootstrap-inaugural-assembly-packet |
+| assembly-chair | none | Founder | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| floor-clerk | none | Data and Knowledge Steward (acting) | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| constitutional-guardian | none | Constitutional Affairs Steward (acting) | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| project-manager | none | PMO Steward (acting) | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| director | none | Directorate Steward (acting) | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| unit-owner | company-os | Founder | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| personnel-committee-member | seat-1 | Founder Office Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| personnel-committee-member | seat-2 | People and Talent Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| personnel-committee-member | seat-3 | Organizational Development and Learning Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| constitutional-review-committee-member | seat-1 | Constitutional Affairs Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| constitutional-review-committee-member | seat-2 | Founder Office Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| constitutional-review-committee-member | seat-3 | Data and Knowledge Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| release-review-committee-member | seat-1 | Security, Risk, and Compliance Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| release-review-committee-member | seat-2 | Release Operations Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| release-review-committee-member | seat-3 | Engineering Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |

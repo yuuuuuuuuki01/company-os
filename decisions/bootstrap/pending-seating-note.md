@@ -1,7 +1,7 @@
 ---
 id: bootstrap-pending-seating-note
 layer: decision
-status: pending
+status: superseded
 owner: assembly-secretariat
 unit: company-os
 risk: medium
@@ -13,12 +13,14 @@ updated_at: 2026-04-03
 
 # Pending Seating Note
 
+Superseded by `bootstrap-inaugural-seating-ruling`.
+
 ## Short Form
 
-- Ruling: bootstrap organization is legally framed but not yet fully seated
-- Reason: inaugural offices, horizontal roles, committees, and unit-owner seats remain vacant
+- Ruling: bootstrap organization was legally framed but not yet fully seated at the time of note
+- Reason: inaugural offices, horizontal roles, committees, and unit-owner seats were vacant when recorded
 - Minority view: none recorded
-- Rehearing condition: not required; proceed by inaugural motions
+- Rehearing condition: none; record retained only as pre-seating history
 - Executor: founder-office and assembly-secretariat
 - Founder veto used: no
 

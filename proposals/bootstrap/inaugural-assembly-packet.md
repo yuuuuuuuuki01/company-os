@@ -1,7 +1,7 @@
 ---
 id: bootstrap-inaugural-assembly-packet
 layer: template
-status: draft
+status: adopted
 owner: founder-office
 unit: company-os
 risk: medium
@@ -29,9 +29,11 @@ Move the Company OS from institutional design into initial staffed operation.
 8. elect Constitutional Guardian
 9. elect PM
 10. elect Director
+11. close bootstrap and open the first ordinary sitting
 
 ## Success test
 
 - inaugural session closes with recorded officeholders
 - committee seats are filled
 - at least one unit can lawfully vote
+- first ordinary sitting is opened for `company-os`

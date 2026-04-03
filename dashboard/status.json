@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "9db114a",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 19:50:48 +0900",
+      "message": "fix: transparency levels and character movement smoothing",
+      "dept": "engineering"
+    },
+    {
+      "hash": "0df7660",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 10:45:37 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "025a255",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 19:45:08 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 16:24:17 +0900",
       "message": "Prompt for questions and improvements in sittings",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "8c88ba5",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 07:20:34 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "6157989",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:20:27 +0900",
-      "message": "fix: final transparency and sprite alignment for chars_v2.png",
-      "dept": "engineering"
     }
   ],
   "tasks": {
@@ -267,5 +267,5 @@
       }
     ]
   },
-  "generated_at": "2026-04-03 19:45:08 +0900"
+  "generated_at": "2026-04-03 19:50:48 +0900"
 }

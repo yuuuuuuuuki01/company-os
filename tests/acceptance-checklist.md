@@ -22,3 +22,5 @@ updated_at: 2026-04-03
 - Project close can dissolve the roster while preserving reusable lessons.
 - The AI Academic Institute can publish reports without directly commanding the organization.
 - The Audit Layer can issue objective operating opinions without becoming line management.
+- The first formal organizational task is a system fitness review of the Company OS itself.
+- Recurring audit and academic reports can be issued in short Japanese form.

@@ -29,3 +29,9 @@ Issue an objective assessment of whether Company OS operations conform to consti
 - material irregularity notice
 - remediation recommendation
 - rolling audit opinion
+
+## Reporting standard
+
+- reports must be in Japanese
+- reports must be concise and token-efficient
+- the opinion must appear before background detail

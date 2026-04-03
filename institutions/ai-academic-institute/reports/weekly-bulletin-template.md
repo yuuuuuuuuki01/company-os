@@ -11,14 +11,19 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Weekly AI Bulletin Template
+# 週間AI速報テンプレート
 
-## Sections
+## ルール
 
-- reporting window
-- key changes
-- source list
-- implications for Company OS
-- implications for business units
-- recommended petitions or no-action recommendation
-- caveats
+- 日本語で書く
+- できるだけ短く書く
+- 1項目1論点にする
+
+## セクション
+
+- 対象期間
+- 変化点
+- 事業影響
+- 組織影響
+- 要上申 / 不要
+- 注意点

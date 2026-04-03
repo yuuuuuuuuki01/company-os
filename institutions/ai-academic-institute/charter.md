@@ -30,6 +30,12 @@ Collect, review, and summarize up-to-date knowledge about AI systems, AI governa
 - structured recommendation report
 - evidence appendix for strategy or governance motions
 
+## Reporting standard
+
+- reports must be in Japanese
+- reports must be compressed and short by default
+- direct recommendations must be clearly separated from observed facts
+
 ## Business use
 
 Units may lawfully use institute outputs in product, strategy, operations, and governance, but adoption must occur through normal authority channels.

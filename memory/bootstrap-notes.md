@@ -17,3 +17,5 @@ updated_at: 2026-04-03
 - Purpose, Vision, Mission, and Values are part of the constitutional interpretation layer.
 - Thirteen existing top-level folders were registered as initial units with pending elections.
 - Standing committees and cross-functional offices were defined before any unit owner elections.
+- The first organizational mission is to verify whether the Company OS itself is appropriate and fit for operation.
+- Recurring reports are expected to be in Japanese and as short as possible.

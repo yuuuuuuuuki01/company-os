@@ -11,15 +11,15 @@
       <header class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Constitutional Company OS</p>
-          <h1>今だれが何をしているかを一目で見る</h1>
+          <h1>いま誰が何をしているかを一画面で見る</h1>
           <p class="hero-text">
-            Company OS の制度、現在稼働、部署、外縁機関、台帳を短く追える静的ダッシュボード。
+            Company OS の運営状況、選任待ち、横断役職、外縁機関、ユニットの状態をまとめて確認する運転盤です。
           </p>
           <div class="hero-pills" id="heroPills"></div>
         </div>
         <aside class="hero-panel">
-          <h2>最優先</h2>
-          <p>制度自体の適正性を確かめながら、初回選任を進める。</p>
+          <h2>優先監視</h2>
+          <p>制度の適正性を保ちつつ、初回選任と委譲を進めるために見るべき論点を先頭に置いています。</p>
           <div class="mini-stack" id="miniStack"></div>
         </aside>
       </header>
@@ -29,20 +29,42 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Current Activity</p>
-              <h2>稼働一覧</h2>
+              <h2>現況一覧</h2>
             </div>
             <p class="panel-note">status / current / next</p>
           </div>
           <div class="activity-grid" id="activityGrid"></div>
         </section>
 
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Vacancies</p>
+              <h2>空席役職</h2>
+            </div>
+            <p class="panel-note">いま埋めるべき中枢</p>
+          </div>
+          <div class="vacancy-list" id="vacancyList"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Election Queue</p>
+              <h2>選任待ち</h2>
+            </div>
+            <p class="panel-note">上申の起点</p>
+          </div>
+          <div class="task-list" id="electionList"></div>
+        </section>
+
         <section class="panel panel-wide">
           <div class="panel-head">
             <div>
               <p class="eyebrow">Rule Stack</p>
-              <h2>制度レイヤー</h2>
+              <h2>規範レイヤー</h2>
             </div>
-            <p class="panel-note">上位が下位を拘束する。</p>
+            <p class="panel-note">上位が下位を拘束する</p>
           </div>
           <div class="stack-grid" id="layerGrid"></div>
         </section>
@@ -51,7 +73,7 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Flow</p>
-              <h2>仕事の流れ</h2>
+              <h2>合意形成の流れ</h2>
             </div>
           </div>
           <div class="flow-list" id="flowList"></div>
@@ -61,7 +83,7 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Bootstrap</p>
-              <h2>直近タスク</h2>
+              <h2>初動タスク</h2>
             </div>
           </div>
           <div class="task-list" id="taskList"></div>
@@ -71,11 +93,11 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Departments</p>
-              <h2>部署と権限</h2>
+              <h2>部署と委譲</h2>
             </div>
             <label class="filter-box">
               <span>絞り込み</span>
-              <input id="departmentFilter" type="search" placeholder="部署名・機能・停止権で検索" />
+              <input id="departmentFilter" type="search" placeholder="部署名・役割・停止権で検索" />
             </label>
           </div>
           <div class="department-grid" id="departmentGrid"></div>
@@ -95,7 +117,7 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Ledgers</p>
-              <h2>追跡台帳</h2>
+              <h2>可視化台帳</h2>
             </div>
           </div>
           <div class="ledger-list" id="ledgerList"></div>
@@ -105,9 +127,9 @@
           <div class="panel-head">
             <div>
               <p class="eyebrow">Units</p>
-              <h2>初期ユニット</h2>
+              <h2>事業ユニット</h2>
             </div>
-            <p class="panel-note">全ユニット 1 議席。現状は pending-election。</p>
+            <p class="panel-note">全ユニットは Unit Owner 選任待ち</p>
           </div>
           <div class="unit-grid" id="unitGrid"></div>
         </section>

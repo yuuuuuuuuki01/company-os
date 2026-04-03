@@ -183,6 +183,7 @@ h3 {
 
 .flow-list,
 .task-list,
+.vacancy-list,
 .institution-list,
 .ledger-list {
   display: grid;
@@ -222,6 +223,10 @@ h3 {
 .activity-card {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(245, 239, 230, 0.92));
+}
+
+.vacancy-list .ledger-card {
+  background: linear-gradient(180deg, rgba(255, 251, 242, 1), rgba(247, 240, 226, 0.96));
 }
 
 .card-top {

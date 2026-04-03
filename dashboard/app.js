@@ -131,7 +131,7 @@ function createCharacter(status, bubbleText, size = 64) {
   img.className = `char-sprite char-anim-${status}`;
   img.style.width = size + "px";
   img.style.height = size + "px";
-  img.style.backgroundImage = "url('./chars.png')";
+  img.style.backgroundImage = "url('./chars_v2.png')";
   img.style.backgroundSize = `${bgSize}px ${bgSize}px`;
   // 新しい透過キャラ（狐・猫・蛙）の配置に合わせてy軸を調整
   img.style.backgroundPosition = `-${spriteIndex * size}px -${size * 0.4}px`;

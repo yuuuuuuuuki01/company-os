@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "d2a32ee",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 20:21:56 +0900",
+      "message": "Advance shift second-lane review path",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "40d8393",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 11:01:26 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "1746a74",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 20:01:17 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 16:52:31 +0900",
       "message": "Run seventh sitting and open eighth agenda",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "59c0a5c",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 07:38:03 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "ca7ec5e",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:37:54 +0900",
-      "message": "fix: finalize character transparency with chars_v3.png and wider threshold",
-      "dept": "engineering"
     }
   ],
   "tasks": {
-    "total": 12,
-    "done": 5,
-    "active": 7,
+    "total": 15,
+    "done": 7,
+    "active": 8,
     "pending": 0,
     "items": [
       {
@@ -264,8 +264,20 @@
       {
         "label": "oem-activation-execution-motion",
         "status": "active"
+      },
+      {
+        "label": "shift-onboarding-preparation-motion",
+        "status": "done"
+      },
+      {
+        "label": "shift-activation-review-motion",
+        "status": "done"
+      },
+      {
+        "label": "shift-activation-execution-threshold-motion",
+        "status": "active"
       }
     ]
   },
-  "generated_at": "2026-04-03 20:01:17 +0900"
+  "generated_at": "2026-04-03 20:21:56 +0900"
 }

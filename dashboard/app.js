@@ -1,5 +1,5 @@
 // ============================================================
-// app.js — Company OS  ゲームUI メインロジック
+// app.js — Company OS  ゲームUI メインロジック（v3 - Live Git Activity対応）
 // ============================================================
 
 import {
@@ -8,7 +8,35 @@ import {
 } from "./map.js";
 
 // ======================================================
-// タイルクラスマップ
+// タスク統計（進捗カウンター用）
+// ======================================================
+const TASK_STATS = {
+  total: 12,
+  done: 5,
+  inProgress: 3,
+  pending: 4,
+  items: [
+    { label: "初回議会を開く", status: "done" },
+    { label: "Assembly Chair を選ぶ", status: "done" },
+    { label: "最初の Unit Owner を選ぶ", status: "done" },
+    { label: "3常設委員会を着席させる", status: "done" },
+    { label: "Constitutional Guardian 選任", status: "done" },
+    { label: "PM / Director を選任", status: "active" },
+    { label: "自律改善ループを試す", status: "active" },
+    { label: "監査定着の確認", status: "active" },
+    { label: "全ユニット onboarding", status: "pending" },
+    { label: "外縁機関レポート受理", status: "pending" },
+    { label: "承認台帳の最終整合", status: "pending" },
+    { label: "制度フェーズ完了宣言", status: "pending" },
+  ]
+};
+
+// ライブGitステータス保存用
+let liveCommits = [];
+let lastGeneratedAt = "";
+
+// ======================================================
+// タイル・マップ描画
 // ======================================================
 const TILE_CLASS = {
   [TILE.GRASS]: "tile-grass",
@@ -25,20 +53,13 @@ const TILE_CLASS = {
   [TILE.TREE]: "tile-tree",
   [TILE.FLOWER]: "tile-flower",
 };
+const TILE_CONTENT = { [TILE.TREE]: "🌳", [TILE.FLOWER]: "🌸" };
 
-const TILE_CONTENT = {
-  [TILE.TREE]: "🌳",
-  [TILE.FLOWER]: "🌸",
-};
-
-// ======================================================
-// マップ描画
-// ======================================================
 function renderMap() {
   const canvas = document.getElementById("mapCanvas");
+  canvas.innerHTML = "";
   canvas.style.width = MAP_COLS * TILE_SIZE + "px";
   canvas.style.height = MAP_ROWS * TILE_SIZE + "px";
-
   const frag = document.createDocumentFragment();
 
   for (let r = 0; r < MAP_ROWS; r++) {
@@ -48,29 +69,24 @@ function renderMap() {
       el.className = "tile " + (TILE_CLASS[tileType] || "tile-grass");
       el.style.left = c * TILE_SIZE + "px";
       el.style.top = r * TILE_SIZE + "px";
-      if (TILE_CONTENT[tileType]) {
-        el.textContent = TILE_CONTENT[tileType];
-      }
+      if (TILE_CONTENT[tileType]) el.textContent = TILE_CONTENT[tileType];
       frag.appendChild(el);
     }
   }
-
   canvas.appendChild(frag);
 }
 
 // ======================================================
-// 建物 + キャラクター描画
+// 建物・キャラ 描画
 // ======================================================
-function buildingStatusLabel(status) {
-  const map = { active: "稼働", pending: "待機", ready: "準備OK" };
-  return map[status] || status;
-}
+const CHAR_SPRITE_W = 200;
+const CHAR_SPRITE_H = 300;
+const SPRITE_OFFSETS = { active: 0, pending: 1, ready: 2 };
 
-function createCharacter(status, bubbleText) {
+function createCharacter(status, bubbleText, size = 48) {
   const wrap = document.createElement("div");
   wrap.className = `char-wrap char-${status}`;
 
-  // 吹き出し（テキストがある場合のみ）
   if (bubbleText) {
     const bubble = document.createElement("div");
     bubble.className = "char-bubble";
@@ -78,35 +94,30 @@ function createCharacter(status, bubbleText) {
     wrap.appendChild(bubble);
   }
 
-  // キャラスプライト（丸い頭 + 体）
-  const sprite = document.createElement("div");
-  sprite.className = "char-sprite";
+  const spriteIndex = SPRITE_OFFSETS[status] ?? 0;
+  const totalW = CHAR_SPRITE_W * 3;
+  const scale = size / CHAR_SPRITE_H;
 
-  const head = document.createElement("div");
-  head.className = "char-head";
-  sprite.appendChild(head);
-
-  const bodyPart = document.createElement("div");
-  bodyPart.className = "char-body-part";
-  sprite.appendChild(bodyPart);
-
-  wrap.appendChild(sprite);
-
-  // デスク
-  const desk = document.createElement("div");
-  desk.className = "char-desk";
-  wrap.appendChild(desk);
+  const img = document.createElement("div");
+  img.className = `char-sprite char-anim-${status}`;
+  img.style.width = size + "px";
+  img.style.height = size + "px";
+  img.style.backgroundImage = "url('./chars.png')";
+  img.style.backgroundSize = `${totalW * scale * (CHAR_SPRITE_H / CHAR_SPRITE_W)}px ${size}px`;
+  img.style.backgroundPosition = `-${spriteIndex * size * (CHAR_SPRITE_W / CHAR_SPRITE_H)}px 0`;
+  img.style.imageRendering = "pixelated";
+  img.style.backgroundRepeat = "no-repeat";
+  wrap.appendChild(img);
 
   return wrap;
 }
 
-function getBubbleText(status) {
-  if (status === "active") return "カタカタ...";
-  if (status === "pending") return "...うーん";
-  return "待機中";
-}
+function buildingStatusLabel(status) { return { active: "稼働", pending: "待機", ready: "準備OK" }[status] || status; }
+function getBubbleText(status) { return { active: "カタカタ", pending: "うーん…", ready: "準備OK!" }[status] || ""; }
 
 function renderBuildings() {
+  // 既存の建物を保持していれば削除（再描画用）
+  document.querySelectorAll(".building").forEach(e => e.remove());
   const canvas = document.getElementById("mapCanvas");
 
   BUILDINGS.forEach(b => {
@@ -118,161 +129,102 @@ function renderBuildings() {
     el.style.height = b.h * TILE_SIZE + "px";
     el.dataset.id = b.id;
 
-    // ステータスバッジ
     const badge = document.createElement("div");
     badge.className = `building-status ${b.status}`;
     badge.textContent = buildingStatusLabel(b.status);
     el.appendChild(badge);
 
-    // 屋根エリア
     const roof = document.createElement("div");
     roof.className = "building-roof";
-
-    const label = document.createElement("div");
-    label.className = "building-label";
-    label.textContent = b.label;
-    roof.appendChild(label);
-
-    const kind = document.createElement("div");
-    kind.className = "building-kind";
-    kind.textContent = b.kind;
-    roof.appendChild(kind);
-
+    roof.innerHTML = `<div class="building-label">${b.label}</div><div class="building-kind">${b.kind}</div>`;
     el.appendChild(roof);
 
-    // 壁（窓・ドア装飾）
     const wall = document.createElement("div");
     wall.className = "building-wall";
-
-    // フロア（キャラ配置）
     const floor = document.createElement("div");
     floor.className = "building-floor";
 
     const charCount = b.w >= 4 ? 2 : 1;
+    const charSize = b.w >= 4 ? 48 : 40;
     for (let i = 0; i < charCount; i++) {
-      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : ""));
+      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : "", charSize));
     }
     wall.appendChild(floor);
     el.appendChild(wall);
 
-    // クリックイベント
     el.addEventListener("click", () => openDialog(b));
-
     canvas.appendChild(el);
   });
 }
 
 // ======================================================
-// ダイアログ
-// ======================================================
-function openDialog(b) {
-  const overlay = document.getElementById("dialogOverlay");
-  const header = document.getElementById("dialogHeader");
-  const body = document.getElementById("dialogBody");
-  const statusCol = b.status === "active" ? "color-active"
-    : b.status === "pending" ? "color-pending" : "color-ready";
-
-  header.textContent = b.label;
-
-  body.innerHTML = `
-    <div class="dialog-row">
-      <span class="dialog-label">【種別】</span>
-      <span class="dialog-value">${b.kind}</span>
-    </div>
-    <div class="dialog-row">
-      <span class="dialog-label">【状態】</span>
-      <span class="dialog-value ${statusCol}">${b.status}</span>
-    </div>
-    <div class="dialog-row">
-      <span class="dialog-label">【いま】</span>
-      <span class="dialog-value">${b.current}</span>
-    </div>
-    <div class="dialog-row">
-      <span class="dialog-label">【次へ】</span>
-      <span class="dialog-value">${b.next}</span>
-    </div>
-    <div class="dialog-row">
-      <span class="dialog-label">【停止権】</span>
-      <span class="dialog-value">${b.stop}</span>
-    </div>
-    <div class="dialog-tags">
-      ${(b.tags || []).map(t => `<span class="dialog-tag">${t}</span>`).join("")}
-    </div>
-  `;
-
-  overlay.classList.add("open");
-  updateMessage(`「${b.label}」を確認中… ${b.current}`);
-}
-
-function closeDialog() {
-  document.getElementById("dialogOverlay").classList.remove("open");
-}
-
-// ======================================================
-// HUD
+// HUD / パネル 描画系
 // ======================================================
 function renderHud() {
   const statsEl = document.getElementById("hudStats");
+  if (!statsEl) return;
   const activeCount = BUILDINGS.filter(b => b.status === "active").length;
   const pendingCount = BUILDINGS.filter(b => b.status === "pending").length;
   const readyCount = BUILDINGS.filter(b => b.status === "ready").length;
 
-  const stats = [
-    ["🏢 建物", BUILDINGS.length],
-    ["🔴 稼働", activeCount],
-    ["🔵 待機", pendingCount],
-    ["🟢 準備OK", readyCount],
-  ];
-
-  statsEl.innerHTML = stats.map(([label, val]) =>
-    `<div class="hud-stat"><strong>${val}</strong> ${label}</div>`
+  statsEl.innerHTML = [
+    ["🏢", BUILDINGS.length, "建物"],
+    ["🔴", activeCount, "稼働"],
+    ["🔵", pendingCount, "待機"],
+    ["🟢", readyCount, "準備"],
+  ].map(([icon, val, label]) =>
+    `<div class="hud-stat"><span>${icon}</span><strong>${val}</strong><span>${label}</span></div>`
   ).join("");
 }
 
-// ======================================================
-// サイドパネル：制度レイヤー
-// ======================================================
 function renderLayers() {
   const el = document.getElementById("layerList");
-  el.innerHTML = LAYERS.map(l =>
-    `<div class="layer-item"><span class="layer-rank">${l.rank}</span>${l.name}</div>`
-  ).join("");
+  if (el) el.innerHTML = LAYERS.map(l => `<div class="layer-item"><span class="layer-rank">${l.rank}</span>${l.name}</div>`).join("");
 }
 
-// ======================================================
-// サイドパネル：承認フロー
-// ======================================================
 const FLOWS = [
-  "📝 上申を起票",
-  "🗣️ 討論と修正",
-  "✅ 採決と裁定",
-  "⚙️ 執行と監査",
+  { icon: "📝", text: "上申を起票" },
+  { icon: "🗣️", text: "討論と修正" },
+  { icon: "✅", text: "採決と裁定" },
+  { icon: "⚙️", text: "執行と監査" },
 ];
-
 function renderFlows() {
   const el = document.getElementById("flowSteps");
-  el.innerHTML = FLOWS.map((f, i) =>
-    `<div class="flow-step">${f}</div>` +
-    (i < FLOWS.length - 1 ? `<div class="flow-step-arrow">↓</div>` : "")
-  ).join("");
+  if (el) el.innerHTML = FLOWS.map((f, i) => `<div class="flow-step">${f.icon} ${f.text}</div>` + (i < FLOWS.length - 1 ? `<div class="flow-step-arrow">↓</div>` : "")).join("");
 }
 
-// ======================================================
-// サイドパネル：アクター一覧（右）
-// ======================================================
+function renderTaskProgress() {
+  const el = document.getElementById("taskProgress");
+  if (!el) return;
+  const { total, done, inProgress, items } = TASK_STATS;
+  const pct = Math.round((done / total) * 100);
+
+  el.innerHTML = `
+    <div class="progress-header"><span class="progress-title">📋 タスク進捗</span><span class="progress-count">${done}/${total} 完了</span></div>
+    <div class="progress-bar-wrap"><div class="progress-bar" style="width:${pct}%"></div></div>
+    <div class="progress-legend"><span class="legend-done">✅ 完了 ${done}</span><span class="legend-wip">⚡ 進行中 ${inProgress}</span><span class="legend-pending">⏳ 予定 ${TASK_STATS.pending}</span></div>
+    <div class="task-list-mini">
+      ${items.map(item => `<div class="task-mini-item task-${item.status}">
+        <span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span>
+        <span class="task-mini-label">${item.label}</span>
+      </div>`).join("")}
+    </div>
+  `;
+}
+
 function renderActors() {
   const el = document.getElementById("actorList");
+  if (!el) return;
   el.innerHTML = BUILDINGS.map(b => `
     <div class="actor-item" data-id="${b.id}">
       <div class="actor-name">${b.label}</div>
       <div class="actor-status-row">
         <div class="status-dot ${b.status}"></div>
-        <span style="font-size:9px;color:var(--ui-muted)">${b.current.slice(0, 22)}…</span>
+        <span class="actor-current">${b.current.length > 22 ? b.current.slice(0, 22) + "…" : b.current}</span>
       </div>
     </div>
   `).join("");
 
-  // クリックで建物フォーカス＋ダイアログ
   el.querySelectorAll(".actor-item").forEach(item => {
     item.addEventListener("click", () => {
       const b = BUILDINGS.find(x => x.id === item.dataset.id);
@@ -281,51 +233,169 @@ function renderActors() {
   });
 }
 
-// ======================================================
-// メッセージウィンドウ
-// ======================================================
-let logIndex = 0;
+function renderGitLog() {
+  const el = document.getElementById("gitLog");
+  if (!el) return;
+  if (!liveCommits.length) {
+    el.innerHTML = `<div class="log-item" style="color:var(--ui-muted)">ログがありません</div>`;
+    return;
+  }
 
+  el.innerHTML = liveCommits.slice(0, 8).map(c => {
+    const d = new Date(c.date);
+    const timeStr = `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+    return `
+    <div class="log-item">
+      <div class="log-header">
+        <span class="log-author">${c.author}</span>
+        <span class="log-time">${timeStr}</span>
+      </div>
+      <div class="log-hash">${c.hash} @ ${c.dept}</div>
+      <div class="log-msg">${c.message}</div>
+    </div>
+    `;
+  }).join("");
+}
+
+// ======================================================
+// リアルタイム Github Sync
+// ======================================================
+async function fetchLiveStatus() {
+  try {
+    const res = await fetch("./status.json?t=" + new Date().getTime());
+    if (!res.ok) throw new Error("status.json not found");
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.log("No live status found, falling back to mock data.");
+    return null;
+  }
+}
+
+async function syncWithLiveStatus() {
+  const liveData = await fetchLiveStatus();
+  if (!liveData || !liveData.commits || !liveData.commits.length) {
+    document.getElementById("liveText").textContent = "準備完了";
+    return;
+  }
+
+  liveCommits = liveData.commits;
+  lastGeneratedAt = liveData.generated_at;
+
+  document.getElementById("liveText").textContent = "Syncing Git...";
+
+  // コミットログに基づいてBUILDINGSの状態を上書き更新
+  // 最新のコミットを行っている部署を active にし、メッセージを反映
+  const deptLatestCommit = {};
+  liveCommits.forEach(c => {
+    if (!deptLatestCommit[c.dept]) deptLatestCommit[c.dept] = c;
+  });
+
+  const recentThreshold = new Date().getTime() - 24 * 60 * 60 * 1000; // 24時間以内のコミットはactive
+
+  BUILDINGS.forEach(b => {
+    const latest = deptLatestCommit[b.id];
+    if (latest) {
+      const commitDate = new Date(latest.date).getTime();
+      b.current = latest.message;
+      if (commitDate > recentThreshold) {
+        b.status = "active";
+      } else {
+        b.status = "ready";
+      }
+    } else {
+      b.status = "pending";
+    }
+  });
+
+  // 再レンダリング
+  renderBuildings();
+  renderHud();
+  renderActors();
+  renderGitLog();
+}
+
+// ======================================================
+// ダイアログ & メッセージ
+// ======================================================
+function openDialog(b) {
+  const overlay = document.getElementById("dialogOverlay");
+  const header = document.getElementById("dialogHeader");
+  const body = document.getElementById("dialogBody");
+  const statusCol = b.status === "active" ? "color-active" : b.status === "pending" ? "color-pending" : "color-ready";
+
+  const charSprite = createCharacter(b.status, "", 52);
+  header.innerHTML = "";
+  const headerInner = document.createElement("div");
+  headerInner.style.display = "flex"; headerInner.style.alignItems = "center"; headerInner.style.gap = "12px";
+  headerInner.appendChild(charSprite);
+  const headerText = document.createElement("span");
+  headerText.textContent = b.label;
+  headerInner.appendChild(headerText);
+  header.appendChild(headerInner);
+
+  body.innerHTML = `
+    <div class="dialog-row"><span class="dialog-label">種別</span><span class="dialog-value">${b.kind}</span></div>
+    <div class="dialog-row"><span class="dialog-label">状態</span><span class="dialog-value ${statusCol}">● ${b.status}</span></div>
+    <div class="dialog-row"><span class="dialog-label">いま</span><span class="dialog-value">${b.current}</span></div>
+    <div class="dialog-row"><span class="dialog-label">次へ</span><span class="dialog-value">↓ ${b.next}</span></div>
+    <div class="dialog-row"><span class="dialog-label">停止権</span><span class="dialog-value">${b.stop}</span></div>
+    <div class="dialog-tags">${(b.tags || []).map(t => `<span class="dialog-tag">${t}</span>`).join("")}</div>
+  `;
+  overlay.classList.add("open");
+  updateMessage(`「${b.label}」を確認中… ${b.current}`);
+}
+
+function closeDialog() { document.getElementById("dialogOverlay").classList.remove("open"); }
+
+let logIndex = 0;
 function updateMessage(text) {
   const el = document.getElementById("messageText");
+  if (!el) return;
   el.textContent = text;
   el.style.animation = "none";
   requestAnimationFrame(() => { el.style.animation = ""; });
 }
 
 function cycleActivityLog() {
-  const log = ACTIVITY_LOG[logIndex % ACTIVITY_LOG.length];
-  updateMessage(`[${log.time}] ${log.text}`);
+  if (liveCommits.length > 0) {
+    // ライブログがある場合はそれを流す
+    const c = liveCommits[logIndex % liveCommits.length];
+    const deptName = BUILDINGS.find(b => b.id === c.dept)?.label || c.dept;
+    updateMessage(`[Log] ${deptName}: ${c.message}`);
+  } else {
+    // なければモックデータ
+    const log = ACTIVITY_LOG[logIndex % ACTIVITY_LOG.length];
+    updateMessage(`[${log.time}] ${log.text}`);
+  }
   logIndex++;
 }
 
 // ======================================================
-// 時計
+// 共通バインド・初期化
 // ======================================================
 function updateClock() {
   const now = new Date();
-  const h = String(now.getHours()).padStart(2, "0");
-  const m = String(now.getMinutes()).padStart(2, "0");
-  const s = String(now.getSeconds()).padStart(2, "0");
-  document.getElementById("hudClock").textContent = `${h}:${m}:${s}`;
+  const el = document.getElementById("hudClock");
+  if (el) el.textContent = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")}`;
 }
 
-// ======================================================
-// アウトサイドクリックでダイアログを閉じる
-// ======================================================
 function bindEvents() {
   document.getElementById("dialogClose").addEventListener("click", closeDialog);
-  document.getElementById("dialogOverlay").addEventListener("click", e => {
-    if (e.target === document.getElementById("dialogOverlay")) closeDialog();
-  });
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeDialog();
+  document.getElementById("dialogOverlay").addEventListener("click", e => { if (e.target === document.getElementById("dialogOverlay")) closeDialog(); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeDialog(); });
+
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".side-panel, .map-viewport").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      const tc = document.getElementById("tab-" + btn.dataset.tab);
+      if (tc) tc.classList.add("active");
+    });
   });
 }
 
-// ======================================================
-// 初期化
-// ======================================================
 function init() {
   renderMap();
   renderBuildings();
@@ -333,14 +403,19 @@ function init() {
   renderLayers();
   renderFlows();
   renderActors();
+  renderTaskProgress();
+  renderGitLog();
   bindEvents();
+
   updateClock();
   setInterval(updateClock, 1000);
 
-  // 最初のメッセージ
   cycleActivityLog();
-  // 4秒ごとにメッセージを切り替え
   setInterval(cycleActivityLog, 4000);
+
+  // 初回同期と定期ポーリング(30秒ごと)
+  syncWithLiveStatus();
+  setInterval(syncWithLiveStatus, 30000);
 }
 
 init();

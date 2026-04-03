@@ -17,6 +17,9 @@
   <header class="hud-top">
     <div class="hud-logo">🏢 COMPANY OS</div>
     <div class="hud-stats" id="hudStats"></div>
+    <div class="hud-live" id="hudLive" title="最新のgit activity">
+      <span class="live-dot"></span><span class="live-text" id="liveText">読み込み中…</span>
+    </div>
     <div class="hud-clock" id="hudClock"></div>
   </header>
 
@@ -24,25 +27,32 @@
   <div class="game-wrap">
 
     <!-- サイドパネル（左） -->
-    <aside class="side-panel side-left">
+    <aside class="side-panel side-left" id="tab-layers">
       <div class="side-panel-title">📜 制度レイヤー</div>
       <div id="layerList" class="layer-list"></div>
 
-      <div class="side-panel-title" style="margin-top:16px;">⚡ 承認フロー</div>
+      <div class="side-panel-title" style="margin-top:12px;">⚡ 承認フロー</div>
       <div class="flow-steps" id="flowSteps"></div>
+
+      <!-- タスク進捗（左下） -->
+      <div class="side-panel-title" style="margin-top:12px;">📋 タスク進捗</div>
+      <div id="taskProgress" class="task-progress"></div>
     </aside>
 
     <!-- マップ本体 -->
-    <main class="map-viewport">
+    <main class="map-viewport" id="tab-map">
       <div class="map-canvas" id="mapCanvas">
         <!-- タイルと建物はJSで生成 -->
       </div>
     </main>
 
     <!-- サイドパネル（右） -->
-    <aside class="side-panel side-right">
+    <aside class="side-panel side-right" id="tab-status">
       <div class="side-panel-title">📡 稼働ステータス</div>
       <div id="actorList" class="actor-list"></div>
+
+      <div class="side-panel-title" style="margin-top:12px;">🕐 最近の活動</div>
+      <div id="gitLog" class="git-log"></div>
     </aside>
   </div>
 
@@ -55,12 +65,19 @@
     </div>
   </footer>
 
+  <!-- ===== モバイルタブバー ===== -->
+  <nav class="mobile-tabs">
+    <button class="tab-btn active" data-tab="layers">📜 制度</button>
+    <button class="tab-btn" data-tab="map">🗺️ マップ</button>
+    <button class="tab-btn" data-tab="status">📡 状況</button>
+  </nav>
+
   <!-- ===== 建物クリック時のダイアログ ===== -->
   <div class="dialog-overlay" id="dialogOverlay">
     <div class="dialog-box" id="dialogBox">
       <div class="dialog-header" id="dialogHeader"></div>
       <div class="dialog-body" id="dialogBody"></div>
-      <button class="dialog-close" id="dialogClose">▶ 閉じる</button>
+      <button class="dialog-close" id="dialogClose">▶ 閉じる [ESC]</button>
     </div>
   </div>
 

@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "27075fa",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 17:45:38 +0900",
+      "message": "Adopt onboarding priority and open oem prep",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "26bd90d",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 08:42:26 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "4289665",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 17:42:12 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 16:05:09 +0900",
       "message": "Run fourth sitting and open fifth sitting",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "e7c3541",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:01:47 +0900",
-      "message": "Add meeting cycle loop for ordinary sittings",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "919bcff",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:00:19 +0900",
-      "message": "feat: responsive UI, cute character sprites, and live git activity sync via GitHub Actions",
-      "dept": "engineering"
     }
   ],
   "tasks": {
-    "total": 9,
+    "total": 10,
     "done": 2,
-    "active": 7,
+    "active": 8,
     "pending": 0,
     "items": [
       {
@@ -252,8 +252,12 @@
       {
         "label": "unit-onboarding-priority-motion",
         "status": "active"
+      },
+      {
+        "label": "oem-onboarding-preparation-motion",
+        "status": "active"
       }
     ]
   },
-  "generated_at": "2026-04-03 17:42:12 +0900"
+  "generated_at": "2026-04-03 17:45:38 +0900"
 }

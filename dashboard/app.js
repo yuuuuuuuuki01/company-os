@@ -70,15 +70,29 @@ function createCharacter(status, bubbleText) {
   const wrap = document.createElement("div");
   wrap.className = `char-wrap char-${status}`;
 
-  const bubble = document.createElement("div");
-  bubble.className = "char-bubble";
-  bubble.textContent = bubbleText;
-  wrap.appendChild(bubble);
+  // 吹き出し（テキストがある場合のみ）
+  if (bubbleText) {
+    const bubble = document.createElement("div");
+    bubble.className = "char-bubble";
+    bubble.textContent = bubbleText;
+    wrap.appendChild(bubble);
+  }
 
-  const body = document.createElement("div");
-  body.className = "char-body";
-  wrap.appendChild(body);
+  // キャラスプライト（丸い頭 + 体）
+  const sprite = document.createElement("div");
+  sprite.className = "char-sprite";
 
+  const head = document.createElement("div");
+  head.className = "char-head";
+  sprite.appendChild(head);
+
+  const bodyPart = document.createElement("div");
+  bodyPart.className = "char-body-part";
+  sprite.appendChild(bodyPart);
+
+  wrap.appendChild(sprite);
+
+  // デスク
   const desk = document.createElement("div");
   desk.className = "char-desk";
   wrap.appendChild(desk);
@@ -126,6 +140,10 @@ function renderBuildings() {
 
     el.appendChild(roof);
 
+    // 壁（窓・ドア装飾）
+    const wall = document.createElement("div");
+    wall.className = "building-wall";
+
     // フロア（キャラ配置）
     const floor = document.createElement("div");
     floor.className = "building-floor";
@@ -134,8 +152,8 @@ function renderBuildings() {
     for (let i = 0; i < charCount; i++) {
       floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : ""));
     }
-
-    el.appendChild(floor);
+    wall.appendChild(floor);
+    el.appendChild(wall);
 
     // クリックイベント
     el.addEventListener("click", () => openDialog(b));

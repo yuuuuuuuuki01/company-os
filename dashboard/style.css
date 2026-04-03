@@ -706,6 +706,11 @@ body {
   position: relative;
 }
 
+.char-sprite {
+  mix-blend-mode: multiply;
+  /* 白背景を透過させる */
+}
+
 .char-bubble {
   font-size: 8px;
   background: #fffef0;

@@ -107,11 +107,11 @@ function renderMap() {
 }
 
 // ======================================================
-// キャラクタースプライト
+// キャラクタースプライト (640x640 正方形, 横に3人並んでいる)
 // ======================================================
 const SPRITE_OFFSETS = { active: 0, pending: 1, ready: 2, walking: 1 };
 
-function createCharacter(status, bubbleText, size = 48) {
+function createCharacter(status, bubbleText, size = 64) {
   const wrap = document.createElement("div");
   wrap.className = `char-wrap char-${status}`;
 
@@ -123,15 +123,18 @@ function createCharacter(status, bubbleText, size = 48) {
   }
 
   const spriteIndex = SPRITE_OFFSETS[status] ?? 0;
-  const scale = size / 300; // Original height 300
+  // 640x640 の画像を 3x3 のグリッド（の真ん中の段）と見なしてスケーリング
+  // 1キャラの表示サイズを size とすると、画像全体は (size*3) x (size*3) になる
+  const bgSize = size * 3;
 
   const img = document.createElement("div");
   img.className = `char-sprite char-anim-${status}`;
   img.style.width = size + "px";
   img.style.height = size + "px";
   img.style.backgroundImage = "url('./chars.png')";
-  img.style.backgroundSize = `${600 * scale}px ${size}px`;
-  img.style.backgroundPosition = `-${spriteIndex * (200 * scale)}px 0`;
+  img.style.backgroundSize = `${bgSize}px ${bgSize}px`;
+  // 真ん中の段（y = -size）を表示。x は index * size
+  img.style.backgroundPosition = `-${spriteIndex * size}px -${size * 0.9}px`;
   img.style.imageRendering = "pixelated";
   img.style.backgroundRepeat = "no-repeat";
   wrap.appendChild(img);

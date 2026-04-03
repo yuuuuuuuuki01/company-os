@@ -1,7 +1,7 @@
 ---
 id: company-os-first-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -32,3 +32,10 @@ Start ordinary business by improving `company-os` itself through a lawful, short
 - committee chairs are assigned
 - one structural improvement item is routed
 - one operating improvement item is routed
+
+## Result
+
+- bootstrap seating accepted
+- three committee chairs assigned
+- structural issue routed as `unit-state-separation-motion`
+- operating issue routed as `record-normalization-motion`

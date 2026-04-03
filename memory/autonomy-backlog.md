@@ -13,10 +13,14 @@ updated_at: 2026-04-03
 
 # Autonomy Backlog
 
+## Selected in the first ordinary sitting
+
+- unit registration state and active lane state must be separated
+
 ## Current candidates
 
-- 初回選任議案の実運用
-- 委員会レビューの定期実行
-- 監査指摘から是正案への自動起票
-- AI速報から要上申候補の抽出
-- ユニット状態の短文ダッシュボード化
+- normalize post-bootstrap ordinary operating flow
+- connect committee review more tightly to execution lanes
+- shorten the path from audit finding to improvement motion
+- define a lighter route from AI bulletin to operating change
+- separate registered units from active operating lanes

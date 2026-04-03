@@ -30,3 +30,6 @@ updated_at: 2026-04-03
 | release-review-committee-member | seat-1 | Security, Risk, and Compliance Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
 | release-review-committee-member | seat-2 | Release Operations Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
 | release-review-committee-member | seat-3 | Engineering Representative | 2026-04-03 | first ordinary sitting | seated | bootstrap-inaugural-seating-ruling |
+| personnel-committee-chair | none | People and Talent Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |
+| constitutional-review-committee-chair | none | Constitutional Affairs Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |
+| release-review-committee-chair | none | Security, Risk, and Compliance Representative | 2026-04-03 | next confidence review | seated | first-ordinary-sitting-ruling |

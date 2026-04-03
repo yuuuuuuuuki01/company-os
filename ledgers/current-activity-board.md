@@ -22,3 +22,5 @@ updated_at: 2026-04-03
 | Data and Knowledge | department | active | ledgers, officeholder registry, dashboard traceability | all departments |
 | Security, Risk, and Compliance | department | ready | key custody and credential request readiness | requester on demand |
 | Organizational Development and Learning | department | active | autonomy backlog and redesign loop | founder-office / constitutional-affairs |
+| Product and Service Design | department | active | design capability loop and external UI brief ownership | directorate / founder-office |
+| UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

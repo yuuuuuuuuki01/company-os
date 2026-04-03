@@ -1,526 +1,328 @@
-const layers = [
-  { rank: "01", name: "憲法", path: "constitution/", summary: "主権、解釈原理、緊急権、公開原則。" },
-  { rank: "02", name: "法律", path: "laws/", summary: "上申、異議、AI取込、監査、公開の可動ルール。" },
-  { rank: "03", name: "定款", path: "articles/", summary: "議会、部署、外縁機関、委員会、役職の構造。" },
-  { rank: "04", name: "社内ルール", path: "internal-rules/", summary: "台帳、鍵管理、報告標準、自律改善、選任。" },
-  { rank: "05", name: "手順", path: "sops/", summary: "上申、票決、鍵要求、監査、AI速報、選任実務。" },
-  { rank: "06", name: "部署", path: "departments/", summary: "常設の能力面。案件チームより長寿命。" }
-];
+// ============================================================
+// app.js — Company OS  ゲームUI メインロジック
+// ============================================================
 
-const activities = [
-  {
-    actor: "Founder Office",
-    layer: "governance",
-    status: "active",
-    current: "制度の初期立ち上げと例外統治の保持。",
-    next: "初回議会へ handoff"
-  },
-  {
-    actor: "Independent Audit Firm",
-    layer: "audit",
-    status: "active",
-    current: "制度適正性レビューと週間運営監査の初回実行。",
-    next: "Founder Office / Constitutional Affairs"
-  },
-  {
-    actor: "AI Academic Institute",
-    layer: "institution",
-    status: "active",
-    current: "AI 一次情報の監視と短い日本語速報の発行。",
-    next: "必要時のみ petition"
-  },
-  {
-    actor: "People and Talent",
-    layer: "department",
-    status: "pending",
-    current: "初回選任議案の準備。",
-    next: "Assembly"
-  },
-  {
-    actor: "Data and Knowledge",
-    layer: "department",
-    status: "active",
-    current: "承認・役職・活動台帳の整備。",
-    next: "全体共有"
-  },
-  {
-    actor: "Security, Risk, and Compliance",
-    layer: "department",
-    status: "ready",
-    current: "鍵貸出と credential request の待機運用。",
-    next: "必要時に requester"
-  },
-  {
-    actor: "Organizational Development and Learning",
-    layer: "department",
-    status: "active",
-    current: "自律改善バックログの維持。",
-    next: "Founder Office / Constitutional Affairs"
+import {
+  MAP_COLS, MAP_ROWS, TILE_SIZE, TILE,
+  MAP_TILES, BUILDINGS, LAYERS, ACTIVITY_LOG
+} from "./map.js";
+
+// ======================================================
+// タイルクラスマップ
+// ======================================================
+const TILE_CLASS = {
+  [TILE.GRASS]: "tile-grass",
+  [TILE.GRASS2]: "tile-grass2",
+  [TILE.ROAD_H]: "tile-road-h",
+  [TILE.ROAD_V]: "tile-road-v",
+  [TILE.ROAD_CROSS]: "tile-road-cross",
+  [TILE.ROAD_TL]: "tile-road-tl",
+  [TILE.ROAD_TR]: "tile-road-tr",
+  [TILE.ROAD_BL]: "tile-road-bl",
+  [TILE.ROAD_BR]: "tile-road-br",
+  [TILE.STONE]: "tile-stone",
+  [TILE.WATER]: "tile-stone",
+  [TILE.TREE]: "tile-tree",
+  [TILE.FLOWER]: "tile-flower",
+};
+
+const TILE_CONTENT = {
+  [TILE.TREE]: "🌳",
+  [TILE.FLOWER]: "🌸",
+};
+
+// ======================================================
+// マップ描画
+// ======================================================
+function renderMap() {
+  const canvas = document.getElementById("mapCanvas");
+  canvas.style.width = MAP_COLS * TILE_SIZE + "px";
+  canvas.style.height = MAP_ROWS * TILE_SIZE + "px";
+
+  const frag = document.createDocumentFragment();
+
+  for (let r = 0; r < MAP_ROWS; r++) {
+    for (let c = 0; c < MAP_COLS; c++) {
+      const tileType = MAP_TILES[r]?.[c] ?? TILE.GRASS;
+      const el = document.createElement("div");
+      el.className = "tile " + (TILE_CLASS[tileType] || "tile-grass");
+      el.style.left = c * TILE_SIZE + "px";
+      el.style.top = r * TILE_SIZE + "px";
+      if (TILE_CONTENT[tileType]) {
+        el.textContent = TILE_CONTENT[tileType];
+      }
+      frag.appendChild(el);
+    }
   }
-];
 
-const flows = [
-  { index: "01", title: "案件や改善要求を上申", body: "議案は sponsor + seconder を満たしてから動く。" },
-  { index: "02", title: "議会と委員会で審議", body: "ロバート議事法ベースで非同期処理。必要時だけ停止。" },
-  { index: "03", title: "部署が能力を貸し出す", body: "Unit が仕事を持ち、Department が標準・承認・停止権を持つ。" },
-  { index: "04", title: "監査とAI学術機関が観測", body: "直接命令はせず、短い日本語レポートと上申だけを出す。" },
-  { index: "05", title: "監査結果で自律性を調整", body: "観測 -> 小さく試す -> 監査 -> 採用 / 撤回で広げる。" }
-];
-
-const tasks = [
-  "初回議会を開く",
-  "Assembly Chair と Floor Clerk を選ぶ",
-  "最初の Unit Owner を選ぶ",
-  "3常設委員会を着席させる",
-  "Constitutional Guardian / PM / Director を選ぶ",
-  "自律改善ループを 1 本だけ試す"
-];
-
-const departments = [
-  {
-    name: "Founder Office",
-    kind: "主権",
-    mandate: "最終主権、例外裁定、包括 veto。",
-    stop: "full sovereign stop",
-    tags: ["主権", "最終裁定", "高権限"],
-    list: ["憲法停止", "予算上書き", "高リスク release 最終判断"]
-  },
-  {
-    name: "Assembly Secretariat",
-    kind: "議会運営",
-    mandate: "上申受付、議事進行、記録整備。",
-    stop: "procedural stop",
-    tags: ["議会", "記録", "手続"],
-    list: ["上申の形式確認", "定足数確認", "票決記録の確定"]
-  },
-  {
-    name: "Constitutional Affairs",
-    kind: "規範監理",
-    mandate: "憲法適合、手続適法、再審可否。",
-    stop: "constitutional stop",
-    tags: ["監理", "憲法", "拘束力"],
-    list: ["上位規範違反を停止", "再審条件を確認", "制度解釈を整理"]
-  },
-  {
-    name: "Portfolio Strategy",
-    kind: "戦略",
-    mandate: "全体優先順位と大型判断の整理。",
-    stop: "portfolio stop",
-    tags: ["戦略", "優先順位"],
-    list: ["案件の順番", "資源配分の提案", "大きな賭けの整理"]
-  },
-  {
-    name: "Project Management Office",
-    kind: "横断進行",
-    mandate: "依存解消、進行管理、詰まりの解除。",
-    stop: "dependency stop",
-    tags: ["PM", "横断", "停止権"],
-    list: ["クリティカルパス管理", "依存衝突で停止", "handoff の明確化"]
-  },
-  {
-    name: "Directorate",
-    kind: "横断品質",
-    mandate: "品質、意味整合、表現整合。",
-    stop: "quality stop",
-    tags: ["Director", "品質", "横断"],
-    list: ["品質崩壊を停止", "全体一貫性の保持", "外向き表現の整合"]
-  },
-  {
-    name: "Product and Service Design",
-    kind: "設計",
-    mandate: "UX、サービス設計、体験設計。",
-    stop: "design integrity stop",
-    tags: ["UX", "設計"],
-    list: ["UI/UX 方針", "情報設計", "体験仕様の承認"]
-  },
-  {
-    name: "Engineering",
-    kind: "実装",
-    mandate: "技術実装、技術標準、保守性。",
-    stop: "technical safety stop",
-    tags: ["実装", "技術", "安全"],
-    list: ["技術方針", "レビュー規約", "破壊的変更の停止"]
-  },
-  {
-    name: "Quality Assurance",
-    kind: "検証",
-    mandate: "受入判定、回帰、証拠整備。",
-    stop: "release quality stop",
-    tags: ["QA", "検証", "release"],
-    list: ["done 判定", "回帰リスク確認", "release 前ブロック"]
-  },
-  {
-    name: "Release Operations",
-    kind: "公開運用",
-    mandate: "deploy / publish / rollback 実務。",
-    stop: "release stop",
-    tags: ["公開", "運用", "高リスク"],
-    list: ["公開前チェック", "rollback 計画", "本番操作の停止"]
-  },
-  {
-    name: "Security, Risk, and Compliance",
-    kind: "安全",
-    mandate: "鍵、秘密、リスク、コンプライアンス。",
-    stop: "security stop",
-    tags: ["鍵", "秘密", "監視"],
-    list: ["鍵貸出台帳", "risk 分類", "漏えい時の即時停止"]
-  },
-  {
-    name: "People and Talent",
-    kind: "人事",
-    mandate: "採用、昇格、解任、配置。",
-    stop: "staffing stop",
-    tags: ["採用", "人事"],
-    list: ["start packet 配布", "confidence review", "役職配置"]
-  },
-  {
-    name: "Finance and Treasury",
-    kind: "財務",
-    mandate: "予算、支出、資源配分。",
-    stop: "spending stop",
-    tags: ["予算", "財務"],
-    list: ["予算超過を停止", "資源配分", "支出トレース"]
-  },
-  {
-    name: "Legal and Policy",
-    kind: "法務",
-    mandate: "外部法務、契約、政策整合。",
-    stop: "policy stop",
-    tags: ["法務", "契約"],
-    list: ["外部約束の法務確認", "政策文言の確認", "外部リスク整理"]
-  },
-  {
-    name: "Organizational Development and Learning",
-    kind: "組織改善",
-    mandate: "学術知見と実績から制度改善。",
-    stop: "redesign hold",
-    tags: ["組織論", "自律改善", "学習"],
-    list: ["自律改善ループ", "制度再設計", "理論知見の吸収"]
-  },
-  {
-    name: "Research and Intelligence",
-    kind: "調査",
-    mandate: "調査、比較、証拠整理。",
-    stop: "evidence hold",
-    tags: ["調査", "証拠"],
-    list: ["根拠不足で hold", "比較調査", "意思決定材料の整備"]
-  },
-  {
-    name: "Communications and Brand",
-    kind: "発信",
-    mandate: "外向き表現、語調、ブランド整合。",
-    stop: "publication stop",
-    tags: ["広報", "ブランド"],
-    list: ["公開文言の確認", "ブランド崩れの停止", "メッセージ整合"]
-  },
-  {
-    name: "Business Development and Partnerships",
-    kind: "提携",
-    mandate: "提携機会、外部折衝、案件化前整理。",
-    stop: "commitment hold",
-    tags: ["提携", "外部"],
-    list: ["外部約束の保留", "案件化前整理", "法務連携"]
-  },
-  {
-    name: "Customer Success and Support",
-    kind: "信頼運用",
-    mandate: "問い合わせ、支援、信頼毀損の早期検知。",
-    stop: "service-risk stop",
-    tags: ["サポート", "信頼"],
-    list: ["障害受理", "ユーザー影響の可視化", "悪化時の停止提案"]
-  },
-  {
-    name: "Data and Knowledge",
-    kind: "記録",
-    mandate: "台帳、記録完全性、圧縮レポート標準。",
-    stop: "record integrity stop",
-    tags: ["台帳", "記録", "承認履歴"],
-    list: ["承認台帳", "officeholder registry", "reporting standard"]
-  },
-  {
-    name: "Internal Tools and Enablement",
-    kind: "内製基盤",
-    mandate: "内製ツール、自動化、運用補助。",
-    stop: "tooling safety stop",
-    tags: ["自動化", "内製"],
-    list: ["自動化整備", "テンプレ整備", "危険な rollout の停止"]
-  }
-];
-
-const institutions = [
-  {
-    title: "AI Academic Institute",
-    type: "学術機関",
-    body: "AI の最新知見を集める。直接指揮は禁止。影響は report と petition 経由のみ。",
-    tags: ["直接命令なし", "日本語短報", "一次情報重視"]
-  },
-  {
-    title: "Independent Audit Firm",
-    type: "監査法人",
-    body: "制度が適正に動いているかを客観判定する。運営はせず、opinion と remediation を返す。",
-    tags: ["独立性", "運営監査", "客観評価"]
-  }
-];
-
-const ledgers = [
-  {
-    name: "Approval Ledger",
-    body: "standing approval と個別承認の履歴。company-os の commit / push もここで追跡。",
-    tags: ["承認", "trace", "公開"]
-  },
-  {
-    name: "Key Loan Ledger",
-    body: "鍵の貸出・返却・失効・事故を Key ID 単位で追跡。",
-    tags: ["鍵", "貸出", "restricted"]
-  },
-  {
-    name: "Credential Request Ledger",
-    body: "資格情報が本当に必要だったかを request 単位で追う。",
-    tags: ["credential", "need-only", "restricted"]
-  },
-  {
-    name: "Officeholder Registry",
-    body: "今だれが lawful に役職についているかを管理。",
-    tags: ["役職", "選任", "公開"]
-  },
-  {
-    name: "Current Activity Board",
-    body: "今だれが何をしていて、次にどこへ渡すかを一覧化。",
-    tags: ["現在稼働", "handoff", "公開"]
-  }
-];
-
-const units = [
-  ["credential-ledger", "high"],
-  ["FormPilot", "medium"],
-  ["jouzou", "medium"],
-  ["kanai-kagamibiraki-proposal", "low"],
-  ["oem", "medium"],
-  ["oem_release", "medium"],
-  ["Poin-T", "high"],
-  ["saigai", "high"],
-  ["shift", "medium"],
-  ["shift_backup", "low"],
-  ["timetree-export", "medium"],
-  ["tumugi", "medium"],
-  ["zenken", "high"]
-];
-
-const heroStats = [
-  ["Rule Layers", String(layers.length)],
-  ["Departments", String(departments.length)],
-  ["Units", String(units.length)],
-  ["Active Actors", String(activities.length)],
-  ["Ledgers", String(ledgers.length)]
-];
-
-const miniStack = ["適正性検証", "初回選任", "監査定着", "自律改善"];
-
-function renderPills() {
-  const target = document.getElementById("heroPills");
-  target.innerHTML = heroStats
-    .map(([label, value]) => `<span class="pill"><strong>${value}</strong>${label}</span>`)
-    .join("");
+  canvas.appendChild(frag);
 }
 
-function renderMiniStack() {
-  const target = document.getElementById("miniStack");
-  target.innerHTML = miniStack.map((item) => `<span class="pill">${item}</span>`).join("");
+// ======================================================
+// 建物 + キャラクター描画
+// ======================================================
+function buildingStatusLabel(status) {
+  const map = { active: "稼働", pending: "待機", ready: "準備OK" };
+  return map[status] || status;
 }
 
-function renderActivities() {
-  const target = document.getElementById("activityGrid");
-  target.innerHTML = activities
-    .map((activity) => {
-      let bubbleText = "Zzz";
-      if (activity.status === "active") bubbleText = "カタカタ...";
-      if (activity.status === "pending") bubbleText = "...?";
-      return `
-        <article class="activity-card">
-          <div class="character-scene">
-            <div class="pixel-character status-${activity.status}">
-              <div class="speech-bubble">${bubbleText}</div>
-            </div>
-            <div class="desk"></div>
-          </div>
-          <div class="card-top">
-            <div>
-              <div class="card-type">▶ ${activity.layer}</div>
-              <h3>${activity.actor}</h3>
-            </div>
-            <span class="status-chip status-${activity.status}">${activity.status}</span>
-          </div>
-          <div class="activity-copy">
-            <p><strong>[いま]</strong><br/>${activity.current}</p>
-            <p style="color: var(--gold);"><strong>[ 次 ]</strong><br/>↓ ${activity.next}</p>
-          </div>
-        </article>
-      `
-    }).join("");
+function createCharacter(status, bubbleText) {
+  const wrap = document.createElement("div");
+  wrap.className = `char-wrap char-${status}`;
+
+  const bubble = document.createElement("div");
+  bubble.className = "char-bubble";
+  bubble.textContent = bubbleText;
+  wrap.appendChild(bubble);
+
+  const body = document.createElement("div");
+  body.className = "char-body";
+  wrap.appendChild(body);
+
+  const desk = document.createElement("div");
+  desk.className = "char-desk";
+  wrap.appendChild(desk);
+
+  return wrap;
 }
 
-function renderLayers() {
-  const target = document.getElementById("layerGrid");
-  target.innerHTML = layers
-    .map(
-      (layer) => `
-        <article class="stack-card">
-          <div class="stack-rank">${layer.rank}</div>
-          <div class="card-copy">
-            <h3>${layer.name}</h3>
-            <p>${layer.path}</p>
-          </div>
-          <p class="muted">${layer.summary}</p>
-        </article>
-      `
-    )
-    .join("");
+function getBubbleText(status) {
+  if (status === "active") return "カタカタ...";
+  if (status === "pending") return "...うーん";
+  return "待機中";
 }
 
-function renderFlow() {
-  const target = document.getElementById("flowList");
-  target.style.display = "flex";
-  target.style.flexDirection = "column";
-  target.style.gap = "0";
+function renderBuildings() {
+  const canvas = document.getElementById("mapCanvas");
 
-  target.innerHTML = flows
-    .map((flow, index) => `
-        <article class="flow-card" style="border-radius: 0; border-bottom: ${index === flows.length - 1 ? '2px solid var(--line)' : 'none'}; position: relative;">
-          ${index !== flows.length - 1 ? '<div style="position: absolute; bottom: -18px; left: 50%; font-size: 24px; font-weight: bold; color: var(--gold); z-index: 10;">⬇</div>' : ''}
-          <div class="flow-index" style="color: var(--ink); background: var(--bg); display: inline-block; padding: 2px 6px;">SEQ: ${flow.index}</div>
-          <h3>${flow.title}</h3>
-          <p>${flow.body}</p>
-        </article>
-      `
-    ).join("");
-}
+  BUILDINGS.forEach(b => {
+    const el = document.createElement("div");
+    el.className = `building ${b.color}`;
+    el.style.left = b.col * TILE_SIZE + "px";
+    el.style.top = b.row * TILE_SIZE + "px";
+    el.style.width = b.w * TILE_SIZE + "px";
+    el.style.height = b.h * TILE_SIZE + "px";
+    el.dataset.id = b.id;
 
-function renderTasks() {
-  const target = document.getElementById("taskList");
-  target.innerHTML = tasks
-    .map(
-      (task, index) => `
-        <article class="task-card">
-          <div class="flow-index">Task ${String(index + 1).padStart(2, "0")}</div>
-          <h3>${task}</h3>
-        </article>
-      `
-    )
-    .join("");
-}
+    // ステータスバッジ
+    const badge = document.createElement("div");
+    badge.className = `building-status ${b.status}`;
+    badge.textContent = buildingStatusLabel(b.status);
+    el.appendChild(badge);
 
-function departmentCard(department) {
-  const searchBlob = [department.name, department.kind, department.mandate, department.stop, ...department.tags, ...department.list]
-    .join(" ")
-    .toLowerCase();
+    // 屋根エリア
+    const roof = document.createElement("div");
+    roof.className = "building-roof";
 
-  return `
-    <article class="department-card" data-search="${searchBlob}">
-      <div class="card-top">
-        <div>
-          <div class="card-type">${department.kind}</div>
-          <h3>${department.name}</h3>
-        </div>
-        <span class="tag stop">${department.stop}</span>
-      </div>
-      <p class="muted">${department.mandate}</p>
-      <div class="tag-row">
-        ${department.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-      </div>
-      <ul class="card-list">
-        ${department.list.map((item) => `<li>${item}</li>`).join("")}
-      </ul>
-    </article>
-  `;
-}
+    const label = document.createElement("div");
+    label.className = "building-label";
+    label.textContent = b.label;
+    roof.appendChild(label);
 
-function renderDepartments(filter = "") {
-  const target = document.getElementById("departmentGrid");
-  const normalized = filter.trim().toLowerCase();
+    const kind = document.createElement("div");
+    kind.className = "building-kind";
+    kind.textContent = b.kind;
+    roof.appendChild(kind);
 
-  const cards = departments
-    .map((department) => departmentCard(department))
-    .filter((html) => !normalized || html.toLowerCase().includes(normalized));
+    el.appendChild(roof);
 
-  target.innerHTML = cards.length
-    ? cards.join("")
-    : `<div class="empty-state">該当する部署がありません。</div>`;
-}
+    // フロア（キャラ配置）
+    const floor = document.createElement("div");
+    floor.className = "building-floor";
 
-function renderInstitutions() {
-  const target = document.getElementById("institutionList");
-  target.innerHTML = institutions
-    .map(
-      (institution) => `
-        <article class="institution-card">
-          <div class="card-top">
-            <div>
-              <div class="card-type">${institution.type}</div>
-              <h3>${institution.title}</h3>
-            </div>
-          </div>
-          <p>${institution.body}</p>
-          <div class="tag-row">
-            ${institution.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
+    const charCount = b.w >= 4 ? 2 : 1;
+    for (let i = 0; i < charCount; i++) {
+      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : ""));
+    }
 
-function renderLedgers() {
-  const target = document.getElementById("ledgerList");
-  target.innerHTML = ledgers
-    .map(
-      (ledger) => `
-        <article class="ledger-card">
-          <h3>${ledger.name}</h3>
-          <p>${ledger.body}</p>
-          <div class="tag-row">
-            ${ledger.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
+    el.appendChild(floor);
 
-function renderUnits() {
-  const target = document.getElementById("unitGrid");
-  target.innerHTML = units
-    .map(
-      ([name, risk]) => `
-        <article class="unit-card">
-          <div class="card-top">
-            <div>
-              <div class="card-type">Unit</div>
-              <h3>${name}</h3>
-            </div>
-            <span class="tag risk-${risk}">${risk}</span>
-          </div>
-          <p class="muted">seat: 1 / owner: pending-election / status: bootstrap-active</p>
-        </article>
-      `
-    )
-    .join("");
-}
+    // クリックイベント
+    el.addEventListener("click", () => openDialog(b));
 
-function bindEvents() {
-  const input = document.getElementById("departmentFilter");
-  input.addEventListener("input", (event) => {
-    renderDepartments(event.target.value);
+    canvas.appendChild(el);
   });
 }
 
-renderPills();
-renderMiniStack();
-renderActivities();
-renderLayers();
-renderFlow();
-renderTasks();
-renderDepartments();
-renderInstitutions();
-renderLedgers();
-renderUnits();
-bindEvents();
+// ======================================================
+// ダイアログ
+// ======================================================
+function openDialog(b) {
+  const overlay = document.getElementById("dialogOverlay");
+  const header = document.getElementById("dialogHeader");
+  const body = document.getElementById("dialogBody");
+  const statusCol = b.status === "active" ? "color-active"
+    : b.status === "pending" ? "color-pending" : "color-ready";
+
+  header.textContent = b.label;
+
+  body.innerHTML = `
+    <div class="dialog-row">
+      <span class="dialog-label">【種別】</span>
+      <span class="dialog-value">${b.kind}</span>
+    </div>
+    <div class="dialog-row">
+      <span class="dialog-label">【状態】</span>
+      <span class="dialog-value ${statusCol}">${b.status}</span>
+    </div>
+    <div class="dialog-row">
+      <span class="dialog-label">【いま】</span>
+      <span class="dialog-value">${b.current}</span>
+    </div>
+    <div class="dialog-row">
+      <span class="dialog-label">【次へ】</span>
+      <span class="dialog-value">${b.next}</span>
+    </div>
+    <div class="dialog-row">
+      <span class="dialog-label">【停止権】</span>
+      <span class="dialog-value">${b.stop}</span>
+    </div>
+    <div class="dialog-tags">
+      ${(b.tags || []).map(t => `<span class="dialog-tag">${t}</span>`).join("")}
+    </div>
+  `;
+
+  overlay.classList.add("open");
+  updateMessage(`「${b.label}」を確認中… ${b.current}`);
+}
+
+function closeDialog() {
+  document.getElementById("dialogOverlay").classList.remove("open");
+}
+
+// ======================================================
+// HUD
+// ======================================================
+function renderHud() {
+  const statsEl = document.getElementById("hudStats");
+  const activeCount = BUILDINGS.filter(b => b.status === "active").length;
+  const pendingCount = BUILDINGS.filter(b => b.status === "pending").length;
+  const readyCount = BUILDINGS.filter(b => b.status === "ready").length;
+
+  const stats = [
+    ["🏢 建物", BUILDINGS.length],
+    ["🔴 稼働", activeCount],
+    ["🔵 待機", pendingCount],
+    ["🟢 準備OK", readyCount],
+  ];
+
+  statsEl.innerHTML = stats.map(([label, val]) =>
+    `<div class="hud-stat"><strong>${val}</strong> ${label}</div>`
+  ).join("");
+}
+
+// ======================================================
+// サイドパネル：制度レイヤー
+// ======================================================
+function renderLayers() {
+  const el = document.getElementById("layerList");
+  el.innerHTML = LAYERS.map(l =>
+    `<div class="layer-item"><span class="layer-rank">${l.rank}</span>${l.name}</div>`
+  ).join("");
+}
+
+// ======================================================
+// サイドパネル：承認フロー
+// ======================================================
+const FLOWS = [
+  "📝 上申を起票",
+  "🗣️ 討論と修正",
+  "✅ 採決と裁定",
+  "⚙️ 執行と監査",
+];
+
+function renderFlows() {
+  const el = document.getElementById("flowSteps");
+  el.innerHTML = FLOWS.map((f, i) =>
+    `<div class="flow-step">${f}</div>` +
+    (i < FLOWS.length - 1 ? `<div class="flow-step-arrow">↓</div>` : "")
+  ).join("");
+}
+
+// ======================================================
+// サイドパネル：アクター一覧（右）
+// ======================================================
+function renderActors() {
+  const el = document.getElementById("actorList");
+  el.innerHTML = BUILDINGS.map(b => `
+    <div class="actor-item" data-id="${b.id}">
+      <div class="actor-name">${b.label}</div>
+      <div class="actor-status-row">
+        <div class="status-dot ${b.status}"></div>
+        <span style="font-size:9px;color:var(--ui-muted)">${b.current.slice(0, 22)}…</span>
+      </div>
+    </div>
+  `).join("");
+
+  // クリックで建物フォーカス＋ダイアログ
+  el.querySelectorAll(".actor-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const b = BUILDINGS.find(x => x.id === item.dataset.id);
+      if (b) openDialog(b);
+    });
+  });
+}
+
+// ======================================================
+// メッセージウィンドウ
+// ======================================================
+let logIndex = 0;
+
+function updateMessage(text) {
+  const el = document.getElementById("messageText");
+  el.textContent = text;
+  el.style.animation = "none";
+  requestAnimationFrame(() => { el.style.animation = ""; });
+}
+
+function cycleActivityLog() {
+  const log = ACTIVITY_LOG[logIndex % ACTIVITY_LOG.length];
+  updateMessage(`[${log.time}] ${log.text}`);
+  logIndex++;
+}
+
+// ======================================================
+// 時計
+// ======================================================
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, "0");
+  const m = String(now.getMinutes()).padStart(2, "0");
+  const s = String(now.getSeconds()).padStart(2, "0");
+  document.getElementById("hudClock").textContent = `${h}:${m}:${s}`;
+}
+
+// ======================================================
+// アウトサイドクリックでダイアログを閉じる
+// ======================================================
+function bindEvents() {
+  document.getElementById("dialogClose").addEventListener("click", closeDialog);
+  document.getElementById("dialogOverlay").addEventListener("click", e => {
+    if (e.target === document.getElementById("dialogOverlay")) closeDialog();
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeDialog();
+  });
+}
+
+// ======================================================
+// 初期化
+// ======================================================
+function init() {
+  renderMap();
+  renderBuildings();
+  renderHud();
+  renderLayers();
+  renderFlows();
+  renderActors();
+  bindEvents();
+  updateClock();
+  setInterval(updateClock, 1000);
+
+  // 最初のメッセージ
+  cycleActivityLog();
+  // 4秒ごとにメッセージを切り替え
+  setInterval(cycleActivityLog, 4000);
+}
+
+init();

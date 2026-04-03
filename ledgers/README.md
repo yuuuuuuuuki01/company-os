@@ -23,4 +23,5 @@ This directory stores active traceability ledgers.
 - `parallel-operations-board.md`: multi-project lanes, owner status, and next handoff
 - `approval-desk-board.md`: approval queues, stamp waits, and escalation path
 - `department-growth-board.md`: self-growth and departmental expansion queue
+- `external-specialist-board.md`: outside specialist lanes and internal acceptance path
 - `officeholder-registry.md`: current lawful office occupancy

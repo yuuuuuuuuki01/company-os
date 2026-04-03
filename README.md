@@ -58,6 +58,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `institutions/`: academic and research institutions that observe and report through formal channels only
 - `audit-layer/`: independent audit entities and objective operating review protocols
 - `ledgers/`: approval, custody, and other traceable operating ledgers
+- `skills/`: reusable capability skillsets and training assets
 - `roles/`: office definitions
 - `committees/`: standing committee charters
 - `recruiting/`: low-context hiring and onboarding packets
@@ -72,6 +73,7 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - Ask for keys only when a task concretely requires them.
 - Expand autonomy through bounded trials, audit, and revision.
 - Allow departments to self-improve continuously, but require approval for structural expansion.
+- Allow outside specialists to execute bounded work, but keep governance and acceptance inside Company OS.
 - Prefer short Japanese reports for recurring operations.
 
 ## Dashboard

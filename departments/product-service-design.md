@@ -32,6 +32,7 @@ Own product framing, user journey design, information architecture, interaction 
 - request usability research
 - maintain design critique skillsets and drills
 - run design capability loops with Directorate and ODL
+- sponsor bounded external design execution lanes
 
 ## Stop power
 

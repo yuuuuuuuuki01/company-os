@@ -29,6 +29,7 @@ Coordinate delivery flow, dependencies, sequencing, staffing cadence, and blocke
 - require explicit handoffs
 - re-sequence approved work
 - convene unblock reviews
+- track external specialist lanes and acceptance flow
 
 ## Stop power
 

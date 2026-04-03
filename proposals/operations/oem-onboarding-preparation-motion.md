@@ -35,3 +35,10 @@ Prepare the lawful seat and activation packet required to move `oem` from `ready
 - `oem` can use a single seat route, one bounded start packet, and one low/medium risk approval path
 - accepted artifact set: `ledgers/oem-seat-route-board.md`, `recruiting/oem-unit-owner-start-packet.md`, and `ledgers/oem-review-approval-route.md`
 - send to `discussion-2` with the minimum lawful preparation bundle only
+
+## Discussion-2 note
+
+- the preparation bundle should include one seat motion draft, one bounded start packet, and one concrete review/approval route
+- `oem` should remain `ready` until a later activation review confirms the gate
+- accepted artifact set: `proposals/operations/oem-unit-owner-seating-motion.md` and `ledgers/oem-activation-review-bundle.md`
+- deliberation should decide whether the bounded preparation bundle is sufficient to proceed

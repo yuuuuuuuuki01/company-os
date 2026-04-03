@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "2f6cb19",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 19:33:04 +0900",
+      "message": "Advance OEM activation review loop to eighteenth sitting",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "4ad88dd",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 10:28:33 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "b97d803",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 19:28:24 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 16:20:26 +0900",
       "message": "fix: true transparent sprites and updated character set (Fox, Cat, Frog)",
       "dept": "engineering"
-    },
-    {
-      "hash": "d82dbee",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 07:15:34 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "68c7c7d",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:15:14 +0900",
-      "message": "fix: character sprite transparency and scaling",
-      "dept": "engineering"
     }
   ],
   "tasks": {
-    "total": 10,
+    "total": 11,
     "done": 2,
-    "active": 8,
+    "active": 9,
     "pending": 0,
     "items": [
       {
@@ -256,8 +256,12 @@
       {
         "label": "oem-onboarding-preparation-motion",
         "status": "active"
+      },
+      {
+        "label": "oem-activation-review-motion",
+        "status": "active"
       }
     ]
   },
-  "generated_at": "2026-04-03 19:28:24 +0900"
+  "generated_at": "2026-04-03 19:33:04 +0900"
 }

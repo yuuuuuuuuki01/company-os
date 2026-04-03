@@ -16,8 +16,8 @@ updated_at: 2026-04-03
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch | assembly |
-| Assembly | governance | active | ninth ordinary sitting completed and tenth sitting opened | tenth ordinary sitting |
-| Assembly Secretariat | governance | active | rollout watch and tenth sitting packet | improvement board |
+| Assembly | governance | active | tenth ordinary sitting completed and eleventh sitting opened | eleventh ordinary sitting |
+| Assembly Secretariat | governance | active | rollout watch and eleventh sitting packet | improvement board |
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
@@ -26,7 +26,9 @@ updated_at: 2026-04-03
 | Security, Risk, and Compliance | department | ready | key custody and credential request readiness | requester on demand |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
 | Project Management Office | department | active | watch first live activation gate use in future lanes | assembly-secretariat |
-| Portfolio Strategy | department | active | prepare first non-company-os onboarding priority note | founder-office / PMO |
+| Portfolio Strategy | department | active | narrow first non-company-os onboarding priority to first and fallback candidate | founder-office / PMO |
+| People and Talent | department | active | confirm seat prerequisites for the first external activation candidate | personnel-committee / PMO |
+| Project Management Office | department | active | confirm lane prerequisites for the first external activation candidate | assembly-secretariat |
 | Research Intelligence | department | active | own first-pass AI bulletin classification rollout | assembly-secretariat |
 | Directorate | department | active | review coherence of new operating artifacts | assembly |
 | Product and Service Design | department | active | design capability work outside the governance lane | directorate / founder-office |

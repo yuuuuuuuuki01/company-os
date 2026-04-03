@@ -27,3 +27,10 @@ Choose which non-`company-os` unit should enter the first formal activation wave
 
 - parallel-ready lanes now exist but no lawful priority has been chosen
 - first activation should be narrow enough to test the gate without diffusing ownership
+
+## Discussion-1 note
+
+- `oem` is the narrowest first candidate because the mission is explicit, the surface area is small, and approval complexity appears lowest
+- `shift` and `jouzou` remain viable but should follow after one activation gate pass is proven
+- accepted artifact set: `ledgers/unit-onboarding-priority-board.md`
+- send to `discussion-2` with one recommended first candidate and one fallback candidate

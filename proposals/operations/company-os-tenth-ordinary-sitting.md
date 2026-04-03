@@ -1,7 +1,7 @@
 ---
 id: company-os-tenth-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -32,3 +32,9 @@ Review rollout after the ninth sitting adoptions and open the first non-`company
 
 - rollout status is visible for all active adopted items
 - first non-`company-os` onboarding priority enters the loop
+
+## Result
+
+- rollout watch stayed visible for the six adopted items
+- `unit-onboarding-priority-motion` entered `discussion-1`
+- the eleventh ordinary sitting was opened

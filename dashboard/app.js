@@ -34,9 +34,9 @@ let lastHash = ""; // 最新のコミットハッシュを保持
 // ======================================================
 // ユーティリティ: パスファインディング (BFS)
 // ======================================================
-function isRoad(c, r) {
+function isWalkable(c, r) {
   const t = MAP_TILES[r]?.[c];
-  return t >= TILE.ROAD_H && t <= TILE.ROAD_BR; // 道路タイルかどうか
+  return t === TILE.HALLWAY || t === TILE.FLOOR; // 通路または部屋の床なら歩ける
 }
 
 function findPath(start, end) {
@@ -55,7 +55,7 @@ function findPath(start, end) {
 
     for (const n of nexts) {
       if (n.x >= 0 && n.x < MAP_COLS && n.y >= 0 && n.y < MAP_ROWS) {
-        if (isRoad(n.x, n.y) && !visited.has(`${n.x},${n.y}`)) {
+        if (isWalkable(n.x, n.y) && !visited.has(`${n.x},${n.y}`)) {
           visited.add(`${n.x},${n.y}`);
           queue.push([...path, n]);
         }
@@ -69,21 +69,11 @@ function findPath(start, end) {
 // マップ描画
 // ======================================================
 const TILE_CLASS = {
-  [TILE.GRASS]: "tile-grass",
-  [TILE.GRASS2]: "tile-grass2",
-  [TILE.ROAD_H]: "tile-road-h",
-  [TILE.ROAD_V]: "tile-road-v",
-  [TILE.ROAD_CROSS]: "tile-road-cross",
-  [TILE.ROAD_TL]: "tile-road-tl",
-  [TILE.ROAD_TR]: "tile-road-tr",
-  [TILE.ROAD_BL]: "tile-road-bl",
-  [TILE.ROAD_BR]: "tile-road-br",
-  [TILE.STONE]: "tile-stone",
-  [TILE.WATER]: "tile-stone",
-  [TILE.TREE]: "tile-tree",
-  [TILE.FLOWER]: "tile-flower",
+  [TILE.FLOOR]: "tile-grass", // CSS側で office floor に変更済み
+  [TILE.HALLWAY]: "tile-stone", // CSS側で hallway に変更済み
+  [TILE.VOID]: "tile-void",
 };
-const TILE_CONTENT = { [TILE.TREE]: "🌳", [TILE.FLOWER]: "🌸" };
+const TILE_CONTENT = {};
 
 function renderMap() {
   const canvas = document.getElementById("mapCanvas");
@@ -145,32 +135,40 @@ function createCharacter(status, bubbleText, size = 64) {
 // ======================================================
 // キャラクター移動演出 (Messenger)
 // ======================================================
-async function spawnMessenger(startCol, startRow, endCol, endRow) {
+async function spawnMessenger(startCol, startRow, endCol, endRow, message = "お届け物！") {
   const canvas = document.getElementById("mapCanvas");
-  const char = createCharacter("ready", "お届け物です！", 40);
+  const char = createCharacter("ready", message, 32);
   char.className += " messenger-wrap";
-  char.querySelector(".char-sprite").className = "char-sprite char-anim-walking";
+  char.querySelector(".char-sprite").classList.add("char-anim-walking");
   char.style.left = startCol * TILE_SIZE + "px";
   char.style.top = startRow * TILE_SIZE + "px";
   canvas.appendChild(char);
 
   const path = findPath({ x: startCol, y: startRow }, { x: endCol, y: endRow });
   if (!path) {
-    setTimeout(() => char.remove(), 2000);
+    console.log("No path found for messenger");
+    setTimeout(() => char.remove(), 1000);
     return;
   }
 
   for (const step of path) {
-    char.style.transition = "all 0.3s linear";
+    char.style.transition = "all 0.4s linear";
     char.style.left = step.x * TILE_SIZE + "px";
     char.style.top = step.y * TILE_SIZE + "px";
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 400));
   }
 
-  // 目的地到着
   char.querySelector(".char-bubble").textContent = "到着！";
-  char.querySelector(".char-sprite").className = "char-sprite char-anim-ready";
-  setTimeout(() => char.remove(), 2000);
+  char.querySelector(".char-sprite").classList.remove("char-anim-walking");
+  setTimeout(() => char.remove(), 1500);
+}
+
+// 部屋から共用スペース（プラザ）へ歩いていく演出
+async function randomWalk() {
+  const b = BUILDINGS[Math.floor(Math.random() * BUILDINGS.length)];
+  const plaza = BUILDINGS.find(room => room.id === "security") || BUILDINGS[5];
+  // 部屋の中心からプラザの中心へ
+  await spawnMessenger(b.col + 1, b.row + 1, plaza.col + 2, plaza.row + 1, "ちょっと休憩…");
 }
 
 // ======================================================
@@ -356,5 +354,6 @@ function init() {
   setInterval(cycleActivityLog, 4000);
   syncWithLiveStatus();
   setInterval(syncWithLiveStatus, 15000);
+  setInterval(randomWalk, 12000); // 12秒ごとに誰かが歩き出す
 }
 init();

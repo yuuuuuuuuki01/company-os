@@ -1,6 +1,34 @@
 {
   "commits": [
     {
+      "hash": "6157989",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:20:27 +0900",
+      "message": "fix: final transparency and sprite alignment for chars_v2.png",
+      "dept": "engineering"
+    },
+    {
+      "hash": "6e3b2d7",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:20:27 +0900",
+      "message": "fix: use chars_v2.png with true transparency and bypass cache",
+      "dept": "engineering"
+    },
+    {
+      "hash": "9ddd55a",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 16:20:26 +0900",
+      "message": "fix: true transparent sprites and updated character set (Fox, Cat, Frog)",
+      "dept": "engineering"
+    },
+    {
+      "hash": "d82dbee",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 07:15:34 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "68c7c7d",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 16:15:14 +0900",
@@ -181,21 +209,7 @@
       "date": "2026-04-03 11:36:04 +0900",
       "message": "Set fitness review as first mission",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "68e9c89",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 11:33:27 +0900",
-      "message": "Add AI institute and audit layer",
-      "dept": "audit"
-    },
-    {
-      "hash": "364eb73",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 11:28:45 +0900",
-      "message": "Bootstrap constitutional company OS",
-      "dept": "founder-office"
     }
   ],
-  "generated_at": "2026-04-03 16:15:14 +0900"
+  "generated_at": "2026-04-03 16:20:27 +0900"
 }

@@ -1,0 +1,74 @@
+name: Generate Status JSON
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  update-status:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 30
+
+      - name: Generate status.json
+        run: |
+          git log -30 --pretty=format:'{"hash":"%h","author":"%an","date":"%ci","message":"%s"}' | \
+            python3 -c "
+          import sys, json
+          commits = []
+          for line in sys.stdin:
+              line = line.strip()
+              if line:
+                  try:
+                      commits.append(json.loads(line))
+                  except:
+                      pass
+
+          dept_map = {
+              'founder': 'founder-office',
+              'assembly': 'assembly',
+              'audit': 'audit',
+              'engineering': 'engineering',
+              'dashboard': 'data-knowledge',
+              'pmo': 'pmo',
+              'security': 'security',
+              'people': 'people-talent',
+              'talent': 'people-talent',
+              'data': 'data-knowledge',
+              'knowledge': 'data-knowledge',
+              'research': 'ai-institute',
+              'ai': 'ai-institute',
+              'ledger': 'data-knowledge',
+              'style': 'engineering',
+              'feat': 'engineering',
+              'fix': 'engineering',
+              'docs': 'assembly',
+              'law': 'assembly',
+              'rule': 'founder-office',
+              'constitution': 'founder-office',
+          }
+
+          for c in commits:
+              msg = c['message'].lower()
+              dept = 'data-knowledge'
+              for kw, d in dept_map.items():
+                  if kw in msg:
+                      dept = d
+                      break
+              c['dept'] = dept
+
+          print(json.dumps({'commits': commits, 'generated_at': commits[0]['date'] if commits else ''}, ensure_ascii=False, indent=2))
+          " > dashboard/status.json
+
+      - name: Commit status.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/status.json
+          git diff --staged --quiet || git commit -m "ci: update status.json [skip ci]"
+          git push

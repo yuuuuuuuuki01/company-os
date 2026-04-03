@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "b97d803",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-03 19:28:24 +0900",
+      "message": "feat: enhance office liveliness with decor, char variety, and reactions",
+      "dept": "engineering"
+    },
+    {
+      "hash": "5e44a66",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 10:21:32 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "c9e0d7c",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 19:21:08 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 16:15:14 +0900",
       "message": "fix: character sprite transparency and scaling",
       "dept": "engineering"
-    },
-    {
-      "hash": "8e64e50",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 16:15:13 +0900",
-      "message": "Couple meetings with work and assign department loads",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "e125659",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 07:09:17 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -259,5 +259,5 @@
       }
     ]
   },
-  "generated_at": "2026-04-03 19:21:08 +0900"
+  "generated_at": "2026-04-03 19:28:24 +0900"
 }

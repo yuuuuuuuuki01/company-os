@@ -1,7 +1,7 @@
 ---
-id: company-os-twelfth-ordinary-sitting
+id: company-os-thirteenth-ordinary-sitting
 layer: proposal
-status: adopted
+status: motion-open
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -11,11 +11,11 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Company OS Twelfth Ordinary Sitting
+# Company OS Thirteenth Ordinary Sitting
 
 ## Goal
 
-Deliberate the first non-`company-os` onboarding priority while keeping active rollout watch visible.
+Open the bounded preparation wave for `oem` while keeping active rollout watch visible.
 
 ## Agenda
 
@@ -25,16 +25,11 @@ Deliberate the first non-`company-os` onboarding priority while keeping active r
 4. report: `ai-bulletin-intake-motion`
 5. report: `department-steward-seating-wave-motion`
 6. report: `decision-template-normalization-motion`
-7. deliberation: `unit-onboarding-priority-motion`
-8. confirm the thirteenth ordinary sitting agenda
+7. report: `unit-onboarding-priority-motion`
+8. discussion-1: `oem-onboarding-preparation-motion`
+9. confirm the fourteenth ordinary sitting agenda
 
 ## Definition of done
 
-- the first external onboarding priority is decided, postponed, or amended
+- `oem` preparation enters the loop with a bounded work board
 - active rollout watch remains visible
-
-## Result
-
-- `unit-onboarding-priority-motion` was adopted
-- active rollout watch remained visible
-- the thirteenth ordinary sitting was opened

@@ -1,7 +1,7 @@
 ---
 id: four-project-stability-review
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -33,3 +33,15 @@ Verify that `oem`, `shift`, `jouzou`, and `FormPilot` can remain simultaneously 
 - this review should stay bounded to watch posture, capacity, and control enforcement
 - accepted artifact set: `ledgers/four-project-stability-board.md`
 - discussion should not open a fifth active PJ
+
+## Discussion-2 note
+
+- the review should confirm four active PJ remain within PMO capacity and low/medium control posture
+- no fifth active PJ should be opened during this cycle
+- deliberation should decide whether four-project operation is stable enough to remain the new baseline
+
+## Deliberation result
+
+- adopted as the first four-project stability checkpoint
+- `oem`, `shift`, `jouzou`, and `FormPilot` remain active under watch
+- no fifth active PJ is opened in this motion

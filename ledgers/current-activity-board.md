@@ -16,8 +16,8 @@ updated_at: 2026-04-04
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch | assembly |
-| Assembly | governance | active | seventy-eighth ordinary sitting completed and seventy-ninth sitting opened | seventy-ninth ordinary sitting |
-| Assembly Secretariat | governance | active | watch four active PJ and prepare the seventy-ninth packet | improvement board |
+| Assembly | governance | active | eighty-first ordinary sitting completed and eighty-second sitting opened | eighty-second ordinary sitting |
+| Assembly Secretariat | governance | active | watch four active PJ and prepare the eighty-second packet | improvement board |
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
@@ -28,7 +28,7 @@ updated_at: 2026-04-04
 | Japanese Naming Migration | governance | active | new files default to Japanese names and legacy files move gradually | data-knowledge / assembly-secretariat |
 | Security, Risk, and Compliance | department | active | watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths | release-review-committee |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
-| Project Management Office | department | active | monitor four active PJ and support the first four-project stability review | assembly-secretariat |
+| Project Management Office | department | active | monitor four active PJ and support tooling prioritization after stability adoption | assembly-secretariat |
 | Portfolio Strategy | department | active | sequence the four active PJ and keep any fifth candidate out of activation | founder-office / PMO |
 | Directorate | department | active | watch the named `oem`, `shift`, `jouzou`, and `FormPilot` reviewer paths during four-PJ operation | assembly |
 | Product Management | department | active | define product requirement packets and scope boundaries for `FormPilot` and later candidates | portfolio-strategy / directorate |
@@ -46,5 +46,5 @@ updated_at: 2026-04-04
 | Procurement and Vendor Management | department | active | define vendor intake and purchasing controls for future expansion | finance-treasury / legal-policy |
 | Information Systems | department | active | define workplace systems and access lifecycle hygiene for the growing org | internal-tools-enablement / security-risk-compliance |
 | Product and Service Design | department | active | design capability work outside the governance line | directorate / founder-office |
-| Internal Tools and Enablement | department | active | shape tooling backlog for governance and ledger ergonomics | engineering / security-risk-compliance |
+| Internal Tools and Enablement | department | active | prioritize tooling backlog for governance and ledger ergonomics | engineering / security-risk-compliance |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

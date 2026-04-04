@@ -21,6 +21,8 @@ Departments are the durable capability structure of the Company OS. They preserv
 
 - Units represent project or business domains.
 - Departments represent functional capabilities.
+- Divisions represent semi-durable capability clusters inside a department.
+- Sections represent the smallest durable delegated work cell inside a department or division.
 - Projects request capacity from departments.
 - Departments lend people, methods, approvals, and stop powers through lawful delegation.
 
@@ -28,6 +30,7 @@ Departments are the durable capability structure of the Company OS. They preserv
 
 - Each department is led by a `Department Steward`.
 - Departments may assign `Department Officer` roles beneath the steward.
+- Departments may create `Division Head` and `Section Chief` lines only after lawful approval.
 - Department stewards are selected through lawful personnel process and remain subject to confidence review, discipline, and removal.
 
 ## Self-growth and expansion
@@ -36,6 +39,14 @@ Departments are the durable capability structure of the Company OS. They preserv
 - Departments may sponsor proposals to expand, split, merge, or redesign themselves.
 - Any structural expansion of a department requires prior lawful approval.
 - Structural expansion becomes effective only after the required petition, review, and threshold are satisfied.
+
+## Subdivision model
+
+- A department may contain zero or more divisions.
+- A division may contain zero or more sections.
+- A section may hold bounded operating authority delegated from its parent line.
+- No subdivision may exceed the authority of its parent department.
+- All subdivision creation, closure, merge, split, and permanent authority change must be recorded.
 
 ## Authority boundary
 

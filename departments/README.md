@@ -22,3 +22,5 @@ This directory defines the permanent department structure of the Company OS.
 - make delegation explicit, reviewable, and stoppable
 
 Start with [registry.md](C:\agent\codex\company-os\departments\registry.md) and [delegation-matrix.md](C:\agent\codex\company-os\departments\delegation-matrix.md).
+
+Subdivision records live in [subdivision-registry.md](C:\agent\codex\company-os\ledgers\subdivision-registry.md) and [delegation-register.md](C:\agent\codex\company-os\ledgers\delegation-register.md).

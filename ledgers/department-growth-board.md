@@ -21,3 +21,4 @@ updated_at: 2026-04-03
 | internal-tools-automation-cell | officer-line | internal-tools-enablement | draft | organizational-development-learning | prepare automation support without new department split |
 | research-intelligence-ai-cell | officer-line | research-intelligence | draft | organizational-development-learning | formalize AI knowledge intake support for business use |
 | exploration-incubation-department | new department | organizational-development-learning / research-intelligence | adopted | founder-office / assembly | launch bounded project origination and incubation without direct lane activation powers |
+| organizational-subdivision-v1 | division-and-section package | organizational-development-learning / project-management-office | adopted | founder-office / assembly | formalize department -> division -> section scaling and record the first delegated cells |

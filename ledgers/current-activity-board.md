@@ -22,6 +22,7 @@ updated_at: 2026-04-04
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
 | Exploration and Incubation | department | active | run bounded project origination and maintain the incubation slate | portfolio-strategy / PMO |
+| Organizational Scaling | governance | active | maintain department / division / section scaling and live delegation records | organizational-development-learning / data-knowledge |
 | People and Talent | department | active | watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review | personnel-committee / PMO |
 | Data and Knowledge | department | active | apply short ruling scope to ordinary operating decisions | assembly-secretariat |
 | Security, Risk, and Compliance | department | active | watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths | release-review-committee |

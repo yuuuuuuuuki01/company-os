@@ -40,6 +40,13 @@ updated_at: 2026-04-03
 | approval ledgers and trace records | data-knowledge | constitutional-affairs |
 | key custody and lending | security-risk-compliance | founder-office |
 | internal automation and tooling | internal-tools-enablement | engineering and security-risk-compliance |
+| project origination and incubation | exploration-incubation | portfolio-strategy and PMO |
+
+## Downward scaling rule
+
+- departments may delegate bounded authority to approved divisions and sections
+- delegated authority becomes effective only after the delegation register is updated
+- stop powers, approval powers, and public commitment authority do not pass downward unless separately recorded
 
 ## Reserved to founder or higher order
 

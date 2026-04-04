@@ -32,8 +32,12 @@ Departments may grow themselves through:
 The following count as departmental expansion and require prior approval:
 
 - creating a new department
+- creating a new division
+- creating a new section
 - splitting or merging an existing department
+- splitting or merging an existing division or section
 - changing a department mandate
+- changing a division or section mandate
 - adding a new permanent officer line
 - adding, removing, or changing a stop power
 - creating a new standing cross-functional interface
@@ -57,3 +61,13 @@ No structural expansion becomes effective until:
 ## Record duty
 
 Every growth request, approval, rejection, pause, and rollback must be logged in the department growth board.
+
+## Auto-scaling trigger
+
+Departments should prepare a structural expansion request when at least one of the following persists:
+
+- repeated work is blocked because one steward line is carrying multiple incompatible mandates
+- approval latency repeats across three or more operating cycles
+- a durable specialty appears often enough to justify a standing cell
+- evidence routing or traceability degrades because responsibilities are too broad
+- a bounded experimental cell has proven stable enough to become permanent

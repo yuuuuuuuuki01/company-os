@@ -51,6 +51,7 @@ This directory stores active traceability ledgers.
 - `jouzou-seat-route-board.md`: proposed lawful seat route for the first `jouzou` unit-owner line
 - `jouzou-review-approval-route.md`: proposed reviewer and approval route for `jouzou` preparation work
 - `jouzou-activation-review-checklist.md`: minimal checklist for the first `jouzou` activation review path
+- `jouzou-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `jouzou`
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

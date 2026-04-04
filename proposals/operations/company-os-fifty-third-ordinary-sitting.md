@@ -1,5 +1,5 @@
 ---
-id: company-os-fifty-second-ordinary-sitting
+id: company-os-fifty-third-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Fifty-Second Ordinary Sitting
+# Company OS Fifty-Third Ordinary Sitting
 
 ## Goal
 
-Keep `oem` and `shift` in watch mode and open `discussion-1` on the bounded `jouzou` execution bundle.
+Run `discussion-2` on the bounded `jouzou` execution bundle while keeping both active lanes in watch mode.
 
 ## Agenda
 
@@ -28,15 +28,15 @@ Keep `oem` and `shift` in watch mode and open `discussion-1` on the bounded `jou
 7. report: `shift-activation-execution-motion`
 8. report: `shift` second-lane watch
 9. report: `jouzou-activation-execution-threshold-motion`
-10. discussion-1: `jouzou-execution-bundle-preparation-motion`
-11. confirm the fifty-third ordinary sitting agenda
+10. discussion-2: `jouzou-execution-bundle-preparation-motion`
+11. confirm the fifty-fourth ordinary sitting agenda
 
 ## Definition of done
 
-- the bounded `jouzou` execution bundle is narrowed enough for `discussion-2`
+- the bounded `jouzou` execution bundle is narrowed enough for deliberation
 - both active lanes remain visible
 
 ## Result
 
-- `jouzou-execution-bundle-preparation-motion` reached `discussion-1`
-- the fifty-third ordinary sitting was opened
+- `jouzou-execution-bundle-preparation-motion` reached `discussion-2`
+- the fifty-fourth ordinary sitting was opened

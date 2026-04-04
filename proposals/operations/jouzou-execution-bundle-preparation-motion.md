@@ -1,7 +1,7 @@
 ---
 id: jouzou-execution-bundle-preparation-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -33,3 +33,16 @@ Prepare the smallest lawful execution bundle for `jouzou` after the execution th
 - this motion should prepare an execution bundle only and should not activate `jouzou`
 - accepted artifact set: `ledgers/jouzou-activation-review-checklist.md`
 - discussion should stay limited to the smallest repeatable execution bundle
+
+## Discussion-2 note
+
+- the execution bundle should name one seat-execution motion, one reviewer-confirmation step, one approval-path acceptance step, and one rollback note
+- `jouzou` remains `ready` until a separate execution motion is adopted
+- accepted artifact set: `ledgers/jouzou-execution-bundle-board.md` and `ledgers/jouzou-seat-route-board.md`
+- deliberation should decide whether the smallest lawful execution bundle is sufficient to proceed
+
+## Deliberation result
+
+- adopted as the smallest lawful execution bundle for `jouzou`
+- `jouzou` remains `ready` and does not enter activation in this motion
+- supporting artifacts: `ledgers/jouzou-execution-bundle-board.md` and `ledgers/jouzou-seat-route-board.md`

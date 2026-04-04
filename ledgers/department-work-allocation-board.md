@@ -16,10 +16,10 @@ updated_at: 2026-04-04
 | Department | Current assignment | Deliverable | Status | Next handoff |
 | --- | --- | --- | --- | --- |
 | founder-office | keep sovereign alignment across the active improvement batch | founder decision lane and reserved-power check | active | assembly |
-| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | forty-third sitting packet, meeting record updates, and dual-active-lane watch note | active | all active owners |
+| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | forty-sixth sitting packet, meeting record updates, and dual-active-lane watch note | active | all active owners |
 | constitutional-affairs | review unit-state and activation changes for compatibility | constitutional review note on state, gate, and rollout compliance | active | constitutional review committee |
-| portfolio-strategy | monitor the first and second active external routes and keep `jouzou` in preparation-only status after screening | `oem` / `shift` sequencing note and `jouzou` readiness recommendation | active | founder-office / PMO |
-| project-management-office | watch the active `oem` and `shift` lanes under the adopted control posture and prepare the bounded `jouzou` preparation path | dual-lane watch note and next candidate threshold package | active | assembly-secretariat / constitutional-review-committee |
+| portfolio-strategy | monitor the first and second active external routes and keep `jouzou` as the next bounded candidate after preparation | `oem` / `shift` sequencing note and `jouzou` readiness recommendation | active | founder-office / PMO |
+| project-management-office | watch the active `oem` and `shift` lanes under the adopted control posture and hold the bounded `jouzou` activation-review path | dual-lane watch note and next candidate threshold package | active | assembly-secretariat / constitutional-review-committee |
 | directorate | review coherence of active governance artifacts and named reviewer confirmation across `oem` and `shift` | quality note on dual-lane reviewer readiness | active | assembly |
 | product-service-design | maintain design capability work without owning UI implementation | next design critique lesson and brief pattern | active | directorate |
 | engineering | support executable operating artifacts and technical implementation constraints | implementation note for internal tooling and release-safe changes | ready | PMO / internal-tools-enablement |

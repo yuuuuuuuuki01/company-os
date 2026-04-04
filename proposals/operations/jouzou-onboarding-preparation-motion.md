@@ -1,7 +1,7 @@
 ---
 id: jouzou-onboarding-preparation-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -33,3 +33,16 @@ Prepare the bounded onboarding bundle for `jouzou` as the next candidate without
 - `jouzou` should stay in preparation only while `oem` and `shift` remain the active lanes
 - accepted artifact set: `ledgers/jouzou-readiness-screen-board.md`
 - discussion should stay limited to one bounded preparation bundle
+
+## Discussion-2 note
+
+- the preparation bundle should include one seat route, one bounded start packet, and one concrete review/approval route
+- `jouzou` remains `ready` while `oem` and `shift` remain the active lanes
+- accepted artifact set: `ledgers/jouzou-seat-route-board.md`, `recruiting/jouzou-unit-owner-start-packet.md`, and `ledgers/jouzou-review-approval-route.md`
+- deliberation should decide whether the bounded `jouzou` preparation bundle is sufficient to proceed
+
+## Deliberation result
+
+- adopted as the bounded `jouzou` preparation bundle
+- `jouzou` remains `ready` and does not enter execution in this motion
+- supporting artifacts: `ledgers/jouzou-seat-route-board.md`, `recruiting/jouzou-unit-owner-start-packet.md`, and `ledgers/jouzou-review-approval-route.md`

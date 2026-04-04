@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "ceb6528",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 17:45:24 +0900",
+      "message": "feat: show current work from activity-board in character bubbles",
+      "dept": "engineering"
+    },
+    {
+      "hash": "31fb66c",
+      "author": "github-actions[bot]",
+      "date": "2026-04-03 11:51:48 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "fec1e8b",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-03 20:51:33 +0900",
@@ -195,25 +209,11 @@
       "date": "2026-04-03 17:11:41 +0900",
       "message": "Advance sittings through ninth adoption",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "b0be8de",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 08:01:49 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "a212b44",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 17:01:40 +0900",
-      "message": "fix: center character sprites vertically and horizontally",
-      "dept": "engineering"
     }
   ],
   "tasks": {
-    "total": 16,
-    "done": 8,
+    "total": 17,
+    "done": 9,
     "active": 8,
     "pending": 0,
     "items": [
@@ -279,9 +279,33 @@
       },
       {
         "label": "shift-execution-bundle-preparation-motion",
+        "status": "done"
+      },
+      {
+        "label": "shift-activation-execution-motion",
         "status": "active"
       }
     ]
   },
-  "generated_at": "2026-04-03 20:51:33 +0900"
+  "activities": {
+    "Founder Office": "sovereign check over the active improvement batch",
+    "Assembly": "thirty-sixth ordinary sitting completed and thirty-seventh sitting opened",
+    "Assembly Secretariat": "dual-active-lane watch and thirty-seventh sitting packet",
+    "Department Allocation": "all departments carry explicit assignments and next handoffs",
+    "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
+    "AI Academic Institute": "weekly AI bulletin and source monitoring",
+    "People and Talent": "watch the seated `oem` and `shift` unit-owner lines and prepare the next confidence review",
+    "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
+    "Security, Risk, and Compliance": "watch the concrete `oem` and `shift` low/medium risk paths",
+    "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
+    "Project Management Office": "monitor the first and second active external lanes under bounded scope",
+    "Portfolio Strategy": "sequence the first and second active lanes and keep `jouzou` as later candidate",
+    "Directorate": "watch the named `oem` and `shift` reviewer paths during dual-lane operation",
+    "OEM Unit": "first external lane is active under bounded static-tool scope",
+    "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
+    "Research Intelligence": "own first-pass AI bulletin classification rollout",
+    "Product and Service Design": "design capability work outside the governance lane",
+    "UI Visual Execution Lane": "Gemini handles UI artifact production only"
+  },
+  "generated_at": "2026-04-04 17:45:24 +0900"
 }

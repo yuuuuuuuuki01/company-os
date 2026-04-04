@@ -13,68 +13,21 @@ updated_at: 2026-04-04
 
 # Ledgers
 
-This directory stores active traceability ledgers.
+このディレクトリには、会社OSの運転状況と委譲履歴を追跡する台帳を置く。
 
-- `approval-ledger.md`: standing and exceptional approvals
-- `key-loan-ledger.md`: key custody, checkout, return, revocation
-- `credential-request-ledger.md`: credential demand trace
-- `開発修正台帳.md`: 会議と並行して回す開発修正 backlog と進捗
-- `日本語命名移行台帳.md`: 日本語ファイル名移行の進捗台帳
-- `current-activity-board.md`: current work, status, and next handoff
-- `bootstrap-election-board.md`: vacancies, pending elections, and next seating actions
-- `parallel-operations-board.md`: multi-project lanes, owner status, and next handoff
-- `approval-desk-board.md`: approval queues, stamp waits, and escalation path
-- `department-growth-board.md`: self-growth and departmental expansion queue
-- `organizational-scaling-board.md`: department, division, and section scaling queue
-- `subdivision-registry.md`: active divisions and sections under lawful parent lines
-- `delegation-register.md`: explicit downward delegation, boundary, and escalation record
-- `project-origination-board.md`: signal, hypothesis, brief, and screen-request pipeline for emergent projects
-- `external-specialist-board.md`: outside specialist lanes and internal acceptance path
-- `company-os-improvement-board.md`: batched improvement agenda for ordinary sittings
-- `department-work-allocation-board.md`: current assignment and deliverable for each department
-- `department-steward-seating-board.md`: steward seating waves, criteria, and next committee handoff
-- `department-steward-wave-1-slate.md`: proposed first ordinary steward confirmations for wave-1
-- `unit-onboarding-priority-board.md`: first external unit onboarding comparison and recommendation
-- `unit-onboarding-prerequisites-board.md`: activation prerequisites for the preferred and fallback unit candidates
-- `oem-onboarding-preparation-board.md`: bounded preparation work needed before `oem` activation review
-- `oem-seat-route-board.md`: proposed lawful seat route for the first `oem` unit-owner line
-- `oem-review-approval-route.md`: proposed reviewer and approval route for `oem` preparation work
-- `oem-activation-review-bundle.md`: deliberation bundle for `oem` seat, packet, reviewer, and approval route
-- `oem-activation-review-checklist.md`: minimal checklist for the first `oem` activation review path
-- `oem-activation-execution-board.md`: accepted bounded execution state for the first `oem` activation
-- `oem-first-lane-watch-board.md`: first active external lane watch snapshot for `oem`
-- `shift-onboarding-preparation-board.md`: bounded preparation work needed before `shift` activation review
-- `shift-seat-route-board.md`: proposed lawful seat route for the first `shift` unit-owner line
-- `shift-review-approval-route.md`: proposed reviewer and approval route for `shift` preparation work
-- `shift-activation-review-checklist.md`: minimal checklist for the first `shift` activation review path
-- `shift-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `shift` execution motion
-- `shift-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `shift`
-- `shift-activation-execution-board.md`: accepted bounded execution state for the first `shift` activation
-- `shift-second-lane-watch-board.md`: second active external lane watch snapshot for `shift`
-- `dual-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem` and `shift` operation
-- `jouzou-readiness-screen-board.md`: bounded readiness screen for `jouzou` as a third candidate without opening a lane
-- `jouzou-onboarding-preparation-board.md`: bounded preparation work needed before `jouzou` activation review
-- `jouzou-seat-route-board.md`: proposed lawful seat route for the first `jouzou` unit-owner line
-- `jouzou-review-approval-route.md`: proposed reviewer and approval route for `jouzou` preparation work
-- `jouzou-activation-review-checklist.md`: minimal checklist for the first `jouzou` activation review path
-- `jouzou-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `jouzou`
-- `jouzou-activation-execution-board.md`: accepted bounded execution state for the first `jouzou` activation
-- `jouzou-third-lane-watch-board.md`: third active external lane watch snapshot for `jouzou`
-- `triple-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, and `jouzou` operation
-- `formpilot-readiness-screen-board.md`: bounded readiness screen for `FormPilot` as a fourth candidate without opening a lane
-- `formpilot-onboarding-preparation-board.md`: bounded preparation work needed before `FormPilot` activation review
-- `formpilot-seat-route-board.md`: proposed lawful seat route for the first `FormPilot` unit-owner line
-- `formpilot-review-approval-route.md`: proposed reviewer and approval route for `FormPilot` preparation work
-- `formpilot-activation-review-checklist.md`: minimal checklist for the first `FormPilot` activation review path
-- `formpilot-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `FormPilot` execution motion
-- `formpilot-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and PJ bundle for `FormPilot`
-- `formpilot-activation-execution-board.md`: accepted bounded execution state for the first `FormPilot` activation
-- `formpilot-fourth-pj-watch-board.md`: fourth active PJ watch snapshot for `FormPilot`
-- `four-project-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, `jouzou`, and `FormPilot` operation
-- `内部ツール改善候補台帳.md`: governance と台帳運用を補助する内部ツール候補
-- `台帳雛形補助準備台帳.md`: 最初の内部ツール対象である台帳雛形補助の準備台帳
-- `subdivision-work-board.md`: current assignments for active divisions and sections
-- `audit-routing-board.md`: audit finding triage and routing
-- `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
-- `record-normalization-board.md`: readable-record normalization progress
-- `officeholder-registry.md`: current lawful office occupancy
+- `approval-ledger.md`: 承認、例外承認、包括承認の記録
+- `key-loan-ledger.md`: 鍵の貸出、返却、失効の記録
+- `credential-request-ledger.md`: 資格情報の要求履歴
+- `開発修正台帳.md`: company-os 自身の軽量修正と受入状況
+- `日本語命名移行台帳.md`: 日本語ファイル名移行の進捗
+- `current-activity-board.md`: 現在の稼働状況と次の handoff
+- `parallel-operations-board.md`: 稼働中PJの一覧と状態
+- `company-os-improvement-board.md`: 会議で扱う改善議題の主台帳
+- `department-work-allocation-board.md`: 部署ごとの現在担当と成果物
+- `内部ツール改善候補台帳.md`: 内部ツール改善の優先候補
+- `台帳雛形補助準備台帳.md`: 台帳雛形補助の標準案準備
+- `subdivision-work-board.md`: 部門、課への割当
+- `audit-routing-board.md`: 監査指摘の振分け
+- `ai-bulletin-intake-board.md`: AI速報の分類と handoff
+- `officeholder-registry.md`: 現在の役職着席状況
+- `oem-*`, `shift-*`, `jouzou-*`, `formpilot-*`: 各PJの審査、承認、watch 用台帳

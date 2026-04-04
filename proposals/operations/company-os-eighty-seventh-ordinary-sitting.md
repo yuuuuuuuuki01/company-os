@@ -1,5 +1,5 @@
 ---
-id: company-os-eighty-fifth-ordinary-sitting
+id: company-os-eighty-seventh-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Eighty-Fifth Ordinary Sitting
+# Company OS Eighty-Seventh Ordinary Sitting
 
 ## Goal
 
-Open the first bounded tooling implementation motion after prioritization.
+Deliberate the ledger-template helper kickoff and choose the next implementation artifact.
 
 ## Agenda
 
@@ -25,15 +25,15 @@ Open the first bounded tooling implementation motion after prioritization.
 4. report: `ai-bulletin-intake-motion`
 5. report: `four-project-stability-review`
 6. report: `内部ツール改善優先化レビュー`
-7. discussion-1: `台帳雛形補助着手議案`
-8. confirm the eighty-sixth ordinary sitting agenda
+7. deliberation: `台帳雛形補助着手議案`
+8. confirm the eighty-eighth ordinary sitting agenda
 
 ## Definition of done
 
-- the first tooling implementation motion is narrowed enough for `discussion-2`
-- four-project stability remains visible
+- the ledger-template helper kickoff is decided, postponed, or amended
+- the next implementation artifact is named
 
 ## Result
 
-- `台帳雛形補助着手議案` reached `discussion-1`
-- the eighty-sixth ordinary sitting was opened
+- `台帳雛形補助着手議案` was adopted
+- the eighty-eighth ordinary sitting was opened

@@ -1,5 +1,5 @@
 // ============================================================
-// app.js — Company OS  ゲームUI メインロジック（v4 - Movement & News）
+// app.js — Company OS  ゲームUI メインロジック（v5 - Desk Sync）
 // ============================================================
 
 import {
@@ -10,7 +10,7 @@ import {
 // ======================================================
 // 最新の活動データ (status.jsonから取得)
 let TASK_STATS = { total: 0, done: 0, active: 0, pending: 0, items: [] };
-let LIVE_ACTIVITIES = {}; // Add this
+let LIVE_ACTIVITIES = {};
 let liveCommits = [];
 let lastHash = "";
 
@@ -19,7 +19,7 @@ let lastHash = "";
 // ======================================================
 function isWalkable(c, r) {
   const t = MAP_TILES[r]?.[c];
-  return t === TILE.HALLWAY || t === TILE.FLOOR; // 通路または部屋の床なら歩ける
+  return t === TILE.HALLWAY || t === TILE.FLOOR;
 }
 
 function findPath(start, end) {
@@ -32,9 +32,7 @@ function findPath(start, end) {
 
     if (x === end.x && y === end.y) return path;
 
-    const nexts = [
-      { x: x + 1, y: y }, { x: x - 1, y: y }, { x: x, y: y + 1 }, { x: x, y: y - 1 }
-    ];
+    const nexts = [{ x: x + 1, y: y }, { x: x - 1, y: y }, { x: x, y: y + 1 }, { x: x, y: y - 1 }];
 
     for (const n of nexts) {
       if (n.x >= 0 && n.x < MAP_COLS && n.y >= 0 && n.y < MAP_ROWS) {
@@ -52,11 +50,10 @@ function findPath(start, end) {
 // マップ描画
 // ======================================================
 const TILE_CLASS = {
-  [TILE.FLOOR]: "tile-grass", // CSS側で office floor に変更済み
-  [TILE.HALLWAY]: "tile-stone", // CSS側で hallway に変更済み
+  [TILE.FLOOR]: "tile-grass",
+  [TILE.HALLWAY]: "tile-stone",
   [TILE.VOID]: "tile-void",
 };
-const TILE_CONTENT = {};
 
 function renderMap() {
   const canvas = document.getElementById("mapCanvas");
@@ -67,12 +64,11 @@ function renderMap() {
 
   for (let r = 0; r < MAP_ROWS; r++) {
     for (let c = 0; c < MAP_COLS; c++) {
-      const tileType = MAP_TILES[r]?.[c] ?? TILE.GRASS;
+      const tileType = MAP_TILES[r]?.[c] ?? TILE.VOID;
       const el = document.createElement("div");
       el.className = "tile " + (TILE_CLASS[tileType] || "tile-grass");
       el.style.left = c * TILE_SIZE + "px";
       el.style.top = r * TILE_SIZE + "px";
-      if (TILE_CONTENT[tileType]) el.textContent = TILE_CONTENT[tileType];
       frag.appendChild(el);
     }
   }
@@ -95,36 +91,71 @@ function createCharacter(status, bubbleText, size = 64, forcedType = null) {
     wrap.appendChild(bubble);
   }
 
-  // キャラの種別（キツネ、ネコ、カエル）をランダム化、または固定
   const typeIndex = (forcedType !== null) ? forcedType : CHAR_TYPES[Math.floor(Math.random() * CHAR_TYPES.length)];
   const statusOffset = SPRITE_OFFSETS[status] ?? 0;
-
   const bgSize = size * 3;
+
   const img = document.createElement("div");
   img.className = `char-sprite char-anim-${status}`;
   img.style.width = size + "px";
   img.style.height = size + "px";
   img.style.backgroundImage = "url('./chars_v3.png')";
   img.style.backgroundSize = `${bgSize}px ${bgSize}px`;
-
-  // X軸: ステータス (0,1,2), Y軸: キャラ種別 (0,1,2)
   img.style.backgroundPosition = `-${statusOffset * size}px -${typeIndex * size}px`;
   img.style.imageRendering = "pixelated";
   img.style.backgroundRepeat = "no-repeat";
-  wrap.appendChild(img);
 
+  wrap.appendChild(img);
   return wrap;
 }
 
+// キャラクターの状態更新 (Sitting / Standing)
+function updateCharacterState(char, newState, pos = null) {
+  char.classList.remove("sitting");
+  if (newState === "sitting") {
+    char.classList.add("sitting");
+    if (pos) {
+      char.style.left = pos.x + "px";
+      char.style.top = (pos.y - 12) + "px";
+    }
+  } else if (newState === "standing") {
+    // デスクの横にずれる
+    if (pos) {
+      char.style.left = (pos.x + 16) + "px";
+      char.style.top = (pos.y + 4) + "px";
+    }
+  }
+  char.dataset.state = newState;
+  if (pos) char.dataset.seatPos = JSON.stringify(pos);
+}
+
 // 感情表現 (Reaction) の追加
-function triggerReaction(parentEl) {
+function triggerReaction(charEl) {
   const emojis = ["❤️", "💡", "🍵", "💤", "✨", "🔥", "🎵"];
   const emoji = emojis[Math.floor(Math.random() * emojis.length)];
   const bubble = document.createElement("div");
   bubble.className = "char-bubble reaction";
   bubble.textContent = emoji;
-  parentEl.appendChild(bubble);
+  charEl.appendChild(bubble);
   setTimeout(() => bubble.remove(), 2500);
+
+  // たまに着席・離席を切り替える (20% chance)
+  if (Math.random() > 0.8 && charEl.dataset.seatPos) {
+    const pos = JSON.parse(charEl.dataset.seatPos);
+    if (charEl.dataset.state === "sitting") {
+      updateCharacterState(charEl, "standing", pos);
+      charEl.querySelector(".char-bubble") ? charEl.querySelector(".char-bubble").textContent = "ふぅ、少し休憩…" : null;
+    } else {
+      updateCharacterState(charEl, "sitting", pos);
+      // 本来のセリフ（活動内容）に戻す
+      const building = charEl.closest(".building");
+      const b = BUILDINGS.find(room => room.id === building?.dataset.id);
+      if (b) {
+        const text = getBubbleText(b.status, b.id);
+        if (charEl.querySelector(".char-bubble")) charEl.querySelector(".char-bubble").textContent = text;
+      }
+    }
+  }
 }
 
 // ======================================================
@@ -141,19 +172,16 @@ async function spawnMessenger(startCol, startRow, endCol, endRow, message = "お
 
   const path = findPath({ x: startCol, y: startRow }, { x: endCol, y: endRow });
   if (!path) {
-    console.log("No path found for messenger");
     setTimeout(() => char.remove(), 1000);
     return;
   }
 
-  // タイルの中心にキャラを配置するためのオフセット (タイルサイズ/2 - キャラサイズ/2)
   const offset = (TILE_SIZE - 32) / 2;
-
   for (const step of path) {
-    char.style.transition = "all 0.45s linear"; // transition時間を少し長めに
+    char.style.transition = "all 0.45s linear";
     char.style.left = (step.x * TILE_SIZE + offset) + "px";
     char.style.top = (step.y * TILE_SIZE + offset) + "px";
-    await new Promise(r => setTimeout(r, 450)); // sync
+    await new Promise(r => setTimeout(r, 450));
   }
 
   char.querySelector(".char-bubble").textContent = "到着！";
@@ -161,18 +189,15 @@ async function spawnMessenger(startCol, startRow, endCol, endRow, message = "お
   setTimeout(() => char.remove(), 1500);
 }
 
-// 部屋から共用スペース（プラザ）へ歩いていく演出
 async function randomWalk() {
   const b = BUILDINGS[Math.floor(Math.random() * BUILDINGS.length)];
   const plaza = BUILDINGS.find(room => room.id === "security") || BUILDINGS[5];
-  // 部屋の中心からプラザの中心へ
   await spawnMessenger(b.col + 1, b.row + 1, plaza.col + 2, plaza.row + 1, "ちょっと休憩…");
 }
 
 // ======================================================
 // 建物・HUD 描画
 // ======================================================
-// 建物IDと台帳 Actor 名の紐付け (New!)
 const ACTOR_MAP = {
   "founder-office": "Founder Office",
   "assembly": "Assembly",
@@ -185,15 +210,23 @@ const ACTOR_MAP = {
   "ai-institute": "AI Academic Institute"
 };
 
+function getSeatPositions(b) {
+  const seats = [];
+  const padding = 12;
+  const spacing = 48;
+  const count = b.w >= 6 ? 3 : (b.w >= 4 ? 2 : 1);
+  for (let i = 0; i < count; i++) {
+    seats.push({ x: padding + i * spacing, y: 12 });
+  }
+  return seats;
+}
+
 function buildingStatusLabel(status) { return { active: "稼働", pending: "待機", ready: "準備OK" }[status] || status; }
 
 function getBubbleText(status, buildingId) {
-  // リアルタイム活動データがあればそちらを優先
   if (buildingId && ACTOR_MAP[buildingId]) {
     const actorName = ACTOR_MAP[buildingId];
-    if (LIVE_ACTIVITIES[actorName]) {
-      return LIVE_ACTIVITIES[actorName];
-    }
+    if (LIVE_ACTIVITIES[actorName]) return LIVE_ACTIVITIES[actorName];
   }
   return { active: "カタカタ", pending: "うーん…", ready: "準備OK!" }[status] || "";
 }
@@ -222,21 +255,26 @@ function renderBuildings() {
 
     const wall = document.createElement("div");
     wall.className = "building-wall";
-
-    // 室内装飾を追加
     wall.innerHTML += `<div class="office-decor decor-plant">🌿</div>`;
-    wall.innerHTML += `<div class="office-decor decor-desk">🪑</div>`;
-    if (b.w >= 4) wall.innerHTML += `<div class="office-decor decor-pc">💻</div>`;
 
     const floor = document.createElement("div");
     floor.className = "building-floor";
 
-    const charCount = b.w >= 4 ? 2 : 1;
-    for (let i = 0; i < charCount; i++) {
-      // 1人目のキャラに活動内容を表示
+    const seats = getSeatPositions(b);
+    seats.forEach((pos, i) => {
+      const seatEl = document.createElement("div");
+      seatEl.className = "office-seat";
+      seatEl.style.left = pos.x + "px";
+      seatEl.style.top = pos.y + "px";
+      seatEl.innerHTML = `<div class="office-chair">🪑</div><div class="office-desktop">💻</div>`;
+      floor.appendChild(seatEl);
+
       const bubbleText = (i === 0) ? getBubbleText(b.status, b.id) : "";
-      floor.appendChild(createCharacter(b.status, bubbleText, b.w >= 4 ? 48 : 40));
-    }
+      const char = createCharacter(b.status, bubbleText, 40);
+      updateCharacterState(char, "sitting", pos);
+      floor.appendChild(char);
+    });
+
     wall.appendChild(floor);
     el.appendChild(wall);
     el.addEventListener("click", () => openDialog(b));
@@ -271,14 +309,7 @@ function renderTaskProgress(liveTasks) {
       <span class="legend-wip">⚡ 進行 ${active}</span>
       <span class="legend-pending">⏳ 予定 ${total - done - active}</span>
     </div>
-    <div class="task-list-mini">
-      ${(items || []).map(item => `
-        <div class="task-mini-item task-${item.status}">
-          <span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span>
-          <span class="task-mini-label">${item.label}</span>
-        </div>
-      `).join("")}
-    </div>
+    <div class="task-list-mini">${(items || []).map(item => `<div class="task-mini-item task-${item.status}"><span class="task-mini-icon">${item.status === "done" ? "✅" : item.status === "active" ? "⚡" : "⏳"}</span><span class="task-mini-label">${item.label}</span></div>`).join("")}</div>
   `;
 }
 
@@ -297,16 +328,11 @@ async function syncWithLiveStatus() {
   const liveData = await fetchLiveStatus();
   if (!liveData || !liveData.commits || !liveData.commits.length) return;
 
-  // 活動データを保持 (New!)
-  if (liveData.activities) {
-    LIVE_ACTIVITIES = liveData.activities;
-  }
+  if (liveData.activities) LIVE_ACTIVITIES = liveData.activities;
 
   const latest = liveData.commits[0];
   if (lastHash && latest.hash !== lastHash) {
-    // 【新着あり！】号外ニュースを表示
     showNewsPopup(latest);
-    // メッセンジャーを派遣（FounderOfficeから該当部署へ）
     const targetB = BUILDINGS.find(b => b.id === latest.dept) || BUILDINGS[0];
     spawnMessenger(2, 2, targetB.col, targetB.row);
   }
@@ -314,7 +340,6 @@ async function syncWithLiveStatus() {
   liveCommits = liveData.commits;
 
   document.getElementById("liveText").textContent = "Live Syncing...";
-
   const deptLatestCommit = {};
   liveCommits.forEach(c => { if (!deptLatestCommit[c.dept]) deptLatestCommit[c.dept] = c; });
   const recentThreshold = new Date().getTime() - 24 * 60 * 60 * 1000;
@@ -324,9 +349,7 @@ async function syncWithLiveStatus() {
     if (c) {
       b.current = c.message;
       b.status = (new Date(c.date).getTime() > recentThreshold) ? "active" : "ready";
-    } else {
-      b.status = "pending";
-    }
+    } else { b.status = "pending"; }
   });
 
   renderBuildings();
@@ -372,23 +395,19 @@ function openDialog(b) {
     <div class="dialog-row"><span class="dialog-label">いま</span><span class="dialog-value">${b.current}</span></div>
     <div class="dialog-row"><span class="dialog-label">次へ</span><span class="dialog-value">↓ ${b.next}</span></div>
     <div class="dialog-row"><span class="dialog-label">停止権</span><span class="dialog-value">${b.stop}</span></div>
-    <div class="dialog-tags">${(b.tags || []).map(t => `<span class="dialog-tag">${t}</span>`).join("")}</div>
   `;
   overlay.classList.add("open");
 }
 
 function closeDialog() { document.getElementById("dialogOverlay").classList.remove("open"); }
-function updateMessage(text) { const el = document.getElementById("messageText"); el.textContent = text; el.style.animation = "none"; requestAnimationFrame(() => el.style.animation = ""); }
+function updateMessage(text) { const el = document.getElementById("messageText"); el.textContent = text; }
 
 function cycleActivityLog() {
   if (liveCommits.length > 0) {
     const c = liveCommits[Math.floor(Math.random() * liveCommits.length)];
     updateMessage(`[Log] ${c.dept}: ${c.message}`);
-  } else {
-    updateMessage(`[Now] Company OS が正常に稼働しています。`);
-  }
+  } else { updateMessage(`[Now] Company OS が正常に稼働しています。`); }
 
-  // 誰かにリアクションさせる (New!)
   const allChars = document.querySelectorAll(".building-floor .char-wrap");
   if (allChars.length > 0) {
     const target = allChars[Math.floor(Math.random() * allChars.length)];
@@ -399,12 +418,6 @@ function cycleActivityLog() {
 function bindEvents() {
   document.getElementById("dialogClose").addEventListener("click", closeDialog);
   document.getElementById("dialogOverlay").addEventListener("click", e => e.target === document.getElementById("dialogOverlay") && closeDialog());
-  document.querySelectorAll(".tab-btn").forEach(btn => btn.addEventListener("click", () => {
-    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-    document.querySelectorAll(".side-panel, .map-viewport").forEach(c => c.classList.remove("active"));
-    btn.classList.add("active");
-    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
-  }));
 }
 
 function init() {
@@ -413,6 +426,6 @@ function init() {
   setInterval(cycleActivityLog, 4000);
   syncWithLiveStatus();
   setInterval(syncWithLiveStatus, 15000);
-  setInterval(randomWalk, 12000); // 12秒ごとに誰かが歩き出す
+  setInterval(randomWalk, 12000);
 }
 init();

@@ -306,7 +306,7 @@ body {
   min-height: 40px;
 }
 
-/* Decor Icons */
+/* オフィス装飾・座席 */
 .office-decor {
   position: absolute;
   pointer-events: none;
@@ -321,17 +321,40 @@ body {
   filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.1));
 }
 
-.decor-desk {
-  bottom: 2px;
-  right: 6px;
-  font-size: 16px;
+/* 座席（デスクとセット） */
+.office-seat {
+  position: absolute;
+  width: 44px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
 }
 
-.decor-pc {
-  top: 10px;
-  left: 10px;
-  font-size: 10px;
-  opacity: 0.8;
+.office-chair {
+  font-size: 16px;
+  margin-bottom: -10px;
+  z-index: 1;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.1));
+}
+
+.office-desktop {
+  font-size: 16px;
+  z-index: 10;
+  margin-top: -4px;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.1));
+}
+
+/* 椅子に座っているキャラの微調整 */
+.char-wrap.sitting {
+  z-index: 5;
+  transform: translateY(6px);
+}
+
+.char-wrap.sitting .char-bubble {
+  bottom: 120%;
 }
 
 /* Room Colors */

@@ -47,6 +47,10 @@ This directory stores active traceability ledgers.
 - `shift-second-lane-watch-board.md`: second active external lane watch snapshot for `shift`
 - `dual-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem` and `shift` operation
 - `jouzou-readiness-screen-board.md`: bounded readiness screen for `jouzou` as a third candidate without opening a lane
+- `jouzou-onboarding-preparation-board.md`: bounded preparation work needed before `jouzou` activation review
+- `jouzou-seat-route-board.md`: proposed lawful seat route for the first `jouzou` unit-owner line
+- `jouzou-review-approval-route.md`: proposed reviewer and approval route for `jouzou` preparation work
+- `jouzou-activation-review-checklist.md`: minimal checklist for the first `jouzou` activation review path
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

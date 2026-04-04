@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "64b33f5",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 18:36:34 +0900",
+      "message": "Advance jouzou activation review path",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "3f99c37",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 09:33:27 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "254b032",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 18:33:20 +0900",
@@ -195,25 +209,11 @@
       "date": "2026-04-03 09:07:10 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "3b666f2",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 18:06:41 +0900",
-      "message": "Advance OEM preparation through thirteenth sitting",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "e2dedbc",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 08:46:03 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 21,
-    "done": 12,
+    "total": 22,
+    "done": 13,
     "active": 9,
     "pending": 0,
     "items": [
@@ -299,14 +299,18 @@
       },
       {
         "label": "jouzou-activation-review-motion",
+        "status": "done"
+      },
+      {
+        "label": "jouzou-activation-execution-threshold-motion",
         "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "forty-fifth ordinary sitting completed and forty-sixth sitting opened",
-    "Assembly Secretariat": "dual-active-lane watch and forty-sixth sitting packet",
+    "Assembly": "forty-eighth ordinary sitting completed and forty-ninth sitting opened",
+    "Assembly Secretariat": "dual-active-lane watch and forty-ninth sitting packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
@@ -314,15 +318,15 @@
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem` and `shift` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first and second active external lanes and hold the bounded `jouzou` activation-review path",
+    "Project Management Office": "monitor the first and second active external lanes and hold the bounded `jouzou` execution-threshold path",
     "Portfolio Strategy": "sequence the first and second active lanes and keep `jouzou` as the next bounded candidate",
     "Directorate": "watch the named `oem` and `shift` reviewer paths during dual-lane operation",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
-    "Jouzou Unit": "third candidate completed bounded preparation and waits for activation-review path only",
+    "Jouzou Unit": "third candidate completed bounded activation-review path and waits for execution threshold only",
     "Research Intelligence": "own first-pass AI bulletin classification rollout",
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 18:33:20 +0900"
+  "generated_at": "2026-04-04 18:36:34 +0900"
 }

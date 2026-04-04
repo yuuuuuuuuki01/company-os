@@ -55,6 +55,7 @@ This directory stores active traceability ledgers.
 - `jouzou-activation-execution-board.md`: accepted bounded execution state for the first `jouzou` activation
 - `jouzou-third-lane-watch-board.md`: third active external lane watch snapshot for `jouzou`
 - `triple-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, and `jouzou` operation
+- `formpilot-readiness-screen-board.md`: bounded readiness screen for `FormPilot` as a fourth candidate without opening a lane
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

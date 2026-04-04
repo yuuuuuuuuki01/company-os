@@ -16,8 +16,8 @@ updated_at: 2026-04-04
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch | assembly |
-| Assembly | governance | active | fifty-eighth ordinary sitting completed and fifty-ninth sitting opened | fifty-ninth ordinary sitting |
-| Assembly Secretariat | governance | active | triple-active-lane watch and fifty-ninth sitting packet | improvement board |
+| Assembly | governance | active | sixtieth ordinary sitting completed and sixty-first sitting opened | sixty-first ordinary sitting |
+| Assembly Secretariat | governance | active | triple-active-lane watch and sixty-first sitting packet | improvement board |
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
@@ -25,8 +25,8 @@ updated_at: 2026-04-04
 | Data and Knowledge | department | active | apply short ruling scope to ordinary operating decisions | assembly-secretariat |
 | Security, Risk, and Compliance | department | active | watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths | release-review-committee |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
-| Project Management Office | department | active | monitor the first, second, and third active external lanes and hold the first triple-lane stability review | assembly-secretariat |
-| Portfolio Strategy | department | active | sequence the three active lanes and keep any fourth candidate out of activation | founder-office / PMO |
+| Project Management Office | department | active | monitor the first, second, and third active external lanes and support the `FormPilot` readiness screen only | assembly-secretariat |
+| Portfolio Strategy | department | active | sequence the three active lanes and keep `FormPilot` as the next screening-only candidate | founder-office / PMO |
 | Directorate | department | active | watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation | assembly |
 | OEM Unit | unit | active | first external lane is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external lane is active under bounded planning and scheduling scope | reviewer / PMO |

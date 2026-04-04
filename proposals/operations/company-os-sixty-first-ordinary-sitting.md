@@ -1,7 +1,7 @@
 ---
-id: company-os-fifty-ninth-ordinary-sitting
+id: company-os-sixty-first-ordinary-sitting
 layer: proposal
-status: adopted
+status: motion-open
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Fifty-Ninth Ordinary Sitting
+# Company OS Sixty-First Ordinary Sitting
 
 ## Goal
 
-Run `discussion-2` for triple-lane stability while keeping `oem`, `shift`, and `jouzou` in watch mode.
+Keep `oem`, `shift`, and `jouzou` in watch mode and open `discussion-1` on the `FormPilot` readiness screen.
 
 ## Agenda
 
@@ -29,15 +29,11 @@ Run `discussion-2` for triple-lane stability while keeping `oem`, `shift`, and `
 8. report: `shift` second-lane watch
 9. report: `jouzou-activation-execution-motion`
 10. report: `jouzou` third-lane watch
-11. discussion-2: `triple-lane-stability-review`
-12. confirm the sixtieth ordinary sitting agenda
+11. report: `triple-lane-stability-review`
+12. discussion-1: `fourth-candidate-readiness-screen-motion`
+13. confirm the sixty-second ordinary sitting agenda
 
 ## Definition of done
 
-- triple-lane stability is narrowed enough for deliberation
+- the `FormPilot` readiness screen is narrowed enough for `discussion-2`
 - all active lanes remain visible
-
-## Result
-
-- `triple-lane-stability-review` reached `discussion-2`
-- the sixtieth ordinary sitting was opened

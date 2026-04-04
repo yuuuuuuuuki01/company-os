@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "bee6024",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 22:36:44 +0900",
+      "message": "Advance FormPilot toward execution bundle preparation",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "6b62392",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 13:18:25 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "2362995",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 22:18:13 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-04 08:53:57 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "21681bf",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 17:53:35 +0900",
-      "message": "Advance dual-lane stability review",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "2bf1107",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 08:48:53 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 28,
+    "total": 30,
     "done": 15,
-    "active": 13,
+    "active": 15,
     "pending": 0,
     "items": [
       {
@@ -328,38 +328,46 @@
       {
         "label": "formpilot-activation-review-motion",
         "status": "active"
+      },
+      {
+        "label": "formpilot-activation-execution-threshold-motion",
+        "status": "active"
+      },
+      {
+        "label": "formpilot-execution-bundle-preparation-motion",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "sixty-sixth ordinary sitting completed and sixty-seventh sitting opened",
-    "Assembly Secretariat": "triple-active-lane watch and sixty-seventh sitting packet",
+    "Assembly": "seventy-second ordinary sitting completed and seventy-third sitting opened",
+    "Assembly Secretariat": "3本の稼働中PJ監視と第73回議事パケット",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and FormPilot-adjacent preparation ideas",
+    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and FormPilot-adjacent execution-bundle ideas",
     "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "日本語命名移行": "new files default to Japanese names and legacy files move gradually",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path",
-    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next bounded candidate under activation review only",
-    "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation",
+    "Project Management Office": "monitor 3本の稼働中PJ and support the `FormPilot` execution-bundle path",
+    "Portfolio Strategy": "sequence the 3本の稼働中PJ and keep `FormPilot` bounded through execution-bundle preparation only",
+    "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-PJ operation",
     "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
-    "OEM Unit": "first external lane is active under bounded static-tool scope",
-    "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
-    "Jouzou Unit": "third external lane is active under bounded planning and quote workflow scope",
+    "OEM Unit": "first external PJ is active under bounded static-tool scope",
+    "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
+    "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
     "Research Intelligence": "own first-pass AI bulletin classification rollout",
     "Business Operations": "define operating cadence and service runbooks beyond pure project flow",
     "Sales and Revenue": "define revenue and qualification logic for `FormPilot` and adjacent opportunities",
     "Marketing and Growth": "define demand-generation and audience learning for candidate products",
     "Procurement and Vendor Management": "define vendor intake and purchasing controls for future expansion",
     "Information Systems": "define workplace systems and access lifecycle hygiene for the growing org",
-    "Product and Service Design": "design capability work outside the governance lane",
+    "Product and Service Design": "design capability work outside the governance line",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 22:18:13 +0900"
+  "generated_at": "2026-04-04 22:36:44 +0900"
 }

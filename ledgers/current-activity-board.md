@@ -16,8 +16,8 @@ updated_at: 2026-04-04
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch | assembly |
-| Assembly | governance | active | eighty-first ordinary sitting completed and eighty-second sitting opened | eighty-second ordinary sitting |
-| Assembly Secretariat | governance | active | watch four active PJ and prepare the eighty-second packet | improvement board |
+| Assembly | governance | active | eighty-fourth ordinary sitting completed and eighty-fifth sitting opened | eighty-fifth ordinary sitting |
+| Assembly Secretariat | governance | active | watch four active PJ and prepare the eighty-fifth packet | improvement board |
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
@@ -46,5 +46,5 @@ updated_at: 2026-04-04
 | Procurement and Vendor Management | department | active | define vendor intake and purchasing controls for future expansion | finance-treasury / legal-policy |
 | Information Systems | department | active | define workplace systems and access lifecycle hygiene for the growing org | internal-tools-enablement / security-risk-compliance |
 | Product and Service Design | department | active | design capability work outside the governance line | directorate / founder-office |
-| Internal Tools and Enablement | department | active | prioritize tooling backlog for governance and ledger ergonomics | engineering / security-risk-compliance |
+| Internal Tools and Enablement | department | active | prepare the ledger-template helper as the first tooling implementation focus | engineering / security-risk-compliance |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

@@ -72,6 +72,7 @@ This directory stores active traceability ledgers.
 - `formpilot-fourth-pj-watch-board.md`: fourth active PJ watch snapshot for `FormPilot`
 - `four-project-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, `jouzou`, and `FormPilot` operation
 - `内部ツール改善候補台帳.md`: governance と台帳運用を補助する内部ツール候補
+- `台帳雛形補助準備台帳.md`: 最初の内部ツール対象である台帳雛形補助の準備台帳
 - `subdivision-work-board.md`: current assignments for active divisions and sections
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff

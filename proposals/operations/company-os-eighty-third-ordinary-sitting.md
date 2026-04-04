@@ -1,5 +1,5 @@
 ---
-id: company-os-eighty-second-ordinary-sitting
+id: company-os-eighty-third-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Eighty-Second Ordinary Sitting
+# Company OS Eighty-Third Ordinary Sitting
 
 ## Goal
 
-Open the first tooling-backlog prioritization after four-project stability is established.
+Run `discussion-2` on the first tooling-backlog prioritization.
 
 ## Agenda
 
@@ -25,15 +25,15 @@ Open the first tooling-backlog prioritization after four-project stability is es
 4. report: `ai-bulletin-intake-motion`
 5. report: `formpilot-activation-execution-motion`
 6. report: `four-project-stability-review`
-7. discussion-1: `内部ツール改善優先化レビュー`
-8. confirm the eighty-third ordinary sitting agenda
+7. discussion-2: `内部ツール改善優先化レビュー`
+8. confirm the eighty-fourth ordinary sitting agenda
 
 ## Definition of done
 
-- the first tooling-backlog prioritization is narrowed enough for `discussion-2`
+- the first tooling-backlog prioritization is narrowed enough for deliberation
 - four-project stability remains visible
 
 ## Result
 
-- `内部ツール改善優先化レビュー` reached `discussion-1`
-- the eighty-third ordinary sitting was opened
+- `内部ツール改善優先化レビュー` reached `discussion-2`
+- the eighty-fourth ordinary sitting was opened

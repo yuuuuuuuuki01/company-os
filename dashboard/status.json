@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "094a6ac",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 21:48:04 +0900",
+      "message": "Advance FormPilot preparation to activation review",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "e53dda3",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 12:20:31 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "c754863",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 21:20:17 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 11:51:48 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "fec1e8b",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 20:51:33 +0900",
-      "message": "Adopt shift execution threshold",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "0b44bc4",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 11:22:16 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 27,
+    "total": 28,
     "done": 15,
-    "active": 12,
+    "active": 13,
     "pending": 0,
     "items": [
       {
@@ -324,24 +324,28 @@
       {
         "label": "formpilot-onboarding-preparation-motion",
         "status": "active"
+      },
+      {
+        "label": "formpilot-activation-review-motion",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "sixty-third ordinary sitting completed and sixty-fourth sitting opened",
-    "Assembly Secretariat": "triple-active-lane watch and sixty-fourth sitting packet",
+    "Assembly": "sixty-sixth ordinary sitting completed and sixty-seventh sitting opened",
+    "Assembly Secretariat": "triple-active-lane watch and sixty-seventh sitting packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and preparation ideas",
+    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and FormPilot-adjacent preparation ideas",
     "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` preparation-only path",
-    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next bounded candidate under preparation only",
+    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path",
+    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next bounded candidate under activation review only",
     "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
@@ -350,5 +354,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 21:20:17 +0900"
+  "generated_at": "2026-04-04 21:48:04 +0900"
 }

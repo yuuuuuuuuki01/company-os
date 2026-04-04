@@ -32,6 +32,9 @@ updated_at: 2026-04-04
 | Portfolio Strategy | department | active | sequence the three active PJ and keep `FormPilot` bounded through activation-execution review only | founder-office / PMO |
 | Directorate | department | active | watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-PJ operation and prepare `FormPilot` reviewer naming | assembly |
 | Product Management | department | active | define product requirement packets and scope boundaries for `FormPilot` and later candidates | portfolio-strategy / directorate |
+| Engineering | department | active | run company-os development fixes in parallel with the governance loop | quality-assurance / internal-tools-enablement |
+| Quality Assurance | department | active | define lightweight verification for development fixes | release-operations |
+| Release Operations | department | active | define release boundary for low/medium development fixes | release-review-committee |
 | OEM Unit | unit | active | first external PJ is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external PJ is active under bounded planning and scheduling scope | reviewer / PMO |
 | Jouzou Unit | unit | active | third external PJ is active under bounded planning and quote workflow scope | reviewer / PMO |
@@ -42,4 +45,5 @@ updated_at: 2026-04-04
 | Procurement and Vendor Management | department | active | define vendor intake and purchasing controls for future expansion | finance-treasury / legal-policy |
 | Information Systems | department | active | define workplace systems and access lifecycle hygiene for the growing org | internal-tools-enablement / security-risk-compliance |
 | Product and Service Design | department | active | design capability work outside the governance line | directorate / founder-office |
+| Internal Tools and Enablement | department | active | shape tooling backlog for governance and ledger ergonomics | engineering / security-risk-compliance |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

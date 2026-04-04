@@ -8,7 +8,7 @@ risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
 # Ledgers
@@ -18,7 +18,7 @@ This directory stores active traceability ledgers.
 - `approval-ledger.md`: standing and exceptional approvals
 - `key-loan-ledger.md`: key custody, checkout, return, revocation
 - `credential-request-ledger.md`: credential demand trace
-- `日本語命名移行台帳.md`: 日本語ファイル名への段階移行記録
+- `日本語命名移行台帳.md`: 日本語ファイル名移行の進捗台帳
 - `current-activity-board.md`: current work, status, and next handoff
 - `bootstrap-election-board.md`: vacancies, pending elections, and next seating actions
 - `parallel-operations-board.md`: multi-project lanes, owner status, and next handoff
@@ -65,6 +65,8 @@ This directory stores active traceability ledgers.
 - `formpilot-seat-route-board.md`: proposed lawful seat route for the first `FormPilot` unit-owner line
 - `formpilot-review-approval-route.md`: proposed reviewer and approval route for `FormPilot` preparation work
 - `formpilot-activation-review-checklist.md`: minimal checklist for the first `FormPilot` activation review path
+- `formpilot-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `FormPilot` execution motion
+- `formpilot-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and PJ bundle for `FormPilot`
 - `subdivision-work-board.md`: current assignments for active divisions and sections
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff

@@ -8,7 +8,7 @@ risk: low
 visibility: public
 motion_type: ruling
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ruling: ""
 reason: ""
 minority_view: ""
@@ -19,23 +19,23 @@ founder_veto_used: false
 
 # Operating Ruling Short Japanese Template
 
-## 短報
+## 裁定
 
 - 裁定:
 - 理由:
 - 少数意見:
 - 再審条件:
-- 実行責任:
+- 実行責任者:
 - 創業者拒否権:
 
-## 任意追記
+## 状態更新
 
-- 扱った議題
-- 実作業
-- 次の引継ぎ
+- 変わったこと
+- 維持すること
+- 補足
 
-## 使い方
+## 次
 
-- 1行は1文で短く書く
-- 先に結論を書く
-- 法的意味が変わる省略はしない
+1. 次回で扱うこと
+2. 監視すること
+3. 再審条件が出た時の扱い

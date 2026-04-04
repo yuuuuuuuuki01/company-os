@@ -1,5 +1,5 @@
 ---
-id: company-os-sixty-seventh-ordinary-sitting
+id: company-os-seventy-first-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Sixty-Seventh Ordinary Sitting
+# Company OS Seventy-First Ordinary Sitting
 
 ## Goal
 
-Keep `oem`, `shift`, and `jouzou` in watch mode and open `discussion-1` on the bounded `FormPilot` activation-review path.
+Keep `oem`, `shift`, and `jouzou` in watch mode and run `discussion-2` on the bounded `FormPilot` execution threshold.
 
 ## Agenda
 
@@ -29,16 +29,16 @@ Keep `oem`, `shift`, and `jouzou` in watch mode and open `discussion-1` on the b
 8. report: `shift` second active PJ watch
 9. report: `jouzou-activation-execution-motion`
 10. report: `jouzou` third active PJ watch
-11. report: `formpilot-onboarding-preparation-motion`
-12. discussion-1: `formpilot-activation-review-motion`
-13. confirm the sixty-eighth ordinary sitting agenda
+11. report: `formpilot-activation-review-motion`
+12. discussion-2: `formpilot-activation-execution-threshold-motion`
+13. confirm the seventy-second ordinary sitting agenda
 
 ## Definition of done
 
-- the bounded `FormPilot` activation-review path is narrowed enough for `discussion-2`
+- the bounded `FormPilot` execution threshold is narrowed enough for deliberation
 - all active PJ remain visible
 
 ## Result
 
-- `formpilot-activation-review-motion` reached `discussion-1`
-- the sixty-eighth ordinary sitting was opened
+- `formpilot-activation-execution-threshold-motion` reached `discussion-2`
+- the seventy-second ordinary sitting was opened

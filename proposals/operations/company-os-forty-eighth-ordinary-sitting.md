@@ -1,5 +1,5 @@
 ---
-id: company-os-forty-sixth-ordinary-sitting
+id: company-os-forty-eighth-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Forty-Sixth Ordinary Sitting
+# Company OS Forty-Eighth Ordinary Sitting
 
 ## Goal
 
-Keep `oem` and `shift` in watch mode and open `discussion-1` on the bounded `jouzou` activation-review path.
+Deliberate the bounded `jouzou` activation-review path and decide the next lawful step.
 
 ## Agenda
 
@@ -28,15 +28,15 @@ Keep `oem` and `shift` in watch mode and open `discussion-1` on the bounded `jou
 7. report: `shift-activation-execution-motion`
 8. report: `shift` second-lane watch
 9. report: `jouzou-onboarding-preparation-motion`
-10. discussion-1: `jouzou-activation-review-motion`
-11. confirm the forty-seventh ordinary sitting agenda
+10. deliberation: `jouzou-activation-review-motion`
+11. confirm the forty-ninth ordinary sitting agenda
 
 ## Definition of done
 
-- the bounded `jouzou` activation-review path is narrowed enough for `discussion-2`
-- both active lanes remain visible
+- the bounded `jouzou` activation-review path is decided, postponed, or amended
+- the next lawful step is named without opening a third active lane
 
 ## Result
 
-- `jouzou-activation-review-motion` reached `discussion-1`
-- the forty-seventh ordinary sitting was opened
+- the bounded `jouzou` activation-review path was adopted
+- the forty-ninth ordinary sitting was opened

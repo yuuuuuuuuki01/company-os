@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "21681bf",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 17:53:35 +0900",
+      "message": "Advance dual-lane stability review",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "2bf1107",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 08:48:53 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "974bf73",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 17:48:40 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 08:32:53 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "d9590e2",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 17:32:37 +0900",
-      "message": "fix: resolve unstaged changes and finalize compact room layout",
-      "dept": "engineering"
-    },
-    {
-      "hash": "718dcbe",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 17:32:36 +0900",
-      "message": "feat: redesign to compact room layout with improved character movement",
-      "dept": "engineering"
     }
   ],
   "tasks": {
-    "total": 17,
-    "done": 9,
-    "active": 8,
+    "total": 19,
+    "done": 10,
+    "active": 9,
     "pending": 0,
     "items": [
       {
@@ -284,13 +284,21 @@
       {
         "label": "shift-activation-execution-motion",
         "status": "active"
+      },
+      {
+        "label": "dual-lane-stability-review",
+        "status": "done"
+      },
+      {
+        "label": "third-candidate-readiness-screen-motion",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "thirty-sixth ordinary sitting completed and thirty-seventh sitting opened",
-    "Assembly Secretariat": "dual-active-lane watch and thirty-seventh sitting packet",
+    "Assembly": "thirty-ninth ordinary sitting completed and fortieth sitting opened",
+    "Assembly Secretariat": "dual-active-lane watch and fortieth sitting packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
@@ -298,14 +306,15 @@
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem` and `shift` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first and second active external lanes under bounded scope",
-    "Portfolio Strategy": "sequence the first and second active lanes and keep `jouzou` as later candidate",
+    "Project Management Office": "monitor the first and second active external lanes and hand off third-candidate screening inputs",
+    "Portfolio Strategy": "sequence the first and second active lanes and run the `jouzou` readiness screen",
     "Directorate": "watch the named `oem` and `shift` reviewer paths during dual-lane operation",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
+    "Jouzou Unit": "third candidate is in readiness screening only",
     "Research Intelligence": "own first-pass AI bulletin classification rollout",
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 17:48:40 +0900"
+  "generated_at": "2026-04-04 17:53:35 +0900"
 }

@@ -8,7 +8,7 @@ risk: low
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
 # Department Work Allocation Board
@@ -16,17 +16,17 @@ updated_at: 2026-04-03
 | Department | Current assignment | Deliverable | Status | Next handoff |
 | --- | --- | --- | --- | --- |
 | founder-office | keep sovereign alignment across the active improvement batch | founder decision lane and reserved-power check | active | assembly |
-| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | thirty-first sitting packet, meeting record updates, and dual-lane watch note | active | all active owners |
+| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | thirty-seventh sitting packet, meeting record updates, and dual-active-lane watch note | active | all active owners |
 | constitutional-affairs | review unit-state and activation changes for compatibility | constitutional review note on state, gate, and rollout compliance | active | constitutional review committee |
-| portfolio-strategy | monitor the first active external route and sequence the second candidate after threshold adoption | `oem` watch / `shift` sequencing note | active | founder-office / PMO |
-| project-management-office | watch the active `oem` lane and prepare the bounded `shift` execution bundle under the adopted threshold | first-lane watch note and second-lane execution package | active | assembly-secretariat / constitutional-review-committee |
-| directorate | review coherence of active governance artifacts and prepare named reviewer confirmation for a later `shift` execution bundle | quality note on dual-lane reviewer readiness | active | assembly |
+| portfolio-strategy | monitor the first and second active external routes and keep the third candidate sequenced | `oem` / `shift` sequencing note and later-candidate recommendation | active | founder-office / PMO |
+| project-management-office | watch the active `oem` and `shift` lanes under the adopted control posture | dual-lane watch note and next candidate threshold package | active | assembly-secretariat / constitutional-review-committee |
+| directorate | review coherence of active governance artifacts and named reviewer confirmation across `oem` and `shift` | quality note on dual-lane reviewer readiness | active | assembly |
 | product-service-design | maintain design capability work without owning UI implementation | next design critique lesson and brief pattern | active | directorate |
 | engineering | support executable operating artifacts and technical implementation constraints | implementation note for internal tooling and release-safe changes | ready | PMO / internal-tools-enablement |
 | quality-assurance | define how governance artifacts are checked before adoption | artifact review checklist for operational changes | ready | directorate / release-review-committee |
 | release-operations | keep release gating posture aligned with new work streams | release readiness note for high-risk changes | ready | release-review-committee |
-| security-risk-compliance | maintain key custody, watch the concrete `oem` active-lane approval path, and enforce the adopted `shift` execution threshold | risk note for lane watch and second-lane threshold posture | active | founder-office / release-review-committee |
-| people-talent | reflect wave-1 steward confirmations, watch the seated `oem` unit-owner line, and prepare the later `shift` seat step inside a bounded execution bundle | officeholder confirmation note and second-lane seat readiness note | active | personnel-committee |
+| security-risk-compliance | maintain key custody and watch the concrete `oem` and `shift` active-lane approval paths | risk note for dual-lane watch and exception handling | active | founder-office / release-review-committee |
+| people-talent | reflect wave-1 steward confirmations and watch the seated `oem` and `shift` unit-owner lines | officeholder confirmation note and dual-lane seat confidence note | active | personnel-committee |
 | finance-treasury | keep cost and resource visibility for growing operations | resource note for active lanes and tooling load | ready | founder-office |
 | legal-policy | check that external specialist and intake rules stay within policy boundaries | policy note on external collaboration and records handling | ready | founder-office / constitutional-affairs |
 | organizational-development-learning | own structural redesign and meeting-to-work learning loop | unit-state redesign package and learning note | active | constitutional-review-committee |

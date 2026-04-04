@@ -1,14 +1,14 @@
 ---
 id: company-os-thirty-first-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
 visibility: public
 motion_type: main-motion
-created_at: 2026-04-03
-updated_at: 2026-04-03
+created_at: 2026-04-04
+updated_at: 2026-04-04
 ---
 
 # Company OS Thirty-First Ordinary Sitting
@@ -34,3 +34,8 @@ Keep `oem` in watch mode and open `discussion-1` on the bounded `shift` executio
 
 - the bounded `shift` execution bundle is narrowed enough for `discussion-2`
 - `oem` watch remains visible
+
+## Result
+
+- `shift-execution-bundle-preparation-motion` reached `discussion-1`
+- the thirty-second ordinary sitting was opened

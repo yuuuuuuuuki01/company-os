@@ -8,7 +8,7 @@ risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
 # Officeholder Registry
@@ -40,3 +40,4 @@ updated_at: 2026-04-03
 | department-steward | data-knowledge | Data and Knowledge Steward (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
 | department-steward | organizational-development-learning | Organizational Development and Learning Representative (acting-confirmed) | 2026-04-03 | next confidence review | seated | ninth-ordinary-sitting-ruling |
 | unit-owner | oem | Founder Office nominee for the initial `oem` unit-owner line | 2026-04-03 | first ordinary sitting after `oem` activation review opens | seated | twenty-first-ordinary-sitting-ruling |
+| unit-owner | shift | Founder Office nominee for the initial `shift` unit-owner line | 2026-04-04 | first ordinary sitting after `shift` activation review opens | seated | thirty-sixth-ordinary-sitting-ruling |

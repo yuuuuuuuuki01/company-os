@@ -42,6 +42,9 @@ This directory stores active traceability ledgers.
 - `shift-review-approval-route.md`: proposed reviewer and approval route for `shift` preparation work
 - `shift-activation-review-checklist.md`: minimal checklist for the first `shift` activation review path
 - `shift-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `shift` execution motion
+- `shift-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `shift`
+- `shift-activation-execution-board.md`: accepted bounded execution state for the first `shift` activation
+- `shift-second-lane-watch-board.md`: second active external lane watch snapshot for `shift`
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

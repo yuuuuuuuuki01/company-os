@@ -8,7 +8,7 @@ risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
 # Unit Registry
@@ -26,7 +26,7 @@ Initial top-level units registered at bootstrap:
 | oem_release | `C:\agent\codex\oem_release` | registered | unseated | not-activated | medium | pending-election |
 | Poin-T | `C:\agent\codex\Poin-T` | registered | unseated | not-activated | high | pending-election |
 | saigai | `C:\agent\codex\saigai` | registered | unseated | not-activated | high | pending-election |
-| shift | `C:\agent\codex\shift` | registered | unseated | ready | medium | pending-election |
+| shift | `C:\agent\codex\shift` | registered | seated | active | medium | seated |
 | shift_backup | `C:\agent\codex\shift_backup` | registered | unseated | not-activated | low | pending-election |
 | timetree-export | `C:\agent\codex\timetree-export` | registered | unseated | not-activated | medium | pending-election |
 | tumugi | `C:\agent\codex\tumugi` | registered | unseated | not-activated | medium | pending-election |

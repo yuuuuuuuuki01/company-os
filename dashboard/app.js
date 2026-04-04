@@ -8,16 +8,11 @@ import {
 } from "./map.js";
 
 // ======================================================
-// タスク統計・ステート
-// ======================================================
-// タスク統計 (デフォルト/フォールバック)
-let TASK_STATS = {
-  total: 0, done: 0, active: 0, pending: 0,
-  items: []
-};
-
+// 最新の活動データ (status.jsonから取得)
+let TASK_STATS = { total: 0, done: 0, active: 0, pending: 0, items: [] };
+let LIVE_ACTIVITIES = {}; // Add this
 let liveCommits = [];
-let lastHash = ""; // 最新のコミットハッシュを保持
+let lastHash = "";
 
 // ======================================================
 // ユーティリティ: パスファインディング (BFS)
@@ -177,8 +172,31 @@ async function randomWalk() {
 // ======================================================
 // 建物・HUD 描画
 // ======================================================
+// 建物IDと台帳 Actor 名の紐付け (New!)
+const ACTOR_MAP = {
+  "founder-office": "Founder Office",
+  "assembly": "Assembly",
+  "audit": "Independent Audit Firm",
+  "engineering": "OEM Unit",
+  "pmo": "Project Management Office",
+  "security": "Security, Risk, and Compliance",
+  "people-talent": "People and Talent",
+  "data-knowledge": "Data and Knowledge",
+  "ai-institute": "AI Academic Institute"
+};
+
 function buildingStatusLabel(status) { return { active: "稼働", pending: "待機", ready: "準備OK" }[status] || status; }
-function getBubbleText(status) { return { active: "カタカタ", pending: "うーん…", ready: "準備OK!" }[status] || ""; }
+
+function getBubbleText(status, buildingId) {
+  // リアルタイム活動データがあればそちらを優先
+  if (buildingId && ACTOR_MAP[buildingId]) {
+    const actorName = ACTOR_MAP[buildingId];
+    if (LIVE_ACTIVITIES[actorName]) {
+      return LIVE_ACTIVITIES[actorName];
+    }
+  }
+  return { active: "カタカタ", pending: "うーん…", ready: "準備OK!" }[status] || "";
+}
 
 function renderBuildings() {
   document.querySelectorAll(".building").forEach(e => e.remove());
@@ -215,7 +233,9 @@ function renderBuildings() {
 
     const charCount = b.w >= 4 ? 2 : 1;
     for (let i = 0; i < charCount; i++) {
-      floor.appendChild(createCharacter(b.status, i === 0 ? getBubbleText(b.status) : "", b.w >= 4 ? 48 : 40));
+      // 1人目のキャラに活動内容を表示
+      const bubbleText = (i === 0) ? getBubbleText(b.status, b.id) : "";
+      floor.appendChild(createCharacter(b.status, bubbleText, b.w >= 4 ? 48 : 40));
     }
     wall.appendChild(floor);
     el.appendChild(wall);
@@ -276,6 +296,11 @@ async function fetchLiveStatus() {
 async function syncWithLiveStatus() {
   const liveData = await fetchLiveStatus();
   if (!liveData || !liveData.commits || !liveData.commits.length) return;
+
+  // 活動データを保持 (New!)
+  if (liveData.activities) {
+    LIVE_ACTIVITIES = liveData.activities;
+  }
 
   const latest = liveData.commits[0];
   if (lastHash && latest.hash !== lastHash) {

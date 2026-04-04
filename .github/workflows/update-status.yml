@@ -76,6 +76,26 @@ jobs:
                               
                               tasks.append({'label': item, 'status': status})
 
+          # --- ACTIVITY PARSING (Current Activity Board) ---
+          activities = {}
+          activity_path = 'ledgers/current-activity-board.md'
+          if os.path.exists(activity_path):
+              with open(activity_path, 'r', encoding='utf-8') as f:
+                  lines = f.readlines()
+                  table_started = False
+                  for line in lines:
+                      if '| Actor |' in line:
+                          table_started = True
+                          continue
+                      if table_started and '| --- |' in line:
+                          continue
+                      if table_started and line.strip().startswith('|'):
+                          parts = [p.strip() for p in line.split('|')]
+                          if len(parts) > 4:
+                              actor = parts[1]
+                              current_work = parts[4]
+                              activities[actor] = current_work
+
           # --- STATS CALC ---
           total = len(tasks)
           done = len([t for t in tasks if t['status'] == 'done'])
@@ -91,6 +111,7 @@ jobs:
                   'pending': pending,
                   'items': tasks
               },
+              'activities': activities,
               'generated_at': commits[0]['date'] if commits else ''
           }
           print(json.dumps(result, ensure_ascii=False, indent=2))

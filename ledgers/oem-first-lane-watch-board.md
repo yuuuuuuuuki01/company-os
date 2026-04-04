@@ -8,7 +8,7 @@ risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
 # OEM First Lane Watch Board
@@ -26,3 +26,4 @@ updated_at: 2026-04-03
 - `oem` remains the reference lane for the next external onboarding wave
 - second-lane review work may proceed, but second-lane execution still needs a separate threshold decision
 - the threshold decision is now separate and adopted; `oem` watch remains the gating reference for any later second-lane execution
+- the second external lane is now active and no immediate overload signal is recorded

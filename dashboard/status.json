@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "ed90125",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 20:25:33 +0900",
+      "message": "Add organizational scaling and subdivision records",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "f1f3b30",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 10:19:12 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "a22a788",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 19:18:59 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 11:01:26 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "1746a74",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 20:01:17 +0900",
-      "message": "fix: clean rewrite of style.css for better transparency and layout",
-      "dept": "engineering"
-    },
-    {
-      "hash": "2c59456",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 10:50:56 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -331,6 +331,7 @@
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
     "Exploration and Incubation": "run bounded project origination and maintain the incubation slate",
+    "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
@@ -345,5 +346,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 19:18:59 +0900"
+  "generated_at": "2026-04-04 20:25:33 +0900"
 }

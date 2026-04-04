@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "974bf73",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 17:48:40 +0900",
+      "message": "Record shift second-lane activation cycle",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "e249f06",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 08:45:33 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "ceb6528",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 17:45:24 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 17:32:36 +0900",
       "message": "feat: redesign to compact room layout with improved character movement",
       "dept": "engineering"
-    },
-    {
-      "hash": "346f242",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 08:12:05 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "0693935",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 17:11:41 +0900",
-      "message": "Advance sittings through ninth adoption",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -307,5 +307,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 17:45:24 +0900"
+  "generated_at": "2026-04-04 17:48:40 +0900"
 }

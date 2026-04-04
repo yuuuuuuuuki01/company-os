@@ -1,7 +1,7 @@
 ---
 id: jouzou-activation-execution-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: project-management-office
 unit: company-os
 risk: medium
@@ -36,3 +36,15 @@ Execute the first lawful seat and lane activation for `jouzou` after the executi
 - execution should stay bounded to the planning and quote workflow only
 - accepted artifact set: `ledgers/jouzou-execution-bundle-board.md`
 - send to `discussion-2` with no broader expansion
+
+## Discussion-2 note
+
+- execution should include seat acceptance, packet acceptance, reviewer naming, approval-path acceptance, rollback-note recording, and lane-state activation
+- `oem` and `shift` remain the first two active lanes and continue under watch
+- deliberation should decide whether the bounded third-lane activation goes live now
+
+## Deliberation result
+
+- adopted as the first bounded third external activation
+- `jouzou` moves to `seat_state: seated` and `lane_state: active`
+- supporting artifact: `ledgers/jouzou-activation-execution-board.md`

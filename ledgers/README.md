@@ -52,6 +52,9 @@ This directory stores active traceability ledgers.
 - `jouzou-review-approval-route.md`: proposed reviewer and approval route for `jouzou` preparation work
 - `jouzou-activation-review-checklist.md`: minimal checklist for the first `jouzou` activation review path
 - `jouzou-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `jouzou`
+- `jouzou-activation-execution-board.md`: accepted bounded execution state for the first `jouzou` activation
+- `jouzou-third-lane-watch-board.md`: third active external lane watch snapshot for `jouzou`
+- `triple-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, and `jouzou` operation
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

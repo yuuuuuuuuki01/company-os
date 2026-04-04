@@ -1,19 +1,38 @@
 ---
 id: unit-jouzou
 layer: registry
-status: bootstrap
-owner: pending-election
+status: active
+owner: portfolio-strategy
 unit: jouzou
 risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-04
 ---
 
-# Unit Record: jouzou
+# Unit: jouzou
 
-- Path: `C:\agent\codex\jouzou`
-- Default seat holder: pending election
-- Working description: planning and quote workflow workspace
-- Default release authority: release review when moving outside internal use
+## Purpose
+
+Handle the planning and quote workflow workspace as the third bounded external onboarding wave under Company OS control.
+
+## State model
+
+- registration_state: registered
+- seat_state: seated
+- lane_state: active
+- voting officer: initial `jouzou` unit-owner line
+
+## Immediate operating scope
+
+- bounded planning and quote workflow operation under the accepted start packet
+- third active external lane watch and issue intake
+- later confidence review and bounded expansion motions
+- the first mission packet is limited to the planning and quote workflow only
+- any broader expansion still needs a separate motion
+
+## Boundary
+
+- active scope is limited to the planning and quote workflow
+- no expansion beyond the planning and quote workflow without a later motion

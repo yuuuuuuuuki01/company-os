@@ -27,3 +27,4 @@ updated_at: 2026-04-04
 - second-lane review work may proceed, but second-lane execution still needs a separate threshold decision
 - the threshold decision is now separate and adopted; `oem` watch remains the gating reference for any later second-lane execution
 - the second external lane is now active and no immediate overload signal is recorded
+- the third external lane is now active and `oem` remains bounded under triple-lane watch

@@ -20,7 +20,7 @@ Initial top-level units registered at bootstrap:
 | company-os | `C:\agent\codex\company-os` | registered | seated | active | medium | seated |
 | credential-ledger | `C:\agent\codex\credential-ledger` | registered | unseated | not-activated | high | pending-election |
 | FormPilot | `C:\agent\codex\FormPilot` | registered | unseated | not-activated | medium | pending-election |
-| jouzou | `C:\agent\codex\jouzou` | registered | unseated | ready | medium | pending-election |
+| jouzou | `C:\agent\codex\jouzou` | registered | seated | active | medium | seated |
 | kanai-kagamibiraki-proposal | `C:\agent\codex\kanai-kagamibiraki-proposal` | registered | unseated | not-activated | low | pending-election |
 | oem | `C:\agent\codex\oem` | registered | seated | active | medium | seated |
 | oem_release | `C:\agent\codex\oem_release` | registered | unseated | not-activated | medium | pending-election |

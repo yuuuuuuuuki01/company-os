@@ -45,6 +45,7 @@ This directory stores active traceability ledgers.
 - `shift-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and lane bundle for `shift`
 - `shift-activation-execution-board.md`: accepted bounded execution state for the first `shift` activation
 - `shift-second-lane-watch-board.md`: second active external lane watch snapshot for `shift`
+- `dual-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem` and `shift` operation
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff
 - `record-normalization-board.md`: readable-record normalization progress

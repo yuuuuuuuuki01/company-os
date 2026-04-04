@@ -16,8 +16,8 @@ updated_at: 2026-04-04
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch | assembly |
-| Assembly | governance | active | thirty-sixth ordinary sitting completed and thirty-seventh sitting opened | thirty-seventh ordinary sitting |
-| Assembly Secretariat | governance | active | dual-active-lane watch and thirty-seventh sitting packet | improvement board |
+| Assembly | governance | active | thirty-ninth ordinary sitting completed and fortieth sitting opened | fortieth ordinary sitting |
+| Assembly Secretariat | governance | active | dual-active-lane watch and fortieth sitting packet | improvement board |
 | Department Allocation | governance | active | all departments carry explicit assignments and next handoffs | department-work-allocation-board |
 | Independent Audit Firm | audit | active | operate watch / route / urgent triage on new findings | founder-office / assembly |
 | AI Academic Institute | institution | active | weekly AI bulletin and source monitoring | formal petition if needed |
@@ -25,11 +25,12 @@ updated_at: 2026-04-04
 | Data and Knowledge | department | active | apply short ruling scope to ordinary operating decisions | assembly-secretariat |
 | Security, Risk, and Compliance | department | active | watch the concrete `oem` and `shift` low/medium risk paths | release-review-committee |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
-| Project Management Office | department | active | monitor the first and second active external lanes under bounded scope | assembly-secretariat |
-| Portfolio Strategy | department | active | sequence the first and second active lanes and keep `jouzou` as later candidate | founder-office / PMO |
+| Project Management Office | department | active | monitor the first and second active external lanes and hand off third-candidate screening inputs | assembly-secretariat |
+| Portfolio Strategy | department | active | sequence the first and second active lanes and run the `jouzou` readiness screen | founder-office / PMO |
 | Directorate | department | active | watch the named `oem` and `shift` reviewer paths during dual-lane operation | assembly |
 | OEM Unit | unit | active | first external lane is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external lane is active under bounded planning and scheduling scope | reviewer / PMO |
+| Jouzou Unit | unit | ready | third candidate is in readiness screening only | people-talent / PMO |
 | Research Intelligence | department | active | own first-pass AI bulletin classification rollout | assembly-secretariat |
 | Product and Service Design | department | active | design capability work outside the governance lane | directorate / founder-office |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

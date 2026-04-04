@@ -1,7 +1,7 @@
 ---
-id: company-os-thirty-seventh-ordinary-sitting
+id: company-os-fortieth-ordinary-sitting
 layer: proposal
-status: adopted
+status: motion-open
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Thirty-Seventh Ordinary Sitting
+# Company OS Fortieth Ordinary Sitting
 
 ## Goal
 
-Keep `oem` and `shift` in watch mode and assess dual external lane stability.
+Keep `oem` and `shift` in watch mode and open `discussion-1` on the `jouzou` readiness screen.
 
 ## Agenda
 
@@ -27,15 +27,11 @@ Keep `oem` and `shift` in watch mode and assess dual external lane stability.
 6. report: `oem` first-lane watch
 7. report: `shift-activation-execution-motion`
 8. report: `shift` second-lane watch
-9. discussion-1: dual-lane-stability-review
-10. confirm the thirty-eighth ordinary sitting agenda
+9. report: `dual-lane-stability-review`
+10. discussion-1: `third-candidate-readiness-screen-motion`
+11. confirm the forty-first ordinary sitting agenda
 
 ## Definition of done
 
-- dual active lane stability is observed at the first checkpoint
-- next structural pressure is narrowed enough for `discussion-2`
-
-## Result
-
-- `dual-lane-stability-review` reached `discussion-1`
-- the thirty-eighth ordinary sitting was opened
+- the `jouzou` readiness screen is narrowed enough for `discussion-2`
+- both active lanes remain visible

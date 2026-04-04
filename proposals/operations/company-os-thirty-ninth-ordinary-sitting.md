@@ -1,5 +1,5 @@
 ---
-id: company-os-thirty-seventh-ordinary-sitting
+id: company-os-thirty-ninth-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Thirty-Seventh Ordinary Sitting
+# Company OS Thirty-Ninth Ordinary Sitting
 
 ## Goal
 
-Keep `oem` and `shift` in watch mode and assess dual external lane stability.
+Deliberate dual-lane stability and name the next bounded structural pressure.
 
 ## Agenda
 
@@ -27,15 +27,15 @@ Keep `oem` and `shift` in watch mode and assess dual external lane stability.
 6. report: `oem` first-lane watch
 7. report: `shift-activation-execution-motion`
 8. report: `shift` second-lane watch
-9. discussion-1: dual-lane-stability-review
-10. confirm the thirty-eighth ordinary sitting agenda
+9. deliberation: `dual-lane-stability-review`
+10. confirm the fortieth ordinary sitting agenda
 
 ## Definition of done
 
-- dual active lane stability is observed at the first checkpoint
-- next structural pressure is narrowed enough for `discussion-2`
+- dual-lane stability is decided, postponed, or amended
+- the next structural pressure is named without opening a third lane
 
 ## Result
 
-- `dual-lane-stability-review` reached `discussion-1`
-- the thirty-eighth ordinary sitting was opened
+- the first dual-lane stability checkpoint was adopted
+- the fortieth ordinary sitting was opened

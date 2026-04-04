@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "2362995",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 22:18:13 +0900",
+      "message": "Adopt Japanese naming policy for files",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "9c7a09b",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 13:13:26 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "01b9506",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 22:13:12 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-04 08:48:53 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "974bf73",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 17:48:40 +0900",
-      "message": "Record shift second-lane activation cycle",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "e249f06",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 08:45:33 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -342,6 +342,7 @@
     "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
+    "日本語命名移行": "new files default to Japanese names and legacy files move gradually",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
     "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path",
@@ -360,5 +361,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 22:13:12 +0900"
+  "generated_at": "2026-04-04 22:18:13 +0900"
 }

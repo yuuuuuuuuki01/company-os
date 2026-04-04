@@ -61,6 +61,9 @@ This directory stores active traceability ledgers.
 - `triple-lane-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, and `jouzou` operation
 - `formpilot-readiness-screen-board.md`: bounded readiness screen for `FormPilot` as a fourth candidate without opening a lane
 - `formpilot-onboarding-preparation-board.md`: bounded preparation work needed before `FormPilot` activation review
+- `formpilot-seat-route-board.md`: proposed lawful seat route for the first `FormPilot` unit-owner line
+- `formpilot-review-approval-route.md`: proposed reviewer and approval route for `FormPilot` preparation work
+- `formpilot-activation-review-checklist.md`: minimal checklist for the first `FormPilot` activation review path
 - `subdivision-work-board.md`: current assignments for active divisions and sections
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff

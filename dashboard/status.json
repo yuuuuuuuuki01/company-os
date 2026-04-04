@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "7549a06",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 23:01:20 +0900",
+      "message": "Activate FormPilot and open four-project stability review",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "378f987",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 13:56:01 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "0d9244f",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 22:55:45 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-04 09:33:27 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "254b032",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 18:33:20 +0900",
-      "message": "feat: implement desk sitting and standing interactions for office workers",
-      "dept": "engineering"
-    },
-    {
-      "hash": "f7f1184",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 09:27:35 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 31,
-    "done": 15,
-    "active": 16,
+    "total": 32,
+    "done": 21,
+    "active": 11,
     "pending": 0,
     "items": [
       {
@@ -315,51 +315,55 @@
       },
       {
         "label": "triple-lane-stability-review",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "fourth-candidate-readiness-screen-motion",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "formpilot-onboarding-preparation-motion",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "formpilot-activation-review-motion",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "formpilot-activation-execution-threshold-motion",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "formpilot-execution-bundle-preparation-motion",
-        "status": "active"
+        "status": "done"
       },
       {
         "label": "formpilot-activation-execution-motion",
+        "status": "active"
+      },
+      {
+        "label": "four-project-stability-review",
         "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "seventy-fifth ordinary sitting completed and seventy-sixth sitting opened",
-    "Assembly Secretariat": "watch three active PJ and prepare the seventy-sixth packet",
+    "Assembly": "seventy-eighth ordinary sitting completed and seventy-ninth sitting opened",
+    "Assembly Secretariat": "watch four active PJ and prepare the seventy-ninth packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and FormPilot-adjacent activation ideas",
+    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate under four-PJ operation",
     "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
-    "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the `FormPilot` seating review",
+    "People and Talent": "watch the seated `oem`, `shift`, `jouzou`, and `FormPilot` unit-owner lines",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Japanese Naming Migration": "new files default to Japanese names and legacy files move gradually",
-    "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths and prepare `FormPilot` activation controls",
+    "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor three active PJ and support the `FormPilot` activation-execution path",
-    "Portfolio Strategy": "sequence the three active PJ and keep `FormPilot` bounded through activation-execution review only",
-    "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-PJ operation and prepare `FormPilot` reviewer naming",
+    "Project Management Office": "monitor four active PJ and support the first four-project stability review",
+    "Portfolio Strategy": "sequence the four active PJ and keep any fifth candidate out of activation",
+    "Directorate": "watch the named `oem`, `shift`, `jouzou`, and `FormPilot` reviewer paths during four-PJ operation",
     "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
     "Engineering": "run company-os development fixes in parallel with the governance loop",
     "Quality Assurance": "define lightweight verification for development fixes",
@@ -367,6 +371,7 @@
     "OEM Unit": "first external PJ is active under bounded static-tool scope",
     "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
     "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
+    "FormPilot Unit": "fourth external PJ is active under bounded outbound-sales automation MVP scope",
     "Research Intelligence": "own first-pass AI bulletin classification rollout",
     "Business Operations": "define operating cadence and service runbooks beyond pure project flow",
     "Sales and Revenue": "define revenue and qualification logic for `FormPilot` and adjacent opportunities",
@@ -377,5 +382,5 @@
     "Internal Tools and Enablement": "shape tooling backlog for governance and ledger ergonomics",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 22:55:45 +0900"
+  "generated_at": "2026-04-04 23:01:20 +0900"
 }

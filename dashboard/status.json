@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "0d9244f",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 22:55:45 +0900",
+      "message": "Add parallel development fix operating loop",
+      "dept": "engineering"
+    },
+    {
+      "hash": "6995ba7",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 13:44:11 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "a7af00e",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 22:43:55 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-04 09:27:35 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "ebc41e9",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 18:27:21 +0900",
-      "message": "Adopt jouzou preparation bundle",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "b0b6eda",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 09:19:25 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -361,6 +361,9 @@
     "Portfolio Strategy": "sequence the three active PJ and keep `FormPilot` bounded through activation-execution review only",
     "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-PJ operation and prepare `FormPilot` reviewer naming",
     "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
+    "Engineering": "run company-os development fixes in parallel with the governance loop",
+    "Quality Assurance": "define lightweight verification for development fixes",
+    "Release Operations": "define release boundary for low/medium development fixes",
     "OEM Unit": "first external PJ is active under bounded static-tool scope",
     "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
     "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
@@ -371,7 +374,8 @@
     "Procurement and Vendor Management": "define vendor intake and purchasing controls for future expansion",
     "Information Systems": "define workplace systems and access lifecycle hygiene for the growing org",
     "Product and Service Design": "design capability work outside the governance line",
+    "Internal Tools and Enablement": "shape tooling backlog for governance and ledger ergonomics",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 22:43:55 +0900"
+  "generated_at": "2026-04-04 22:55:45 +0900"
 }

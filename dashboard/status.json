@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "a22a788",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 19:18:59 +0900",
+      "message": "Add exploration and incubation department",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "9ab7e86",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 10:04:51 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "857de30",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 19:04:35 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 10:50:56 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "9db114a",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 19:50:48 +0900",
-      "message": "fix: transparency levels and character movement smoothing",
-      "dept": "engineering"
-    },
-    {
-      "hash": "0df7660",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 10:45:37 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -330,6 +330,7 @@
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
+    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
@@ -344,5 +345,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 19:04:35 +0900"
+  "generated_at": "2026-04-04 19:18:59 +0900"
 }

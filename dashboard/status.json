@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "01b9506",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 22:13:12 +0900",
+      "message": "Add standard business departments",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "7cad8d7",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 12:48:17 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "094a6ac",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 21:48:04 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-04 08:45:33 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "ceb6528",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 17:45:24 +0900",
-      "message": "feat: show current work from activity-board in character bubbles",
-      "dept": "engineering"
-    },
-    {
-      "hash": "31fb66c",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 11:51:48 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -347,12 +347,18 @@
     "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path",
     "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next bounded candidate under activation review only",
     "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation",
+    "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
     "Jouzou Unit": "third external lane is active under bounded planning and quote workflow scope",
     "Research Intelligence": "own first-pass AI bulletin classification rollout",
+    "Business Operations": "define operating cadence and service runbooks beyond pure project flow",
+    "Sales and Revenue": "define revenue and qualification logic for `FormPilot` and adjacent opportunities",
+    "Marketing and Growth": "define demand-generation and audience learning for candidate products",
+    "Procurement and Vendor Management": "define vendor intake and purchasing controls for future expansion",
+    "Information Systems": "define workplace systems and access lifecycle hygiene for the growing org",
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 21:48:04 +0900"
+  "generated_at": "2026-04-04 22:13:12 +0900"
 }

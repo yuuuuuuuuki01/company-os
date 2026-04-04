@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "af05000",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 23:05:09 +0900",
+      "message": "Adopt four-project stability and open tooling prioritization",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "ea466de",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 14:01:33 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "7549a06",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 23:01:20 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-04 09:36:54 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "64b33f5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 18:36:34 +0900",
-      "message": "Advance jouzou activation review path",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "3f99c37",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 09:33:27 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 32,
+    "total": 33,
     "done": 21,
-    "active": 11,
+    "active": 12,
     "pending": 0,
     "items": [
       {
@@ -344,13 +344,17 @@
       {
         "label": "four-project-stability-review",
         "status": "active"
+      },
+      {
+        "label": "internal-tools-prioritization-review",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "seventy-eighth ordinary sitting completed and seventy-ninth sitting opened",
-    "Assembly Secretariat": "watch four active PJ and prepare the seventy-ninth packet",
+    "Assembly": "eighty-first ordinary sitting completed and eighty-second sitting opened",
+    "Assembly Secretariat": "watch four active PJ and prepare the eighty-second packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
@@ -361,7 +365,7 @@
     "Japanese Naming Migration": "new files default to Japanese names and legacy files move gradually",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor four active PJ and support the first four-project stability review",
+    "Project Management Office": "monitor four active PJ and support tooling prioritization after stability adoption",
     "Portfolio Strategy": "sequence the four active PJ and keep any fifth candidate out of activation",
     "Directorate": "watch the named `oem`, `shift`, `jouzou`, and `FormPilot` reviewer paths during four-PJ operation",
     "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
@@ -379,8 +383,8 @@
     "Procurement and Vendor Management": "define vendor intake and purchasing controls for future expansion",
     "Information Systems": "define workplace systems and access lifecycle hygiene for the growing org",
     "Product and Service Design": "design capability work outside the governance line",
-    "Internal Tools and Enablement": "shape tooling backlog for governance and ledger ergonomics",
+    "Internal Tools and Enablement": "prioritize tooling backlog for governance and ledger ergonomics",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 23:01:20 +0900"
+  "generated_at": "2026-04-04 23:05:09 +0900"
 }

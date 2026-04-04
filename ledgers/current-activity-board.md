@@ -25,6 +25,7 @@ updated_at: 2026-04-04
 | Organizational Scaling | governance | active | maintain department / division / section scaling and live delegation records | organizational-development-learning / data-knowledge |
 | People and Talent | department | active | watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review | personnel-committee / PMO |
 | Data and Knowledge | department | active | apply short ruling scope to ordinary operating decisions | assembly-secretariat |
+| 日本語命名移行 | governance | active | new files default to Japanese names and legacy files move gradually | data-knowledge / assembly-secretariat |
 | Security, Risk, and Compliance | department | active | watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths | release-review-committee |
 | Organizational Development and Learning | department | active | monitor structural debt after unit-state separation closure | constitutional-review-committee |
 | Project Management Office | department | active | monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path | assembly-secretariat |

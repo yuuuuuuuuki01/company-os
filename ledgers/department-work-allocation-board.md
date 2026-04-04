@@ -41,6 +41,6 @@ updated_at: 2026-04-04
 | communications-brand | keep outward-facing descriptions consistent as the company OS evolves | wording pass for public charters and summaries | ready | directorate |
 | business-development-partnerships | map how outside collaborators are framed without overcommitting authority | collaboration framing note for external specialist lanes | ready | legal-policy / founder-office |
 | customer-success-support | surface trust and usability concerns from operating friction | service-friction note for future operating improvements | ready | PMO / directorate |
-| data-knowledge | apply the short Japanese ruling pattern to ordinary operating decisions | short ruling rule in force and live ledger upkeep | active | assembly-secretariat |
+| data-knowledge | apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration | short ruling rule, live ledger upkeep, and naming migration board | active | assembly-secretariat |
 | internal-tools-enablement | support tooling and automation for boards, ledgers, and recurring loops | tooling backlog for governance automation | active | engineering / security-risk-compliance |
 | information-systems | define workplace systems and access hygiene for the expanding organization | workplace systems note and access lifecycle checklist | active | internal-tools-enablement / security-risk-compliance |

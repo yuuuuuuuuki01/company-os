@@ -40,3 +40,8 @@ Departments are the durable capability structure of the Company OS. They preserv
 ## Authority boundary
 
 Departments may act on routine matters inside their delegated domain, but they cannot amend higher-order rules or exercise founder-reserved powers.
+
+## Project origination boundary
+
+- A department may sponsor bounded project origination, hypothesis design, and incubation briefs.
+- No department may directly create an active lane, allocate founder-reserved resources, or claim a new business commitment without the lawful unit onboarding path.

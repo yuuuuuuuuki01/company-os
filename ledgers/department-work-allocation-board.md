@@ -31,6 +31,7 @@ updated_at: 2026-04-04
 | legal-policy | check that external specialist and intake rules stay within policy boundaries | policy note on external collaboration and records handling | ready | founder-office / constitutional-affairs |
 | organizational-development-learning | own structural redesign and meeting-to-work learning loop | unit-state redesign package and learning note | active | constitutional-review-committee |
 | research-intelligence | own first-pass AI bulletin classification and intake upkeep | intake classification note and board upkeep | active | assembly-secretariat |
+| exploration-incubation | run the bounded project origination loop and produce incubation-ready briefs without opening lanes directly | project origination board and first hypothesis slate | active | portfolio-strategy / PMO |
 | communications-brand | keep outward-facing descriptions consistent as the company OS evolves | wording pass for public charters and summaries | ready | directorate |
 | business-development-partnerships | map how outside collaborators are framed without overcommitting authority | collaboration framing note for external specialist lanes | ready | legal-policy / founder-office |
 | customer-success-support | surface trust and usability concerns from operating friction | service-friction note for future operating improvements | ready | PMO / directorate |

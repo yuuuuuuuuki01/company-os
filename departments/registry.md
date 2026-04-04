@@ -31,6 +31,7 @@ updated_at: 2026-04-03
 | legal-policy | Department Steward | legal posture and policy interpretation | policy stop |
 | organizational-development-learning | Organizational Development and Learning Representative (acting-confirmed) | org design, institutional research, redesign cadence, and reusable learning systems | redesign hold |
 | research-intelligence | Department Steward | discovery, analysis, evidence gathering | evidence hold |
+| exploration-incubation | Department Steward | new project origination, hypothesis design, incubation briefs | premature-scale hold |
 | communications-brand | Department Steward | messaging, publication voice, brand | publication stop |
 | business-development-partnerships | Department Steward | partner relations and external deal shaping | commitment hold |
 | customer-success-support | Department Steward | user support, issue intake, trust signals | service-risk stop |

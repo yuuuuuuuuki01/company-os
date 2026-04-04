@@ -28,6 +28,7 @@ Produce research, analysis, evidence packets, and comparative insight to support
 - define evidence standards
 - publish research briefs
 - recommend inquiry paths
+- hand off validated opportunity signals to Exploration and Incubation
 
 ## Stop power
 

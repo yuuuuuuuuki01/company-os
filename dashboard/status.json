@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "254b032",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 18:33:20 +0900",
+      "message": "feat: implement desk sitting and standing interactions for office workers",
+      "dept": "engineering"
+    },
+    {
+      "hash": "f7f1184",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 09:27:35 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "ebc41e9",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 18:27:21 +0900",
@@ -195,20 +209,6 @@
       "date": "2026-04-03 08:46:03 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "27075fa",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 17:45:38 +0900",
-      "message": "Adopt onboarding priority and open oem prep",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "26bd90d",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 08:42:26 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
@@ -324,5 +324,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 18:27:21 +0900"
+  "generated_at": "2026-04-04 18:33:20 +0900"
 }

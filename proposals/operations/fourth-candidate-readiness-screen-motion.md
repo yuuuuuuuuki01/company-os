@@ -1,7 +1,7 @@
 ---
 id: fourth-candidate-readiness-screen-motion
 layer: proposal
-status: motion-open
+status: adopted
 owner: portfolio-strategy
 unit: company-os
 risk: medium
@@ -33,3 +33,15 @@ Run a bounded readiness screen for `FormPilot` as the fourth candidate without o
 - this motion should screen only and should not open a fourth lane
 - accepted artifact set: `units/registry.md`, `ledgers/parallel-operations-board.md`, and `C:/agent/codex/FormPilot/README.md`
 - discussion should stay limited to the minimum readiness screen
+
+## Discussion-2 note
+
+- the screen should decide only whether `FormPilot` merits a preparation-only path
+- `FormPilot` remains out of activation and does not receive a lane in this motion
+- deliberation should decide whether the next bounded path is preparation only
+
+## Deliberation result
+
+- adopted as the fourth-candidate readiness screen
+- `FormPilot` is limited to a preparation-only path
+- no fourth lane opens in this motion

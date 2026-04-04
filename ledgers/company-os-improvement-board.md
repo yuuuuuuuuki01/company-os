@@ -17,27 +17,28 @@ updated_at: 2026-04-04
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | urgent | record-normalization-motion | operating | report | closed | data-knowledge | reported-complete | maintenance under reporting-standard-rule | closed in seventh ordinary sitting |
 | urgent | unit-state-separation-motion | structural | report | closed | organizational-development-learning | reported-complete | normal amendment path if needed | closed in seventh ordinary sitting |
-| next | unit-activation-gate-motion | structural | report | watch | project-management-office | rollout-active | triple external lane watch | sixty-first ordinary sitting |
-| next | committee-execution-bridge-motion | operating | report | watch | assembly-secretariat | rollout-active | committee-to-execution handoff watch | sixty-first ordinary sitting |
-| next | audit-fast-path-motion | operating | report | watch | independent-audit-firm | rollout-active | founder-office / assembly | sixty-first ordinary sitting |
-| next | ai-bulletin-intake-motion | operating | report | watch | research-intelligence | rollout-active | assembly-secretariat | sixty-first ordinary sitting |
-| next | department-steward-seating-wave-motion | staffing | report | watch | people-talent | adopted | next confidence review | sixty-first ordinary sitting |
-| next | decision-template-normalization-motion | operating | report | watch | data-knowledge | adopted | short ruling watch under triple-lane load | sixty-first ordinary sitting |
+| next | unit-activation-gate-motion | structural | report | watch | project-management-office | rollout-active | triple external lane watch | sixty-fourth ordinary sitting |
+| next | committee-execution-bridge-motion | operating | report | watch | assembly-secretariat | rollout-active | committee-to-execution handoff watch | sixty-fourth ordinary sitting |
+| next | audit-fast-path-motion | operating | report | watch | independent-audit-firm | rollout-active | founder-office / assembly | sixty-fourth ordinary sitting |
+| next | ai-bulletin-intake-motion | operating | report | watch | research-intelligence | rollout-active | assembly-secretariat | sixty-fourth ordinary sitting |
+| next | department-steward-seating-wave-motion | staffing | report | watch | people-talent | adopted | next confidence review | sixty-fourth ordinary sitting |
+| next | decision-template-normalization-motion | operating | report | watch | data-knowledge | adopted | short ruling watch under triple-lane load | sixty-fourth ordinary sitting |
 | next | unit-onboarding-priority-motion | structural | report | closed | portfolio-strategy | completed | oem route active | completed in twenty-first ordinary sitting |
 | next | oem-onboarding-preparation-motion | structural | report | closed | project-management-office | completed | oem route active | completed in twenty-first ordinary sitting |
 | next | oem-activation-review-motion | structural | report | closed | project-management-office | completed | oem route active | completed in twenty-first ordinary sitting |
-| next | oem-activation-execution-motion | structural | report | watch | project-management-office | adopted | first external lane watch | sixty-first ordinary sitting |
+| next | oem-activation-execution-motion | structural | report | watch | project-management-office | adopted | first external lane watch | sixty-fourth ordinary sitting |
 | next | shift-onboarding-preparation-motion | structural | report | closed | project-management-office | completed | shift activation review path | completed in twenty-fourth ordinary sitting |
 | next | shift-activation-review-motion | structural | report | closed | project-management-office | completed | later execution motion only after threshold review | completed in twenty-seventh ordinary sitting |
 | next | shift-activation-execution-threshold-motion | structural | report | closed | project-management-office | completed | execution bundle preparation only after threshold adoption | completed in thirtieth ordinary sitting |
 | next | shift-execution-bundle-preparation-motion | structural | report | closed | project-management-office | completed | shift activation execution motion | completed in thirty-third ordinary sitting |
-| next | shift-activation-execution-motion | structural | report | watch | project-management-office | adopted | second external lane watch | sixty-first ordinary sitting |
+| next | shift-activation-execution-motion | structural | report | watch | project-management-office | adopted | second external lane watch | sixty-fourth ordinary sitting |
 | next | dual-lane-stability-review | structural | report | closed | project-management-office | completed | third candidate readiness screen | completed in thirty-ninth ordinary sitting |
 | next | third-candidate-readiness-screen-motion | structural | report | closed | portfolio-strategy | completed | jouzou preparation-only path | completed in forty-second ordinary sitting |
 | next | jouzou-onboarding-preparation-motion | structural | report | closed | project-management-office | completed | jouzou activation review path | completed in forty-fifth ordinary sitting |
 | next | jouzou-activation-review-motion | structural | report | closed | project-management-office | completed | later execution motion only after threshold review | completed in forty-eighth ordinary sitting |
 | next | jouzou-activation-execution-threshold-motion | structural | report | closed | project-management-office | completed | execution bundle preparation only after threshold adoption | completed in fifty-first ordinary sitting |
 | next | jouzou-execution-bundle-preparation-motion | structural | report | closed | project-management-office | completed | jouzou activation execution motion | completed in fifty-fourth ordinary sitting |
-| next | jouzou-activation-execution-motion | structural | report | watch | project-management-office | adopted | third external lane watch | sixty-first ordinary sitting |
-| next | triple-lane-stability-review | structural | report | watch | project-management-office | adopted | fourth candidate readiness screen | sixty-first ordinary sitting |
-| next | fourth-candidate-readiness-screen-motion | structural | discussion | discussion-1 | portfolio-strategy | active | project-management-office / founder-office | sixty-first ordinary sitting |
+| next | jouzou-activation-execution-motion | structural | report | watch | project-management-office | adopted | third external lane watch | sixty-fourth ordinary sitting |
+| next | triple-lane-stability-review | structural | report | watch | project-management-office | adopted | fourth candidate readiness screen | sixty-fourth ordinary sitting |
+| next | fourth-candidate-readiness-screen-motion | structural | report | watch | portfolio-strategy | adopted | formpilot preparation-only path | sixty-fourth ordinary sitting |
+| next | formpilot-onboarding-preparation-motion | structural | discussion | discussion-1 | project-management-office | active | people-talent / directorate / security-risk-compliance | sixty-fourth ordinary sitting |

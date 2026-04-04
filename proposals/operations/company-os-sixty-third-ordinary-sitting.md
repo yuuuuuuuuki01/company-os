@@ -1,5 +1,5 @@
 ---
-id: company-os-sixty-first-ordinary-sitting
+id: company-os-sixty-third-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-04
 updated_at: 2026-04-04
 ---
 
-# Company OS Sixty-First Ordinary Sitting
+# Company OS Sixty-Third Ordinary Sitting
 
 ## Goal
 
-Keep `oem`, `shift`, and `jouzou` in watch mode and open `discussion-1` on the `FormPilot` readiness screen.
+Deliberate the `FormPilot` readiness screen and decide the next bounded path.
 
 ## Agenda
 
@@ -30,15 +30,15 @@ Keep `oem`, `shift`, and `jouzou` in watch mode and open `discussion-1` on the `
 9. report: `jouzou-activation-execution-motion`
 10. report: `jouzou` third-lane watch
 11. report: `triple-lane-stability-review`
-12. discussion-1: `fourth-candidate-readiness-screen-motion`
-13. confirm the sixty-second ordinary sitting agenda
+12. deliberation: `fourth-candidate-readiness-screen-motion`
+13. confirm the sixty-fourth ordinary sitting agenda
 
 ## Definition of done
 
-- the `FormPilot` readiness screen is narrowed enough for `discussion-2`
-- all active lanes remain visible
+- the `FormPilot` readiness screen is decided, postponed, or amended
+- the next bounded path is named without opening a fourth active lane
 
 ## Result
 
-- `fourth-candidate-readiness-screen-motion` reached `discussion-1`
-- the sixty-second ordinary sitting was opened
+- the `FormPilot` readiness screen was adopted
+- the sixty-fourth ordinary sitting was opened

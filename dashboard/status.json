@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "857de30",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 19:04:35 +0900",
+      "message": "Adopt triple-lane stability and open FormPilot screen",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "6477076",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 09:59:26 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "e154db6",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 18:59:09 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 10:45:37 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "025a255",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 19:45:08 +0900",
-      "message": "Complete first external onboarding cycle for oem",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "6f364b2",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 10:33:23 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 25,
+    "total": 26,
     "done": 15,
-    "active": 10,
+    "active": 11,
     "pending": 0,
     "items": [
       {
@@ -316,13 +316,17 @@
       {
         "label": "triple-lane-stability-review",
         "status": "active"
+      },
+      {
+        "label": "fourth-candidate-readiness-screen-motion",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "fifty-eighth ordinary sitting completed and fifty-ninth sitting opened",
-    "Assembly Secretariat": "triple-active-lane watch and fifty-ninth sitting packet",
+    "Assembly": "sixtieth ordinary sitting completed and sixty-first sitting opened",
+    "Assembly Secretariat": "triple-active-lane watch and sixty-first sitting packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
@@ -330,8 +334,8 @@
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first, second, and third active external lanes and hold the first triple-lane stability review",
-    "Portfolio Strategy": "sequence the three active lanes and keep any fourth candidate out of activation",
+    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` readiness screen only",
+    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next screening-only candidate",
     "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
@@ -340,5 +344,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 18:59:09 +0900"
+  "generated_at": "2026-04-04 19:04:35 +0900"
 }

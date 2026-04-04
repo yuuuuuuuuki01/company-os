@@ -42,3 +42,4 @@ updated_at: 2026-04-04
 | unit-owner | oem | Founder Office nominee for the initial `oem` unit-owner line | 2026-04-03 | first ordinary sitting after `oem` activation review opens | seated | twenty-first-ordinary-sitting-ruling |
 | unit-owner | shift | Founder Office nominee for the initial `shift` unit-owner line | 2026-04-04 | first ordinary sitting after `shift` activation review opens | seated | thirty-sixth-ordinary-sitting-ruling |
 | unit-owner | jouzou | Founder Office nominee for the initial `jouzou` unit-owner line | 2026-04-04 | first ordinary sitting after `jouzou` activation review opens | seated | fifty-seventh-ordinary-sitting-ruling |
+| unit-owner | FormPilot | Founder Office nominee for the initial `FormPilot` unit-owner line | 2026-04-04 | first ordinary sitting after `FormPilot` activation review opens | seated | seventy-eighth-ordinary-sitting-ruling |

@@ -15,9 +15,10 @@ updated_at: 2026-04-04
 
 | Lane ID | Unit | Route | Status | Current Work | Next Handoff | Paper Load | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| lane-company-os | company-os | governance-loop | active | ordinary sitting loop, rollout watch, and triple external lane monitoring | founder-office -> assembly-secretariat | 7 | primary live lane |
-| lane-oem | oem | first-external-lane | active | bounded static OEM tool operation under accepted packet | oem-unit-owner -> reviewer | 4 | first external lane active and under watch |
-| lane-shift | shift | second-external-lane | active | bounded planning and scheduling operation under accepted packet | shift-unit-owner -> reviewer | 4 | second external lane active under triple-lane watch |
-| lane-jouzou | jouzou | third-external-lane | active | bounded planning and quote workflow operation under accepted packet | jouzou-unit-owner -> reviewer | 4 | third external lane active under triple-lane watch |
+| lane-company-os | company-os | governance-loop | active | ordinary sitting loop, rollout watch, and four external PJ monitoring | founder-office -> assembly-secretariat | 8 | primary live lane |
+| lane-oem | oem | first-external-pj | active | bounded static OEM tool operation under accepted packet | oem-unit-owner -> reviewer | 4 | first external PJ active and under watch |
+| lane-shift | shift | second-external-pj | active | bounded planning and scheduling operation under accepted packet | shift-unit-owner -> reviewer | 4 | second external PJ active under four-PJ watch |
+| lane-jouzou | jouzou | third-external-pj | active | bounded planning and quote workflow operation under accepted packet | jouzou-unit-owner -> reviewer | 4 | third external PJ active under four-PJ watch |
+| lane-formpilot | FormPilot | fourth-external-pj | active | bounded outbound-sales automation MVP operation under accepted packet | formpilot-unit-owner -> reviewer | 4 | fourth external PJ active under first four-PJ watch |
 
-Operating note: lane state is independent from unit registration and seat state. A lane may run in parallel only when owner, handoff target, and approval path are all declared.
+Operating note: PJ state is independent from unit registration and seat state. A PJ may run in parallel only when owner, handoff target, and approval path are all declared.

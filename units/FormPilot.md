@@ -1,8 +1,8 @@
 ---
 id: unit-formpilot
 layer: registry
-status: bootstrap
-owner: pending-election
+status: active
+owner: portfolio-strategy
 unit: FormPilot
 risk: medium
 visibility: public
@@ -11,9 +11,28 @@ created_at: 2026-04-03
 updated_at: 2026-04-03
 ---
 
-# Unit Record: FormPilot
+# Unit: FormPilot
 
-- Path: `C:\agent\codex\FormPilot`
-- Default seat holder: pending election
-- Working description: form workflow and review workspace
-- Default release authority: release review when publishing or deploying
+## Purpose
+
+Handle the outbound-sales automation MVP workspace as the fourth bounded external onboarding wave under Company OS control.
+
+## State model
+
+- registration_state: registered
+- seat_state: seated
+- lane_state: active
+- voting officer: initial `FormPilot` unit-owner line
+
+## Immediate operating scope
+
+- bounded outbound-sales automation MVP operation under the accepted start packet
+- fourth active PJ watch and issue intake
+- later confidence review and bounded expansion motions
+- the first mission packet is limited to the outbound-sales automation MVP only
+- any broader expansion still needs a separate motion
+
+## Boundary
+
+- active scope is limited to the outbound-sales automation MVP
+- no expansion beyond the outbound-sales automation MVP without a later motion

@@ -19,7 +19,7 @@ Initial top-level units registered at bootstrap:
 | --- | --- | --- | --- | --- | --- | --- |
 | company-os | `C:\agent\codex\company-os` | registered | seated | active | medium | seated |
 | credential-ledger | `C:\agent\codex\credential-ledger` | registered | unseated | not-activated | high | pending-election |
-| FormPilot | `C:\agent\codex\FormPilot` | registered | unseated | not-activated | medium | pending-election |
+| FormPilot | `C:\agent\codex\FormPilot` | registered | seated | active | medium | seated |
 | jouzou | `C:\agent\codex\jouzou` | registered | seated | active | medium | seated |
 | kanai-kagamibiraki-proposal | `C:\agent\codex\kanai-kagamibiraki-proposal` | registered | unseated | not-activated | low | pending-election |
 | oem | `C:\agent\codex\oem` | registered | seated | active | medium | seated |

@@ -68,6 +68,9 @@ This directory stores active traceability ledgers.
 - `formpilot-activation-review-checklist.md`: minimal checklist for the first `FormPilot` activation review path
 - `formpilot-execution-threshold-board.md`: minimum threshold and control-capacity check before any later `FormPilot` execution motion
 - `formpilot-execution-bundle-board.md`: smallest lawful seat, reviewer, approval, rollback, and PJ bundle for `FormPilot`
+- `formpilot-activation-execution-board.md`: accepted bounded execution state for the first `FormPilot` activation
+- `formpilot-fourth-pj-watch-board.md`: fourth active PJ watch snapshot for `FormPilot`
+- `four-project-stability-board.md`: first checkpoint stability summary for simultaneous `oem`, `shift`, `jouzou`, and `FormPilot` operation
 - `subdivision-work-board.md`: current assignments for active divisions and sections
 - `audit-routing-board.md`: audit finding triage and routing
 - `ai-bulletin-intake-board.md`: AI bulletin intake classes and handoff

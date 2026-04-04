@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "c754863",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-04 21:20:17 +0900",
+      "message": "Advance FormPilot screening and subdivision work",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "32a1251",
+      "author": "github-actions[bot]",
+      "date": "2026-04-04 11:25:48 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "ed90125",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-04 20:25:33 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-03 11:22:16 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "d2a32ee",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-03 20:21:56 +0900",
-      "message": "Advance shift second-lane review path",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "40d8393",
-      "author": "github-actions[bot]",
-      "date": "2026-04-03 11:01:26 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 26,
+    "total": 27,
     "done": 15,
-    "active": 11,
+    "active": 12,
     "pending": 0,
     "items": [
       {
@@ -320,24 +320,28 @@
       {
         "label": "fourth-candidate-readiness-screen-motion",
         "status": "active"
+      },
+      {
+        "label": "formpilot-onboarding-preparation-motion",
+        "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "sixtieth ordinary sitting completed and sixty-first sitting opened",
-    "Assembly Secretariat": "triple-active-lane watch and sixty-first sitting packet",
+    "Assembly": "sixty-third ordinary sitting completed and sixty-fourth sitting opened",
+    "Assembly Secretariat": "triple-active-lane watch and sixty-fourth sitting packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
     "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate",
+    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate and preparation ideas",
     "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, and `jouzou` unit-owner lines and prepare the next confidence review",
     "Data and Knowledge": "apply short ruling scope to ordinary operating decisions",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, and `jouzou` low/medium risk paths",
     "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` readiness screen only",
-    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next screening-only candidate",
+    "Project Management Office": "monitor the first, second, and third active external lanes and support the `FormPilot` preparation-only path",
+    "Portfolio Strategy": "sequence the three active lanes and keep `FormPilot` as the next bounded candidate under preparation only",
     "Directorate": "watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation",
     "OEM Unit": "first external lane is active under bounded static-tool scope",
     "Shift Unit": "second external lane is active under bounded planning and scheduling scope",
@@ -346,5 +350,5 @@
     "Product and Service Design": "design capability work outside the governance lane",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-04 20:25:33 +0900"
+  "generated_at": "2026-04-04 21:20:17 +0900"
 }

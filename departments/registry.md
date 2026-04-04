@@ -21,6 +21,7 @@ updated_at: 2026-04-03
 | portfolio-strategy | Department Steward | portfolio direction and prioritization | portfolio stop |
 | project-management-office | PMO Steward (acting-confirmed) | delivery coordination and dependency control | dependency stop |
 | directorate | Department Steward | quality, coherence, expression | quality stop |
+| product-management | Department Steward | roadmap, requirements, product scope control | product scope stop |
 | product-service-design | Department Steward | service framing, UX definition, and design capability development | design integrity stop |
 | engineering | Department Steward | implementation standards and technical execution | technical safety stop |
 | quality-assurance | Department Steward | test quality and regression control | release quality stop |
@@ -28,12 +29,17 @@ updated_at: 2026-04-03
 | security-risk-compliance | Department Steward | security, risk, compliance controls | security stop |
 | people-talent | People and Talent Representative (acting-confirmed) | hiring, promotion, discipline operations | staffing stop |
 | finance-treasury | Department Steward | budgets, spending, financial controls | spending stop |
+| procurement-vendor-management | Department Steward | sourcing, vendor selection, purchasing controls | procurement hold |
 | legal-policy | Department Steward | legal posture and policy interpretation | policy stop |
 | organizational-development-learning | Organizational Development and Learning Representative (acting-confirmed) | org design, institutional research, redesign cadence, and reusable learning systems | redesign hold |
 | research-intelligence | Department Steward | discovery, analysis, evidence gathering | evidence hold |
 | exploration-incubation | Department Steward | new project origination, hypothesis design, incubation briefs | premature-scale hold |
+| business-operations | Department Steward | operating cadence, service operations, process health | operations hold |
+| sales-revenue | Department Steward | qualification, pipeline, revenue conversion | commercialization hold |
+| marketing-growth | Department Steward | demand generation, audience development, growth learning | growth integrity stop |
 | communications-brand | Department Steward | messaging, publication voice, brand | publication stop |
 | business-development-partnerships | Department Steward | partner relations and external deal shaping | commitment hold |
 | customer-success-support | Department Steward | user support, issue intake, trust signals | service-risk stop |
 | data-knowledge | Data and Knowledge Steward (acting-confirmed) | records, metrics, institutional memory | record integrity stop |
 | internal-tools-enablement | Department Steward | internal systems, tooling, automation enablement | tooling safety stop |
+| information-systems | Department Steward | workplace systems, access lifecycle, internal productivity stack | workplace systems stop |

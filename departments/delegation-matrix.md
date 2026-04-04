@@ -23,6 +23,7 @@ updated_at: 2026-04-03
 | cross-unit prioritization | portfolio-strategy | assembly or founder |
 | schedule and dependency control | project-management-office | PM office then assembly |
 | coherence and quality direction | directorate | director office then assembly |
+| product roadmap and requirements | product-management | portfolio-strategy and directorate |
 | product framing and UX | product-service-design | directorate |
 | implementation method | engineering | unit owner and PM |
 | test and regression quality | quality-assurance | directorate and release review |
@@ -30,9 +31,13 @@ updated_at: 2026-04-03
 | security and risk | security-risk-compliance | constitutional affairs and founder |
 | hiring and performance process | people-talent | personnel committee |
 | budget and spend | finance-treasury | founder-office |
+| sourcing and vendor purchasing | procurement-vendor-management | finance-treasury and legal-policy |
 | legal and policy interpretation | legal-policy | founder-office |
 | organizational redesign and learning loops | organizational-development-learning | constitutional-affairs and founder-office |
 | evidence and research | research-intelligence | portfolio-strategy |
+| operating cadence and service process | business-operations | founder-office and PM office |
+| sales qualification and revenue process | sales-revenue | founder-office and finance-treasury |
+| marketing acquisition and growth | marketing-growth | directorate and finance-treasury |
 | public messaging | communications-brand | directorate and founder-office |
 | partner commitments | business-development-partnerships | legal-policy and founder-office |
 | user trust and support | customer-success-support | PM office and directorate |
@@ -40,6 +45,7 @@ updated_at: 2026-04-03
 | approval ledgers and trace records | data-knowledge | constitutional-affairs |
 | key custody and lending | security-risk-compliance | founder-office |
 | internal automation and tooling | internal-tools-enablement | engineering and security-risk-compliance |
+| workplace systems and access lifecycle | information-systems | internal-tools-enablement and security-risk-compliance |
 | project origination and incubation | exploration-incubation | portfolio-strategy and PMO |
 
 ## Downward scaling rule

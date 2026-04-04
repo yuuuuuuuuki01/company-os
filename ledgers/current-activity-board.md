@@ -30,9 +30,15 @@ updated_at: 2026-04-04
 | Project Management Office | department | active | monitor the first, second, and third active external lanes and support the `FormPilot` activation-review path | assembly-secretariat |
 | Portfolio Strategy | department | active | sequence the three active lanes and keep `FormPilot` as the next bounded candidate under activation review only | founder-office / PMO |
 | Directorate | department | active | watch the named `oem`, `shift`, and `jouzou` reviewer paths during triple-lane operation | assembly |
+| Product Management | department | active | define product requirement packets and scope boundaries for `FormPilot` and later candidates | portfolio-strategy / directorate |
 | OEM Unit | unit | active | first external lane is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external lane is active under bounded planning and scheduling scope | reviewer / PMO |
 | Jouzou Unit | unit | active | third external lane is active under bounded planning and quote workflow scope | reviewer / PMO |
 | Research Intelligence | department | active | own first-pass AI bulletin classification rollout | assembly-secretariat |
+| Business Operations | department | active | define operating cadence and service runbooks beyond pure project flow | founder-office / PMO |
+| Sales and Revenue | department | active | define revenue and qualification logic for `FormPilot` and adjacent opportunities | founder-office / finance-treasury |
+| Marketing and Growth | department | active | define demand-generation and audience learning for candidate products | directorate / product-management |
+| Procurement and Vendor Management | department | active | define vendor intake and purchasing controls for future expansion | finance-treasury / legal-policy |
+| Information Systems | department | active | define workplace systems and access lifecycle hygiene for the growing org | internal-tools-enablement / security-risk-compliance |
 | Product and Service Design | department | active | design capability work outside the governance lane | directorate / founder-office |
 | UI Visual Execution Lane | external-specialist | active | Gemini handles UI artifact production only | internal design review |

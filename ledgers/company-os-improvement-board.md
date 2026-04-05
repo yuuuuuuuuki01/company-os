@@ -59,6 +59,7 @@ updated_at: 2026-04-05
 | urgent | high-risk-screening-sequencing | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee / founder-office | one-hundred-fifty-eighth ordinary sitting |
 | urgent | credential-ledger-high-risk-screen-opening | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
 | urgent | point-high-risk-screen-prep | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixty-third ordinary sitting |
-| urgent | automation-heartbeat-layers | operating | report | watch | assembly-secretariat | adopted | internal-tools-enablement / project-management-office / independent-audit-firm | 第百六十九回通常会議 |
+| urgent | automation-heartbeat-layers | operating | report | watch | assembly-secretariat | adopted | internal-tools-enablement / project-management-office / independent-audit-firm | 第百七十三回通常会議 |
 | urgent | token-efficient-execution | operating | report | watch | internal-tools-enablement | adopted | all department stewards / data-knowledge / independent-audit-firm | 第百七十三回通常会議 |
 | urgent | routine-work-scriptification | operating | report | watch | internal-tools-enablement | adopted | independent-audit-firm / data-knowledge / internal-tools-enablement | 第百七十四回通常会議 |
+| urgent | initial-scriptification-implementation-bundle | operating | discussion | discussion-1 | internal-tools-enablement | active | independent-audit-firm / data-knowledge / assembly-secretariat | 第百七十五回通常会議 |

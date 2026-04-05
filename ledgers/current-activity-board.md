@@ -15,15 +15,15 @@ updated_at: 2026-04-05
 
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
-| Founder Office | governance | active | sovereign check over the active improvement batch and approval-wait resource-reservation boundaries | assembly |
-| Assembly | governance | active | one-hundred-twentieth ordinary sitting completed and one-hundred-twenty-first sitting opened | one-hundred-twenty-first ordinary sitting |
-| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop and prepare the approval-wait resource-reservation packet | improvement board |
-| Project Management Office | department | active | monitor four active PJ and keep approval-wait resource reservation connected to live PJ watch | assembly-secretariat |
-| Data and Knowledge | department | active | maintain the adopted ledger template set and support approval-wait artifact reuse | assembly-secretariat |
+| Founder Office | governance | active | sovereign check over the active improvement batch and approval-wait borrow-log boundaries | assembly |
+| Assembly | governance | active | one-hundred-twenty-third ordinary sitting completed and one-hundred-twenty-fourth sitting opened | one-hundred-twenty-fourth ordinary sitting |
+| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop and prepare the approval-wait borrow-log packet | improvement board |
+| Project Management Office | department | active | monitor four active PJ and keep approval-wait borrow log connected to live PJ watch | assembly-secretariat |
+| Data and Knowledge | department | active | maintain the adopted ledger template set and support approval-wait borrow logging | assembly-secretariat |
 | Engineering | department | active | maintain the adopted ledger template set and watch for column drift in active ledgers | quality-assurance / internal-tools-enablement |
-| Security, Risk, and Compliance | department | active | keep branch-trigger boundaries aligned with real risk while arbitration output is reused for resource reservation | founder-office / release-review-committee |
+| Security, Risk, and Compliance | department | active | keep branch-trigger boundaries aligned with real risk while reservation output is reused for borrow logging | founder-office / release-review-committee |
 | OEM Unit | unit | active | first external PJ is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external PJ is active under bounded planning and scheduling scope | reviewer / PMO |
 | Jouzou Unit | unit | active | third external PJ is active under bounded planning and quote workflow scope | reviewer / PMO |
 | FormPilot Unit | unit | active | fourth external PJ is active under bounded outbound-sales automation MVP scope | reviewer / PMO |
-| Internal Tools and Enablement | department | active | keep the template set reusable while arbitration and refill artifacts are reused | engineering / security-risk-compliance |
+| Internal Tools and Enablement | department | active | keep the template set reusable while reservation and refill artifacts are reused | engineering / security-risk-compliance |

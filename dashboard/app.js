@@ -335,6 +335,73 @@ function renderActivities() {
   `).join("");
 }
 
+// ====== Assembly: Approval Branches ======
+function renderApprovalBranches() {
+  const el = document.getElementById("approvalList");
+  const branches = DATA.approval_branches || [];
+  document.getElementById("approvalCount").textContent = `${branches.length} 件`;
+
+  if (!branches.length) {
+    el.innerHTML = '<div class="empty-state"><span class="empty-icon">✅</span><p>承認待ちなし</p></div>';
+    return;
+  }
+
+  el.innerHTML = branches.map(b => {
+    const state = b["状態"] || "";
+    const stateClass = state === "standby" ? "approval-standby" :
+                       state === "waiting" ? "approval-waiting" :
+                       state === "completed" ? "approval-completed" : "approval-standby";
+    const stateLabel = state === "standby" ? "待機中" :
+                       state === "waiting" ? "承認待ち" :
+                       state === "completed" ? "完了" : state;
+    const blocked = b["Blocked item"] || "";
+    const parallel = b["Parallelizable items"] || "";
+
+    return `
+      <div class="card approval-card ${stateClass}">
+        <div class="approval-header">
+          <span class="approval-id">${b["Branch ID"] || ""}</span>
+          <span class="approval-state-badge">${stateLabel}</span>
+        </div>
+        <div class="approval-scope">
+          <strong>承認対象:</strong> ${b["承認対象"] || ""}
+        </div>
+        <div class="approval-approver">
+          <strong>承認者:</strong> ${ja("dept", b["Approver"] || "")}
+        </div>
+        ${blocked ? `<div class="approval-blocked"><strong>🚫 ブロック中:</strong> ${blocked}</div>` : ""}
+        ${parallel ? `<div class="approval-parallel"><strong>✅ 並行可能:</strong> ${parallel}</div>` : ""}
+        ${b["Return condition"] ? `<div class="approval-return"><strong>返却条件:</strong> ${b["Return condition"]}</div>` : ""}
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Projects: Git Branches ======
+function renderGitBranches() {
+  const el = document.getElementById("branchList");
+  const branches = DATA.git_branches || [];
+
+  if (!branches.length) {
+    el.innerHTML = '<div class="empty-state">ブランチデータなし</div>';
+    return;
+  }
+
+  el.innerHTML = branches.map(b => {
+    const isMain = b.name === "main" || b.name === "origin/main";
+    const isHead = b.name === "origin/HEAD";
+    if (isHead) return "";
+    const icon = isMain ? "🏠" : "🌿";
+    return `
+      <div class="branch-row ${isMain ? 'branch-main' : ''}">
+        <span class="branch-icon">${icon}</span>
+        <span class="branch-name">${b.name}</span>
+        <span class="branch-msg">${b.message || ""}</span>
+      </div>
+    `;
+  }).join("");
+}
+
 // ====== Modal ======
 function openModal(title, bodyHtml) {
   document.getElementById("modalHeader").textContent = title;
@@ -431,11 +498,13 @@ async function init() {
   renderHeaderStats();
   renderTimeline();
   renderTracker();
+  renderApprovalBranches();
   renderDepartments();
   renderOfficeholders();
   renderWorkAllocation();
   renderUnits();
   renderActivities();
+  renderGitBranches();
 
   // Modal close
   document.getElementById("modalClose").addEventListener("click", closeModal);
@@ -446,7 +515,7 @@ async function init() {
   // Auto refresh
   setInterval(async () => {
     const fresh = await fetchStatus();
-    if (fresh) { DATA = fresh; renderHeaderStats(); renderTimeline(); renderTracker(); }
+    if (fresh) { DATA = fresh; renderHeaderStats(); renderTimeline(); renderTracker(); renderApprovalBranches(); }
   }, 30000);
 }
 

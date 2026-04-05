@@ -176,6 +176,45 @@ try:
 except:
     commits = []
 
+# Parse approval branches
+approval_branches = parse_board('ledgers/承認分岐台帳.md', ['Branch ID', '承認対象'])
+approval_drills = parse_board('ledgers/承認分岐模擬訓練台帳.md', ['Drill ID', '模擬承認対象'])
+
+# Parse approval request tickets (承認要求票) if any exist
+approval_requests = []
+for f in glob.glob('ledgers/承認要求票-*.md') + glob.glob('ledgers/approval-request-*.md'):
+    fm, body = parse_frontmatter(f)
+    rows = parse_table(body, ['Field', 'Value'])
+    ticket = {r.get('Field',''): r.get('Value','') for r in rows}
+    ticket['id'] = fm.get('id', os.path.basename(f).replace('.md',''))
+    ticket['status'] = fm.get('status', '')
+    approval_requests.append(ticket)
+
+# Parse approval return records (承認返却記録) if any exist
+approval_returns = []
+for f in glob.glob('ledgers/承認返却記録-*.md') + glob.glob('ledgers/approval-return-*.md'):
+    fm, body = parse_frontmatter(f)
+    rows = parse_table(body, ['Field', 'Value'])
+    record = {r.get('Field',''): r.get('Value','') for r in rows}
+    record['id'] = fm.get('id', os.path.basename(f).replace('.md',''))
+    approval_returns.append(record)
+
+# Git branches (for approval branch visualization)
+try:
+    branches_raw = subprocess.check_output(['git', 'branch', '-a', '--format=%(refname:short)|%(upstream:short)|%(committerdate:iso8601)|%(subject)'], text=True).strip().split('\n')
+    git_branches = []
+    for line in branches_raw:
+        parts = line.split('|', 3)
+        if len(parts) >= 1 and parts[0].strip():
+            git_branches.append({
+                'name': parts[0].strip(),
+                'upstream': parts[1].strip() if len(parts) > 1 else '',
+                'date': parts[2].strip() if len(parts) > 2 else '',
+                'message': parts[3].strip() if len(parts) > 3 else ''
+            })
+except:
+    git_branches = []
+
 result = {
     'sittings': sittings,
     'rulings': {str(k): v for k, v in rulings.items()},
@@ -186,6 +225,11 @@ result = {
     'units': units,
     'activities': activities,
     'work_allocation': work_allocation,
+    'approval_branches': approval_branches,
+    'approval_drills': approval_drills,
+    'approval_requests': approval_requests,
+    'approval_returns': approval_returns,
+    'git_branches': git_branches,
     'commits': commits,
     'stats': {
         'total_sittings': len(sittings),
@@ -194,7 +238,8 @@ result = {
         'active_units': len([u for u in units if u.get('Lane state') == 'active']),
         'total_motions': len(improvement_items),
         'total_proposals': len(motions),
-        'completed_motions': len([i for i in improvement_items if 'complete' in i.get('Status','').lower() or 'closed' in i.get('Cycle stage','').lower()])
+        'completed_motions': len([i for i in improvement_items if 'complete' in i.get('Status','').lower() or 'closed' in i.get('Cycle stage','').lower()]),
+        'open_approvals': len([a for a in approval_branches if a.get('状態','') not in ('standby','completed','closed')])
     },
     'generated_at': commits[0]['date'] if commits else ''
 }
@@ -202,4 +247,4 @@ result = {
 with open('dashboard/status.json', 'w', encoding='utf-8') as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
-print(f"Generated: {len(sittings)} sittings, {len(rulings)} rulings, {len(departments)} departments, {len(units)} units, {len(improvement_items)} motions, {len(officeholders)} officeholders, {len(activities)} activities")
+print(f"Generated: {len(sittings)} sittings, {len(rulings)} rulings, {len(departments)} departments, {len(units)} units, {len(improvement_items)} motions, {len(officeholders)} officeholders, {len(activities)} activities, {len(approval_branches)} approval branches, {len(git_branches)} git branches")

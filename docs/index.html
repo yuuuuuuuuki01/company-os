@@ -1,133 +1,149 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Company OS World</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Company OS World</p>
-          <h1>会社OSを並行稼働するRPGの街として見る</h1>
-          <p class="hero-text">
-            会議は会議室へ、承認は承認机へ、案件は複数のルートへ流れます。いま何本の仕事が走っているか、どこに紙が積まれているかを地図感覚で見られる画面です。
-          </p>
-          <div class="hero-pills" id="heroPills"></div>
-        </div>
-        <aside class="hero-panel">
-          <h2>本日のクエスト</h2>
-          <div class="quest-list" id="questList"></div>
-        </aside>
-      </header>
-
-      <main class="content-grid">
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">World Map</p>
-              <h2>組織マップ</h2>
-            </div>
-            <p class="panel-note">場所ごとに稼働と紙の量を見る</p>
-          </div>
-          <div class="location-grid" id="locationGrid"></div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Parallel Routes</p>
-              <h2>並行ルート</h2>
-            </div>
-            <p class="panel-note">複数案件を同時に走らせる運行表</p>
-          </div>
-          <div class="route-grid" id="routeGrid"></div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Current Party</p>
-              <h2>いま動いている担当</h2>
-            </div>
-            <p class="panel-note">誰が何をしていて次にどこへ渡すか</p>
-          </div>
-          <div class="activity-grid" id="activityGrid"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Meeting Room</p>
-              <h2>会議室</h2>
-            </div>
-            <p class="panel-note">審議と選任</p>
-          </div>
-          <div class="queue-list" id="electionList"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Stamp Desk</p>
-              <h2>承認机</h2>
-            </div>
-            <p class="panel-note">ハンコ待ちと承認行列</p>
-          </div>
-          <div class="approval-grid" id="approvalGrid"></div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Guilds</p>
-              <h2>部署ギルド</h2>
-            </div>
-            <label class="filter-box">
-              <span>絞り込み</span>
-              <input id="departmentFilter" type="search" placeholder="部署名・役割・停止権で検索" />
-            </label>
-          </div>
-          <div class="department-grid" id="departmentGrid"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Archive Tower</p>
-              <h2>書庫と監査塔</h2>
-            </div>
-          </div>
-          <div class="institution-list" id="institutionList"></div>
-          <div class="ledger-list" id="ledgerList"></div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Rule Tower</p>
-              <h2>規範の塔</h2>
-            </div>
-          </div>
-          <div class="stack-grid" id="layerGrid"></div>
-          <div class="flow-list" id="flowList"></div>
-        </section>
-
-        <section class="panel panel-wide">
-          <div class="panel-head">
-            <div>
-              <p class="eyebrow">Unit Field</p>
-              <h2>事業ユニット平原</h2>
-            </div>
-            <p class="panel-note">各ユニットは onboarding または active lane に接続される</p>
-          </div>
-          <div class="unit-grid" id="unitGrid"></div>
-        </section>
-      </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company OS — 統合ダッシュボード</title>
+  <meta name="description" content="Company OS の会議・組織・事業・財務を一元管理する統合ダッシュボード">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header-left">
+      <h1 class="logo">⬡ Company OS</h1>
+      <span class="live-badge" id="liveBadge"><span class="live-dot"></span> Live</span>
     </div>
+    <nav class="tab-nav" id="tabNav">
+      <button class="tab-btn active" data-tab="assembly">🏛️ 議会</button>
+      <button class="tab-btn" data-tab="org">🏢 組織</button>
+      <button class="tab-btn" data-tab="projects">🚀 事業</button>
+      <button class="tab-btn" data-tab="finance">💰 財務</button>
+    </nav>
+    <div class="header-right">
+      <div class="header-stat" id="statSittings">— 回</div>
+      <div class="header-stat" id="statMotions">— 件</div>
+      <time class="header-clock" id="clock">--:--:--</time>
+    </div>
+  </header>
 
-    <script src="./app.js"></script>
-  </body>
+  <!-- ===== Main Content ===== -->
+  <main class="main" id="main">
+
+    <!-- Tab: Assembly (議会) -->
+    <section class="tab-panel active" id="panel-assembly">
+      <div class="panel-grid assembly-grid">
+        <!-- Left: Timeline -->
+        <div class="panel-col">
+          <div class="section-header">
+            <h2>📜 会議タイムライン</h2>
+            <span class="section-badge" id="sittingCount">0 回</span>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <!-- Right: Tracker -->
+        <div class="panel-col">
+          <div class="section-header">
+            <h2>📋 議案トラッカー</h2>
+            <span class="section-badge" id="motionCount">0 件</span>
+          </div>
+          <div class="tracker" id="tracker">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+          <div class="section-header" style="margin-top:24px">
+            <h2>🔀 承認分岐</h2>
+            <span class="section-badge" id="approvalCount">0 件</span>
+          </div>
+          <div class="approval-list" id="approvalList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Organization (組織) -->
+    <section class="tab-panel" id="panel-org">
+      <div class="panel-grid org-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header">
+            <h2>🏗️ 部署一覧</h2>
+            <span class="section-badge" id="deptCount">0 部署</span>
+          </div>
+          <div class="dept-grid" id="deptGrid">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <div class="panel-col">
+          <div class="section-header"><h2>👤 役職者</h2></div>
+          <div class="officeholder-list" id="officeholderList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+          <div class="section-header" style="margin-top:24px"><h2>📌 業務割当</h2></div>
+          <div class="work-list" id="workList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Projects (事業) -->
+    <section class="tab-panel" id="panel-projects">
+      <div class="panel-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header">
+            <h2>🔷 事業ユニット</h2>
+            <span class="section-badge" id="unitCount">0 ユニット</span>
+          </div>
+          <div class="unit-grid" id="unitGrid">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <div class="panel-col">
+          <div class="section-header"><h2>📡 最近の活動</h2></div>
+          <div class="activity-list" id="activityList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+          <div class="section-header" style="margin-top:24px">
+            <h2>🌿 Git ブランチ</h2>
+          </div>
+          <div class="branch-list" id="branchList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Finance (財務) -->
+    <section class="tab-panel" id="panel-finance">
+      <div class="panel-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header"><h2>📊 財務サマリ</h2></div>
+          <div class="finance-placeholder">
+            <div class="empty-state">
+              <span class="empty-icon">🏗️</span>
+              <p>Phase 3 で実装予定</p>
+              <p class="text-muted">売上・原価・P&L データの台帳を作成後、ここに表示されます</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Detail Modal ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header" id="modalHeader">詳細</div>
+      <div class="modal-body" id="modalBody"></div>
+      <button class="modal-close" id="modalClose">閉じる</button>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
 </html>

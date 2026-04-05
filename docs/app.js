@@ -1,312 +1,522 @@
-const layers = [
-  { rank: "01", name: "憲法", path: "constitution/", summary: "最上位の規範。主権、権利義務、拒否権、公開原則。" },
-  { rank: "02", name: "法律", path: "laws/", summary: "上申、採用、公開、監査、研究連携の具体ルール。" },
-  { rank: "03", name: "定款", path: "articles/", summary: "議会、委員会、役職、部署、外縁機関の骨格。" },
-  { rank: "04", name: "社内ルール", path: "internal-rules/", summary: "採用、承認、鍵、報告、自律化改善の運用。" },
-  { rank: "05", name: "作業手順", path: "sops/", summary: "レビュー、監査、研究速報、鍵請求などの日々の手順。" }
-];
+// ============================================================
+// app.js — Company OS 統合ダッシュボード (v1)
+// ============================================================
 
-const activities = [
-  ["Founder Office", "統治", "active", "初回選任の順番と並行運用の枠組みを整えている。", "初回選任議案を会議室へ上申"],
-  ["Independent Audit Firm", "監査", "active", "制度適正性レビューと週次運営監査を継続中。", "選任後と多重運行後の統制有効性を再監査"],
-  ["AI Academic Institute", "学術", "active", "AI の最新知見を短報向けに整理している。", "必要時のみ petition を提出"],
-  ["People and Talent", "人事", "pending", "選任対象と各ユニットの初回 mission packet を整理している。", "Assembly Secretariat と PMO に起票材料を渡す"],
-  ["Data and Knowledge", "記録", "active", "台帳と UI の整合を保ちながら parallel board を更新している。", "active lane の変化を公開面へ反映"],
-  ["Security, Risk, and Compliance", "統制", "ready", "鍵貸出と credential request の受け口を維持。", "高リスク lane 発生時のみ承認机へ接続"]
-];
+let DATA = null;
 
-const routeLanes = [
-  ["company-os", "governance-loop", "active", "UI と制度の改善を継続", "founder-office -> data-knowledge", 6, "medium"],
-  ["oem", "onboarding-ready", "ready", "最初の mission packet 待ち", "people-talent -> PMO", 3, "medium"],
-  ["shift", "onboarding-ready", "ready", "最初の mission packet 待ち", "people-talent -> PMO", 2, "medium"],
-  ["jouzou", "onboarding-ready", "ready", "最初の mission packet 待ち", "people-talent -> PMO", 2, "medium"]
-];
+// ====== 日本語名マッピング ======
+const JA = {
+  // --- 部署 ---
+  dept: {
+    "founder-office": "創業者室",
+    "assembly-secretariat": "議会事務局",
+    "constitutional-affairs": "憲法審査部",
+    "portfolio-strategy": "ポートフォリオ戦略部",
+    "project-management-office": "PMO（プロジェクト管理室）",
+    "directorate": "ディレクター室",
+    "product-management": "プロダクト管理部",
+    "product-service-design": "プロダクト・サービス設計部",
+    "engineering": "エンジニアリング部",
+    "quality-assurance": "品質保証部",
+    "release-operations": "リリース運用部",
+    "security-risk-compliance": "セキュリティ・リスク・コンプライアンス部",
+    "people-talent": "人事部",
+    "finance-treasury": "財務部",
+    "procurement-vendor-management": "調達・ベンダー管理部",
+    "legal-policy": "法務・政策部",
+    "organizational-development-learning": "組織開発・学習部",
+    "research-intelligence": "リサーチ・インテリジェンス部",
+    "exploration-incubation": "探索・インキュベーション部",
+    "business-operations": "事業運営部",
+    "sales-revenue": "営業・売上部",
+    "marketing-growth": "マーケティング・グロース部",
+    "communications-brand": "広報・ブランド部",
+    "business-development-partnerships": "事業開発・パートナーシップ部",
+    "customer-success-support": "カスタマーサクセス・サポート部",
+    "data-knowledge": "データ・ナレッジ部",
+    "internal-tools-enablement": "内部ツール推進部",
+    "information-systems": "情報システム部",
+    "organizational-scaling": "組織スケーリング部",
+  },
+  // --- 役職 ---
+  office: {
+    "assembly-chair": "議長",
+    "floor-clerk": "議事記録担当",
+    "constitutional-guardian": "憲法守護官",
+    "project-manager": "プロジェクトマネージャー",
+    "director": "ディレクター",
+    "unit-owner": "ユニットオーナー",
+    "department-steward": "部署スチュワード",
+    "personnel-committee-member": "人事委員会委員",
+    "personnel-committee-chair": "人事委員会委員長",
+    "constitutional-review-committee-member": "憲法審査委員会委員",
+    "constitutional-review-committee-chair": "憲法審査委員会委員長",
+    "release-review-committee-member": "リリース審査委員会委員",
+    "release-review-committee-chair": "リリース審査委員会委員長",
+  },
+  // --- アジェンダモード ---
+  mode: {
+    "report": "報告",
+    "discussion-1": "討議-1",
+    "discussion-2": "討議-2",
+    "discussion": "討議",
+    "deliberation": "採決",
+    "procedural": "手続",
+  },
+  // --- ステータス ---
+  status: {
+    "adopted": "採択済",
+    "motion-open": "審議中",
+    "rollout-active": "展開中",
+    "reported-complete": "完了報告済",
+    "active": "活動中",
+    "ready": "準備完了",
+    "seated": "着任",
+    "pending-election": "選任待ち",
+    "unseated": "未着任",
+    "not-activated": "未稼働",
+    "watch": "監視中",
+    "closed": "完了",
+  },
+  // --- ユニット ---
+  unit: {
+    "company-os": "Company OS",
+    "oem": "OEM見積ツール",
+    "shift": "SHIFT",
+    "jouzou": "醸造",
+    "FormPilot": "FormPilot",
+    "Poin-T": "Poin-T",
+    "credential-ledger": "資格台帳",
+    "kanai-kagamibiraki-proposal": "金井鏡開き提案",
+    "oem_release": "OEMリリース",
+    "saigai": "災害",
+    "shift_backup": "SHIFTバックアップ",
+    "timetree-export": "TimeTreeエクスポート",
+    "tumugi": "紬",
+    "zenken": "全研",
+  },
+};
 
-const approvalDesk = [
-  ["inaugural office seating", "governance approval", "pending", "founder-office", "founder-office -> assembly-secretariat", 5],
-  ["first three unit mission packets", "onboarding approval", "ready", "people-talent", "people-talent -> PMO", 3],
-  ["high-risk release gate", "release approval", "idle", "security-risk-compliance", "security-risk-compliance -> founder-office", 1]
-];
-
-const electionQueue = [
-  ["Assembly Chair と Floor Clerk を選任", "役職", "最優先", "nominate and second"],
-  ["Constitutional Guardian / PM / Director を選任", "横断役", "初回会期", "nominate and second"],
-  ["3 常設委員会を着席", "委員会", "初回会期", "各 3 名を seat"],
-  ["全 Unit Owner を選任", "ユニット", "通常議事前", "ユニット別 slate を作成"]
-];
-
-const quests = [
-  "会議室を開いて初回選任議案を回す",
-  "承認机で空席役職と onboarding を処理する",
-  "並行ルートに 3 つまで案件を接続できる状態にする",
-  "書庫の台帳と実運用を一致させる"
-];
-
-const flows = [
-  ["01", "上申を起票", "sponsor と seconder をそろえて議場へ。"],
-  ["02", "討論と修正", "文書ベースのロバート議事法で進行。"],
-  ["03", "採決と裁定", "可決後は decision に落として証跡化。"],
-  ["04", "執行と監査", "部署が実行し、監査法人が客観評価。"]
-];
-
-const departments = [
-  ["Founder Office", "統治ギルド", "最終主権、創業者拒否権、公開前の最終判断。", "sovereign stop", ["主権", "拒否権", "公開前"], ["憲法解釈の最終確認", "再上程条件の指定", "高リスク release の最終判断"]],
-  ["Assembly Secretariat", "会議室", "上申受付、議事進行、採決記録、議席管理。", "procedural stop", ["議会", "議事", "記録"], ["正式議案の受理", "議事テンプレート運用", "定足数と採決結果の記録"]],
-  ["Project Management Office", "進行ギルド", "依存関係、進行、handoff を整理する横断 PM。", "dependency stop", ["PM", "横断", "依存"], ["クリティカルパス整理", "依存衝突時の停止", "handoff 品質の担保"]],
-  ["Directorate", "演出ギルド", "品質、表現、構想の一貫性を守る横断 Director。", "quality stop", ["Director", "品質", "整合"], ["表現品質レビュー", "成果物全体の整合確認", "品質崩壊時の停止"]],
-  ["Engineering", "工房", "技術実装と内部道具の改善。", "technical safety stop", ["実装", "技術", "安全"], ["コード変更", "技術的レビュー", "破壊的変更前の停止"]],
-  ["People and Talent", "人事ギルド", "採用、配置、昇格、役職選任支援。", "staffing stop", ["採用", "選任", "評価"], ["start-packet 配布", "選任候補整理", "引継ぎ品質の評価"]],
-  ["Security, Risk, and Compliance", "守衛所", "鍵、資格情報、リスク、コンプライアンス管理。", "security stop", ["鍵", "統制", "リスク"], ["鍵貸出記録", "credential request 管理", "高リスク作業の統制"]],
-  ["Data and Knowledge", "書庫番", "台帳、知識、証跡、表示整合の管理。", "record integrity stop", ["台帳", "記録", "可視化"], ["current activity 管理", "registry 更新", "reporting standard の実装"]]
-];
-
-const institutions = [
-  ["AI Academic Institute", "学術機関", "最新 AI の知見を収集し、短報と petition だけで材料を供給する。", ["最新AI", "一次情報", "直接統治しない"]],
-  ["Independent Audit Firm", "監査法人", "制度と運営が適正かを独立に監査し、opinion と remediation を出す。", ["独立監査", "客観評価", "改善勧告"]]
-];
-
-const ledgers = [
-  ["Approval Ledger", "承認書類の流れを追う台帳。", ["承認", "ハンコ", "公開"]],
-  ["Approval Desk Board", "承認机の行列と紙の量を追う台帳。", ["承認机", "行列", "公開"]],
-  ["Parallel Operations Board", "複数案件の route lane を追う台帳。", ["並行", "route", "公開"]],
-  ["Current Activity Board", "今だれが何をしているかを追う台帳。", ["現況", "handoff", "公開"]]
-];
-
-const units = [
-  ["credential-ledger", "high"],
-  ["FormPilot", "medium"],
-  ["jouzou", "medium"],
-  ["oem", "medium"],
-  ["Poin-T", "high"],
-  ["saigai", "high"],
-  ["shift", "medium"],
-  ["timetree-export", "medium"],
-  ["tumugi", "medium"],
-  ["zenken", "high"]
-];
-
-const locations = [
-  ["会議室", "meeting", "議案と選任が集まる場所。", electionQueue.length + 1, "審議待ち"],
-  ["承認机", "approval", "承認印と差戻しが発生する場所。", approvalDesk.reduce((sum, item) => sum + item[5], 0), "ハンコ待ち"],
-  ["並行路", "routes", "複数の案件が同時に走る道路。", routeLanes.reduce((sum, item) => sum + item[5], 0), "同時進行"],
-  ["書庫", "archive", "台帳と証跡が積み上がる場所。", ledgers.length, "整理中"],
-  ["監査塔", "audit", "制度の適正性を見張る塔。", institutions.length, "巡回中"]
-];
-
-const heroStats = [
-  ["場所", String(locations.length)],
-  ["担当", String(activities.length)],
-  ["route", String(routeLanes.length)],
-  ["ユニット", String(units.length)],
-  ["書類束", String(locations.reduce((sum, location) => sum + location[3], 0))]
-];
-
-function renderPills() {
-  document.getElementById("heroPills").innerHTML = heroStats.map(([label, value]) => `<span class="pill"><strong>${value}</strong>${label}</span>`).join("");
+// ヘルパー：英語キーから日本語名を取得（見つからなければ原文を返す）
+function ja(category, key) {
+  return JA[category]?.[key] || key;
 }
 
-function renderQuests() {
-  document.getElementById("questList").innerHTML = quests.map((quest, index) => `<article class="quest-card"><span>Quest ${String(index + 1).padStart(2, "0")}</span><p>${quest}</p></article>`).join("");
+// ====== Data Fetching ======
+async function fetchStatus() {
+  try {
+    const res = await fetch("./status.json?t=" + Date.now());
+    if (!res.ok) return null;
+    return await res.json();
+  } catch { return null; }
 }
 
-function renderLocations() {
-  document.getElementById("locationGrid").innerHTML = locations.map(([name, type, description, papers, state]) => `
-    <article class="location-card">
-      <div class="location-scene">
-        <div class="building"></div>
-        <div class="paper-stack" style="--stack-size:${Math.min(papers, 12)}"></div>
-      </div>
-      <div class="location-copy">
-        <div class="card-top">
-          <div>
-            <div class="card-type">${type}</div>
-            <h3>${name}</h3>
-          </div>
-          <span class="status-chip status-active">${state}</span>
-        </div>
-        <p>${description}</p>
-        <p class="muted">書類束: ${papers}</p>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderRoutes() {
-  document.getElementById("routeGrid").innerHTML = routeLanes.map(([unit, route, status, current, handoff, papers, risk]) => `
-    <article class="route-card">
-      <div class="route-head">
-        <div>
-          <div class="card-type">${route}</div>
-          <h3>${unit}</h3>
-        </div>
-        <span class="tag risk-${risk}">${status}</span>
-      </div>
-      <div class="route-road">
-        <span class="route-token"></span>
-        <span class="paper-stack mini-stack-visual" style="--stack-size:${Math.min(papers, 8)}"></span>
-      </div>
-      <p><strong>いま:</strong> ${current}</p>
-      <p><strong>handoff:</strong> ${handoff}</p>
-    </article>
-  `).join("");
-}
-
-function renderActivities() {
-  document.getElementById("activityGrid").innerHTML = activities.map(([actor, layer, status, current, next]) => `
-    <article class="activity-card">
-      <div class="card-top">
-        <div>
-          <div class="card-type">${layer}</div>
-          <h3>${actor}</h3>
-        </div>
-        <span class="status-chip status-${status}">${status}</span>
-      </div>
-      <div class="activity-copy">
-        <p><strong>いま:</strong> ${current}</p>
-        <p><strong>次:</strong> ${next}</p>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderElectionQueue() {
-  document.getElementById("electionList").innerHTML = electionQueue.map(([label, type, due, next], index) => `
-    <article class="queue-card">
-      <div class="paper-stack mini-stack-visual" style="--stack-size:${Math.min(index + 3, 8)}"></div>
-      <div>
-        <div class="flow-index">Queue ${String(index + 1).padStart(2, "0")}</div>
-        <h3>${label}</h3>
-        <p class="muted">種別: ${type} / 期限: ${due}</p>
-        <p class="muted">次: ${next}</p>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderApprovals() {
-  document.getElementById("approvalGrid").innerHTML = approvalDesk.map(([subject, queue, status, holder, path, papers]) => `
-    <article class="paper-card">
-      <div class="stamp-mark">${status}</div>
-      <h3>${subject}</h3>
-      <p class="muted">queue: ${queue}</p>
-      <p class="muted">holder: ${holder}</p>
-      <p class="muted">path: ${path}</p>
-      <p class="muted">paper load: ${papers}</p>
-    </article>
-  `).join("");
-}
-
-function renderLayers() {
-  document.getElementById("layerGrid").innerHTML = layers.map((layer) => `
-    <article class="stack-card">
-      <div class="stack-rank">${layer.rank}</div>
-      <div class="card-copy">
-        <h3>${layer.name}</h3>
-        <p>${layer.path}</p>
-      </div>
-      <p class="muted">${layer.summary}</p>
-    </article>
-  `).join("");
-}
-
-function renderFlow() {
-  document.getElementById("flowList").innerHTML = flows.map(([index, title, body]) => `
-    <article class="flow-card">
-      <div class="flow-index">${index}</div>
-      <h3>${title}</h3>
-      <p>${body}</p>
-    </article>
-  `).join("");
-}
-
-function departmentCard([name, kind, mandate, stop, tags, list]) {
-  const searchBlob = [name, kind, mandate, stop, ...tags, ...list].join(" ").toLowerCase();
-  return `
-    <article class="department-card" data-search="${searchBlob}">
-      <div class="card-top">
-        <div>
-          <div class="card-type">${kind}</div>
-          <h3>${name}</h3>
-        </div>
-        <span class="tag stop">${stop}</span>
-      </div>
-      <p class="muted">${mandate}</p>
-      <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
-      <ul class="card-list">${list.map((item) => `<li>${item}</li>`).join("")}</ul>
-    </article>
-  `;
-}
-
-function renderDepartments(filter = "") {
-  const normalized = filter.trim().toLowerCase();
-  const cards = departments.map((department) => departmentCard(department)).filter((html) => !normalized || html.toLowerCase().includes(normalized));
-  document.getElementById("departmentGrid").innerHTML = cards.length ? cards.join("") : `<div class="empty-state">条件に合う部署がありません。</div>`;
-}
-
-function renderInstitutions() {
-  document.getElementById("institutionList").innerHTML = institutions.map(([title, type, body, tags]) => `
-    <article class="institution-card">
-      <div class="card-top">
-        <div>
-          <div class="card-type">${type}</div>
-          <h3>${title}</h3>
-        </div>
-      </div>
-      <p>${body}</p>
-      <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
-    </article>
-  `).join("");
-}
-
-function renderLedgers() {
-  document.getElementById("ledgerList").innerHTML = ledgers.map(([name, body, tags], index) => `
-    <article class="ledger-card">
-      <div class="paper-stack mini-stack-visual" style="--stack-size:${Math.min(index + 2, 7)}"></div>
-      <div>
-        <h3>${name}</h3>
-        <p>${body}</p>
-        <div class="tag-row">${tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
-      </div>
-    </article>
-  `).join("");
-}
-
-function renderUnits() {
-  document.getElementById("unitGrid").innerHTML = units.map(([name, risk], index) => `
-    <article class="unit-card">
-      <div class="card-top">
-        <div>
-          <div class="card-type">Unit</div>
-          <h3>${name}</h3>
-        </div>
-        <span class="tag risk-${risk}">${risk}</span>
-      </div>
-      <div class="unit-scene">
-        <span class="unit-token"></span>
-        <span class="paper-stack mini-stack-visual" style="--stack-size:${(index % 5) + 2}"></span>
-      </div>
-      <p class="muted">lane: onboarding or active route / owner: pending-election</p>
-    </article>
-  `).join("");
-}
-
-function bindEvents() {
-  document.getElementById("departmentFilter").addEventListener("input", (event) => {
-    renderDepartments(event.target.value);
+// ====== Tab Navigation ======
+function initTabs() {
+  const btns = document.querySelectorAll(".tab-btn");
+  btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btns.forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById("panel-" + btn.dataset.tab).classList.add("active");
+      location.hash = btn.dataset.tab;
+    });
   });
+  // Restore from hash
+  const hash = location.hash.replace("#", "");
+  if (hash) {
+    const btn = document.querySelector(`.tab-btn[data-tab="${hash}"]`);
+    if (btn) btn.click();
+  }
 }
 
-renderPills();
-renderQuests();
-renderLocations();
-renderRoutes();
-renderActivities();
-renderElectionQueue();
-renderApprovals();
-renderDepartments();
-renderInstitutions();
-renderLedgers();
-renderLayers();
-renderFlow();
-renderUnits();
-bindEvents();
+// ====== Clock ======
+function startClock() {
+  const el = document.getElementById("clock");
+  const update = () => {
+    const n = new Date();
+    el.textContent = [n.getHours(), n.getMinutes(), n.getSeconds()].map(v => String(v).padStart(2, "0")).join(":");
+  };
+  update();
+  setInterval(update, 1000);
+}
+
+// ====== Header Stats ======
+function renderHeaderStats() {
+  if (!DATA) return;
+  document.getElementById("statSittings").textContent = `${DATA.stats.total_sittings} 回`;
+  document.getElementById("statMotions").textContent = `${DATA.stats.total_motions} 件`;
+}
+
+// ====== Assembly: Timeline ======
+function renderTimeline() {
+  const el = document.getElementById("timeline");
+  const sittings = DATA.sittings || [];
+  document.getElementById("sittingCount").textContent = `${sittings.length} 回`;
+
+  if (!sittings.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">📭</span><p>会議データなし</p></div>'; return; }
+
+  el.innerHTML = sittings.slice(0, 30).map(s => {
+    const ruling = DATA.rulings[String(s.number)];
+    const statusClass = s.status === "adopted" ? "adopted" : "motion-open";
+    const agendaHtml = (s.agenda || []).map(a => {
+      const modeClass = a.mode.startsWith("discussion") ? "discussion" : a.mode === "deliberation" ? "deliberation" : a.mode === "report" ? "report" : "procedural";
+      return `<div class="agenda-item"><span class="agenda-mode mode-${modeClass}">${ja("mode", a.mode)}</span><span class="agenda-name clickable" onclick="showMotion('${a.item.replace(/'/g, "\\'")}')">${a.item}</span></div>`;
+    }).join("");
+    const resultHtml = (s.result || []).map(r => `<div class="result-item">${r}</div>`).join("");
+    const rulingBtn = ruling ? `<div style="margin-top:8px"><button class="card ruling-btn" onclick="showRuling(${s.number})" style="width:100%;padding:8px;font-size:11px;color:var(--accent);border-color:var(--accent)">📖 裁定を表示</button></div>` : "";
+
+    return `
+      <div class="card sitting-card" data-num="${s.number}">
+        <div class="sitting-card-header">
+          <span class="sitting-number">#${s.number}</span>
+          <span class="sitting-status ${statusClass}">${ja("status", s.status)}</span>
+          <span class="sitting-date">${s.date || ""}</span>
+        </div>
+        <div class="sitting-goal">${s.goal || ""}</div>
+        <div class="agenda-list">${agendaHtml}</div>
+        ${resultHtml ? `<div class="sitting-result">${resultHtml}</div>` : ""}
+        ${rulingBtn}
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Assembly: Motion Tracker ======
+function renderTracker() {
+  const el = document.getElementById("tracker");
+  const items = DATA.improvement_board || [];
+  document.getElementById("motionCount").textContent = `${items.length} 件`;
+
+  if (!items.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">📋</span><p>議案データなし</p></div>'; return; }
+
+  // Group by status
+  const groups = { active: [], adopted: [], closed: [] };
+  items.forEach(item => {
+    const status = (item.Status || "").toLowerCase();
+    const stage = (item["Cycle stage"] || "").toLowerCase();
+    if (stage === "closed" || status.includes("complete")) groups.closed.push(item);
+    else if (status.includes("active") || status.includes("rollout")) groups.active.push(item);
+    else groups.adopted.push(item);
+  });
+
+  const groupLabels = { active: "🔴 進行中", adopted: "🔵 採択済み", closed: "✅ 完了" };
+  const groupColors = { active: "active", adopted: "adopted", closed: "closed" };
+
+  el.innerHTML = Object.entries(groups).map(([key, motions]) => {
+    if (!motions.length) return "";
+    return `
+      <div class="tracker-group">
+        <div class="tracker-group-title">${groupLabels[key]} (${motions.length})</div>
+        ${motions.map(m => `
+          <div class="card motion-card" onclick="showMotion('${(m.Item || "").replace(/'/g,"\\'")}')">
+            <div class="motion-card-header">
+              <span class="motion-status-dot ${groupColors[key]}"></span>
+              <span class="motion-name">${m.Item || ""}</span>
+            </div>
+            <div class="motion-owner">${ja("dept", m.Owner || "")} · ${m["Next sitting"] || ""}</div>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Organization: Departments ======
+function renderDepartments() {
+  const el = document.getElementById("deptGrid");
+  const depts = DATA.departments || [];
+  document.getElementById("deptCount").textContent = `${depts.length} 部署`;
+
+  if (!depts.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">🏢</span><p>部署データなし</p></div>'; return; }
+
+  const icons = {
+    "founder-office": "👑", "assembly-secretariat": "🏛️", "constitutional-affairs": "⚖️",
+    "portfolio-strategy": "🎯", "project-management-office": "📋", "directorate": "🎨",
+    "engineering": "⚙️", "security-risk-compliance": "🔒", "people-talent": "👥",
+    "data-knowledge": "🗄️", "research-intelligence": "🔬", "finance-treasury": "💰",
+    "sales-revenue": "📈", "marketing-growth": "📣", "legal-policy": "📜",
+    "product-management": "📦", "quality-assurance": "✅", "release-operations": "🚀",
+    "exploration-incubation": "🧪", "business-operations": "🔄", "internal-tools-enablement": "🛠️",
+    "information-systems": "💻", "product-service-design": "🎯", "procurement-vendor-management": "🛒",
+    "communications-brand": "📢", "business-development-partnerships": "🤝",
+    "customer-success-support": "🎧", "organizational-development-learning": "📚"
+  };
+
+  el.innerHTML = depts.map(d => {
+    const id = d.Department || "";
+    const icon = icons[id] || "🏢";
+    return `
+      <div class="card dept-card">
+        <div class="dept-name">${icon} ${ja("dept", id)}</div>
+        <div class="dept-steward">${d.Steward || ""}</div>
+        <div class="dept-stop">${d["Stop power"] || ""}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Organization: Officeholders ======
+function renderOfficeholders() {
+  const el = document.getElementById("officeholderList");
+  const holders = DATA.officeholders || [];
+
+  if (!holders.length) { el.innerHTML = '<div class="empty-state">データなし</div>'; return; }
+
+  el.innerHTML = holders.slice(0, 20).map(h => `
+    <div class="oh-row">
+      <span class="oh-office">${ja("office", h.Office || "")}</span>
+      <span class="oh-holder">${h.Holder || ""}</span>
+      <span class="oh-status">${ja("status", h.Status || "")}</span>
+    </div>
+  `).join("");
+}
+
+// ====== Organization: Work Allocation ======
+function renderWorkAllocation() {
+  const el = document.getElementById("workList");
+  const work = DATA.work_allocation || [];
+
+  if (!work.length) { el.innerHTML = '<div class="empty-state">データなし</div>'; return; }
+
+  el.innerHTML = work.slice(0, 15).map(w => `
+    <div class="work-row">
+      <div class="work-dept">${ja("dept", w.Department || "")}</div>
+      <div class="work-task">${w["Current assignment"] || ""}</div>
+    </div>
+  `).join("");
+}
+
+// ====== Projects: Units ======
+function renderUnits() {
+  const el = document.getElementById("unitGrid");
+  const units = DATA.units || [];
+  document.getElementById("unitCount").textContent = `${units.length} ユニット`;
+
+  if (!units.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">🔷</span><p>ユニットデータなし</p></div>'; return; }
+
+  el.innerHTML = units.map(u => {
+    const unitName = u.Unit || "";
+    const lane = (u["Lane state"] || "not-activated").toLowerCase();
+    const laneClass = lane === "active" ? "lane-active" : lane === "ready" ? "lane-ready" : "lane-not-activated";
+    const seat = (u["Seat state"] || "").toLowerCase();
+    const owner = (u["Owner status"] || "").toLowerCase();
+
+    return `
+      <div class="card unit-card">
+        <div class="unit-card-header">
+          <span class="unit-name">${ja("unit", unitName)}</span>
+          <span class="unit-lane-badge ${laneClass}">${ja("status", lane)}</span>
+        </div>
+        <div class="unit-meta">
+          <div class="unit-meta-row"><span class="unit-meta-label">着席</span><span class="unit-meta-value">${ja("status", seat)}</span></div>
+          <div class="unit-meta-row"><span class="unit-meta-label">リスク</span><span class="unit-meta-value">${u["Default risk"] || ""}</span></div>
+          <div class="unit-meta-row"><span class="unit-meta-label">オーナー</span><span class="unit-meta-value">${ja("status", owner)}</span></div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Projects: Activities ======
+function renderActivities() {
+  const el = document.getElementById("activityList");
+  const acts = DATA.activities || [];
+
+  if (!acts.length) { el.innerHTML = '<div class="empty-state">データなし</div>'; return; }
+
+  el.innerHTML = acts.map(a => `
+    <div class="activity-row">
+      <div class="activity-actor">${a.Actor || ""}</div>
+      <div class="activity-work">${a["Current Work"] || ""}</div>
+      <div class="activity-status">${a.Status || ""} → ${a["Next Handoff"] || ""}</div>
+    </div>
+  `).join("");
+}
+
+// ====== Assembly: Approval Branches ======
+function renderApprovalBranches() {
+  const el = document.getElementById("approvalList");
+  const branches = DATA.approval_branches || [];
+  document.getElementById("approvalCount").textContent = `${branches.length} 件`;
+
+  if (!branches.length) {
+    el.innerHTML = '<div class="empty-state"><span class="empty-icon">✅</span><p>承認待ちなし</p></div>';
+    return;
+  }
+
+  el.innerHTML = branches.map(b => {
+    const state = b["状態"] || "";
+    const stateClass = state === "standby" ? "approval-standby" :
+                       state === "waiting" ? "approval-waiting" :
+                       state === "completed" ? "approval-completed" : "approval-standby";
+    const stateLabel = state === "standby" ? "待機中" :
+                       state === "waiting" ? "承認待ち" :
+                       state === "completed" ? "完了" : state;
+    const blocked = b["Blocked item"] || "";
+    const parallel = b["Parallelizable items"] || "";
+
+    return `
+      <div class="card approval-card ${stateClass}">
+        <div class="approval-header">
+          <span class="approval-id">${b["Branch ID"] || ""}</span>
+          <span class="approval-state-badge">${stateLabel}</span>
+        </div>
+        <div class="approval-scope">
+          <strong>承認対象:</strong> ${b["承認対象"] || ""}
+        </div>
+        <div class="approval-approver">
+          <strong>承認者:</strong> ${ja("dept", b["Approver"] || "")}
+        </div>
+        ${blocked ? `<div class="approval-blocked"><strong>🚫 ブロック中:</strong> ${blocked}</div>` : ""}
+        ${parallel ? `<div class="approval-parallel"><strong>✅ 並行可能:</strong> ${parallel}</div>` : ""}
+        ${b["Return condition"] ? `<div class="approval-return"><strong>返却条件:</strong> ${b["Return condition"]}</div>` : ""}
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Projects: Git Branches ======
+function renderGitBranches() {
+  const el = document.getElementById("branchList");
+  const branches = DATA.git_branches || [];
+
+  if (!branches.length) {
+    el.innerHTML = '<div class="empty-state">ブランチデータなし</div>';
+    return;
+  }
+
+  el.innerHTML = branches.map(b => {
+    const isMain = b.name === "main" || b.name === "origin/main";
+    const isHead = b.name === "origin/HEAD";
+    if (isHead) return "";
+    const icon = isMain ? "🏠" : "🌿";
+    return `
+      <div class="branch-row ${isMain ? 'branch-main' : ''}">
+        <span class="branch-icon">${icon}</span>
+        <span class="branch-name">${b.name}</span>
+        <span class="branch-msg">${b.message || ""}</span>
+      </div>
+    `;
+  }).join("");
+}
+
+// ====== Modal ======
+function openModal(title, bodyHtml) {
+  document.getElementById("modalHeader").textContent = title;
+  document.getElementById("modalBody").innerHTML = bodyHtml;
+  document.getElementById("modalOverlay").classList.add("open");
+}
+function closeModal() { document.getElementById("modalOverlay").classList.remove("open"); }
+
+window.showRuling = function(num) {
+  const r = DATA.rulings[String(num)];
+  if (!r) return;
+  openModal(`#${num} 裁定`, `
+    <h3>裁定</h3><p>${r.ruling || ""}</p>
+    <h3>理由</h3><p>${r.reason || ""}</p>
+    <h3>実行責任者</h3><p>${r.executor || ""}</p>
+    <h3>少数意見</h3><p>${r.minority_view || "なし"}</p>
+    <h3>創業者拒否権</h3><p>${r.founder_veto ? "行使" : "なし"}</p>
+  `);
+};
+
+window.showMotion = function(name) {
+  const item = (DATA.improvement_board || []).find(i => i.Item === name);
+  // Try to find the detailed motion data
+  const motion = DATA.motions ? (DATA.motions[name] || Object.values(DATA.motions).find(m => m.title === name || m.id === name)) : null;
+
+  let body = "";
+
+  if (motion) {
+    // Full discussion detail view
+    const renderList = (arr) => arr && arr.length ? arr.map(l => `<li>${l}</li>`).join("") : "<li>—</li>";
+
+    body = `
+      <div class="modal-section">
+        <h3>📌 目的</h3>
+        <ul>${renderList(motion.goal)}</ul>
+      </div>
+      <div class="modal-section">
+        <h3>📝 提案内容</h3>
+        <ul>${renderList(motion.proposed_action)}</ul>
+      </div>
+      <div class="modal-section">
+        <h3>❓ 理由</h3>
+        <ul>${renderList(motion.why)}</ul>
+      </div>
+      <div class="modal-section discussion-box">
+        <h3>💬 討議-1</h3>
+        <ul>${renderList(motion.discussion_1)}</ul>
+      </div>
+      <div class="modal-section discussion-box">
+        <h3>💬 討議-2</h3>
+        <ul>${renderList(motion.discussion_2)}</ul>
+      </div>
+      <div class="modal-section deliberation-box">
+        <h3>⚖️ 採決結果</h3>
+        <ul>${renderList(motion.deliberation)}</ul>
+      </div>
+      <div class="modal-meta">
+        <span>オーナー: ${ja("dept", motion.owner)}</span>
+        <span>ステータス: ${ja("status", motion.status)}</span>
+        <span>リスク: ${motion.risk}</span>
+      </div>
+    `;
+  } else if (item) {
+    // Fallback: improvement board metadata only
+    body = `
+      <h3>種別</h3><p>${item.Type || ""}</p>
+      <h3>優先度</h3><p>${item.Priority || ""}</p>
+      <h3>審議モード</h3><p>${item["Agenda mode"] || ""}</p>
+      <h3>サイクル</h3><p>${item["Cycle stage"] || ""}</p>
+      <h3>オーナー</h3><p>${ja("dept", item.Owner || "")}</p>
+      <h3>ステータス</h3><p>${ja("status", item.Status || "")}</p>
+      <h3>次のハンドオフ</h3><p>${item["Next handoff"] || ""}</p>
+      <h3>次の会議</h3><p>${item["Next sitting"] || ""}</p>
+    `;
+  } else {
+    body = "<p>議案の詳細データが見つかりませんでした。</p>";
+  }
+
+  const title = motion ? motion.title : name;
+  openModal(title, body);
+};
+
+// ====== Init ======
+async function init() {
+  initTabs();
+  startClock();
+
+  DATA = await fetchStatus();
+  if (!DATA) {
+    document.getElementById("timeline").innerHTML = '<div class="empty-state"><span class="empty-icon">⚠️</span><p>status.json を読み込めませんでした</p></div>';
+    return;
+  }
+
+  renderHeaderStats();
+  renderTimeline();
+  renderTracker();
+  renderApprovalBranches();
+  renderDepartments();
+  renderOfficeholders();
+  renderWorkAllocation();
+  renderUnits();
+  renderActivities();
+  renderGitBranches();
+
+  // Modal close
+  document.getElementById("modalClose").addEventListener("click", closeModal);
+  document.getElementById("modalOverlay").addEventListener("click", e => {
+    if (e.target === document.getElementById("modalOverlay")) closeModal();
+  });
+
+  // Auto refresh
+  setInterval(async () => {
+    const fresh = await fetchStatus();
+    if (fresh) { DATA = fresh; renderHeaderStats(); renderTimeline(); renderTracker(); renderApprovalBranches(); }
+  }, 30000);
+}
+
+init();

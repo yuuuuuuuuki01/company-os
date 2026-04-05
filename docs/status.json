@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 149,
+      "id": "company-os-one-hundred-forty-ninth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 148,
       "id": "company-os-one-hundred-forty-eighth-ordinary-sitting",
       "status": "motion-open",
@@ -7481,6 +7490,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "148": {
+      "ruling": "`非稼働事業初回審査束議案` を discussion-2 で維持し、`timetree-export`, `kanai-kagamibiraki-proposal`, `oem_release` の3件を initial low/medium review packet として deliberation に送る。",
+      "reason": "先頭3件は審査境界が明確で、high-risk gate と衝突せずに non-active business review の最小手順を実証できるため。",
+      "executor": "assembly-secretariat, portfolio-strategy, project-management-office, directorate, people-talent",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "62": {
       "ruling": "`FormPilot` readiness screen を discussion-2 まで進めた。",
       "reason": "screen-only のまま preparation-only path を deliberation に上げる条件が揃ったため。",
@@ -8577,12 +8593,12 @@
       "Priority": "urgent",
       "Item": "inactive-business-initial-review-packet",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "portfolio-strategy",
       "Status": "active",
       "Next handoff": "assembly-secretariat / project-management-office / people-talent",
-      "Next sitting": "one-hundred-forty-seventh ordinary sitting"
+      "Next sitting": "one-hundred-forty-ninth ordinary sitting"
     }
   ],
   "motions": {
@@ -11581,17 +11597,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:18:09 +0900",
-      "message": "Open inactive business first review packet"
+      "date": "2026-04-05 13:19:33 +0900",
+      "message": "Advance inactive review packet to deliberation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:18:09 +0900",
-      "message": "Open inactive business first review packet"
+      "date": "2026-04-05 13:19:33 +0900",
+      "message": "Advance inactive review packet to deliberation"
     }
   ],
   "commits": [
+    {
+      "hash": "01f8695",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:19:33 +0900",
+      "message": "Advance inactive review packet to deliberation"
+    },
+    {
+      "hash": "b7e621b",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:18:29 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "50ff569",
       "author": "yuuuuuuuuki01",
@@ -11699,22 +11727,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:32:41 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "8238d98",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:32:26 +0900",
-      "message": "Add work-first operating limits"
-    },
-    {
-      "hash": "b3c5740",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:28:29 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 144,
+    "total_sittings": 145,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -11723,5 +11739,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:18:09 +0900"
+  "generated_at": "2026-04-05 13:19:33 +0900"
 }

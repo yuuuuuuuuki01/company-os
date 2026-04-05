@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "19c2c04",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 10:22:25 +0900",
+      "message": "Adopt ledger columns template and open branch drill",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "8001c04",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 01:05:56 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "4d8f506",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 10:05:36 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-04 11:25:48 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "ed90125",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 20:25:33 +0900",
-      "message": "Add organizational scaling and subdivision records",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "f1f3b30",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 10:19:12 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 23,
-    "done": 3,
-    "active": 20,
+    "total": 19,
+    "done": 2,
+    "active": 17,
     "pending": 0,
     "items": [
       {
@@ -250,10 +250,6 @@
         "status": "active"
       },
       {
-        "label": "unit-onboarding-priority-motion",
-        "status": "done"
-      },
-      {
         "label": "oem-activation-execution-motion",
         "status": "active"
       },
@@ -274,31 +270,15 @@
         "status": "active"
       },
       {
-        "label": "internal-tools-prioritization-review",
-        "status": "active"
-      },
-      {
-        "label": "ledger-template-helper-kickoff",
-        "status": "active"
-      },
-      {
-        "label": "ledger-template-standard-draft",
-        "status": "active"
-      },
-      {
-        "label": "ledger-template-implementation-packet-kickoff",
-        "status": "active"
-      },
-      {
-        "label": "ledger-frontmatter-template-draft",
-        "status": "active"
-      },
-      {
         "label": "autonomous-meeting-operations",
         "status": "active"
       },
       {
         "label": "approval-branch-operations",
+        "status": "active"
+      },
+      {
+        "label": "ledger-frontmatter-template-draft",
         "status": "active"
       },
       {
@@ -308,27 +288,27 @@
       {
         "label": "ledger-standard-columns-template-draft",
         "status": "active"
+      },
+      {
+        "label": "approval-branch-drill",
+        "status": "active"
       }
     ]
   },
   "activities": {
-    "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "ninety-ninth ordinary sitting completed and one-hundredth sitting opened",
-    "Assembly Secretariat": "run the autonomous ordinary sitting loop, branch approval-needed items, and prepare the one-hundredth packet",
+    "Founder Office": "sovereign check over the active improvement batch and branch-return boundaries",
+    "Assembly": "one-hundred-second ordinary sitting completed and one-hundred-third sitting opened",
+    "Assembly Secretariat": "run the autonomous ordinary sitting loop, branch approval-needed items, and prepare the approval-branch drill packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
-    "Independent Audit Firm": "operate watch, route, and urgent triage on new findings",
-    "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "People and Talent": "watch the seated `oem`, `shift`, `jouzou`, and `FormPilot` unit-owner lines",
-    "Data and Knowledge": "apply short ruling scope, maintain the adopted ledger heading template, and support the standard columns draft",
-    "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths",
-    "Project Management Office": "monitor four active PJ and support autonomous plus approval-branch watch while the standard columns draft proceeds",
-    "Engineering": "run company-os development fixes in parallel with the governance loop and support the standard columns draft",
+    "Project Management Office": "monitor four active PJ and support the approval-branch drill while keeping the four active PJ stable",
+    "Data and Knowledge": "maintain the adopted ledger templates and support the approval-branch drill record shape",
+    "Engineering": "maintain the adopted ledger templates and watch for column drift in active ledgers",
+    "Security, Risk, and Compliance": "define what a real branch trigger would look like without invoking secrets or high-risk execution",
     "OEM Unit": "first external PJ is active under bounded static-tool scope",
     "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
     "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
     "FormPilot Unit": "fourth external PJ is active under bounded outbound-sales automation MVP scope",
-    "Internal Tools and Enablement": "watch autonomous and approval-branch operations while handing off to the standard columns draft",
-    "UI Visual Execution Lane": "Gemini handles UI artifact production only"
+    "Internal Tools and Enablement": "keep the template set reusable while the branch drill is designed"
   },
-  "generated_at": "2026-04-05 10:05:36 +0900"
+  "generated_at": "2026-04-05 10:22:25 +0900"
 }

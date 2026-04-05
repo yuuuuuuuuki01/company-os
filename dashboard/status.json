@@ -8924,12 +8924,12 @@
       "Priority": "urgent",
       "Item": "automation-heartbeat-layers",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
-      "Status": "active",
+      "Status": "adopted",
       "Next handoff": "internal-tools-enablement / project-management-office / independent-audit-firm",
-      "Next sitting": "第百六十八回通常会議"
+      "Next sitting": "第百六十九回通常会議"
     },
     {
       "Priority": "urgent",
@@ -12061,17 +12061,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 15:07:13 +0900",
-      "message": "Advance automation heartbeat and script audit governance"
+      "date": "2026-04-05 15:08:54 +0900",
+      "message": "Adopt automation heartbeat layers"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 15:07:13 +0900",
-      "message": "Advance automation heartbeat and script audit governance"
+      "date": "2026-04-05 15:08:54 +0900",
+      "message": "Adopt automation heartbeat layers"
     }
   ],
   "commits": [
+    {
+      "hash": "76fa609",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 15:08:54 +0900",
+      "message": "Adopt automation heartbeat layers"
+    },
+    {
+      "hash": "3e79208",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 06:07:33 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "2f4db3e",
       "author": "yuuuuuuuuki01",
@@ -12179,18 +12191,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:52:33 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "a37c2a1",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:52:15 +0900",
-      "message": "Adopt high-risk sequencing and open credential review"
-    },
-    {
-      "hash": "0e2c0e0",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:49:41 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12203,5 +12203,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 15:07:13 +0900"
+  "generated_at": "2026-04-05 15:08:54 +0900"
 }

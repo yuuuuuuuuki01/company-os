@@ -16,7 +16,7 @@ updated_at: 2026-04-05
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch, bottom-up exception route, and adopted automation bundles | assembly |
-| Assembly | governance | active | one-hundred-forty-fourth ordinary sitting completed and automation bundles moved into chained rollout | next implementation batch |
+| Assembly | governance | active | one-hundred-forty-seventh ordinary sitting opened to carry the inactive-business first review packet into formal review | one-hundred-forty-eighth ordinary sitting |
 | Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop under work-first limits and auto-promote queued automation bundles without waiting for new selection meetings | improvement board |
 | Project Management Office | department | active | monitor four active PJ, enforce work-first meeting allowance, and run business triads against active improvement work | assembly-secretariat |
 | Portfolio Strategy | department | active | keep business-owner seats assigned by business and manage active/pending/dormant portfolio transitions | assembly-secretariat / PMO |

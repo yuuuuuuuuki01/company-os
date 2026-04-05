@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 164,
+      "id": "company-os-one-hundred-sixty-fourth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 163,
       "id": "company-os-one-hundred-sixty-third-ordinary-sitting",
       "status": "motion-open",
@@ -8878,6 +8887,17 @@
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee",
       "Next sitting": "one-hundred-sixty-third ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "automation-heartbeat-layers",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "assembly-secretariat",
+      "Status": "active",
+      "Next handoff": "internal-tools-enablement / project-management-office",
+      "Next sitting": "one-hundred-sixty-fourth ordinary sitting"
     }
   ],
   "motions": {
@@ -10461,6 +10481,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-automation-heartbeat-layers": {
+      "id": "motion-automation-heartbeat-layers",
+      "title": "自動運転階層導入議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
+      "risk": "low",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-bottom-up-petition-system": {
       "id": "motion-bottom-up-petition-system",
       "title": "ボトムアップ上申制度議案",
@@ -11941,17 +11974,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 14:02:25 +0900",
-      "message": "Advance Poin-T prep to deliberation"
+      "date": "2026-04-05 14:12:44 +0900",
+      "message": "Add automation heartbeat layers and review loop"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 14:02:25 +0900",
-      "message": "Advance Poin-T prep to deliberation"
+      "date": "2026-04-05 14:12:44 +0900",
+      "message": "Add automation heartbeat layers and review loop"
     }
   ],
   "commits": [
+    {
+      "hash": "528fb20",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 14:12:44 +0900",
+      "message": "Add automation heartbeat layers and review loop"
+    },
+    {
+      "hash": "144a6f6",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 05:02:43 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "59dfb9b",
       "author": "yuuuuuuuuki01",
@@ -12059,29 +12104,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:35:03 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "0b28064",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:34:45 +0900",
-      "message": "Prepare second inactive business review packet"
-    },
-    {
-      "hash": "68a19da",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:33:02 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 159,
+    "total_sittings": 160,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 44,
-    "total_proposals": 79,
+    "total_motions": 45,
+    "total_proposals": 80,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 14:02:25 +0900"
+  "generated_at": "2026-04-05 14:12:44 +0900"
 }

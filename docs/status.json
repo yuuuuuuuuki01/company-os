@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 159,
+      "id": "company-os-one-hundred-fifty-ninth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 158,
       "id": "company-os-one-hundred-fifty-eighth-ordinary-sitting",
       "status": "motion-open",
@@ -7228,6 +7237,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "158": {
+      "ruling": "`高リスク審査着手順議案` を採択し、最初の high-risk screening opening を `credential-ledger`、policy-first 別レーンを `saigai` として進める。",
+      "reason": "`credential-ledger` は utility 起点で screening 境界を限定しやすく、`saigai` は founder-side 例外確認が先行するため別レーン維持が妥当だから。",
+      "executor": "security-risk-compliance, assembly-secretariat, release-review-committee, founder-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "39": {
       "ruling": "第三十九回会議で dual-lane stability を採択し、次の圧力を `jouzou` readiness screen に限定した。",
       "reason": "二本の active lane に重大逸脱がなく、第三候補については screening までなら制度負荷を増やさずに前進できるため。",
@@ -8770,10 +8786,10 @@
       "Priority": "urgent",
       "Item": "high-risk-screening-sequencing",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "security-risk-compliance",
-      "Status": "active",
+      "Status": "adopted",
       "Next handoff": "assembly-secretariat / release-review-committee / founder-office",
       "Next sitting": "one-hundred-fifty-eighth ordinary sitting"
     },
@@ -8786,7 +8802,7 @@
       "Owner": "security-risk-compliance",
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee",
-      "Next sitting": "one-hundred-fifty-eighth ordinary sitting"
+      "Next sitting": "one-hundred-fifty-ninth ordinary sitting"
     }
   ],
   "motions": {
@@ -11837,17 +11853,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:49:23 +0900",
-      "message": "Prepare credential-ledger high-risk opening"
+      "date": "2026-04-05 13:52:15 +0900",
+      "message": "Adopt high-risk sequencing and open credential review"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:49:23 +0900",
-      "message": "Prepare credential-ledger high-risk opening"
+      "date": "2026-04-05 13:52:15 +0900",
+      "message": "Adopt high-risk sequencing and open credential review"
     }
   ],
   "commits": [
+    {
+      "hash": "a37c2a1",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:52:15 +0900",
+      "message": "Adopt high-risk sequencing and open credential review"
+    },
+    {
+      "hash": "0e2c0e0",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:49:41 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "d31f5bd",
       "author": "yuuuuuuuuki01",
@@ -11955,22 +11983,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:19:53 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "01f8695",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:19:33 +0900",
-      "message": "Advance inactive review packet to deliberation"
-    },
-    {
-      "hash": "b7e621b",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:18:29 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 154,
+    "total_sittings": 155,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -11979,5 +11995,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:49:23 +0900"
+  "generated_at": "2026-04-05 13:52:15 +0900"
 }

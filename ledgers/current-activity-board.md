@@ -30,4 +30,4 @@ updated_at: 2026-04-05
 | Jouzou Unit | unit | active | import validation and quote-workflow acceptance improvement under the business triad | reviewer / PMO |
 | FormPilot Unit | unit | active | review queue and provider-boundary hardening under the business triad | reviewer / PMO |
 | Pending Business Pool | portfolio | active | keep review-opened items stocked and move high-risk items in gate order without overloading branch capacity | portfolio-strategy / people-talent / project-management-office / security-risk-compliance |
-| Internal Tools and Enablement | department | active | build the first scriptification implementation bundle for review packet issuance and automation review carry-forward while keeping CLI-first entrypoints current | independent-audit-firm / data-knowledge |
+| Internal Tools and Enablement | department | active | repair and verify the CLI-first entrypoints for `status`, `review-open`, and `script-audit-sample` while keeping the first scriptification bundle active for review packet issuance and automation review carry-forward | independent-audit-firm / data-knowledge / assembly-secretariat |

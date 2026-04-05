@@ -10,7 +10,9 @@ $OutputEncoding = [Console]::OutputEncoding
 
 $Root = Split-Path -Parent $PSScriptRoot
 
-function Read-Utf8([string]$Path) {
+function Read-Utf8 {
+    param([string]$Path)
+
     Get-Content -Raw -Encoding utf8 $Path
 }
 
@@ -65,8 +67,13 @@ function Write-Section {
     )
 
     Write-Output $Title
-    foreach ($line in $Lines) {
-        Write-Output ("- {0}" -f $line)
+    if ($null -eq $Lines -or $Lines.Count -eq 0) {
+        Write-Output '- none'
+    }
+    else {
+        foreach ($line in $Lines) {
+            Write-Output ("- {0}" -f $line)
+        }
     }
     Write-Output ''
 }
@@ -78,10 +85,19 @@ function Show-Status {
     $activityRows = Get-MarkdownTableRows -Path $activityPath
     $boardRows = Get-MarkdownTableRows -Path $boardPath
 
-    Write-Section '今の状況' ($activityRows | Select-Object -First 4 | ForEach-Object { "{0}: {1}" -f $_[0], $_[3] })
-    Write-Section '次の実務' ($boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 4 | ForEach-Object { "{0}: {1} -> {2}" -f $_[1], $_[4], $_[7] })
-    Write-Output ("参照: {0}" -f $activityPath)
-    Write-Output ("参照: {0}" -f $boardPath)
+    Write-Section 'current activity' (
+        $activityRows |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[3] }
+    )
+    Write-Section 'next bounded work' (
+        $boardRows |
+        Where-Object { $_[6] -eq 'active' } |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1} -> {2}" -f $_[1], $_[4], $_[7] }
+    )
+    Write-Output ("source: {0}" -f $activityPath)
+    Write-Output ("source: {0}" -f $boardPath)
 }
 
 function Show-LightWatch {
@@ -91,10 +107,18 @@ function Show-LightWatch {
     $watchRows = Get-MarkdownTableRows -Path $watchPath
     $queueRows = Get-MarkdownTableRows -Path $queuePath
 
-    Write-Section '軽監視' ($watchRows | Select-Object -First 5 | ForEach-Object { "{0}: {1}" -f $_[0], $_[2] })
-    Write-Section '補充候補' (($queueRows | Select-Object -First 4) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] })
-    Write-Output ("参照: {0}" -f $watchPath)
-    Write-Output ("参照: {0}" -f $queuePath)
+    Write-Section 'continuous watch' (
+        $watchRows |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[2] }
+    )
+    Write-Section 'queue sample' (
+        $queueRows |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] }
+    )
+    Write-Output ("source: {0}" -f $watchPath)
+    Write-Output ("source: {0}" -f $queuePath)
 }
 
 function Show-Portfolio {
@@ -104,10 +128,19 @@ function Show-Portfolio {
     $portfolioRows = Get-MarkdownTableRows -Path $portfolioPath
     $inactiveRows = Get-MarkdownTableRows -Path $inactivePath
 
-    Write-Section '事業ポートフォリオ' (($portfolioRows | Select-Object -First 6) | ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] })
-    Write-Section '非稼働の次手' (($inactiveRows | Where-Object { $_[5] -notlike 'review-opened' } | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[5] })
-    Write-Output ("参照: {0}" -f $portfolioPath)
-    Write-Output ("参照: {0}" -f $inactivePath)
+    Write-Section 'portfolio sample' (
+        $portfolioRows |
+        Select-Object -First 6 |
+        ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] }
+    )
+    Write-Section 'inactive next steps' (
+        $inactiveRows |
+        Where-Object { $_[5] -ne 'review-opened' } |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[5] }
+    )
+    Write-Output ("source: {0}" -f $portfolioPath)
+    Write-Output ("source: {0}" -f $inactivePath)
 }
 
 function Show-Tactical {
@@ -117,10 +150,19 @@ function Show-Tactical {
     $boardRows = Get-MarkdownTableRows -Path $boardPath
     $activityRows = Get-MarkdownTableRows -Path $activityPath
 
-    Write-Section '戦術整理' (($boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[4], $_[8] })
-    Write-Section '直近 handoff' (($activityRows | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[4] })
-    Write-Output ("参照: {0}" -f $boardPath)
-    Write-Output ("参照: {0}" -f $activityPath)
+    Write-Section 'tactical board' (
+        $boardRows |
+        Where-Object { $_[6] -eq 'active' } |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[4], $_[8] }
+    )
+    Write-Section 'recent handoff' (
+        $activityRows |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[4] }
+    )
+    Write-Output ("source: {0}" -f $boardPath)
+    Write-Output ("source: {0}" -f $activityPath)
 }
 
 function Show-ReviewOpen {
@@ -130,10 +172,19 @@ function Show-ReviewOpen {
     $queueRows = Get-MarkdownTableRows -Path $queuePath
     $scriptRows = Get-MarkdownTableRows -Path $scriptPath
 
-    Write-Section 'review-open 候補' (($queueRows | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] })
-    Write-Section 'script 化候補' (($scriptRows | Where-Object { $_[5] -ne 'active' } | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[5] })
-    Write-Output ("参照: {0}" -f $queuePath)
-    Write-Output ("参照: {0}" -f $scriptPath)
+    Write-Section 'review-open queue' (
+        $queueRows |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] }
+    )
+    Write-Section 'script candidates' (
+        $scriptRows |
+        Where-Object { $_[5] -ne 'active' } |
+        Select-Object -First 4 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[5] }
+    )
+    Write-Output ("source: {0}" -f $queuePath)
+    Write-Output ("source: {0}" -f $scriptPath)
 }
 
 function Show-ReportRollup {
@@ -143,10 +194,19 @@ function Show-ReportRollup {
     $improvementRows = Get-MarkdownTableRows -Path $improvementPath
     $auditRows = Get-MarkdownTableRows -Path $auditPath
 
-    Write-Section 'watch 中の議題' (($improvementRows | Where-Object { $_[4] -eq 'watch' } | Select-Object -First 6) | ForEach-Object { "{0}: {1}" -f $_[1], $_[6] })
-    Write-Section '監査報告候補' (($auditRows | Select-Object -First 5) | ForEach-Object { "{0}: {1}" -f $_[0], $_[4] })
-    Write-Output ("参照: {0}" -f $improvementPath)
-    Write-Output ("参照: {0}" -f $auditPath)
+    Write-Section 'watch items' (
+        $improvementRows |
+        Where-Object { $_[4] -eq 'watch' } |
+        Select-Object -First 6 |
+        ForEach-Object { "{0}: {1}" -f $_[1], $_[6] }
+    )
+    Write-Section 'audit targets' (
+        $auditRows |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[4] }
+    )
+    Write-Output ("source: {0}" -f $improvementPath)
+    Write-Output ("source: {0}" -f $auditPath)
 }
 
 function Show-ScriptAuditSample {
@@ -156,10 +216,18 @@ function Show-ScriptAuditSample {
     $auditRows = Get-MarkdownTableRows -Path $auditPath
     $tokenRows = Get-MarkdownTableRows -Path $tokenPath
 
-    Write-Section 'script audit sample' (($auditRows | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] })
-    Write-Section '例外境界確認対象' (($tokenRows | Select-Object -First 5) | ForEach-Object { "{0}: {1}" -f $_[0], $_[2] })
-    Write-Output ("参照: {0}" -f $auditPath)
-    Write-Output ("参照: {0}" -f $tokenPath)
+    Write-Section 'script audit sample' (
+        $auditRows |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] }
+    )
+    Write-Section 'token efficiency notice' (
+        $tokenRows |
+        Select-Object -First 5 |
+        ForEach-Object { "{0}: {1}" -f $_[0], $_[2] }
+    )
+    Write-Output ("source: {0}" -f $auditPath)
+    Write-Output ("source: {0}" -f $tokenPath)
 }
 
 switch ($Command) {

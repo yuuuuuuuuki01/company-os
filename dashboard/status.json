@@ -8536,6 +8536,17 @@
       "Status": "adopted",
       "Next handoff": "portfolio-strategy / directorate / people-talent / active and pending businesses",
       "Next sitting": "one-hundred-forty-sixth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "active-and-inactive-business-readiness",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "portfolio-strategy",
+      "Status": "adopted",
+      "Next handoff": "project-management-office / people-talent / business-owner seats",
+      "Next sitting": "one-hundred-forty-sixth ordinary sitting"
     }
   ],
   "motions": {
@@ -10951,17 +10962,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:49:22 +0900",
-      "message": "Add portfolio-wide business triad operations"
+      "date": "2026-04-05 12:52:59 +0900",
+      "message": "Add active and inactive business readiness work"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:49:22 +0900",
-      "message": "Add portfolio-wide business triad operations"
+      "date": "2026-04-05 12:52:59 +0900",
+      "message": "Add active and inactive business readiness work"
     }
   ],
   "commits": [
+    {
+      "hash": "9863cc8",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:52:59 +0900",
+      "message": "Add active and inactive business readiness work"
+    },
+    {
+      "hash": "16de000",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:49:34 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "780ea70",
       "author": "yuuuuuuuuki01",
@@ -11069,18 +11092,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:55:58 +0900",
       "message": "Advance approval wait remediation tracking"
-    },
-    {
-      "hash": "b7f9f81",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 02:49:50 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "ca5cda0",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:49:38 +0900",
-      "message": "Advance approval wait delay escalation and remediation"
     }
   ],
   "stats": {
@@ -11088,10 +11099,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 37,
+    "total_motions": 38,
     "total_proposals": 73,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:49:22 +0900"
+  "generated_at": "2026-04-05 12:52:59 +0900"
 }

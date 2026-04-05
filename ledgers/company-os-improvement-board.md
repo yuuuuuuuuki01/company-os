@@ -52,3 +52,4 @@ updated_at: 2026-04-05
 | urgent | work-first-operations | operating | report | rollout-active | project-management-office | adopted | assembly-secretariat / data-knowledge / owner departments | one-hundred-forty-fifth ordinary sitting |
 | urgent | collaboration-growth-business-owner | structural | report | rollout-active | organizational-development-learning | adopted | project-management-office / directorate / people-talent / portfolio-strategy | one-hundred-forty-fifth ordinary sitting |
 | urgent | business-work-and-discussion | operating | report | rollout-active | project-management-office | adopted | portfolio-strategy / directorate / people-talent / active and pending businesses | one-hundred-forty-sixth ordinary sitting |
+| urgent | active-and-inactive-business-readiness | operating | report | rollout-active | portfolio-strategy | adopted | project-management-office / people-talent / business-owner seats | one-hundred-forty-sixth ordinary sitting |

@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 156,
+      "id": "company-os-one-hundred-fifty-sixth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 155,
       "id": "company-os-one-hundred-fifty-fifth-ordinary-sitting",
       "status": "motion-open",
@@ -8020,6 +8029,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "155": {
+      "ruling": "`非稼働事業次順位審査束議案` を採択し、`tumugi`, `shift_backup` の2件を formal review opening 済みとして扱う。",
+      "reason": "両件とも low / medium であり、bundle-issued 条件を満たしているため、pending review の補充を lawful に継続できるため。",
+      "executor": "portfolio-strategy, project-management-office, people-talent, directorate",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "48": {
       "ruling": "第四十八回会議で bounded `jouzou` activation-review path を採択した。",
       "reason": "第三候補をまだ activation せず、次段を review path に限定することで dual-lane の安定を保てるため。",
@@ -8711,12 +8727,23 @@
       "Priority": "urgent",
       "Item": "inactive-business-second-review-packet",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "portfolio-strategy",
-      "Status": "active",
-      "Next handoff": "assembly-secretariat / project-management-office / people-talent / directorate",
+      "Status": "adopted",
+      "Next handoff": "project-management-office / people-talent / directorate",
       "Next sitting": "one-hundred-fifty-fifth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "high-risk-screening-sequencing",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "security-risk-compliance",
+      "Status": "active",
+      "Next handoff": "assembly-secretariat / release-review-committee / founder-office",
+      "Next sitting": "one-hundred-fifty-sixth ordinary sitting"
     }
   ],
   "motions": {
@@ -10235,6 +10262,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-high-risk-screening-sequencing": {
+      "id": "motion-high-risk-screening-sequencing",
+      "title": "高リスク審査着手順議案",
+      "status": "motion-open",
+      "owner": "security-risk-compliance",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-approval-wait-remediation-completion-confirmation": {
       "id": "motion-approval-wait-remediation-completion-confirmation",
       "title": "承認待機是正完了確認議案",
@@ -10970,8 +11010,8 @@
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-fifty-second ordinary sitting adopted continuous operations and opened the next inactive-business refill packet",
-      "Next Handoff": "one-hundred-fifty-third ordinary sitting"
+      "Current Work": "one-hundred-fifty-fifth ordinary sitting adopted the second inactive-business review packet and opened high-risk screening sequencing",
+      "Next Handoff": "one-hundred-fifty-sixth ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
@@ -11061,8 +11101,8 @@
       "Actor": "Pending Business Pool",
       "Layer": "portfolio",
       "Status": "active",
-      "Current Work": "keep review-opened items stocked and move the second inactive-business review packet toward formal opening",
-      "Next Handoff": "portfolio-strategy / people-talent / project-management-office"
+      "Current Work": "keep review-opened items stocked and move high-risk items in gate order without overloading branch capacity",
+      "Next Handoff": "portfolio-strategy / people-talent / project-management-office / security-risk-compliance"
     },
     {
       "Actor": "Internal Tools and Enablement",
@@ -11741,17 +11781,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:35:55 +0900",
-      "message": "Advance second inactive review packet to deliberation"
+      "date": "2026-04-05 13:43:41 +0900",
+      "message": "Adopt second review packet and open high-risk sequencing"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:35:55 +0900",
-      "message": "Advance second inactive review packet to deliberation"
+      "date": "2026-04-05 13:43:41 +0900",
+      "message": "Adopt second review packet and open high-risk sequencing"
     }
   ],
   "commits": [
+    {
+      "hash": "ea47d6f",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:43:41 +0900",
+      "message": "Adopt second review packet and open high-risk sequencing"
+    },
+    {
+      "hash": "ca0075a",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:36:12 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "8666a18",
       "author": "yuuuuuuuuki01",
@@ -11859,29 +11911,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:14:29 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "9b0e51d",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:14:11 +0900",
-      "message": "Add inactive business review opening gates"
-    },
-    {
-      "hash": "d1a80e6",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:10:17 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 151,
+    "total_sittings": 152,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 41,
-    "total_proposals": 76,
+    "total_motions": 42,
+    "total_proposals": 77,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:35:55 +0900"
+  "generated_at": "2026-04-05 13:43:41 +0900"
 }

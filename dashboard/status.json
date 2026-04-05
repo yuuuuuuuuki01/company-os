@@ -7995,6 +7995,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "145": {
+      "ruling": "`作業先行運用議案` を採択し、今後は meeting allowance を実装前進に連動させる。",
+      "reason": "自律運転の目的は会議継続ではなく作業継続であり、議題進行に会議予算上限を設ける必要がある。",
+      "executor": "project-management-office, assembly-secretariat, data-knowledge",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "118": {
       "ruling": "`承認待機競合調停議案` を discussion-2 まで進めた。",
       "reason": "`conflicting_items`、`priority_basis`、`temporary_owner`、`revisit_at` の最小調停項目が十分に収束できたため。",
@@ -8489,6 +8496,17 @@
       "Status": "adopted",
       "Next handoff": "project-management-office / internal-tools-enablement / owner departments",
       "Next sitting": "one-hundred-forty-fourth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "work-first-operations",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "project-management-office",
+      "Status": "adopted",
+      "Next handoff": "assembly-secretariat / data-knowledge / owner departments",
+      "Next sitting": "one-hundred-forty-fifth ordinary sitting"
     }
   ],
   "motions": {
@@ -10059,6 +10077,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-work-first-operations": {
+      "id": "motion-work-first-operations",
+      "title": "作業先行運用議案",
+      "status": "motion-open",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-ledger-standard-columns-template-draft": {
       "id": "motion-ledger-standard-columns-template-draft",
       "title": "台帳標準列雛形作成議案",
@@ -10657,21 +10688,21 @@
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop and auto-promote queued automation bundles without waiting for new selection meetings",
+      "Current Work": "run the autonomous ordinary sitting loop under work-first limits and auto-promote queued automation bundles without waiting for new selection meetings",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and keep the automation bundle chain advancing without waiting for manual reselection",
+      "Current Work": "monitor four active PJ, enforce work-first meeting allowance, and keep the automation bundle chain advancing",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "maintain the adopted ledger template set and start the adopted ledger normalization automation bundle",
+      "Current Work": "maintain the adopted ledger template set and record work-first progress so meetings only open after implementation moves",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -10802,17 +10833,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:28:16 +0900",
-      "message": "Add chained automation bundle rollout"
+      "date": "2026-04-05 12:32:26 +0900",
+      "message": "Add work-first operating limits"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:28:16 +0900",
-      "message": "Add chained automation bundle rollout"
+      "date": "2026-04-05 12:32:26 +0900",
+      "message": "Add work-first operating limits"
     }
   ],
   "commits": [
+    {
+      "hash": "8238d98",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:32:26 +0900",
+      "message": "Add work-first operating limits"
+    },
+    {
+      "hash": "b3c5740",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:28:29 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "70681c0",
       "author": "yuuuuuuuuki01",
@@ -10920,18 +10963,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:42:16 +0900",
       "message": "Adopt Japanese meeting output and return confirmation"
-    },
-    {
-      "hash": "b4b93a4",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:40:54 +0900",
-      "message": "fix: GitHub Actionsで古いスクリプトを使わずローカルのgenerate_status.pyを実行しdocsにコピーするよう修正"
-    },
-    {
-      "hash": "1973561",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:35:24 +0900",
-      "message": "Advance approval wait reservation and borrow log"
     }
   ],
   "stats": {
@@ -10939,10 +10970,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 34,
-    "total_proposals": 70,
+    "total_motions": 35,
+    "total_proposals": 71,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:28:16 +0900"
+  "generated_at": "2026-04-05 12:32:26 +0900"
 }

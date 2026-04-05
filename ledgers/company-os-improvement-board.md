@@ -17,23 +17,25 @@ updated_at: 2026-04-05
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | urgent | record-normalization-motion | operating | report | closed | data-knowledge | reported-complete | maintenance under reporting-standard-rule | closed in seventh ordinary sitting |
 | urgent | unit-state-separation-motion | structural | report | closed | organizational-development-learning | reported-complete | normal amendment path if needed | closed in seventh ordinary sitting |
-| next | unit-activation-gate-motion | structural | report | watch | project-management-office | rollout-active | four active PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | committee-execution-bridge-motion | operating | report | watch | assembly-secretariat | rollout-active | committee-to-execution handoff watch | one-hundred-twenty-fourth ordinary sitting |
-| next | audit-fast-path-motion | operating | report | watch | independent-audit-firm | rollout-active | founder-office / assembly | one-hundred-twenty-fourth ordinary sitting |
-| next | ai-bulletin-intake-motion | operating | report | watch | research-intelligence | rollout-active | assembly-secretariat | one-hundred-twenty-fourth ordinary sitting |
-| next | oem-activation-execution-motion | structural | report | watch | project-management-office | adopted | first external PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | shift-activation-execution-motion | structural | report | watch | project-management-office | adopted | second external PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | jouzou-activation-execution-motion | structural | report | watch | project-management-office | adopted | third external PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | formpilot-activation-execution-motion | structural | report | watch | project-management-office | adopted | fourth external PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | four-project-stability-review | structural | report | watch | project-management-office | adopted | approval-wait borrow log and four active PJ watch | one-hundred-twenty-fourth ordinary sitting |
-| next | autonomous-meeting-operations | operating | report | watch | assembly-secretariat | adopted | autonomous meeting watch | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-branch-operations | operating | report | watch | assembly-secretariat | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-branch-drill | operating | report | watch | assembly-secretariat | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-request-template-draft | operating | report | watch | assembly-secretariat | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-return-record-template-draft | operating | report | watch | data-knowledge | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-priority-reshuffle | operating | report | watch | project-management-office | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-candidate-refill-ledger | operating | report | watch | internal-tools-enablement | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-review | operating | report | watch | security-risk-compliance | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-conflict-arbitration | operating | report | watch | project-management-office | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-resource-reservation | operating | report | watch | project-management-office | adopted | approval-wait borrow log | one-hundred-twenty-fourth ordinary sitting |
-| next | approval-wait-reservation-borrow-log | operating | discussion | discussion-2 | data-knowledge | active | assembly-secretariat / project-management-office | one-hundred-twenty-fourth ordinary sitting |
+| next | unit-activation-gate-motion | structural | report | watch | project-management-office | rollout-active | four active PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | committee-execution-bridge-motion | operating | report | watch | assembly-secretariat | rollout-active | committee-to-execution handoff watch | one-hundred-twenty-ninth ordinary sitting |
+| next | audit-fast-path-motion | operating | report | watch | independent-audit-firm | rollout-active | founder-office / assembly | one-hundred-twenty-ninth ordinary sitting |
+| next | ai-bulletin-intake-motion | operating | report | watch | research-intelligence | rollout-active | assembly-secretariat | one-hundred-twenty-ninth ordinary sitting |
+| next | oem-activation-execution-motion | structural | report | watch | project-management-office | adopted | first external PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | shift-activation-execution-motion | structural | report | watch | project-management-office | adopted | second external PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | jouzou-activation-execution-motion | structural | report | watch | project-management-office | adopted | third external PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | formpilot-activation-execution-motion | structural | report | watch | project-management-office | adopted | fourth external PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | four-project-stability-review | structural | report | watch | project-management-office | adopted | approval-wait delay escalation and four active PJ watch | one-hundred-twenty-ninth ordinary sitting |
+| next | autonomous-meeting-operations | operating | report | watch | assembly-secretariat | adopted | autonomous meeting watch | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-branch-operations | operating | report | watch | assembly-secretariat | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-branch-drill | operating | report | watch | assembly-secretariat | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-request-template-draft | operating | report | watch | assembly-secretariat | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-return-record-template-draft | operating | report | watch | data-knowledge | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-priority-reshuffle | operating | report | watch | project-management-office | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-candidate-refill-ledger | operating | report | watch | internal-tools-enablement | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-review | operating | report | watch | security-risk-compliance | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-conflict-arbitration | operating | report | watch | project-management-office | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-resource-reservation | operating | report | watch | project-management-office | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-reservation-borrow-log | operating | report | watch | data-knowledge | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-return-confirmation | operating | report | watch | security-risk-compliance | adopted | approval-wait delay escalation | one-hundred-twenty-ninth ordinary sitting |
+| next | approval-wait-return-delay-escalation | operating | discussion | discussion-1 | founder-office | active | assembly-secretariat / security-risk-compliance | one-hundred-twenty-ninth ordinary sitting |

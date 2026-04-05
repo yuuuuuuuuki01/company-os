@@ -1,5 +1,5 @@
 ---
-id: company-os-one-hundred-twenty-fourth-ordinary-sitting
+id: company-os-one-hundred-twenty-seventh-ordinary-sitting
 layer: proposal
 status: motion-open
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-05
 updated_at: 2026-04-05
 ---
 
-# Company OS One-Hundred-Twenty-Fourth Ordinary Sitting
+# Company OS One-Hundred-Twenty-Seventh Ordinary Sitting
 
 ## 目的
 
-承認待機の借用記録雛形を採択に十分な形まで絞る。
+承認待機の返却確認成果物を採択に十分な形まで進める。
 
 ## 議題
 
@@ -37,10 +37,11 @@ updated_at: 2026-04-05
 16. report: `承認待機中棚卸議案`
 17. report: `承認待機競合調停議案`
 18. report: `承認待機資源予約議案`
-19. discussion-2: `承認待機借用記録議案`
-20. 次回の one-hundred-twenty-fifth ordinary sitting 議題確認
+19. report: `承認待機借用記録議案`
+20. discussion-2: `承認待機返却確認議案`
+21. 次回の one-hundred-twenty-eighth ordinary sitting 議題確認
 
 ## 完了条件
 
-- 借用記録の成果物が採択に十分な形まで絞られている
-- 予約枠の借用と返却を短く追跡できる
+- 返却確認の成果物が採択に十分な形まで絞られている
+- 借用済みの予約枠を閉じ、必要時に再利用できる

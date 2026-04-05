@@ -49,3 +49,7 @@ This applies to `discussion` and `deliberation`, and may also be used for `repor
 
 Every formal debate thread must end in a vote, ruling, withdrawal, or postponement record.
 Every sitting must also leave a recorded next-agenda state.
+
+## Language duty
+
+Debate output that is expected to be read in the UI should be written in Japanese by default under [会議日本語出力ルール.md](C:/agent/codex/company-os/internal-rules/会議日本語出力ルール.md).

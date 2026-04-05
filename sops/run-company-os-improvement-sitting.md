@@ -23,3 +23,4 @@ updated_at: 2026-04-03
 8. Open or update the next ordinary sitting record as the closing trigger.
 9. Record what was activated, deferred, reported, adopted, or closed.
 10. Keep the sitting output short and in Japanese.
+11. For UI-facing meeting records, use Japanese headings such as `目的`, `議題`, and `完了条件`.

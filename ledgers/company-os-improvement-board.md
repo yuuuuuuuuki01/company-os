@@ -59,3 +59,4 @@ updated_at: 2026-04-05
 | urgent | high-risk-screening-sequencing | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee / founder-office | one-hundred-fifty-eighth ordinary sitting |
 | urgent | credential-ledger-high-risk-screen-opening | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
 | urgent | point-high-risk-screen-prep | operating | deliberation | deliberation | security-risk-compliance | active | assembly-secretariat / release-review-committee | one-hundred-sixty-third ordinary sitting |
+| urgent | automation-heartbeat-layers | operating | discussion | discussion-1 | assembly-secretariat | active | internal-tools-enablement / project-management-office | one-hundred-sixty-fourth ordinary sitting |

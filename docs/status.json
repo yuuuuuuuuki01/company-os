@@ -10962,17 +10962,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:52:59 +0900",
-      "message": "Add active and inactive business readiness work"
+      "date": "2026-04-05 12:59:06 +0900",
+      "message": "Add business packets for active and inactive portfolio"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:52:59 +0900",
-      "message": "Add active and inactive business readiness work"
+      "date": "2026-04-05 12:59:06 +0900",
+      "message": "Add business packets for active and inactive portfolio"
     }
   ],
   "commits": [
+    {
+      "hash": "c9a4dd9",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:59:06 +0900",
+      "message": "Add business packets for active and inactive portfolio"
+    },
+    {
+      "hash": "3761769",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:53:12 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "9863cc8",
       "author": "yuuuuuuuuki01",
@@ -11080,18 +11092,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:57:30 +0900",
       "message": "fix stash pop"
-    },
-    {
-      "hash": "41afc91",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 02:56:14 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "e4da096",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:55:58 +0900",
-      "message": "Advance approval wait remediation tracking"
     }
   ],
   "stats": {
@@ -11104,5 +11104,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:52:59 +0900"
+  "generated_at": "2026-04-05 12:59:06 +0900"
 }

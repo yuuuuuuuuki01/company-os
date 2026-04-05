@@ -57,4 +57,5 @@ updated_at: 2026-04-05
 | urgent | continuous-operations | operating | report | rollout-active | assembly-secretariat | adopted | project-management-office / portfolio-strategy / security-risk-compliance | one-hundred-fifty-second ordinary sitting |
 | urgent | inactive-business-second-review-packet | operating | report | watch | portfolio-strategy | adopted | project-management-office / people-talent / directorate | one-hundred-fifty-fifth ordinary sitting |
 | urgent | high-risk-screening-sequencing | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee / founder-office | one-hundred-fifty-eighth ordinary sitting |
-| urgent | credential-ledger-high-risk-screen-opening | operating | discussion | discussion-2 | security-risk-compliance | active | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
+| urgent | credential-ledger-high-risk-screen-opening | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
+| urgent | point-high-risk-screen-prep | operating | discussion | discussion-1 | security-risk-compliance | active | assembly-secretariat / release-review-committee | one-hundred-sixty-first ordinary sitting |

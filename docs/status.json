@@ -8924,23 +8924,34 @@
       "Priority": "urgent",
       "Item": "automation-heartbeat-layers",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "assembly-secretariat",
       "Status": "active",
-      "Next handoff": "internal-tools-enablement / project-management-office",
-      "Next sitting": "one-hundred-sixty-fifth ordinary sitting"
+      "Next handoff": "internal-tools-enablement / project-management-office / independent-audit-firm",
+      "Next sitting": "第百六十八回通常会議"
     },
     {
       "Priority": "urgent",
       "Item": "token-efficient-execution",
       "Type": "operating",
       "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Cycle stage": "discussion-2",
       "Owner": "internal-tools-enablement",
       "Status": "active",
-      "Next handoff": "all department stewards / data-knowledge",
-      "Next sitting": "one-hundred-sixty-sixth ordinary sitting"
+      "Next handoff": "all department stewards / data-knowledge / internal-tools-enablement",
+      "Next sitting": "第百六十九回通常会議"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "routine-work-scriptification",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-2",
+      "Owner": "internal-tools-enablement",
+      "Status": "active",
+      "Next handoff": "independent-audit-firm / data-knowledge / internal-tools-enablement",
+      "Next sitting": "第百七十回通常会議"
     }
   ],
   "motions": {
@@ -10347,6 +10358,19 @@
       "title": "承認待機返却遅延エスカレーション議案",
       "status": "adopted",
       "owner": "founder-office",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-routine-work-scriptification": {
+      "id": "motion-routine-work-scriptification",
+      "title": "定型業務スクリプト化導入議案",
+      "status": "motion-open",
+      "owner": "internal-tools-enablement",
       "risk": "medium",
       "goal": [],
       "proposed_action": [],
@@ -12037,17 +12061,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 14:57:36 +0900",
-      "message": "Add token-efficient execution policy"
+      "date": "2026-04-05 15:07:13 +0900",
+      "message": "Advance automation heartbeat and script audit governance"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 14:57:36 +0900",
-      "message": "Add token-efficient execution policy"
+      "date": "2026-04-05 15:07:13 +0900",
+      "message": "Advance automation heartbeat and script audit governance"
     }
   ],
   "commits": [
+    {
+      "hash": "2f4db3e",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 15:07:13 +0900",
+      "message": "Advance automation heartbeat and script audit governance"
+    },
+    {
+      "hash": "43797dd",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 05:57:53 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "91fcba3",
       "author": "yuuuuuuuuki01",
@@ -12155,18 +12191,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:49:41 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "d31f5bd",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:49:23 +0900",
-      "message": "Prepare credential-ledger high-risk opening"
-    },
-    {
-      "hash": "d56f958",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:45:04 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12174,10 +12198,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 46,
-    "total_proposals": 81,
+    "total_motions": 47,
+    "total_proposals": 82,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 14:57:36 +0900"
+  "generated_at": "2026-04-05 15:07:13 +0900"
 }

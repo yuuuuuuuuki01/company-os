@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 23:02:58 +0900",
-      "message": "Add automation note to remediation completion motion"
+      "date": "2026-04-05 23:07:02 +0900",
+      "message": "Add approval gate section"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 23:02:58 +0900",
-      "message": "Add automation note to remediation completion motion"
+      "date": "2026-04-05 23:07:02 +0900",
+      "message": "Add approval gate section"
     }
   ],
   "commits": [
+    {
+      "hash": "e315128",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 23:07:02 +0900",
+      "message": "Add approval gate section"
+    },
+    {
+      "hash": "9ce40af",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 14:03:11 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "ee8d1cb",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 12:44:03 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "006ead0",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 21:43:51 +0900",
-      "message": "Document scriptification verification"
-    },
-    {
-      "hash": "f91f144",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 12:25:44 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 23:02:58 +0900"
+  "generated_at": "2026-04-05 23:07:02 +0900"
 }

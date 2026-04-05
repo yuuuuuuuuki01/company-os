@@ -1,5 +1,5 @@
 ---
-id: company-os-one-hundred-fifteenth-ordinary-sitting
+id: company-os-one-hundred-sixteenth-ordinary-sitting
 layer: proposal
 status: motion-open
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-05
 updated_at: 2026-04-05
 ---
 
-# Company OS One-Hundred-Fifteenth Ordinary Sitting
+# Company OS One-Hundred-Sixteenth Ordinary Sitting
 
 ## Goal
 
-Adopt the candidate-refill artifact and open the approval-wait review.
+Advance the approval-wait review artifact for adoption.
 
 ## Agenda
 
@@ -33,11 +33,11 @@ Adopt the candidate-refill artifact and open the approval-wait review.
 12. report: `承認要求票雛形作成議案`
 13. report: `承認返却記録雛形作成議案`
 14. report: `承認待機優先度組替議案`
-15. deliberation: `承認待機補充候補台帳作成議案`
-16. discussion-1: `承認待機中棚卸議案`
-17. confirm the one-hundred-sixteenth ordinary sitting agenda
+15. report: `承認待機補充候補台帳作成議案`
+16. discussion-2: `承認待機中棚卸議案`
+17. confirm the one-hundred-seventeenth ordinary sitting agenda
 
 ## Definition of done
 
-- the candidate-refill artifact is adopted
-- the next approval-wait operating artifact is opened
+- the approval-wait review artifact is narrowed enough for adoption
+- refill candidates and blocked items remain distinguishable

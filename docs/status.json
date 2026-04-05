@@ -11484,6 +11484,40 @@
       "Status": "active"
     }
   ],
+  "bottomup_petitions": [
+    {
+      "Source line": "pmo-lane-watch-section",
+      "Current issue": "active PJ watch と改善PJ watch が同じ steward に集中しやすい",
+      "Local proposal": "active PJ watch note と改善 watch note を分離する",
+      "Routed by": "division-head",
+      "Current status": "department review",
+      "Next handoff": "project-management-office"
+    },
+    {
+      "Source line": "ri-ai-intake-section",
+      "Current issue": "学術速報はあるが制度改善への翻訳粒度が一定でない",
+      "Local proposal": "quarterly synthesis を追加して制度改善論点へ圧縮する",
+      "Routed by": "division-head",
+      "Current status": "department review",
+      "Next handoff": "research-intelligence"
+    },
+    {
+      "Source line": "ei-incubation-section",
+      "Current issue": "創発案と制度改善案の整理棚が混線しやすい",
+      "Local proposal": "incubation brief と improvement brief を台帳段階で分離する",
+      "Routed by": "division-head",
+      "Current status": "department review",
+      "Next handoff": "exploration-incubation"
+    },
+    {
+      "Source line": "psd-ui-visual-section",
+      "Current issue": "UI 学習知見が運用文書へ戻り切らない",
+      "Local proposal": "UI 受入知見の短報テンプレートを作る",
+      "Routed by": "division-head",
+      "Current status": "department review",
+      "Next handoff": "product-service-design"
+    }
+  ],
   "approval_branches": [
     {
       "Branch ID": "none-open",

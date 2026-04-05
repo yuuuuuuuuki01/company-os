@@ -233,6 +233,8 @@ function renderDepartments() {
   const automationIssues = DATA.automation_issues || [];
   const reviewIssues = DATA.review_issues || [];
   const originationAgendas = DATA.origination_agendas || [];
+  const bottomupPetitions = DATA.bottomup_petitions || [];
+  const activities = DATA.activities || [];
 
   // Calculate total headcount (unique members in officeholders registry)
   const uniqueHolders = new Set(officeholders.map(o => o.Holder).filter(h => h && h.toLowerCase() !== "tbd"));
@@ -271,13 +273,25 @@ function renderDepartments() {
     const deptAutomations = automationIssues.filter(a => a.Department === id);
     const deptReviews = reviewIssues.filter(r => r.Department === id);
     const deptOriginations = originationAgendas.filter(o => o.Department === id);
+    const deptBottomUp = bottomupPetitions.filter(b => b["Next handoff"] === id || b["Source line"] === id);
+    
+    // Find active ongoing tasks natively handled by the department
+    const deptNameNormalized = (ja("dept", id) || "").toLowerCase();
+    const idNormalized = id.replace(/-/g, ' ');
+    const deptActivities = activities.filter(a => {
+      if (!a.Actor) return false;
+      const actorLower = a.Actor.toLowerCase();
+      return actorLower.includes(idNormalized) || actorLower.includes(deptNameNormalized);
+    });
 
     let issuesHtml = "";
-    if (deptAutomations.length || deptReviews.length || deptOriginations.length) {
-      issuesHtml = `<div class="dept-issues"><div class="dept-issues-title">🚨 部門課題</div><ul class="dept-issue-list">`;
+    if (deptAutomations.length || deptReviews.length || deptOriginations.length || deptBottomUp.length || deptActivities.length) {
+      issuesHtml = `<div class="dept-issues"><div class="dept-issues-title">🚨 部門の活動・課題</div><ul class="dept-issue-list">`;
+      deptActivities.forEach(act => issuesHtml += `<li><span class="badge-action">進行中</span> ${act["Current Work"] || ""}</li>`);
+      deptBottomUp.forEach(b => issuesHtml += `<li><span class="badge-up">上申</span> ${b["Local proposal"] || ""} (${b["Current issue"] || ""})</li>`);
+      deptOriginations.forEach(o => issuesHtml += `<li><span class="badge-orig">議題案</span> ${o["Candidate"] || ""}</li>`);
       deptAutomations.forEach(a => issuesHtml += `<li><span class="badge-auto">自動化</span> ${a["自動化課題"] || ""}</li>`);
       deptReviews.forEach(r => issuesHtml += `<li><span class="badge-review">総点検</span> ${r["Submission summary"] || ""}</li>`);
-      deptOriginations.forEach(o => issuesHtml += `<li><span class="badge-orig">議題案</span> ${o["Candidate"] || ""}</li>`);
       issuesHtml += `</ul></div>`;
     }
 

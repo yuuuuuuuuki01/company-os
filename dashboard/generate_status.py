@@ -148,6 +148,7 @@ work_allocation = parse_board('ledgers/department-work-allocation-board.md', ['D
 automation_issues = parse_board('ledgers/全部署自動化運用課題台帳.md', ['Department', '自動化課題', '優先度'])
 review_issues = parse_board('ledgers/全部署論点総点検台帳.md', ['Department', 'Submission summary', 'Priority'])
 origination_agendas = parse_board('ledgers/部署議題創出台帳.md', ['Department', 'Candidate', 'Priority band'])
+bottomup_petitions = parse_board('ledgers/ボトムアップ上申台帳.md', ['Current issue', 'Local proposal', 'Next handoff'])
 
 # Parse individual motions (non-sitting proposals)
 motions = {}
@@ -234,6 +235,7 @@ result = {
     'automation_issues': automation_issues,
     'review_issues': review_issues,
     'origination_agendas': origination_agendas,
+    'bottomup_petitions': bottomup_petitions,
     'approval_branches': approval_branches,
     'approval_drills': approval_drills,
     'approval_requests': approval_requests,

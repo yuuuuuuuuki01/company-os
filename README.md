@@ -93,6 +93,11 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 
 These commands provide short Japanese status output so the chat can trigger work while the terminal carries the next operational slice.
 
+## CLI Prompt Templates
+
+- `memory/CLI指示テンプレート.md`: Codex CLI にそのまま渡せる監視用、会議用、実装用、監査用のテンプレート
+- `internal-rules/CLI自律実行ルール.md`: CLI が承認を戻さず進めてよい範囲と、Founder へ戻す条件
+
 ## Amendment thresholds
 
 - `sops/` and `internal-rules/`: simple majority

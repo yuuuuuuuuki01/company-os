@@ -27,6 +27,10 @@ Each ordinary sitting should leave at least one of the following for every activ
 - a template
 - a bounded implementation artifact
 
+## Work-first override
+
+If a sitting does not also move active implementation or active bundles forward, new discussion items should not be opened except for narrow exception handling.
+
 ## Reporting-only exception
 
 `report` items may avoid new artifacts only when they already carry completed work and the sitting is merely acknowledging status.

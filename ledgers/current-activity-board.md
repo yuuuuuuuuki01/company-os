@@ -17,9 +17,9 @@ updated_at: 2026-04-05
 | --- | --- | --- | --- | --- |
 | Founder Office | governance | active | sovereign check over the active improvement batch, bottom-up exception route, and adopted automation bundles | assembly |
 | Assembly | governance | active | one-hundred-forty-fourth ordinary sitting completed and automation bundles moved into chained rollout | next implementation batch |
-| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop and auto-promote queued automation bundles without waiting for new selection meetings | improvement board |
-| Project Management Office | department | active | monitor four active PJ and keep the automation bundle chain advancing without waiting for manual reselection | assembly-secretariat |
-| Data and Knowledge | department | active | maintain the adopted ledger template set and start the adopted ledger normalization automation bundle | assembly-secretariat |
+| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop under work-first limits and auto-promote queued automation bundles without waiting for new selection meetings | improvement board |
+| Project Management Office | department | active | monitor four active PJ, enforce work-first meeting allowance, and keep the automation bundle chain advancing | assembly-secretariat |
+| Data and Knowledge | department | active | maintain the adopted ledger template set and record work-first progress so meetings only open after implementation moves | assembly-secretariat |
 | Engineering | department | active | maintain the adopted ledger template set and watch for column drift in active ledgers | quality-assurance / internal-tools-enablement |
 | Security, Risk, and Compliance | department | active | keep branch-trigger boundaries aligned with real risk and start the adopted exception-routing automation bundle | founder-office / release-review-committee |
 | OEM Unit | unit | active | first external PJ is active under bounded static-tool scope | reviewer / PMO |

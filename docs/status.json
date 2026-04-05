@@ -1,6 +1,33 @@
 {
   "sittings": [
     {
+      "number": 143,
+      "id": "company-os-one-hundred-forty-third-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 142,
+      "id": "company-os-one-hundred-forty-second-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 141,
+      "id": "company-os-one-hundred-forty-first-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 140,
       "id": "company-os-one-hundred-fortieth-ordinary-sitting",
       "status": "motion-open",
@@ -7212,6 +7239,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "143": {
+      "ruling": "`自動化運用課題一括決定議案` を採択し、初回の自動化実装束として `会議補充`, `PJ監視`, `台帳整流`, `例外経路`, `規律順序` の五束を正式採用する。",
+      "reason": "全部署から出た課題の中で、低〜中リスクで横断効果が大きい束を先に進めるのが最も自律化効果が高い。",
+      "executor": "assembly-secretariat, project-management-office, data-knowledge, security-risk-compliance, people-talent, internal-tools-enablement",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "75": {
       "ruling": "bounded `FormPilot` execution bundle を採択し、次を activation execution に進めた。",
       "reason": "第4PJを起動する前に、seat / packet / reviewer / approval / rollback の最小束を lawful に確定させる必要があるため。",
@@ -7485,6 +7519,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "141": {
+      "ruling": "`全部署自動化運用課題抽出議案` を discussion-2 へ進め、`自動化運用課題一括決定議案` を開く。",
+      "reason": "課題抽出は単発で終わらせず、一括決定へ直接つなげることで実装優先順位を早く決められる。",
+      "executor": "assembly-secretariat, data-knowledge, project-management-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "129": {
       "ruling": "`承認待機返却遅延エスカレーション議案` を discussion-2 まで進めた。",
       "reason": "`overdue_since`、`current_owner`、`escalation_target`、`escalation_at` の最小項目が十分に収束できたため。",
@@ -7545,6 +7586,13 @@
       "ruling": "`承認待機借用記録議案` を discussion-2 まで進めた。",
       "reason": "`reservation_id`、`borrowed_capacity`、`return_due`、`returned_at` の必須性が十分に収束できたため。",
       "executor": "data-knowledge, project-management-office, assembly-secretariat",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
+    "140": {
+      "ruling": "`議題創出不履行規律議案` を採択し、`ボトムアップ上申制度議案` を deliberation へ進め、次に `全部署自動化運用課題抽出議案` を開く。",
+      "reason": "議題供給経路を増やした後は、全部署で自動化運用の詰まりを洗い出す段階へ進むのが自然である。",
+      "executor": "assembly-secretariat, people-talent, organizational-development-learning",
       "minority_view": "なし",
       "founder_veto": false
     },
@@ -7692,6 +7740,13 @@
       "ruling": "`承認待機補充候補台帳作成議案` を採択し、次を `承認待機中棚卸議案` に進める。",
       "reason": "承認待機中の差し替え候補を保つ最小台帳が整ったため、次は待機の長期化を棚卸しするのが自然だったため。",
       "executor": "internal-tools-enablement, project-management-office, assembly-secretariat, security-risk-compliance",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
+    "142": {
+      "ruling": "`全部署自動化運用課題抽出議案` を採択し、`自動化運用課題一括決定議案` を deliberation へ進める。",
+      "reason": "全部署から自動化課題が出揃ったため、次は束単位で採択と watch を決める段階に入れる。",
+      "executor": "assembly-secretariat, data-knowledge, security-risk-compliance",
       "minority_view": "なし",
       "founder_veto": false
     },
@@ -8377,8 +8432,8 @@
       "Priority": "next",
       "Item": "bottom-up-petition-system",
       "Type": "structural",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "organizational-development-learning",
       "Status": "active",
       "Next handoff": "section-chiefs / division-heads / assembly-secretariat",
@@ -8388,12 +8443,34 @@
       "Priority": "next",
       "Item": "all-department-omnibus-packet",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
-      "Status": "active",
+      "Status": "adopted",
       "Next handoff": "data-knowledge / project-management-office / all department stewards",
-      "Next sitting": "one-hundred-fortieth ordinary sitting"
+      "Next sitting": "one-hundred-forty-first ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "all-department-automation-issues",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "assembly-secretariat",
+      "Status": "adopted",
+      "Next handoff": "all department stewards / data-knowledge / security-risk-compliance",
+      "Next sitting": "one-hundred-forty-third ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "automation-issues-omnibus",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "assembly-secretariat",
+      "Status": "adopted",
+      "Next handoff": "assembly-secretariat / project-management-office / data-knowledge / security-risk-compliance / people-talent / internal-tools-enablement",
+      "Next sitting": "one-hundred-forty-third ordinary sitting"
     }
   ],
   "motions": {
@@ -9639,6 +9716,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-all-department-automation-issues": {
+      "id": "motion-all-department-automation-issues",
+      "title": "全部署自動化運用課題抽出議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-all-department-review-round": {
       "id": "motion-all-department-review-round",
       "title": "全部署論点総点検議案",
@@ -9891,6 +9981,19 @@
       "title": "開発修正並行運用議案",
       "status": "adopted",
       "owner": "engineering",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-automation-issues-omnibus": {
+      "id": "motion-automation-issues-omnibus",
+      "title": "自動化運用課題一括決定議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
       "risk": "medium",
       "goal": [],
       "proposed_action": [],
@@ -10509,35 +10612,35 @@
       "Actor": "Founder Office",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "sovereign check over the active improvement batch, all-department review boundaries, and bottom-up exception route",
+      "Current Work": "sovereign check over the active improvement batch, bottom-up exception route, and adopted automation bundles",
       "Next Handoff": "assembly"
     },
     {
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-thirty-ninth ordinary sitting completed and one-hundred-fortieth sitting opened",
-      "Next Handoff": "one-hundred-fortieth ordinary sitting"
+      "Current Work": "one-hundred-forty-third ordinary sitting completed and automation bundles moved into rollout",
+      "Next Handoff": "next implementation batch"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop, keep the all-department review in watch, and prepare the omnibus packet",
+      "Current Work": "run the autonomous ordinary sitting loop and launch the adopted automation implementation bundles",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and return agenda seeds from delivery friction into the omnibus packet and bottom-up route",
+      "Current Work": "monitor four active PJ and start the adopted PJ watch automation bundle",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "maintain the adopted ledger template set and normalize all-department review submissions into one omnibus packet",
+      "Current Work": "maintain the adopted ledger template set and start the adopted ledger normalization automation bundle",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -10551,7 +10654,7 @@
       "Actor": "Security, Risk, and Compliance",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep branch-trigger boundaries aligned with real risk and define direct-send exceptions for bottom-up petitions",
+      "Current Work": "keep branch-trigger boundaries aligned with real risk and start the adopted exception-routing automation bundle",
       "Next Handoff": "founder-office / release-review-committee"
     },
     {
@@ -10586,7 +10689,7 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep the template set reusable while all-department review, bottom-up reminder support, and omnibus packet tooling are prepared",
+      "Current Work": "build the adopted automation helper bundles for meeting replenishment, PJ watch, and exception routing",
       "Next Handoff": "engineering / security-risk-compliance"
     }
   ],
@@ -10594,21 +10697,21 @@
     {
       "Department": "founder-office",
       "Current assignment": "keep sovereign alignment across the active improvement batch",
-      "Deliverable": "founder decision lane and all-department review boundary check",
+      "Deliverable": "founder decision lane and automation-boundary watch note",
       "Status": "active",
       "Next handoff": "assembly"
     },
     {
       "Department": "assembly-secretariat",
       "Current assignment": "run the autonomous ordinary sitting loop and maintain rollout watch across active motions",
-      "Deliverable": "one-hundred-fortieth sitting packet, all-department omnibus packet, and four-active-PJ watch note",
+      "Deliverable": "automation meeting-replenishment bundle kickoff packet and next implementation batch note",
       "Status": "active",
       "Next handoff": "all active owners"
     },
     {
       "Department": "project-management-office",
       "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and supply agenda seeds from delivery friction",
-      "Deliverable": "four-PJ watch note, all-department prioritization note, bottom-up routing note, and omnibus sequencing note",
+      "Deliverable": "four-PJ watch note and PJ watch automation bundle kickoff note",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
     },
@@ -10622,21 +10725,21 @@
     {
       "Department": "security-risk-compliance",
       "Current assignment": "maintain key custody and watch the concrete active-PJ approval paths",
-      "Deliverable": "branch-trigger boundary note, bottom-up direct-send exception note, and department proposal risk screen note",
+      "Deliverable": "branch-trigger boundary note and exception-routing automation bundle kickoff note",
       "Status": "active",
       "Next handoff": "founder-office / release-review-committee"
     },
     {
       "Department": "data-knowledge",
       "Current assignment": "apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration",
-      "Deliverable": "adopted ledger template set, live ledger upkeep, and all-department review normalization support",
+      "Deliverable": "adopted ledger template set, live ledger upkeep, and ledger-normalization automation bundle kickoff note",
       "Status": "active",
       "Next handoff": "assembly-secretariat"
     },
     {
       "Department": "internal-tools-enablement",
       "Current assignment": "support tooling and automation for boards, ledgers, and recurring loops",
-      "Deliverable": "template set upkeep, all-department reminder support, and bottom-up intake assist note",
+      "Deliverable": "automation helper bundle plan for meeting replenishment, PJ watch, and exception routing",
       "Status": "active",
       "Next handoff": "engineering / security-risk-compliance"
     }
@@ -10668,17 +10771,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:15:31 +0900",
-      "message": "Add all-department review and bottom-up petitions"
+      "date": "2026-04-05 12:23:01 +0900",
+      "message": "Add automation readiness review across all departments"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:15:31 +0900",
-      "message": "Add all-department review and bottom-up petitions"
+      "date": "2026-04-05 12:23:01 +0900",
+      "message": "Add automation readiness review across all departments"
     }
   ],
   "commits": [
+    {
+      "hash": "b6407b3",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:23:01 +0900",
+      "message": "Add automation readiness review across all departments"
+    },
+    {
+      "hash": "175aa4b",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:15:48 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "704be5e",
       "author": "yuuuuuuuuki01",
@@ -10786,29 +10901,17 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:30:51 +0900",
       "message": "Advance approval wait arbitration and reservation"
-    },
-    {
-      "hash": "b9eb7ef",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:27:12 +0900",
-      "message": "Advance approval wait review and arbitration"
-    },
-    {
-      "hash": "2222f5a",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:23:44 +0900",
-      "message": "feat: 議案の討議内容をモーダル表示 - Discussion-1/2/Deliberation の中身をクリックで閲覧可能に"
     }
   ],
   "stats": {
-    "total_sittings": 139,
+    "total_sittings": 142,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 31,
-    "total_proposals": 67,
+    "total_motions": 33,
+    "total_proposals": 69,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:15:31 +0900"
+  "generated_at": "2026-04-05 12:23:01 +0900"
 }

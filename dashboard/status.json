@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 165,
+      "id": "company-os-one-hundred-sixty-fifth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 164,
       "id": "company-os-one-hundred-sixty-fourth-ordinary-sitting",
       "status": "motion-open",
@@ -8122,6 +8131,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "164": {
+      "ruling": "`自動運転階層導入議案` を discussion-1 で受理し、理想 cadence と実装 cadence を分離したまま discussion-2 へ送る。",
+      "reason": "10分級と30分級を理想層として保持しつつ、実装制約上は1時間以上へ折り畳む設計が現実的だから。",
+      "executor": "assembly-secretariat, internal-tools-enablement, project-management-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "68": {
       "ruling": "`FormPilot` activation-review path を協議2回目まで進めた。",
       "reason": "実行前に review path の境界と accepted artifact を十分に絞る必要があるため。",
@@ -8349,6 +8365,13 @@
     "159": {
       "ruling": "`credential-ledger 高リスク審査着手議案` を discussion-1 で受理し、opening 範囲を `seat / auth boundary / encryption boundary / secret boundary` に限定したまま discussion-2 へ送る。",
       "reason": "high-risk でも bounded opening に限定すれば、本流を止めずに screening 準備を進められるため。",
+      "executor": "security-risk-compliance, assembly-secretariat, release-review-committee",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
+    "163": {
+      "ruling": "`Poin-T 高リスク審査準備議案` を採択し、`Poin-T` を ready 化までに留めた次順位 high-risk 候補として扱う。",
+      "reason": "同時 opening を避けつつ次手を切らさないためには、`Poin-T` を ready 状態で待機させるのが最も安定するため。",
       "executor": "security-risk-compliance, assembly-secretariat, release-review-committee",
       "minority_view": "なし",
       "founder_veto": false
@@ -8881,10 +8904,10 @@
       "Priority": "urgent",
       "Item": "point-high-risk-screen-prep",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "security-risk-compliance",
-      "Status": "active",
+      "Status": "adopted",
       "Next handoff": "assembly-secretariat / release-review-committee",
       "Next sitting": "one-hundred-sixty-third ordinary sitting"
     },
@@ -8893,11 +8916,11 @@
       "Item": "automation-heartbeat-layers",
       "Type": "operating",
       "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Cycle stage": "discussion-2",
       "Owner": "assembly-secretariat",
       "Status": "active",
       "Next handoff": "internal-tools-enablement / project-management-office",
-      "Next sitting": "one-hundred-sixty-fourth ordinary sitting"
+      "Next sitting": "one-hundred-sixty-fifth ordinary sitting"
     }
   ],
   "motions": {
@@ -11974,17 +11997,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 14:12:44 +0900",
-      "message": "Add automation heartbeat layers and review loop"
+      "date": "2026-04-05 14:44:57 +0900",
+      "message": "Adopt Poin-T ready state and advance automation layers"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 14:12:44 +0900",
-      "message": "Add automation heartbeat layers and review loop"
+      "date": "2026-04-05 14:44:57 +0900",
+      "message": "Adopt Poin-T ready state and advance automation layers"
     }
   ],
   "commits": [
+    {
+      "hash": "5a8896c",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 14:44:57 +0900",
+      "message": "Adopt Poin-T ready state and advance automation layers"
+    },
+    {
+      "hash": "8c38625",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 05:13:02 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "528fb20",
       "author": "yuuuuuuuuki01",
@@ -12092,22 +12127,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:36:12 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "8666a18",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:35:55 +0900",
-      "message": "Advance second inactive review packet to deliberation"
-    },
-    {
-      "hash": "5461edd",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:35:03 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 160,
+    "total_sittings": 161,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -12116,5 +12139,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 14:12:44 +0900"
+  "generated_at": "2026-04-05 14:44:57 +0900"
 }

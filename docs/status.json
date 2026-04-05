@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 22:19:06 +0900",
-      "message": "Document automation note for return-delay remediation"
+      "date": "2026-04-05 22:29:37 +0900",
+      "message": "Document automation note for priority reshuffle"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 22:19:06 +0900",
-      "message": "Document automation note for return-delay remediation"
+      "date": "2026-04-05 22:29:37 +0900",
+      "message": "Document automation note for priority reshuffle"
     }
   ],
   "commits": [
+    {
+      "hash": "6c10af8",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 22:29:37 +0900",
+      "message": "Document automation note for priority reshuffle"
+    },
+    {
+      "hash": "3972785",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 13:19:18 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "b4d7802",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 08:49:13 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "dd57890",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 17:48:52 +0900",
-      "message": "Adopt token-efficient execution and scriptification"
-    },
-    {
-      "hash": "074d1b7",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 08:47:24 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 22:19:06 +0900"
+  "generated_at": "2026-04-05 22:29:37 +0900"
 }

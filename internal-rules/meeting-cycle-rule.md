@@ -8,7 +8,7 @@ risk: low
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-05
 ---
 
 # Meeting Cycle Rule
@@ -48,3 +48,7 @@ Before every sitting closes, the assembly must:
 3. open or update the next ordinary sitting record
 
 This next-agenda confirmation is the trigger that starts the following meeting loop.
+
+## Auto mode
+
+If an item is eligible under [自動会議運用ルール.md](C:/agent/codex/company-os/internal-rules/自動会議運用ルール.md), the secretariat may open, advance, and close successive ordinary sittings without separate founder confirmation.

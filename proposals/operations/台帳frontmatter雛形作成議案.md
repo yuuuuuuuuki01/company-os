@@ -1,7 +1,7 @@
 ---
 id: motion-ledger-frontmatter-template-draft
 layer: proposal
-status: motion-open
+status: adopted
 owner: internal-tools-enablement
 unit: company-os
 risk: medium
@@ -20,7 +20,12 @@ updated_at: 2026-04-05
 ## 範囲
 
 - `id`, `layer`, `status`, `owner`, `unit`, `risk`, `visibility`, `motion_type`, `created_at`, `updated_at`
-- 台帳向けの既定値の整理
+- 台帳向け既定値の整理
+
+## 採択結果
+
+- 議案は採択
+- 成果物は [台帳frontmatter雛形.md](C:/agent/codex/company-os/ledgers/台帳frontmatter雛形.md)
 
 ## 境界
 

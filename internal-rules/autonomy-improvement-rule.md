@@ -8,7 +8,7 @@ risk: medium
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-03
+updated_at: 2026-04-05
 ---
 
 # Autonomy Improvement Rule
@@ -34,3 +34,7 @@ Expanded autonomy requires evidence that:
 - stop powers still worked
 - no hidden context dependency appeared
 - quality and release controls did not regress
+
+## Meeting autonomy
+
+Ordinary sittings may be promoted into auto mode when the boundaries are written in a reusable rule, the return conditions to Founder are explicit, and each sitting still produces reusable operating artifacts.

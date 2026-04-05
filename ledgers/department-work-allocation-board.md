@@ -8,7 +8,7 @@ risk: low
 visibility: public
 motion_type: none
 created_at: 2026-04-03
-updated_at: 2026-04-04
+updated_at: 2026-04-05
 ---
 
 # Department Work Allocation Board
@@ -16,14 +16,14 @@ updated_at: 2026-04-04
 | Department | Current assignment | Deliverable | Status | Next handoff |
 | --- | --- | --- | --- | --- |
 | founder-office | keep sovereign alignment across the active improvement batch | founder decision lane and reserved-power check | active | assembly |
-| assembly-secretariat | run the ordinary sitting loop and maintain rollout watch across active motions | ninety-fourth sitting packet, meeting record updates, and four-active-PJ watch note | active | all active owners |
+| assembly-secretariat | run the autonomous ordinary sitting loop and maintain rollout watch across active motions | ninety-seventh sitting packet, autonomous-meeting watch note, and four-active-PJ watch note | active | all active owners |
 | constitutional-affairs | review unit-state and activation changes for compatibility | constitutional review note on state, gate, and rollout compliance | active | constitutional review committee |
 | portfolio-strategy | monitor the four active PJ routes and keep any fifth candidate out of activation | four-PJ sequencing note and no-fifth-PJ recommendation | active | founder-office / PMO |
-| project-management-office | watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support the ledger frontmatter draft path | four-PJ watch note and frontmatter-draft packet | active | assembly-secretariat / constitutional-review-committee |
+| project-management-office | watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support autonomous meeting watch plus the ledger heading draft path | four-PJ watch note and heading-draft packet | active | assembly-secretariat / constitutional-review-committee |
 | directorate | review coherence of active governance artifacts and named reviewer confirmation across `oem`, `shift`, `jouzou`, and `FormPilot` | quality note on four-PJ reviewer readiness | active | assembly |
 | product-management | define product requirement packets for `FormPilot` and future candidates | product requirement packet and scope boundary note | active | portfolio-strategy / directorate |
 | product-service-design | maintain design capability work without owning UI implementation | next design critique lesson and brief pattern | active | directorate |
-| engineering | support executable operating artifacts and technical implementation constraints | ledger frontmatter draft support and implementation note | active | PMO / internal-tools-enablement |
+| engineering | support executable operating artifacts and technical implementation constraints | adopted ledger frontmatter artifact and heading-draft support note | active | PMO / internal-tools-enablement |
 | quality-assurance | define how governance artifacts are checked before adoption | lightweight acceptance checklist for development fixes | active | directorate / release-review-committee |
 | release-operations | keep release gating posture aligned with new work streams | low/medium development-fix release boundary note | active | release-review-committee |
 | security-risk-compliance | maintain key custody and watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` active-PJ approval paths | risk note for four-PJ watch and tooling helper boundary | active | founder-office / release-review-committee |
@@ -41,6 +41,6 @@ updated_at: 2026-04-04
 | communications-brand | keep outward-facing descriptions consistent as the company OS evolves | wording pass for public charters and summaries | ready | directorate |
 | business-development-partnerships | map how outside collaborators are framed without overcommitting authority | collaboration framing note for external specialist PJ | ready | legal-policy / founder-office |
 | customer-success-support | surface trust and usability concerns from operating friction | service-friction note for future operating improvements | ready | PMO / directorate |
-| data-knowledge | apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration | short ruling rule, live ledger upkeep, and naming migration board | active | assembly-secretariat |
-| internal-tools-enablement | support tooling and automation for boards, ledgers, and recurring loops | ledger frontmatter draft package | active | engineering / security-risk-compliance |
+| data-knowledge | apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration | ledger heading draft package and live ledger upkeep | active | assembly-secretariat |
+| internal-tools-enablement | support tooling and automation for boards, ledgers, and recurring loops | autonomous-meeting watch and ledger heading draft package | active | engineering / security-risk-compliance |
 | information-systems | define workplace systems and access hygiene for the expanding organization | workplace systems note and access lifecycle checklist | active | internal-tools-enablement / security-risk-compliance |

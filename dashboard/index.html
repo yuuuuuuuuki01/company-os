@@ -1,96 +1,136 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company OS World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company OS — 統合ダッシュボード</title>
+  <meta name="description" content="Company OS の会議・組織・事業・財務を一元管理する統合ダッシュボード">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!-- ===== HUD：上部 ===== -->
-  <header class="hud-top">
-    <div class="hud-logo">🏢 COMPANY OS</div>
-    <div class="hud-stats" id="hudStats"></div>
-    <div class="hud-live" id="hudLive" title="最新のgit activity">
-      <span class="live-dot"></span><span class="live-text" id="liveText">読み込み中…</span>
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header-left">
+      <h1 class="logo">⬡ Company OS</h1>
+      <span class="live-badge" id="liveBadge"><span class="live-dot"></span> Live</span>
     </div>
-    <div class="hud-clock" id="hudClock"></div>
+    <nav class="tab-nav" id="tabNav">
+      <button class="tab-btn active" data-tab="assembly">🏛️ 議会</button>
+      <button class="tab-btn" data-tab="org">🏢 組織</button>
+      <button class="tab-btn" data-tab="projects">🚀 事業</button>
+      <button class="tab-btn" data-tab="finance">💰 財務</button>
+    </nav>
+    <div class="header-right">
+      <div class="header-stat" id="statSittings">— 回</div>
+      <div class="header-stat" id="statMotions">— 件</div>
+      <time class="header-clock" id="clock">--:--:--</time>
+    </div>
   </header>
 
-  <!-- ===== メインゲームエリア ===== -->
-  <div class="game-wrap">
+  <!-- ===== Main Content ===== -->
+  <main class="main" id="main">
 
-    <!-- サイドパネル（左） -->
-    <aside class="side-panel side-left" id="tab-layers">
-      <div class="side-panel-title">📜 制度レイヤー</div>
-      <div id="layerList" class="layer-list"></div>
-
-      <div class="side-panel-title" style="margin-top:12px;">⚡ 承認フロー</div>
-      <div class="flow-steps" id="flowSteps"></div>
-
-      <!-- タスク進捗（左下） -->
-      <div class="side-panel-title" style="margin-top:12px;">📋 プロジェクト動向</div>
-      <div id="taskProgress" class="task-progress"></div>
-    </aside>
-
-    <!-- マップ本体 -->
-    <main class="map-viewport" id="tab-map">
-      <div class="map-canvas" id="mapCanvas">
-        <!-- タイルと建物はJSで生成 -->
+    <!-- Tab: Assembly (議会) -->
+    <section class="tab-panel active" id="panel-assembly">
+      <div class="panel-grid assembly-grid">
+        <!-- Left: Timeline -->
+        <div class="panel-col">
+          <div class="section-header">
+            <h2>📜 会議タイムライン</h2>
+            <span class="section-badge" id="sittingCount">0 回</span>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <!-- Right: Tracker -->
+        <div class="panel-col">
+          <div class="section-header">
+            <h2>📋 議案トラッカー</h2>
+            <span class="section-badge" id="motionCount">0 件</span>
+          </div>
+          <div class="tracker" id="tracker">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
 
-    <!-- サイドパネル（右） -->
-    <aside class="side-panel side-right" id="tab-status">
-      <div class="side-panel-title">📡 稼働ステータス</div>
-      <div id="actorList" class="actor-list"></div>
+    <!-- Tab: Organization (組織) -->
+    <section class="tab-panel" id="panel-org">
+      <div class="panel-grid org-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header">
+            <h2>🏗️ 部署一覧</h2>
+            <span class="section-badge" id="deptCount">0 部署</span>
+          </div>
+          <div class="dept-grid" id="deptGrid">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <div class="panel-col">
+          <div class="section-header"><h2>👤 役職者</h2></div>
+          <div class="officeholder-list" id="officeholderList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+          <div class="section-header" style="margin-top:24px"><h2>📌 業務割当</h2></div>
+          <div class="work-list" id="workList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class="side-panel-title" style="margin-top:12px;">🕐 最近の活動</div>
-      <div id="gitLog" class="git-log"></div>
-    </aside>
+    <!-- Tab: Projects (事業) -->
+    <section class="tab-panel" id="panel-projects">
+      <div class="panel-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header">
+            <h2>🔷 事業ユニット</h2>
+            <span class="section-badge" id="unitCount">0 ユニット</span>
+          </div>
+          <div class="unit-grid" id="unitGrid">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+        <div class="panel-col">
+          <div class="section-header"><h2>📡 最近の活動</h2></div>
+          <div class="activity-list" id="activityList">
+            <div class="loading-placeholder">データを読み込み中…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Finance (財務) -->
+    <section class="tab-panel" id="panel-finance">
+      <div class="panel-grid">
+        <div class="panel-col panel-col-wide">
+          <div class="section-header"><h2>📊 財務サマリ</h2></div>
+          <div class="finance-placeholder">
+            <div class="empty-state">
+              <span class="empty-icon">🏗️</span>
+              <p>Phase 3 で実装予定</p>
+              <p class="text-muted">売上・原価・P&L データの台帳を作成後、ここに表示されます</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Detail Modal ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header" id="modalHeader">詳細</div>
+      <div class="modal-body" id="modalBody"></div>
+      <button class="modal-close" id="modalClose">閉じる</button>
+    </div>
   </div>
 
-  <!-- ===== 下部メッセージウィンドウ ===== -->
-  <footer class="message-window">
-    <div class="message-window-inner">
-      <div class="message-icon">📣</div>
-      <div class="message-text" id="messageText">Company OS が起動しています…</div>
-      <div class="message-next">▼</div>
-    </div>
-  </footer>
-
-  <!-- ===== モバイルタブバー ===== -->
-  <nav class="mobile-tabs">
-    <button class="tab-btn active" data-tab="layers">📜 制度</button>
-    <button class="tab-btn" data-tab="map">🗺️ マップ</button>
-    <button class="tab-btn" data-tab="status">📡 状況</button>
-  </nav>
-
-  <!-- ===== ワールドニュース通知 ===== -->
-  <div class="news-overlay" id="newsOverlay">
-    <div class="news-card">
-      <div class="news-header">📰 号外ニュース！</div>
-      <div class="news-body" id="newsBody">新しい成果物がコミットされました！</div>
-      <div class="news-footer" id="newsFooter">@Engineering</div>
-    </div>
-  </div>
-
-  <!-- ===== 建物クリック時のダイアログ ===== -->
-  <div class="dialog-overlay" id="dialogOverlay">
-    <div class="dialog-box" id="dialogBox">
-      <div class="dialog-header" id="dialogHeader"></div>
-      <div class="dialog-body" id="dialogBody"></div>
-      <button class="dialog-close" id="dialogClose">▶ 閉じる [ESC]</button>
-    </div>
-  </div>
-
-  <script type="module" src="./app.js?v=4"></script>
+  <script type="module" src="app.js"></script>
 </body>
-
 </html>

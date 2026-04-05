@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 22:12:55 +0900",
-      "message": "Document autonomous meeting automation note"
+      "date": "2026-04-05 22:19:06 +0900",
+      "message": "Document automation note for return-delay remediation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 22:12:55 +0900",
-      "message": "Document autonomous meeting automation note"
+      "date": "2026-04-05 22:19:06 +0900",
+      "message": "Document automation note for return-delay remediation"
     }
   ],
   "commits": [
+    {
+      "hash": "b4d7802",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 22:19:06 +0900",
+      "message": "Document automation note for return-delay remediation"
+    },
+    {
+      "hash": "6e51a39",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 13:13:09 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "c151d10",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 08:47:24 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "71818e4",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 17:47:14 +0900",
-      "message": "Move token and scriptification motions to deliberation"
-    },
-    {
-      "hash": "ad692ec",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 06:09:43 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 22:12:55 +0900"
+  "generated_at": "2026-04-05 22:19:06 +0900"
 }

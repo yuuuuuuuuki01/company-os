@@ -42,3 +42,4 @@ updated_at: 2026-04-05
 | next | approval-wait-return-delay-remediation-tracking | operating | report | watch | security-risk-compliance | adopted | approval-wait completion confirmation | one-hundred-thirty-fifth ordinary sitting |
 | next | approval-wait-remediation-completion-confirmation | operating | discussion | discussion-1 | data-knowledge | active | security-risk-compliance / assembly-secretariat | one-hundred-thirty-fifth ordinary sitting |
 | next | department-agenda-origination | operating | discussion | discussion-1 | assembly-secretariat | active | all department stewards / project-management-office / data-knowledge | one-hundred-thirty-sixth ordinary sitting |
+| next | agenda-origination-discipline | operating | discussion | discussion-1 | people-talent | active | personnel-committee / founder-office / assembly-secretariat | one-hundred-thirty-seventh ordinary sitting |

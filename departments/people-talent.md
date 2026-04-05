@@ -30,6 +30,7 @@ Run hiring, role placement, promotion process, confidence review administration,
 - maintain staffing rosters
 - administer promotion reviews
 - administer sanctions after lawful findings
+- administer retirement processing after lawful discipline findings
 
 ## Stop power
 
@@ -38,3 +39,4 @@ May halt onboarding or continued staffing when a role lacks lawful authorization
 ## Mandatory escalation
 
 Escalate major removal, confidence, or discipline matters to the Personnel Committee and Founder Office when necessary.
+Escalate repeated agenda-origination nonperformance to the Personnel Committee and Founder Office when retirement or role removal becomes plausible.

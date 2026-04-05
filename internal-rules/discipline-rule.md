@@ -20,12 +20,14 @@ updated_at: 2026-04-03
 - context contamination
 - unsafe release conduct
 - record concealment
+- repeated agenda-origination nonperformance
 
 ## Sanction ladder
 
 1. Written warning
 2. Authority restriction
 3. Removal from office
+4. Retirement from staffing when continued nonperformance is confirmed
 
 ## Due process
 

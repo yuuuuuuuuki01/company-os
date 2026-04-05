@@ -1,6 +1,6 @@
 param(
     [Parameter(Position = 0)]
-    [ValidateSet('status', 'light-watch', 'portfolio', 'tactical')]
+    [ValidateSet('status', 'light-watch', 'portfolio', 'tactical', 'review-open', 'report-rollup', 'script-audit-sample')]
     [string]$Command = 'status'
 )
 
@@ -58,6 +58,19 @@ function Get-MarkdownTableRows {
     return $rows
 }
 
+function Write-Section {
+    param(
+        [string]$Title,
+        [string[]]$Lines
+    )
+
+    Write-Output $Title
+    foreach ($line in $Lines) {
+        Write-Output ("- {0}" -f $line)
+    }
+    Write-Output ''
+}
+
 function Show-Status {
     $activityPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-current-activity-board'
     $boardPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-company-os-improvement-board'
@@ -65,21 +78,8 @@ function Show-Status {
     $activityRows = Get-MarkdownTableRows -Path $activityPath
     $boardRows = Get-MarkdownTableRows -Path $boardPath
 
-    $activeActors = $activityRows | Select-Object -First 4
-    $activeItems = $boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 4
-
-    Write-Output '今の位置'
-    foreach ($row in $activeActors) {
-        Write-Output ("- {0}: {1}" -f $row[0], $row[3])
-    }
-
-    Write-Output ''
-    Write-Output '次の作業'
-    foreach ($row in $activeItems) {
-        Write-Output ("- {0}: {1} -> {2}" -f $row[1], $row[4], $row[7])
-    }
-
-    Write-Output ''
+    Write-Section '今の状況' ($activityRows | Select-Object -First 4 | ForEach-Object { "{0}: {1}" -f $_[0], $_[3] })
+    Write-Section '次の実務' ($boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 4 | ForEach-Object { "{0}: {1} -> {2}" -f $_[1], $_[4], $_[7] })
     Write-Output ("参照: {0}" -f $activityPath)
     Write-Output ("参照: {0}" -f $boardPath)
 }
@@ -91,18 +91,8 @@ function Show-LightWatch {
     $watchRows = Get-MarkdownTableRows -Path $watchPath
     $queueRows = Get-MarkdownTableRows -Path $queuePath
 
-    Write-Output '今の位置'
-    foreach ($row in $watchRows) {
-        Write-Output ("- {0}: {1}" -f $row[0], $row[2])
-    }
-
-    Write-Output ''
-    Write-Output '次の作業'
-    foreach ($row in ($queueRows | Select-Object -First 3)) {
-        Write-Output ("- {0}: {1} / {2}" -f $row[1], $row[5], $row[7])
-    }
-
-    Write-Output ''
+    Write-Section '軽監視' ($watchRows | Select-Object -First 5 | ForEach-Object { "{0}: {1}" -f $_[0], $_[2] })
+    Write-Section '補充候補' (($queueRows | Select-Object -First 4) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] })
     Write-Output ("参照: {0}" -f $watchPath)
     Write-Output ("参照: {0}" -f $queuePath)
 }
@@ -114,18 +104,8 @@ function Show-Portfolio {
     $portfolioRows = Get-MarkdownTableRows -Path $portfolioPath
     $inactiveRows = Get-MarkdownTableRows -Path $inactivePath
 
-    Write-Output '今の位置'
-    foreach ($row in ($portfolioRows | Select-Object -First 6)) {
-        Write-Output ("- {0}: {1} / {2}" -f $row[0], $row[1], $row[4])
-    }
-
-    Write-Output ''
-    Write-Output '次の作業'
-    foreach ($row in ($inactiveRows | Where-Object { $_[5] -notlike 'review-opened' } | Select-Object -First 4)) {
-        Write-Output ("- {0}: {1}" -f $row[0], $row[5])
-    }
-
-    Write-Output ''
+    Write-Section '事業ポートフォリオ' (($portfolioRows | Select-Object -First 6) | ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] })
+    Write-Section '非稼働の次手' (($inactiveRows | Where-Object { $_[5] -notlike 'review-opened' } | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[5] })
     Write-Output ("参照: {0}" -f $portfolioPath)
     Write-Output ("参照: {0}" -f $inactivePath)
 }
@@ -137,20 +117,49 @@ function Show-Tactical {
     $boardRows = Get-MarkdownTableRows -Path $boardPath
     $activityRows = Get-MarkdownTableRows -Path $activityPath
 
-    Write-Output '今の位置'
-    foreach ($row in ($boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 5)) {
-        Write-Output ("- {0}: {1} / {2}" -f $row[1], $row[4], $row[8])
-    }
-
-    Write-Output ''
-    Write-Output '次の作業'
-    foreach ($row in ($activityRows | Select-Object -First 4)) {
-        Write-Output ("- {0}: {1}" -f $row[0], $row[4])
-    }
-
-    Write-Output ''
+    Write-Section '戦術整理' (($boardRows | Where-Object { $_[6] -eq 'active' } | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[4], $_[8] })
+    Write-Section '直近 handoff' (($activityRows | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[4] })
     Write-Output ("参照: {0}" -f $boardPath)
     Write-Output ("参照: {0}" -f $activityPath)
+}
+
+function Show-ReviewOpen {
+    $queuePath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-inactive-business-screening-queue'
+    $scriptPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-routine-work-scriptification'
+
+    $queueRows = Get-MarkdownTableRows -Path $queuePath
+    $scriptRows = Get-MarkdownTableRows -Path $scriptPath
+
+    Write-Section 'review-open 候補' (($queueRows | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[1], $_[5], $_[7] })
+    Write-Section 'script 化候補' (($scriptRows | Where-Object { $_[5] -ne 'active' } | Select-Object -First 4) | ForEach-Object { "{0}: {1}" -f $_[0], $_[5] })
+    Write-Output ("参照: {0}" -f $queuePath)
+    Write-Output ("参照: {0}" -f $scriptPath)
+}
+
+function Show-ReportRollup {
+    $improvementPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-company-os-improvement-board'
+    $auditPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-script-audit'
+
+    $improvementRows = Get-MarkdownTableRows -Path $improvementPath
+    $auditRows = Get-MarkdownTableRows -Path $auditPath
+
+    Write-Section 'watch 中の議題' (($improvementRows | Where-Object { $_[4] -eq 'watch' } | Select-Object -First 6) | ForEach-Object { "{0}: {1}" -f $_[1], $_[6] })
+    Write-Section '監査報告候補' (($auditRows | Select-Object -First 5) | ForEach-Object { "{0}: {1}" -f $_[0], $_[4] })
+    Write-Output ("参照: {0}" -f $improvementPath)
+    Write-Output ("参照: {0}" -f $auditPath)
+}
+
+function Show-ScriptAuditSample {
+    $auditPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-script-audit'
+    $tokenPath = Resolve-DocPathById -Folder 'ledgers' -Id 'ledger-all-department-token-efficiency-notice'
+
+    $auditRows = Get-MarkdownTableRows -Path $auditPath
+    $tokenRows = Get-MarkdownTableRows -Path $tokenPath
+
+    Write-Section 'script audit sample' (($auditRows | Select-Object -First 5) | ForEach-Object { "{0}: {1} / {2}" -f $_[0], $_[1], $_[4] })
+    Write-Section '例外境界確認対象' (($tokenRows | Select-Object -First 5) | ForEach-Object { "{0}: {1}" -f $_[0], $_[2] })
+    Write-Output ("参照: {0}" -f $auditPath)
+    Write-Output ("参照: {0}" -f $tokenPath)
 }
 
 switch ($Command) {
@@ -158,4 +167,7 @@ switch ($Command) {
     'light-watch' { Show-LightWatch }
     'portfolio' { Show-Portfolio }
     'tactical' { Show-Tactical }
+    'review-open' { Show-ReviewOpen }
+    'report-rollup' { Show-ReportRollup }
+    'script-audit-sample' { Show-ScriptAuditSample }
 }

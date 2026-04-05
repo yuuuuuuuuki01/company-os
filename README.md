@@ -87,6 +87,9 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `bin/company-os.cmd light-watch`
 - `bin/company-os.cmd portfolio`
 - `bin/company-os.cmd tactical`
+- `bin/company-os.cmd review-open`
+- `bin/company-os.cmd report-rollup`
+- `bin/company-os.cmd script-audit-sample`
 
 These commands provide short Japanese status output so the chat can trigger work while the terminal carries the next operational slice.
 

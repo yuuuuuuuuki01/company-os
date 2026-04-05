@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 21:46:25 +0900",
-      "message": "Document CLI ledger in English"
+      "date": "2026-04-05 21:49:29 +0900",
+      "message": "Document continuous watch verification"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 21:46:25 +0900",
-      "message": "Document CLI ledger in English"
+      "date": "2026-04-05 21:49:29 +0900",
+      "message": "Document continuous watch verification"
     }
   ],
   "commits": [
+    {
+      "hash": "640fca9",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 21:49:29 +0900",
+      "message": "Document continuous watch verification"
+    },
+    {
+      "hash": "79cc7f8",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 12:46:36 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "9a986f5",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:57:53 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "91fcba3",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:57:36 +0900",
-      "message": "Add token-efficient execution policy"
-    },
-    {
-      "hash": "fc326b7",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 05:52:53 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 21:46:25 +0900"
+  "generated_at": "2026-04-05 21:49:29 +0900"
 }

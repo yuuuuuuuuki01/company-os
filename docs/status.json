@@ -1,6 +1,24 @@
 {
   "sittings": [
     {
+      "number": 137,
+      "id": "company-os-one-hundred-thirty-seventh-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 136,
+      "id": "company-os-one-hundred-thirty-sixth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 135,
       "id": "company-os-one-hundred-thirty-fifth-ordinary-sitting",
       "status": "motion-open",
@@ -7818,6 +7836,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "135": {
+      "ruling": "`承認待機是正完了確認議案` を `discussion-1` まで進め、次に `部署議題上申促進議案` を開く。",
+      "reason": "是正完了確認の論点は引き続き必要だが、会議全体として議題母数不足を先に是正する必要が高かったため。",
+      "executor": "assembly-secretariat, project-management-office, data-knowledge",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "102": {
       "ruling": "`台帳標準列雛形作成議案` を採択し、次を `承認分岐模擬訓練議案` に進める。",
       "reason": "frontmatter、見出し、標準列の3点が揃い、次は承認分岐の実地検証へ移るのが自然だったため。",
@@ -7927,6 +7952,13 @@
       "ruling": "`FormPilot` execution bundle を協議2回目まで進めた。",
       "reason": "deliberation 前に execution bundle の範囲を seat / reviewer / approval / rollback に固定する必要があるため。",
       "executor": "project-management-office, people-talent, directorate, security-risk-compliance, assembly-secretariat",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
+    "136": {
+      "ruling": "`部署議題上申促進議案` を `discussion-1` まで進め、次に `議題創出不履行規律議案` を開く。",
+      "reason": "議題母数を増やすだけでは不十分で、未提出が続く場合の規律も同時に必要だったため。",
+      "executor": "assembly-secretariat, people-talent, project-management-office",
       "minority_view": "なし",
       "founder_veto": false
     },
@@ -8259,6 +8291,28 @@
       "Status": "active",
       "Next handoff": "security-risk-compliance / assembly-secretariat",
       "Next sitting": "one-hundred-thirty-fifth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "department-agenda-origination",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "assembly-secretariat",
+      "Status": "active",
+      "Next handoff": "all department stewards / project-management-office / data-knowledge",
+      "Next sitting": "one-hundred-thirty-sixth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "agenda-origination-discipline",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "people-talent",
+      "Status": "active",
+      "Next handoff": "personnel-committee / founder-office / assembly-secretariat",
+      "Next sitting": "one-hundred-thirty-seventh ordinary sitting"
     }
   ],
   "motions": {
@@ -9478,6 +9532,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-department-agenda-origination": {
+      "id": "motion-department-agenda-origination",
+      "title": "部署議題上申促進議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-ledger-template-helper-kickoff": {
       "id": "motion-ledger-template-helper-kickoff",
       "title": "台帳雛形補助着手議案",
@@ -9600,6 +9667,19 @@
       "title": "台帳雛形補助実装束着手議案",
       "status": "adopted",
       "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-agenda-origination-discipline": {
+      "id": "motion-agenda-origination-discipline",
+      "title": "議題創出不履行規律議案",
+      "status": "motion-open",
+      "owner": "people-talent",
       "risk": "medium",
       "goal": [],
       "proposed_action": [],
@@ -10309,35 +10389,35 @@
       "Actor": "Founder Office",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "sovereign check over the active improvement batch and approval-wait completion-confirmation boundaries",
+      "Current Work": "sovereign check over the active improvement batch and department agenda inflow boundaries",
       "Next Handoff": "assembly"
     },
     {
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-thirty-fourth ordinary sitting completed and one-hundred-thirty-fifth sitting opened",
-      "Next Handoff": "one-hundred-thirty-fifth ordinary sitting"
+      "Current Work": "one-hundred-thirty-fifth ordinary sitting completed and one-hundred-thirty-sixth sitting opened",
+      "Next Handoff": "one-hundred-thirty-sixth ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-wait completion-confirmation packet",
+      "Current Work": "run the autonomous ordinary sitting loop, solicit more department agenda candidates, and prepare the origination packet",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and keep approval-wait completion confirmation connected to live PJ watch",
+      "Current Work": "monitor four active PJ and return agenda seeds from delivery friction into the department origination loop",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "maintain the adopted ledger template set and support approval-wait completion confirmation",
+      "Current Work": "maintain the adopted ledger template set and support department agenda origination and completion confirmation",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -10351,7 +10431,7 @@
       "Actor": "Security, Risk, and Compliance",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep branch-trigger boundaries aligned with real risk while remediation tracking is reused for completion confirmation",
+      "Current Work": "keep branch-trigger boundaries aligned with real risk while remediation tracking and new department proposals are reviewed",
       "Next Handoff": "founder-office / release-review-committee"
     },
     {
@@ -10386,7 +10466,7 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep the template set reusable while reservation and refill artifacts are reused",
+      "Current Work": "keep the template set reusable while department candidate submission and reminder support are prepared",
       "Next Handoff": "engineering / security-risk-compliance"
     }
   ],
@@ -10394,21 +10474,21 @@
     {
       "Department": "founder-office",
       "Current assignment": "keep sovereign alignment across the active improvement batch",
-      "Deliverable": "founder decision lane and approval-wait completion-confirmation boundary check",
+      "Deliverable": "founder decision lane and department agenda inflow boundary check",
       "Status": "active",
       "Next handoff": "assembly"
     },
     {
       "Department": "assembly-secretariat",
       "Current assignment": "run the autonomous ordinary sitting loop and maintain rollout watch across active motions",
-      "Deliverable": "one-hundred-thirty-fifth sitting packet, approval-wait completion-confirmation packet, and four-active-PJ watch note",
+      "Deliverable": "one-hundred-thirty-sixth sitting packet, department agenda origination packet, and four-active-PJ watch note",
       "Status": "active",
       "Next handoff": "all active owners"
     },
     {
       "Department": "project-management-office",
-      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support approval-wait completion confirmation",
-      "Deliverable": "four-PJ watch note and approval-wait completion-confirmation packet",
+      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and supply agenda seeds from delivery friction",
+      "Deliverable": "four-PJ watch note and department agenda seed packet",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
     },
@@ -10422,21 +10502,21 @@
     {
       "Department": "security-risk-compliance",
       "Current assignment": "maintain key custody and watch the concrete active-PJ approval paths",
-      "Deliverable": "branch-trigger boundary note and remediation-to-completion-confirmation boundary note",
+      "Deliverable": "branch-trigger boundary note and department proposal risk screen note",
       "Status": "active",
       "Next handoff": "founder-office / release-review-committee"
     },
     {
       "Department": "data-knowledge",
       "Current assignment": "apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration",
-      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-wait completion-confirmation support",
+      "Deliverable": "adopted ledger template set, live ledger upkeep, and department agenda origination support",
       "Status": "active",
       "Next handoff": "assembly-secretariat"
     },
     {
       "Department": "internal-tools-enablement",
       "Current assignment": "support tooling and automation for boards, ledgers, and recurring loops",
-      "Deliverable": "template set upkeep and approval-wait refill support",
+      "Deliverable": "template set upkeep and department agenda reminder support",
       "Status": "active",
       "Next handoff": "engineering / security-risk-compliance"
     }
@@ -10468,17 +10548,47 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 11:55:58 +0900",
-      "message": "Advance approval wait remediation tracking"
+      "date": "2026-04-05 12:11:25 +0900",
+      "message": "feat: 組織タブの部署カードに所属人数と現在の作業量（アサイン内容）を追加表示"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 11:55:58 +0900",
-      "message": "Advance approval wait remediation tracking"
+      "date": "2026-04-05 12:11:25 +0900",
+      "message": "feat: 組織タブの部署カードに所属人数と現在の作業量（アサイン内容）を追加表示"
     }
   ],
   "commits": [
+    {
+      "hash": "8243655",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:11:25 +0900",
+      "message": "feat: 組織タブの部署カードに所属人数と現在の作業量（アサイン内容）を追加表示"
+    },
+    {
+      "hash": "21d05f4",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:04:15 +0900",
+      "message": "Add agenda origination discipline and retirement ladder"
+    },
+    {
+      "hash": "c026188",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 11:59:50 +0900",
+      "message": "Increase departmental agenda origination"
+    },
+    {
+      "hash": "8b455fd",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 11:57:30 +0900",
+      "message": "fix stash pop"
+    },
+    {
+      "hash": "41afc91",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 02:56:14 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "e4da096",
       "author": "yuuuuuuuuki01",
@@ -10568,47 +10678,17 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 10:46:24 +0900",
       "message": "feat: 全表示名を日本語化 - 部署名・役職名・ステータス・ユニット名・議案モードの日本語マッピング"
-    },
-    {
-      "hash": "a630aa5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:44:18 +0900",
-      "message": "Advance approval return flow and reprioritization"
-    },
-    {
-      "hash": "f4c6074",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:35:31 +0900",
-      "message": "Adopt approval branch drill and open request template"
-    },
-    {
-      "hash": "80e266c",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:31:19 +0900",
-      "message": "Restore UI design authority and capture dashboard CSS knowledge"
-    },
-    {
-      "hash": "f960e38",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:25:02 +0900",
-      "message": "feat: complete UI rewrite - meeting-centric integrated dashboard with Assembly/Org/Projects/Finance tabs"
-    },
-    {
-      "hash": "294d158",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 01:23:09 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 134,
+    "total_sittings": 136,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 26,
-    "total_proposals": 62,
+    "total_motions": 28,
+    "total_proposals": 64,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 11:55:58 +0900"
+  "generated_at": "2026-04-05 12:11:25 +0900"
 }

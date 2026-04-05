@@ -227,7 +227,13 @@ function renderTracker() {
 function renderDepartments() {
   const el = document.getElementById("deptGrid");
   const depts = DATA.departments || [];
-  document.getElementById("deptCount").textContent = `${depts.length} 部署`;
+  const officeholders = DATA.officeholders || [];
+  const works = DATA.work_allocation || [];
+
+  // Calculate total headcount (unique members in officeholders registry)
+  const uniqueHolders = new Set(officeholders.map(o => o.Holder).filter(h => h && h.toLowerCase() !== "tbd"));
+  const totalHeadcount = uniqueHolders.size;
+  document.getElementById("deptCount").textContent = `総登録 ${totalHeadcount}名 / ${depts.length} 部署`;
 
   if (!depts.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">🏢</span><p>部署データなし</p></div>'; return; }
 
@@ -247,11 +253,24 @@ function renderDepartments() {
   el.innerHTML = depts.map(d => {
     const id = d.Department || "";
     const icon = icons[id] || "🏢";
+    
+    // Estimate members count for the department
+    const deptMembers = officeholders.filter(o => o["Seat/Unit"] === id || (o.Office && o.Office.includes(id)));
+    let count = Math.max(1, deptMembers.length); 
+    if (!d.Steward || d.Steward.toUpperCase() === "TBD") count = 0;
+
+    // Get assigned workload
+    const workload = works.find(w => w.Department === id);
+    const workText = workload ? workload["Current assignment"] : "現在のアサインなし";
+
     return `
       <div class="card dept-card">
-        <div class="dept-name">${icon} ${ja("dept", id)}</div>
-        <div class="dept-steward">${d.Steward || ""}</div>
-        <div class="dept-stop">${d["Stop power"] || ""}</div>
+        <div class="dept-name">
+          <span>${icon} ${ja("dept", id)}</span>
+          <span class="dept-headcount">👤 ${count}名</span>
+        </div>
+        <div class="dept-steward">${d.Steward || "メンバー未割り当て"}</div>
+        <div class="dept-workload"><strong>📝 作業量:</strong> ${workText}</div>
       </div>
     `;
   }).join("");

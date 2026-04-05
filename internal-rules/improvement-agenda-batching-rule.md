@@ -20,6 +20,7 @@ Allow the assembly to process multiple Company OS improvement items per sitting 
 ## Default batch size
 
 - ordinary sittings should normally carry `3` to `7` agenda items
+- when agenda inflow is thin, the secretariat should actively source additional department-raised items before the next sitting
 - at least `1` structural item should be included when structural debt exists
 - at least `1` operating item should be included when active friction exists
 - at least `1` report-only item may be included when status must be surfaced without reopening a vote
@@ -51,3 +52,7 @@ Each batched item should carry:
 ## Safeguard
 
 Batching changes meeting throughput only. It does not change voting thresholds, committee review duties, or founder-reserved powers.
+
+## Department inflow duty
+
+Agenda batching should be fed by [部署議題上申促進ルール.md](C:/agent/codex/company-os/internal-rules/部署議題上申促進ルール.md) so that the assembly is not forced to recycle too few substantive items.

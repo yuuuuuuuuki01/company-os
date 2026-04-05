@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 23:18:55 +0900",
-      "message": "Add automation note and gate to omnibus motion"
+      "date": "2026-04-05 23:20:49 +0900",
+      "message": "Add CLI prompt templates and autonomous execution rule"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 23:18:55 +0900",
-      "message": "Add automation note and gate to omnibus motion"
+      "date": "2026-04-05 23:20:49 +0900",
+      "message": "Add CLI prompt templates and autonomous execution rule"
     }
   ],
   "commits": [
+    {
+      "hash": "410e56d",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 23:20:49 +0900",
+      "message": "Add CLI prompt templates and autonomous execution rule"
+    },
+    {
+      "hash": "70a0915",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 14:19:09 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "95d3888",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 12:49:43 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "640fca9",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 21:49:29 +0900",
-      "message": "Document continuous watch verification"
-    },
-    {
-      "hash": "79cc7f8",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 12:46:36 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 23:18:55 +0900"
+  "generated_at": "2026-04-05 23:20:49 +0900"
 }

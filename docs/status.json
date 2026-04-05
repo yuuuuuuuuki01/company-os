@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 153,
+      "id": "company-os-one-hundred-fifty-third-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 152,
       "id": "company-os-one-hundred-fifty-second-ordinary-sitting",
       "status": "motion-open",
@@ -7580,6 +7589,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "152": {
+      "ruling": "`常時稼働運用議案` を採択し、push 後 handoff 必須、active / pending の両棚維持、停止条件限定を通常運転の標準動作にする。",
+      "reason": "24時間常時稼働に近づくには、push を停止点にせず、active PJ と pending review の両方を切らさない運転基準が必要なため。",
+      "executor": "assembly-secretariat, project-management-office, portfolio-strategy, security-risk-compliance",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "15": {
       "ruling": "第十五回定例会は `oem` の bounded preparation bundle を採択した。",
       "reason": "seat motion, start packet, reviewer route, approval path がそろい、activation review 前の必要条件が制度上まとまったため。",
@@ -8652,12 +8668,23 @@
       "Priority": "urgent",
       "Item": "continuous-operations",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
       "Owner": "assembly-secretariat",
-      "Status": "active",
-      "Next handoff": "project-management-office / portfolio-strategy",
+      "Status": "adopted",
+      "Next handoff": "project-management-office / portfolio-strategy / security-risk-compliance",
       "Next sitting": "one-hundred-fifty-second ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "inactive-business-second-review-packet",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "portfolio-strategy",
+      "Status": "active",
+      "Next handoff": "assembly-secretariat / project-management-office / people-talent / directorate",
+      "Next sitting": "one-hundred-fifty-third ordinary sitting"
     }
   ],
   "motions": {
@@ -10072,6 +10099,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-inactive-business-second-review-packet": {
+      "id": "motion-inactive-business-second-review-packet",
+      "title": "非稼働事業次順位審査束議案",
+      "status": "motion-open",
+      "owner": "portfolio-strategy",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-all-department-omnibus-packet": {
       "id": "motion-all-department-omnibus-packet",
       "title": "全部署一括審議束議案",
@@ -10898,8 +10938,8 @@
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-forty-seventh ordinary sitting opened to carry the inactive-business first review packet into formal review",
-      "Next Handoff": "one-hundred-forty-eighth ordinary sitting"
+      "Current Work": "one-hundred-fifty-second ordinary sitting adopted continuous operations and opened the next inactive-business refill packet",
+      "Next Handoff": "one-hundred-fifty-third ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
@@ -10989,7 +11029,7 @@
       "Actor": "Pending Business Pool",
       "Layer": "portfolio",
       "Status": "active",
-      "Current Work": "keep review-ready items stocked and advance the first inactive-business review packet without over-activating the queue",
+      "Current Work": "keep review-opened items stocked and move the second inactive-business review packet toward formal opening",
       "Next Handoff": "portfolio-strategy / people-talent / project-management-office"
     },
     {
@@ -11669,17 +11709,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:27:23 +0900",
-      "message": "Advance continuous operations to deliberation"
+      "date": "2026-04-05 13:32:48 +0900",
+      "message": "Adopt continuous operations and queue next reviews"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:27:23 +0900",
-      "message": "Advance continuous operations to deliberation"
+      "date": "2026-04-05 13:32:48 +0900",
+      "message": "Adopt continuous operations and queue next reviews"
     }
   ],
   "commits": [
+    {
+      "hash": "064b6b0",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:32:48 +0900",
+      "message": "Adopt continuous operations and queue next reviews"
+    },
+    {
+      "hash": "e97bebe",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:27:47 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "8a4d3e3",
       "author": "yuuuuuuuuki01",
@@ -11787,29 +11839,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:59:24 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "c9a4dd9",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:59:06 +0900",
-      "message": "Add business packets for active and inactive portfolio"
-    },
-    {
-      "hash": "3761769",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:53:12 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 148,
+    "total_sittings": 149,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 40,
-    "total_proposals": 75,
+    "total_motions": 41,
+    "total_proposals": 76,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:27:23 +0900"
+  "generated_at": "2026-04-05 13:32:48 +0900"
 }

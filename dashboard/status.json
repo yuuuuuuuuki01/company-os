@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 158,
+      "id": "company-os-one-hundred-fifty-eighth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 157,
       "id": "company-os-one-hundred-fifty-seventh-ordinary-sitting",
       "status": "motion-open",
@@ -7240,6 +7249,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "157": {
+      "ruling": "`高リスク審査着手順議案` を discussion-2 で維持し、最初の high-risk screening 候補を `credential-ledger`、policy-first 別レーンを `saigai` とする構成で deliberation に送る。",
+      "reason": "`credential-ledger` は high-risk utility として境界が比較的明確であり、`saigai` は policy-first として別扱いする方が gate 混雑を避けられるため。",
+      "executor": "security-risk-compliance, assembly-secretariat, founder-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "93": {
       "ruling": "`台帳雛形補助実装束着手議案` を採択し、次を `台帳frontmatter雛形作成議案` に進める。",
       "reason": "実装束の範囲と境界が十分に狭くなり、第1成果物を frontmatter 雛形に固定する妥当性が確認できたため。",
@@ -8754,12 +8770,23 @@
       "Priority": "urgent",
       "Item": "high-risk-screening-sequencing",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "security-risk-compliance",
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee / founder-office",
-      "Next sitting": "one-hundred-fifty-seventh ordinary sitting"
+      "Next sitting": "one-hundred-fifty-eighth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "credential-ledger-high-risk-screen-opening",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "security-risk-compliance",
+      "Status": "active",
+      "Next handoff": "assembly-secretariat / release-review-committee",
+      "Next sitting": "one-hundred-fifty-eighth ordinary sitting"
     }
   ],
   "motions": {
@@ -10232,6 +10259,19 @@
       "status": "motion-open",
       "owner": "people-talent",
       "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-credential-ledger-high-risk-screen-opening": {
+      "id": "motion-credential-ledger-high-risk-screen-opening",
+      "title": "credential-ledger 高リスク審査着手議案",
+      "status": "motion-open",
+      "owner": "security-risk-compliance",
+      "risk": "high",
       "goal": [],
       "proposed_action": [],
       "why": [],
@@ -11797,17 +11837,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:44:46 +0900",
-      "message": "Advance high-risk screening sequencing"
+      "date": "2026-04-05 13:49:23 +0900",
+      "message": "Prepare credential-ledger high-risk opening"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:44:46 +0900",
-      "message": "Advance high-risk screening sequencing"
+      "date": "2026-04-05 13:49:23 +0900",
+      "message": "Prepare credential-ledger high-risk opening"
     }
   ],
   "commits": [
+    {
+      "hash": "d31f5bd",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:49:23 +0900",
+      "message": "Prepare credential-ledger high-risk opening"
+    },
+    {
+      "hash": "d56f958",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:45:04 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "f129954",
       "author": "yuuuuuuuuki01",
@@ -11915,29 +11967,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:18:29 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "50ff569",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:18:09 +0900",
-      "message": "Open inactive business first review packet"
-    },
-    {
-      "hash": "02be70a",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:16:01 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 153,
+    "total_sittings": 154,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 42,
-    "total_proposals": 77,
+    "total_motions": 43,
+    "total_proposals": 78,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:44:46 +0900"
+  "generated_at": "2026-04-05 13:49:23 +0900"
 }

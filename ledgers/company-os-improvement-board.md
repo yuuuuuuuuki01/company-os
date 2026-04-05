@@ -59,6 +59,6 @@ updated_at: 2026-04-05
 | urgent | high-risk-screening-sequencing | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee / founder-office | one-hundred-fifty-eighth ordinary sitting |
 | urgent | credential-ledger-high-risk-screen-opening | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
 | urgent | point-high-risk-screen-prep | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixty-third ordinary sitting |
-| urgent | automation-heartbeat-layers | operating | deliberation | deliberation | assembly-secretariat | active | internal-tools-enablement / project-management-office / independent-audit-firm | 第百六十八回通常会議 |
+| urgent | automation-heartbeat-layers | operating | report | watch | assembly-secretariat | adopted | internal-tools-enablement / project-management-office / independent-audit-firm | 第百六十九回通常会議 |
 | urgent | token-efficient-execution | operating | discussion | discussion-2 | internal-tools-enablement | active | all department stewards / data-knowledge / internal-tools-enablement | 第百六十九回通常会議 |
 | urgent | routine-work-scriptification | operating | discussion | discussion-2 | internal-tools-enablement | active | independent-audit-firm / data-knowledge / internal-tools-enablement | 第百七十回通常会議 |

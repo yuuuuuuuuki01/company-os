@@ -1,6 +1,20 @@
 {
   "commits": [
     {
+      "hash": "4d8f506",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 10:05:36 +0900",
+      "message": "Add approval branch operations and continue auto meetings",
+      "dept": "data-knowledge"
+    },
+    {
+      "hash": "fd9a68a",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 00:58:49 +0000",
+      "message": "ci: update status.json [skip ci]",
+      "dept": "data-knowledge"
+    },
+    {
       "hash": "768138b",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 09:58:28 +0900",
@@ -195,26 +209,12 @@
       "date": "2026-04-04 10:19:12 +0000",
       "message": "ci: update status.json [skip ci]",
       "dept": "data-knowledge"
-    },
-    {
-      "hash": "a22a788",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 19:18:59 +0900",
-      "message": "Add exploration and incubation department",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "9ab7e86",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 10:04:51 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
     }
   ],
   "tasks": {
-    "total": 21,
+    "total": 23,
     "done": 3,
-    "active": 18,
+    "active": 20,
     "pending": 0,
     "items": [
       {
@@ -298,45 +298,37 @@
         "status": "active"
       },
       {
+        "label": "approval-branch-operations",
+        "status": "active"
+      },
+      {
         "label": "ledger-heading-template-draft",
+        "status": "active"
+      },
+      {
+        "label": "ledger-standard-columns-template-draft",
         "status": "active"
       }
     ]
   },
   "activities": {
     "Founder Office": "sovereign check over the active improvement batch",
-    "Assembly": "ninety-sixth ordinary sitting completed and ninety-seventh sitting opened",
-    "Assembly Secretariat": "run the autonomous ordinary sitting loop, watch four active PJ, and prepare the ninety-seventh packet",
+    "Assembly": "ninety-ninth ordinary sitting completed and one-hundredth sitting opened",
+    "Assembly Secretariat": "run the autonomous ordinary sitting loop, branch approval-needed items, and prepare the one-hundredth packet",
     "Department Allocation": "all departments carry explicit assignments and next handoffs",
-    "Independent Audit Firm": "operate watch / route / urgent triage on new findings",
+    "Independent Audit Firm": "operate watch, route, and urgent triage on new findings",
     "AI Academic Institute": "weekly AI bulletin and source monitoring",
-    "Exploration and Incubation": "run bounded project origination and maintain the incubation slate under four-PJ operation",
-    "Organizational Scaling": "maintain department / division / section scaling and live delegation records",
     "People and Talent": "watch the seated `oem`, `shift`, `jouzou`, and `FormPilot` unit-owner lines",
-    "Data and Knowledge": "apply short ruling scope and prepare the ledger heading draft path",
-    "Japanese Naming Migration": "new files default to Japanese names and legacy files move gradually",
+    "Data and Knowledge": "apply short ruling scope, maintain the adopted ledger heading template, and support the standard columns draft",
     "Security, Risk, and Compliance": "watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths",
-    "Organizational Development and Learning": "monitor structural debt after unit-state separation closure",
-    "Project Management Office": "monitor four active PJ and support autonomous meeting watch plus the ledger heading draft path",
-    "Portfolio Strategy": "sequence the four active PJ and keep any fifth candidate out of activation",
-    "Directorate": "watch the named `oem`, `shift`, `jouzou`, and `FormPilot` reviewer paths during four-PJ operation",
-    "Product Management": "define product requirement packets and scope boundaries for `FormPilot` and later candidates",
-    "Engineering": "run company-os development fixes in parallel with the governance loop and support the adopted ledger frontmatter artifact",
-    "Quality Assurance": "define lightweight verification for development fixes",
-    "Release Operations": "define release boundary for low/medium development fixes",
+    "Project Management Office": "monitor four active PJ and support autonomous plus approval-branch watch while the standard columns draft proceeds",
+    "Engineering": "run company-os development fixes in parallel with the governance loop and support the standard columns draft",
     "OEM Unit": "first external PJ is active under bounded static-tool scope",
     "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
     "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
     "FormPilot Unit": "fourth external PJ is active under bounded outbound-sales automation MVP scope",
-    "Research Intelligence": "own first-pass AI bulletin classification rollout",
-    "Business Operations": "define operating cadence and service runbooks beyond pure project flow",
-    "Sales and Revenue": "define revenue and qualification logic for `FormPilot` and adjacent opportunities",
-    "Marketing and Growth": "define demand-generation and audience learning for candidate products",
-    "Procurement and Vendor Management": "define vendor intake and purchasing controls for future expansion",
-    "Information Systems": "define workplace systems and access lifecycle hygiene for the growing org",
-    "Product and Service Design": "design capability work outside the governance line",
-    "Internal Tools and Enablement": "watch autonomous meeting operations and prepare the ledger heading draft as the next tooling focus",
+    "Internal Tools and Enablement": "watch autonomous and approval-branch operations while handing off to the standard columns draft",
     "UI Visual Execution Lane": "Gemini handles UI artifact production only"
   },
-  "generated_at": "2026-04-05 09:58:28 +0900"
+  "generated_at": "2026-04-05 10:05:36 +0900"
 }

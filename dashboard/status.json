@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 22:29:37 +0900",
-      "message": "Document automation note for priority reshuffle"
+      "date": "2026-04-05 22:33:06 +0900",
+      "message": "Document automation review note"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 22:29:37 +0900",
-      "message": "Document automation note for priority reshuffle"
+      "date": "2026-04-05 22:33:06 +0900",
+      "message": "Document automation review note"
     }
   ],
   "commits": [
+    {
+      "hash": "f733089",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 22:33:06 +0900",
+      "message": "Document automation review note"
+    },
+    {
+      "hash": "d716950",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 13:29:51 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "6c10af8",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 09:05:16 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "7a35f8c",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 18:05:03 +0900",
-      "message": "Expand CLI commands for long-running operations"
-    },
-    {
-      "hash": "b909918",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 08:49:13 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 22:29:37 +0900"
+  "generated_at": "2026-04-05 22:33:06 +0900"
 }

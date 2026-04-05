@@ -145,6 +145,10 @@ units = parse_board('units/registry.md', ['Unit', 'Seat state'])
 activities = parse_board('ledgers/current-activity-board.md', ['Actor', 'Current Work'])
 work_allocation = parse_board('ledgers/department-work-allocation-board.md', ['Department', 'Current assignment'])
 
+automation_issues = parse_board('ledgers/全部署自動化運用課題台帳.md', ['Department', '自動化課題', '優先度'])
+review_issues = parse_board('ledgers/全部署論点総点検台帳.md', ['Department', 'Submission summary', 'Priority'])
+origination_agendas = parse_board('ledgers/部署議題創出台帳.md', ['Department', 'Candidate', 'Priority band'])
+
 # Parse individual motions (non-sitting proposals)
 motions = {}
 for f in glob.glob('proposals/operations/*-motion.md') + glob.glob('proposals/operations/*-review.md') + glob.glob('proposals/operations/*議案.md') + glob.glob('proposals/operations/*レビュー.md'):
@@ -227,6 +231,9 @@ result = {
     'units': units,
     'activities': activities,
     'work_allocation': work_allocation,
+    'automation_issues': automation_issues,
+    'review_issues': review_issues,
+    'origination_agendas': origination_agendas,
     'approval_branches': approval_branches,
     'approval_drills': approval_drills,
     'approval_requests': approval_requests,

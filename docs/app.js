@@ -229,6 +229,10 @@ function renderDepartments() {
   const depts = DATA.departments || [];
   const officeholders = DATA.officeholders || [];
   const works = DATA.work_allocation || [];
+  
+  const automationIssues = DATA.automation_issues || [];
+  const reviewIssues = DATA.review_issues || [];
+  const originationAgendas = DATA.origination_agendas || [];
 
   // Calculate total headcount (unique members in officeholders registry)
   const uniqueHolders = new Set(officeholders.map(o => o.Holder).filter(h => h && h.toLowerCase() !== "tbd"));
@@ -263,6 +267,20 @@ function renderDepartments() {
     const workload = works.find(w => w.Department === id);
     const workText = workload ? workload["Current assignment"] : "現在のアサインなし";
 
+    // Build department issues
+    const deptAutomations = automationIssues.filter(a => a.Department === id);
+    const deptReviews = reviewIssues.filter(r => r.Department === id);
+    const deptOriginations = originationAgendas.filter(o => o.Department === id);
+
+    let issuesHtml = "";
+    if (deptAutomations.length || deptReviews.length || deptOriginations.length) {
+      issuesHtml = `<div class="dept-issues"><div class="dept-issues-title">🚨 部門課題</div><ul class="dept-issue-list">`;
+      deptAutomations.forEach(a => issuesHtml += `<li><span class="badge-auto">自動化</span> ${a["自動化課題"] || ""}</li>`);
+      deptReviews.forEach(r => issuesHtml += `<li><span class="badge-review">総点検</span> ${r["Submission summary"] || ""}</li>`);
+      deptOriginations.forEach(o => issuesHtml += `<li><span class="badge-orig">議題案</span> ${o["Candidate"] || ""}</li>`);
+      issuesHtml += `</ul></div>`;
+    }
+
     return `
       <div class="card dept-card">
         <div class="dept-name">
@@ -271,6 +289,7 @@ function renderDepartments() {
         </div>
         <div class="dept-steward">${d.Steward || "メンバー未割り当て"}</div>
         <div class="dept-workload"><strong>📝 作業量:</strong> ${workText}</div>
+        ${issuesHtml}
       </div>
     `;
   }).join("");

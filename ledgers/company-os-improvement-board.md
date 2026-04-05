@@ -54,3 +54,4 @@ updated_at: 2026-04-05
 | urgent | business-work-and-discussion | operating | report | rollout-active | project-management-office | adopted | portfolio-strategy / directorate / people-talent / active and pending businesses | one-hundred-forty-sixth ordinary sitting |
 | urgent | active-and-inactive-business-readiness | operating | report | rollout-active | portfolio-strategy | adopted | project-management-office / people-talent / business-owner seats | one-hundred-forty-sixth ordinary sitting |
 | urgent | inactive-business-initial-review-packet | operating | deliberation | deliberation | portfolio-strategy | active | assembly-secretariat / project-management-office / people-talent | one-hundred-forty-ninth ordinary sitting |
+| urgent | continuous-operations | operating | discussion | discussion-1 | assembly-secretariat | active | project-management-office / portfolio-strategy | one-hundred-fiftieth ordinary sitting |

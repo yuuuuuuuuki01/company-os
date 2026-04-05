@@ -12061,17 +12061,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 17:48:52 +0900",
-      "message": "Adopt token-efficient execution and scriptification"
+      "date": "2026-04-05 18:05:03 +0900",
+      "message": "Expand CLI commands for long-running operations"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 17:48:52 +0900",
-      "message": "Adopt token-efficient execution and scriptification"
+      "date": "2026-04-05 18:05:03 +0900",
+      "message": "Expand CLI commands for long-running operations"
     }
   ],
   "commits": [
+    {
+      "hash": "7a35f8c",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 18:05:03 +0900",
+      "message": "Expand CLI commands for long-running operations"
+    },
+    {
+      "hash": "b909918",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 08:49:13 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "dd57890",
       "author": "yuuuuuuuuki01",
@@ -12179,18 +12191,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:01:41 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "972faf5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:01:19 +0900",
-      "message": "Add nonblocking reporting and advance Poin-T"
-    },
-    {
-      "hash": "de21dd3",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:58:11 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12203,5 +12203,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 17:48:52 +0900"
+  "generated_at": "2026-04-05 18:05:03 +0900"
 }

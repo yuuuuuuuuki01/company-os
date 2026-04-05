@@ -1,7 +1,7 @@
 ---
 id: company-os-ninety-seventh-ordinary-sitting
 layer: proposal
-status: motion-open
+status: adopted
 owner: assembly-secretariat
 unit: company-os
 risk: low
@@ -27,9 +27,16 @@ Open the second concrete artifact while watching the autonomous meeting loop in 
 6. report: `台帳frontmatter雛形作成議案`
 7. report: `自動会議運用議案`
 8. discussion-1: `台帳見出し雛形作成議案`
-9. confirm the ninety-eighth ordinary sitting agenda
+9. discussion-1: `承認分岐運用議案`
+10. confirm the ninety-eighth ordinary sitting agenda
 
 ## Definition of done
 
 - the second concrete artifact is narrowed enough for `discussion-2`
-- the autonomous meeting loop remains within low/medium bounds
+- the approval branch proposal is narrowed enough for `discussion-2`
+
+## Result
+
+- `台帳見出し雛形作成議案` reached `discussion-1`
+- `承認分岐運用議案` reached `discussion-1`
+- the ninety-eighth ordinary sitting was opened

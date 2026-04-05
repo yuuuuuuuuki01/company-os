@@ -8935,23 +8935,23 @@
       "Priority": "urgent",
       "Item": "token-efficient-execution",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "internal-tools-enablement",
-      "Status": "active",
-      "Next handoff": "all department stewards / data-knowledge / internal-tools-enablement",
-      "Next sitting": "第百七十一回通常会議"
+      "Status": "adopted",
+      "Next handoff": "all department stewards / data-knowledge / independent-audit-firm",
+      "Next sitting": "第百七十三回通常会議"
     },
     {
       "Priority": "urgent",
       "Item": "routine-work-scriptification",
       "Type": "operating",
-      "Agenda mode": "deliberation",
-      "Cycle stage": "deliberation",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
       "Owner": "internal-tools-enablement",
-      "Status": "active",
+      "Status": "adopted",
       "Next handoff": "independent-audit-firm / data-knowledge / internal-tools-enablement",
-      "Next sitting": "第百七十二回通常会議"
+      "Next sitting": "第百七十四回通常会議"
     }
   ],
   "motions": {
@@ -12061,17 +12061,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 17:47:14 +0900",
-      "message": "Move token and scriptification motions to deliberation"
+      "date": "2026-04-05 17:48:52 +0900",
+      "message": "Adopt token-efficient execution and scriptification"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 17:47:14 +0900",
-      "message": "Move token and scriptification motions to deliberation"
+      "date": "2026-04-05 17:48:52 +0900",
+      "message": "Adopt token-efficient execution and scriptification"
     }
   ],
   "commits": [
+    {
+      "hash": "dd57890",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 17:48:52 +0900",
+      "message": "Adopt token-efficient execution and scriptification"
+    },
+    {
+      "hash": "074d1b7",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 08:47:24 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "71818e4",
       "author": "yuuuuuuuuki01",
@@ -12179,18 +12191,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:58:11 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "7e0d003",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:57:56 +0900",
-      "message": "Open credential-ledger screening and prep Poin-T"
-    },
-    {
-      "hash": "b655768",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:53:32 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12203,5 +12203,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 17:47:14 +0900"
+  "generated_at": "2026-04-05 17:48:52 +0900"
 }

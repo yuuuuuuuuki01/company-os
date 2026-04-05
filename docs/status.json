@@ -10340,7 +10340,7 @@
     },
     "motion-initial-scriptification-implementation-bundle": {
       "id": "motion-initial-scriptification-implementation-bundle",
-      "title": "初回スクリプト化実装束議案",
+      "title": "Initial Scriptification Implementation Bundle Motion",
       "status": "motion-open",
       "owner": "internal-tools-enablement",
       "risk": "medium",
@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 21:25:31 +0900",
-      "message": "Repair company-os CLI summaries"
+      "date": "2026-04-05 21:43:51 +0900",
+      "message": "Document scriptification verification"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 21:25:31 +0900",
-      "message": "Repair company-os CLI summaries"
+      "date": "2026-04-05 21:43:51 +0900",
+      "message": "Document scriptification verification"
     }
   ],
   "commits": [
+    {
+      "hash": "006ead0",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 21:43:51 +0900",
+      "message": "Document scriptification verification"
+    },
+    {
+      "hash": "f91f144",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 12:25:44 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "a1921bd",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:45:14 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "5a8896c",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:44:57 +0900",
-      "message": "Adopt Poin-T ready state and advance automation layers"
-    },
-    {
-      "hash": "8c38625",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 05:13:02 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 21:25:31 +0900"
+  "generated_at": "2026-04-05 21:43:51 +0900"
 }

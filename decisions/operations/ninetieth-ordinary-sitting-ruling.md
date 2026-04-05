@@ -8,7 +8,7 @@ risk: low
 visibility: public
 motion_type: ruling-note
 created_at: 2026-04-04
-updated_at: 2026-04-04
+updated_at: 2026-04-05
 ruling: "`台帳雛形標準案作成議案` を採択し、次を `台帳雛形補助実装束着手議案` に進める。"
 reason: "最初の内部ツール改善として必要な標準境界が明確になり、低リスクの実装束へ進める妥当性が確認できたため。"
 minority_view: "なし"

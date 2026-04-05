@@ -8507,6 +8507,17 @@
       "Status": "adopted",
       "Next handoff": "assembly-secretariat / data-knowledge / owner departments",
       "Next sitting": "one-hundred-forty-fifth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "collaboration-growth-business-owner",
+      "Type": "structural",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "organizational-development-learning",
+      "Status": "adopted",
+      "Next handoff": "project-management-office / directorate / people-talent / portfolio-strategy",
+      "Next sitting": "one-hundred-forty-fifth ordinary sitting"
     }
   ],
   "motions": {
@@ -9726,6 +9737,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-collaboration-growth-business-owner": {
+      "id": "motion-collaboration-growth-business-owner",
+      "title": "連携成長事業責任者体制議案",
+      "status": "motion-open",
+      "owner": "organizational-development-learning",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-department-agenda-origination": {
       "id": "motion-department-agenda-origination",
       "title": "部署議題上申促進議案",
@@ -10549,7 +10573,8 @@
       "Seat state": "seated",
       "Lane state": "active",
       "Default risk": "medium",
-      "Owner status": "seated"
+      "Owner status": "seated",
+      "Business owner status": "seated"
     },
     {
       "Unit": "credential-ledger",
@@ -10558,7 +10583,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "high",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "FormPilot",
@@ -10567,7 +10593,8 @@
       "Seat state": "seated",
       "Lane state": "active",
       "Default risk": "medium",
-      "Owner status": "seated"
+      "Owner status": "seated",
+      "Business owner status": "seated"
     },
     {
       "Unit": "jouzou",
@@ -10576,7 +10603,8 @@
       "Seat state": "seated",
       "Lane state": "active",
       "Default risk": "medium",
-      "Owner status": "seated"
+      "Owner status": "seated",
+      "Business owner status": "seated"
     },
     {
       "Unit": "kanai-kagamibiraki-proposal",
@@ -10585,7 +10613,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "low",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "oem",
@@ -10594,7 +10623,8 @@
       "Seat state": "seated",
       "Lane state": "active",
       "Default risk": "medium",
-      "Owner status": "seated"
+      "Owner status": "seated",
+      "Business owner status": "seated"
     },
     {
       "Unit": "oem_release",
@@ -10603,7 +10633,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "medium",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "Poin-T",
@@ -10612,7 +10643,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "high",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "saigai",
@@ -10621,7 +10653,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "high",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "shift",
@@ -10630,7 +10663,8 @@
       "Seat state": "seated",
       "Lane state": "active",
       "Default risk": "medium",
-      "Owner status": "seated"
+      "Owner status": "seated",
+      "Business owner status": "seated"
     },
     {
       "Unit": "shift_backup",
@@ -10639,7 +10673,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "low",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "timetree-export",
@@ -10648,7 +10683,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "medium",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "tumugi",
@@ -10657,7 +10693,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "medium",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     },
     {
       "Unit": "zenken",
@@ -10666,7 +10703,8 @@
       "Seat state": "unseated",
       "Lane state": "not-activated",
       "Default risk": "high",
-      "Owner status": "pending-election"
+      "Owner status": "pending-election",
+      "Business owner status": "pending"
     }
   ],
   "activities": [
@@ -10699,6 +10737,20 @@
       "Next Handoff": "assembly-secretariat"
     },
     {
+      "Actor": "Portfolio Strategy",
+      "Layer": "department",
+      "Status": "active",
+      "Current Work": "assign business-owner seats by business and keep the business triad coherent with unit ownership",
+      "Next Handoff": "assembly-secretariat / PMO"
+    },
+    {
+      "Actor": "Directorate",
+      "Layer": "department",
+      "Status": "active",
+      "Current Work": "operate business triads with PM and business owners so quality and sequencing are not split apart",
+      "Next Handoff": "assembly-secretariat / PMO"
+    },
+    {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
@@ -10718,6 +10770,13 @@
       "Status": "active",
       "Current Work": "keep branch-trigger boundaries aligned with real risk and start the adopted exception-routing automation bundle",
       "Next Handoff": "founder-office / release-review-committee"
+    },
+    {
+      "Actor": "People and Talent",
+      "Layer": "department",
+      "Status": "active",
+      "Current Work": "open trainee seats for all departments and major offices while keeping context packets narrow",
+      "Next Handoff": "assembly-secretariat / personnel-committee"
     },
     {
       "Actor": "OEM Unit",
@@ -10833,17 +10892,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:32:26 +0900",
-      "message": "Add work-first operating limits"
+      "date": "2026-04-05 12:38:36 +0900",
+      "message": "Add collaboration growth and business-owner structure"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:32:26 +0900",
-      "message": "Add work-first operating limits"
+      "date": "2026-04-05 12:38:36 +0900",
+      "message": "Add collaboration growth and business-owner structure"
     }
   ],
   "commits": [
+    {
+      "hash": "135080e",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:38:36 +0900",
+      "message": "Add collaboration growth and business-owner structure"
+    },
+    {
+      "hash": "b8c0e91",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:32:41 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "8238d98",
       "author": "yuuuuuuuuki01",
@@ -10951,18 +11022,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:47:59 +0900",
       "message": "fix: generate_status.pyで92回以降の議会が0回目として処理されていたバグを修正"
-    },
-    {
-      "hash": "51f7676",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 02:43:23 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "62f283b",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:42:16 +0900",
-      "message": "Adopt Japanese meeting output and return confirmation"
     }
   ],
   "stats": {
@@ -10970,10 +11029,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 35,
-    "total_proposals": 71,
+    "total_motions": 36,
+    "total_proposals": 72,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:32:26 +0900"
+  "generated_at": "2026-04-05 12:38:36 +0900"
 }

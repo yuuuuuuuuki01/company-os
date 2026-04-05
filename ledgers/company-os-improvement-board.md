@@ -60,3 +60,4 @@ updated_at: 2026-04-05
 | urgent | credential-ledger-high-risk-screen-opening | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixtieth ordinary sitting |
 | urgent | point-high-risk-screen-prep | operating | report | watch | security-risk-compliance | adopted | assembly-secretariat / release-review-committee | one-hundred-sixty-third ordinary sitting |
 | urgent | automation-heartbeat-layers | operating | discussion | discussion-2 | assembly-secretariat | active | internal-tools-enablement / project-management-office | one-hundred-sixty-fifth ordinary sitting |
+| urgent | token-efficient-execution | operating | discussion | discussion-1 | internal-tools-enablement | active | all department stewards / data-knowledge | one-hundred-sixty-sixth ordinary sitting |

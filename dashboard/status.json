@@ -10852,8 +10852,8 @@
       "Actor": "Pending Business Pool",
       "Layer": "portfolio",
       "Status": "active",
-      "Current Work": "prepare seats and packets for inactive businesses without over-activating them",
-      "Next Handoff": "portfolio-strategy / people-talent"
+      "Current Work": "prepare seats, notes, and screening order for inactive businesses without over-activating them",
+      "Next Handoff": "portfolio-strategy / people-talent / project-management-office"
     },
     {
       "Actor": "Internal Tools and Enablement",
@@ -11498,17 +11498,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:04:09 +0900",
-      "message": "feat: 部署カードへ全部署の課題（自動化・総点検・議題創出）を再抽出して明示"
+      "date": "2026-04-05 13:10:00 +0900",
+      "message": "Add business kickoff and screening notes"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:04:09 +0900",
-      "message": "feat: 部署カードへ全部署の課題（自動化・総点検・議題創出）を再抽出して明示"
+      "date": "2026-04-05 13:10:00 +0900",
+      "message": "Add business kickoff and screening notes"
     }
   ],
   "commits": [
+    {
+      "hash": "40fd6ca",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:10:00 +0900",
+      "message": "Add business kickoff and screening notes"
+    },
+    {
+      "hash": "fa8624b",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:04:17 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "5d10c9f",
       "author": "yuuuuuuuuki01",
@@ -11616,18 +11628,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:11:34 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "8243655",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:11:25 +0900",
-      "message": "feat: 組織タブの部署カードに所属人数と現在の作業量（アサイン内容）を追加表示"
-    },
-    {
-      "hash": "21d05f4",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:04:15 +0900",
-      "message": "Add agenda origination discipline and retirement ladder"
     }
   ],
   "stats": {
@@ -11640,5 +11640,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:04:09 +0900"
+  "generated_at": "2026-04-05 13:10:00 +0900"
 }

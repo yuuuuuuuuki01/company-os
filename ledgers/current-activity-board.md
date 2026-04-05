@@ -15,13 +15,13 @@ updated_at: 2026-04-05
 
 | Actor | Layer | Status | Current Work | Next Handoff |
 | --- | --- | --- | --- | --- |
-| Founder Office | governance | active | sovereign check over the active improvement batch and approval-wait return-delay escalation boundaries | assembly |
-| Assembly | governance | active | one-hundred-twenty-eighth ordinary sitting completed and one-hundred-twenty-ninth sitting opened | one-hundred-twenty-ninth ordinary sitting |
-| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop and prepare the approval-wait return-delay escalation packet | improvement board |
-| Project Management Office | department | active | monitor four active PJ and keep approval-wait delay escalation connected to live PJ watch | assembly-secretariat |
-| Data and Knowledge | department | active | maintain the adopted ledger template set and support approval-wait borrow and return artifacts | assembly-secretariat |
+| Founder Office | governance | active | sovereign check over the active improvement batch and approval-wait delay-remediation boundaries | assembly |
+| Assembly | governance | active | one-hundred-thirty-first ordinary sitting completed and one-hundred-thirty-second sitting opened | one-hundred-thirty-second ordinary sitting |
+| Assembly Secretariat | governance | active | run the autonomous ordinary sitting loop and prepare the approval-wait delay-remediation packet | improvement board |
+| Project Management Office | department | active | monitor four active PJ and keep approval-wait delay remediation connected to live PJ watch | assembly-secretariat |
+| Data and Knowledge | department | active | maintain the adopted ledger template set and support approval-wait delay artifacts | assembly-secretariat |
 | Engineering | department | active | maintain the adopted ledger template set and watch for column drift in active ledgers | quality-assurance / internal-tools-enablement |
-| Security, Risk, and Compliance | department | active | keep branch-trigger boundaries aligned with real risk while return confirmation is reused for delay escalation | founder-office / release-review-committee |
+| Security, Risk, and Compliance | department | active | keep branch-trigger boundaries aligned with real risk while delay escalation is reused for remediation tracking | founder-office / release-review-committee |
 | OEM Unit | unit | active | first external PJ is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external PJ is active under bounded planning and scheduling scope | reviewer / PMO |
 | Jouzou Unit | unit | active | third external PJ is active under bounded planning and quote workflow scope | reviewer / PMO |

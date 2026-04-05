@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 166,
+      "id": "company-os-one-hundred-sixty-sixth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 165,
       "id": "company-os-one-hundred-sixty-fifth-ordinary-sitting",
       "status": "motion-open",
@@ -8921,6 +8930,17 @@
       "Status": "active",
       "Next handoff": "internal-tools-enablement / project-management-office",
       "Next sitting": "one-hundred-sixty-fifth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "token-efficient-execution",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "internal-tools-enablement",
+      "Status": "active",
+      "Next handoff": "all department stewards / data-knowledge",
+      "Next sitting": "one-hundred-sixty-sixth ordinary sitting"
     }
   ],
   "motions": {
@@ -10582,6 +10602,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-token-efficient-execution": {
+      "id": "motion-token-efficient-execution",
+      "title": "トークン節約実行導入議案",
+      "status": "motion-open",
+      "owner": "internal-tools-enablement",
+      "risk": "low",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-automation-implementation-chain": {
       "id": "motion-automation-implementation-chain",
       "title": "自動化実装連鎖化議案",
@@ -11398,6 +11431,13 @@
       "Deliverable": "trainee staffing packet set and shadow-seat rollout note",
       "Status": "active",
       "Next handoff": "department stewards / major offices"
+    },
+    {
+      "Department": "all departments",
+      "Current assignment": "shift repetitive work to script-first, cli-first, and template-first execution wherever lawful",
+      "Deliverable": "token-efficient replacement candidates and short replacement notes",
+      "Status": "active",
+      "Next handoff": "internal-tools-enablement / data-knowledge"
     }
   ],
   "automation_issues": [
@@ -11997,17 +12037,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 14:52:38 +0900",
-      "message": "Add CLI launch entrypoints"
+      "date": "2026-04-05 14:57:36 +0900",
+      "message": "Add token-efficient execution policy"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 14:52:38 +0900",
-      "message": "Add CLI launch entrypoints"
+      "date": "2026-04-05 14:57:36 +0900",
+      "message": "Add token-efficient execution policy"
     }
   ],
   "commits": [
+    {
+      "hash": "91fcba3",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 14:57:36 +0900",
+      "message": "Add token-efficient execution policy"
+    },
+    {
+      "hash": "fc326b7",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 05:52:53 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "ab82b16",
       "author": "yuuuuuuuuki01",
@@ -12115,29 +12167,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:45:04 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "f129954",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:44:46 +0900",
-      "message": "Advance high-risk screening sequencing"
-    },
-    {
-      "hash": "c84661a",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:43:58 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 161,
+    "total_sittings": 162,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 45,
-    "total_proposals": 80,
+    "total_motions": 46,
+    "total_proposals": 81,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 14:52:38 +0900"
+  "generated_at": "2026-04-05 14:57:36 +0900"
 }

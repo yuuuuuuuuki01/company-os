@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 157,
+      "id": "company-os-one-hundred-fifty-seventh-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 156,
       "id": "company-os-one-hundred-fifty-sixth-ordinary-sitting",
       "status": "motion-open",
@@ -7560,6 +7569,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "156": {
+      "ruling": "`高リスク審査着手順議案` を discussion-1 で受理し、最初の high-risk screening 候補を `credential-ledger` に固定したまま discussion-2 へ送る。",
+      "reason": "`credential-ledger` は utility 起点で境界が比較的明確であり、policy-first の `saigai` や追加の release-review capacity を要する項目より先に扱いやすいため。",
+      "executor": "security-risk-compliance, assembly-secretariat, release-review-committee",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "62": {
       "ruling": "`FormPilot` readiness screen を discussion-2 まで進めた。",
       "reason": "screen-only のまま preparation-only path を deliberation に上げる条件が揃ったため。",
@@ -8739,11 +8755,11 @@
       "Item": "high-risk-screening-sequencing",
       "Type": "operating",
       "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Cycle stage": "discussion-2",
       "Owner": "security-risk-compliance",
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee / founder-office",
-      "Next sitting": "one-hundred-fifty-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifty-seventh ordinary sitting"
     }
   ],
   "motions": {
@@ -11781,17 +11797,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:43:41 +0900",
-      "message": "Adopt second review packet and open high-risk sequencing"
+      "date": "2026-04-05 13:44:46 +0900",
+      "message": "Advance high-risk screening sequencing"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:43:41 +0900",
-      "message": "Adopt second review packet and open high-risk sequencing"
+      "date": "2026-04-05 13:44:46 +0900",
+      "message": "Advance high-risk screening sequencing"
     }
   ],
   "commits": [
+    {
+      "hash": "f129954",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:44:46 +0900",
+      "message": "Advance high-risk screening sequencing"
+    },
+    {
+      "hash": "c84661a",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:43:58 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "ea47d6f",
       "author": "yuuuuuuuuki01",
@@ -11899,22 +11927,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:16:01 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "7501a87",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:15:52 +0900",
-      "message": "feat: 部署カードへボトムアップ上申と進行中の活動を追加して可視化"
-    },
-    {
-      "hash": "0d84d9b",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:14:29 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 152,
+    "total_sittings": 153,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -11923,5 +11939,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:43:41 +0900"
+  "generated_at": "2026-04-05 13:44:46 +0900"
 }

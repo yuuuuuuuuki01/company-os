@@ -9974,6 +9974,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-inactive-business-initial-review-packet": {
+      "id": "motion-inactive-business-initial-review-packet",
+      "title": "非稼働事業初回審査束議案",
+      "status": "motion-open",
+      "owner": "portfolio-strategy",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-agenda-origination-discipline": {
       "id": "motion-agenda-origination-discipline",
       "title": "議題創出不履行規律議案",
@@ -11498,17 +11511,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:10:00 +0900",
-      "message": "Add business kickoff and screening notes"
+      "date": "2026-04-05 13:14:11 +0900",
+      "message": "Add inactive business review opening gates"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:10:00 +0900",
-      "message": "Add business kickoff and screening notes"
+      "date": "2026-04-05 13:14:11 +0900",
+      "message": "Add inactive business review opening gates"
     }
   ],
   "commits": [
+    {
+      "hash": "9b0e51d",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:14:11 +0900",
+      "message": "Add inactive business review opening gates"
+    },
+    {
+      "hash": "d1a80e6",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:10:17 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "40fd6ca",
       "author": "yuuuuuuuuki01",
@@ -11616,18 +11641,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:15:48 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "704be5e",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:15:31 +0900",
-      "message": "Add all-department review and bottom-up petitions"
-    },
-    {
-      "hash": "8dcef85",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:11:34 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -11636,9 +11649,9 @@
     "total_units": 14,
     "active_units": 5,
     "total_motions": 38,
-    "total_proposals": 73,
+    "total_proposals": 74,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:10:00 +0900"
+  "generated_at": "2026-04-05 13:14:11 +0900"
 }

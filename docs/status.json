@@ -8929,7 +8929,7 @@
       "Owner": "assembly-secretariat",
       "Status": "adopted",
       "Next handoff": "internal-tools-enablement / project-management-office / independent-audit-firm",
-      "Next sitting": "第百六十九回通常会議"
+      "Next sitting": "第百七十三回通常会議"
     },
     {
       "Priority": "urgent",
@@ -8952,6 +8952,17 @@
       "Status": "adopted",
       "Next handoff": "independent-audit-firm / data-knowledge / internal-tools-enablement",
       "Next sitting": "第百七十四回通常会議"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "initial-scriptification-implementation-bundle",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "internal-tools-enablement",
+      "Status": "active",
+      "Next handoff": "independent-audit-firm / data-knowledge / assembly-secretariat",
+      "Next sitting": "第百七十五回通常会議"
     }
   ],
   "motions": {
@@ -10327,6 +10338,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-initial-scriptification-implementation-bundle": {
+      "id": "motion-initial-scriptification-implementation-bundle",
+      "title": "初回スクリプト化実装束議案",
+      "status": "motion-open",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-ledger-heading-template-draft": {
       "id": "motion-ledger-heading-template-draft",
       "title": "台帳見出し雛形作成議案",
@@ -11381,8 +11405,8 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "build the adopted automation helper bundles and prepare queued bundles for automatic promotion",
-      "Next Handoff": "engineering / security-risk-compliance"
+      "Current Work": "build the first scriptification implementation bundle for review packet issuance and automation review carry-forward while keeping CLI-first entrypoints current",
+      "Next Handoff": "independent-audit-firm / data-knowledge"
     }
   ],
   "work_allocation": [
@@ -11444,10 +11468,10 @@
     },
     {
       "Department": "internal-tools-enablement",
-      "Current assignment": "support tooling and automation for boards, ledgers, and recurring loops",
-      "Deliverable": "automation helper bundle plan for meeting replenishment, PJ watch, and exception routing",
+      "Current assignment": "support tooling and automation for boards, ledgers, recurring loops, and first scriptification rollout",
+      "Deliverable": "initial scriptification implementation bundle and audit-sample handoff note",
       "Status": "active",
-      "Next handoff": "engineering / security-risk-compliance"
+      "Next handoff": "engineering / security-risk-compliance / independent-audit-firm"
     },
     {
       "Department": "people-talent",
@@ -12061,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 18:05:03 +0900",
-      "message": "Expand CLI commands for long-running operations"
+      "date": "2026-04-05 18:10:40 +0900",
+      "message": "Add initial scriptification implementation bundle"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 18:05:03 +0900",
-      "message": "Expand CLI commands for long-running operations"
+      "date": "2026-04-05 18:10:40 +0900",
+      "message": "Add initial scriptification implementation bundle"
     }
   ],
   "commits": [
+    {
+      "hash": "b67693b",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 18:10:40 +0900",
+      "message": "Add initial scriptification implementation bundle"
+    },
+    {
+      "hash": "6e54ef9",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 09:05:16 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "7a35f8c",
       "author": "yuuuuuuuuki01",
@@ -12179,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:02:43 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "59dfb9b",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:02:25 +0900",
-      "message": "Advance Poin-T prep to deliberation"
-    },
-    {
-      "hash": "b6a7636",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 05:01:41 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12198,10 +12222,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 47,
-    "total_proposals": 82,
+    "total_motions": 48,
+    "total_proposals": 83,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 18:05:03 +0900"
+  "generated_at": "2026-04-05 18:10:40 +0900"
 }

@@ -7617,6 +7617,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "144": {
+      "ruling": "`自動化実装連鎖化議案` を採択し、自動化束は今後 `queued -> active -> watch` の連鎖運用で前進させる。",
+      "reason": "初回束で閉じる設計は安全だが、毎回の選定会議を必要とするため自律性が不足していた。",
+      "executor": "assembly-secretariat, project-management-office, internal-tools-enablement",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "36": {
       "ruling": "第三十六回会議で bounded `shift` activation execution を採択し、第二外部ユニットのオンボードを完了した。",
       "reason": "execution threshold と execution bundle を満たし、dual-lane watch の制御余力も維持できると判断したため。",
@@ -8471,6 +8478,17 @@
       "Status": "adopted",
       "Next handoff": "assembly-secretariat / project-management-office / data-knowledge / security-risk-compliance / people-talent / internal-tools-enablement",
       "Next sitting": "one-hundred-forty-third ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "automation-implementation-chain",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "assembly-secretariat",
+      "Status": "adopted",
+      "Next handoff": "project-management-office / internal-tools-enablement / owner departments",
+      "Next sitting": "one-hundred-forty-fourth ordinary sitting"
     }
   ],
   "motions": {
@@ -10015,6 +10033,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-automation-implementation-chain": {
+      "id": "motion-automation-implementation-chain",
+      "title": "自動化実装連鎖化議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-approval-wait-resource-reservation": {
       "id": "motion-approval-wait-resource-reservation",
       "title": "承認待機資源予約議案",
@@ -10619,21 +10650,21 @@
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-forty-third ordinary sitting completed and automation bundles moved into rollout",
+      "Current Work": "one-hundred-forty-fourth ordinary sitting completed and automation bundles moved into chained rollout",
       "Next Handoff": "next implementation batch"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop and launch the adopted automation implementation bundles",
+      "Current Work": "run the autonomous ordinary sitting loop and auto-promote queued automation bundles without waiting for new selection meetings",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and start the adopted PJ watch automation bundle",
+      "Current Work": "monitor four active PJ and keep the automation bundle chain advancing without waiting for manual reselection",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -10689,7 +10720,7 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "build the adopted automation helper bundles for meeting replenishment, PJ watch, and exception routing",
+      "Current Work": "build the adopted automation helper bundles and prepare queued bundles for automatic promotion",
       "Next Handoff": "engineering / security-risk-compliance"
     }
   ],
@@ -10771,17 +10802,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:23:01 +0900",
-      "message": "Add automation readiness review across all departments"
+      "date": "2026-04-05 12:28:16 +0900",
+      "message": "Add chained automation bundle rollout"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:23:01 +0900",
-      "message": "Add automation readiness review across all departments"
+      "date": "2026-04-05 12:28:16 +0900",
+      "message": "Add chained automation bundle rollout"
     }
   ],
   "commits": [
+    {
+      "hash": "70681c0",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:28:16 +0900",
+      "message": "Add chained automation bundle rollout"
+    },
+    {
+      "hash": "305695e",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:23:17 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "b6407b3",
       "author": "yuuuuuuuuki01",
@@ -10889,18 +10932,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:35:24 +0900",
       "message": "Advance approval wait reservation and borrow log"
-    },
-    {
-      "hash": "67d47a5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:32:34 +0900",
-      "message": "feat: 承認分岐の可視化とGitHub Pages同期"
-    },
-    {
-      "hash": "1a3d910",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:30:51 +0900",
-      "message": "Advance approval wait arbitration and reservation"
     }
   ],
   "stats": {
@@ -10908,10 +10939,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 33,
-    "total_proposals": 69,
+    "total_motions": 34,
+    "total_proposals": 70,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:23:01 +0900"
+  "generated_at": "2026-04-05 12:28:16 +0900"
 }

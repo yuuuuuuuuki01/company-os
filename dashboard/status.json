@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 22:10:11 +0900",
-      "message": "Add automation note to approval wait template"
+      "date": "2026-04-05 22:12:55 +0900",
+      "message": "Document autonomous meeting automation note"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 22:10:11 +0900",
-      "message": "Add automation note to approval wait template"
+      "date": "2026-04-05 22:12:55 +0900",
+      "message": "Document autonomous meeting automation note"
     }
   ],
   "commits": [
+    {
+      "hash": "c151d10",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 22:12:55 +0900",
+      "message": "Document autonomous meeting automation note"
+    },
+    {
+      "hash": "2eb9d81",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 13:10:23 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "1ccea78",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 06:09:43 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "76fa609",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 15:08:54 +0900",
-      "message": "Adopt automation heartbeat layers"
-    },
-    {
-      "hash": "3e79208",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 06:07:33 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 22:10:11 +0900"
+  "generated_at": "2026-04-05 22:12:55 +0900"
 }

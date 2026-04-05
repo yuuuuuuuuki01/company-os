@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 22:34:50 +0900",
-      "message": "Add automation heartbeat ledger"
+      "date": "2026-04-05 23:02:58 +0900",
+      "message": "Add automation note to remediation completion motion"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 22:34:50 +0900",
-      "message": "Add automation heartbeat ledger"
+      "date": "2026-04-05 23:02:58 +0900",
+      "message": "Add automation note to remediation completion motion"
     }
   ],
   "commits": [
+    {
+      "hash": "ee8d1cb",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 23:02:58 +0900",
+      "message": "Add automation note to remediation completion motion"
+    },
+    {
+      "hash": "b8beba4",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 13:35:01 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "9c521e9",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 12:25:44 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "a1921bd",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 21:25:31 +0900",
-      "message": "Repair company-os CLI summaries"
-    },
-    {
-      "hash": "bcc6644",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 09:11:00 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 22:34:50 +0900"
+  "generated_at": "2026-04-05 23:02:58 +0900"
 }

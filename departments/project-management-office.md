@@ -30,6 +30,8 @@ Coordinate delivery flow, dependencies, sequencing, staffing cadence, and blocke
 - re-sequence approved work
 - convene unblock reviews
 - track external specialist lanes and acceptance flow
+- jointly operate each business with its Business Owner and Director
+- maintain the business triad operating packet for each active business
 
 ## Stop power
 

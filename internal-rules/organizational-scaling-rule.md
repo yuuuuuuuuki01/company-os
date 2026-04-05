@@ -22,6 +22,7 @@ Allow Company OS to add departments, divisions, and sections as load grows, whil
 - scale by smallest sufficient layer first
 - prefer a section before a division, and a division before a new department
 - create a new top-level department only when the mandate clearly escapes existing departmental ownership
+- if repeated interdepartment handoffs create durable context debt, split the context instead of forcing the parent department to absorb it
 
 ## Required fields
 

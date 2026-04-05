@@ -31,6 +31,8 @@ Run hiring, role placement, promotion process, confidence review administration,
 - administer promotion reviews
 - administer sanctions after lawful findings
 - administer retirement processing after lawful discipline findings
+- operate trainee hiring across all departments and major offices
+- maintain trainee seat, shadow seat, and growth-path records
 
 ## Stop power
 

@@ -23,12 +23,15 @@ Handle the static OEM estimate tool as the first bounded external onboarding wav
 - seat_state: seated
 - lane_state: active
 - voting officer: initial `oem` unit-owner line
+- business owner: `oem` 事業責任者席
+- operating triad: `事業責任者 + PM + Director`
 
 ## Immediate operating scope
 
 - bounded static-tool operation under the accepted start packet
 - first active lane watch and issue intake
 - later confidence review and bounded expansion motions
+- business triad jointly operates scope, sequencing, and quality
 
 ## Boundary
 

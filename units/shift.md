@@ -23,6 +23,8 @@ Handle the workforce-planning and shift-optimization MVP as the second bounded e
 - seat_state: seated
 - lane_state: active
 - voting officer: initial `shift` unit-owner line
+- business owner: `shift` 事業責任者席
+- operating triad: `事業責任者 + PM + Director`
 
 ## Immediate operating scope
 
@@ -31,6 +33,7 @@ Handle the workforce-planning and shift-optimization MVP as the second bounded e
 - later confidence review and bounded expansion motions
 - the first mission packet is limited to the MVP planning and scheduling flow
 - any broader expansion still needs a separate motion
+- business triad jointly operates scope, sequencing, and quality
 
 ## Boundary
 

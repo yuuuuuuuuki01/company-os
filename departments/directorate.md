@@ -28,6 +28,8 @@ Guard coherence, meaning, quality bar, expressive alignment, and end-to-end conc
 - define quality standards across outputs
 - require coherence corrections
 - issue cross-unit quality guidance
+- jointly operate each business with its Business Owner and PM
+- maintain quality alignment inside the business triad
 
 ## Stop power
 

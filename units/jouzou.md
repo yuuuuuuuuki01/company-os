@@ -23,6 +23,8 @@ Handle the planning and quote workflow workspace as the third bounded external o
 - seat_state: seated
 - lane_state: active
 - voting officer: initial `jouzou` unit-owner line
+- business owner: `jouzou` 事業責任者席
+- operating triad: `事業責任者 + PM + Director`
 
 ## Immediate operating scope
 
@@ -31,6 +33,7 @@ Handle the planning and quote workflow workspace as the third bounded external o
 - later confidence review and bounded expansion motions
 - the first mission packet is limited to the planning and quote workflow only
 - any broader expansion still needs a separate motion
+- business triad jointly operates scope, sequencing, and quality
 
 ## Boundary
 

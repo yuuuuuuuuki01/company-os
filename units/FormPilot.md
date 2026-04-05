@@ -23,6 +23,8 @@ Handle the outbound-sales automation MVP workspace as the fourth bounded externa
 - seat_state: seated
 - lane_state: active
 - voting officer: initial `FormPilot` unit-owner line
+- business owner: `FormPilot` 事業責任者席
+- operating triad: `事業責任者 + PM + Director`
 
 ## Immediate operating scope
 
@@ -31,6 +33,7 @@ Handle the outbound-sales automation MVP workspace as the fourth bounded externa
 - later confidence review and bounded expansion motions
 - the first mission packet is limited to the outbound-sales automation MVP only
 - any broader expansion still needs a separate motion
+- business triad jointly operates scope, sequencing, and quality
 
 ## Boundary
 

@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 162,
+      "id": "company-os-one-hundred-sixty-second-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 161,
       "id": "company-os-one-hundred-sixty-first-ordinary-sitting",
       "status": "motion-open",
@@ -7710,6 +7719,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "161": {
+      "ruling": "`Poin-T 高リスク審査準備議案` を discussion-1 で受理し、`credential-ledger` と同時 opening しない前提を維持したまま discussion-2 へ送る。",
+      "reason": "次候補を ready 化しても、同時 opening しなければ gate capacity を守りつつ常時稼働を維持できるため。",
+      "executor": "security-risk-compliance, assembly-secretariat, release-review-committee",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "109": {
       "ruling": "`承認返却記録雛形作成議案` を discussion-2 まで進めた。",
       "reason": "`branch_id`、`approval_result`、`resumed_items`、`dropped_items` の必須性が十分に収束できたため。",
@@ -8841,11 +8857,11 @@
       "Item": "point-high-risk-screen-prep",
       "Type": "operating",
       "Agenda mode": "discussion",
-      "Cycle stage": "discussion-1",
+      "Cycle stage": "discussion-2",
       "Owner": "security-risk-compliance",
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee",
-      "Next sitting": "one-hundred-sixty-first ordinary sitting"
+      "Next sitting": "one-hundred-sixty-second ordinary sitting"
     }
   ],
   "motions": {
@@ -11909,17 +11925,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:57:56 +0900",
-      "message": "Open credential-ledger screening and prep Poin-T"
+      "date": "2026-04-05 14:01:19 +0900",
+      "message": "Add nonblocking reporting and advance Poin-T"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:57:56 +0900",
-      "message": "Open credential-ledger screening and prep Poin-T"
+      "date": "2026-04-05 14:01:19 +0900",
+      "message": "Add nonblocking reporting and advance Poin-T"
     }
   ],
   "commits": [
+    {
+      "hash": "972faf5",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 14:01:19 +0900",
+      "message": "Add nonblocking reporting and advance Poin-T"
+    },
+    {
+      "hash": "de21dd3",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:58:11 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "7e0d003",
       "author": "yuuuuuuuuki01",
@@ -12027,22 +12055,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:27:47 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "8a4d3e3",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:27:23 +0900",
-      "message": "Advance continuous operations to deliberation"
-    },
-    {
-      "hash": "f29bbea",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:26:02 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 157,
+    "total_sittings": 158,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -12051,5 +12067,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:57:56 +0900"
+  "generated_at": "2026-04-05 14:01:19 +0900"
 }

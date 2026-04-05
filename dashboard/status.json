@@ -5220,6 +5220,215 @@
     },
     {
       "number": 0,
+      "id": "company-os-one-hundred-eighth-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Deliberate the approval-request artifact and decide the next branch record artifact.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "deliberation",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-ninth ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`承認要求票雛形作成議案` was adopted",
+        "the one-hundred-ninth ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-eleventh-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Open the priority reshuffle artifact for approval waits.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認待機優先度組替議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-twelfth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-fifteenth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Adopt the candidate-refill artifact for approval waits.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認待機優先度組替議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認待機中棚卸議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-sixteenth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
       "id": "company-os-one-hundred-fifth-ordinary-sitting",
       "status": "adopted",
       "date": "2026-04-05",
@@ -5338,6 +5547,80 @@
     },
     {
       "number": 0,
+      "id": "company-os-one-hundred-fourteenth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Advance the candidate-refill artifact for approval waits.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認待機優先度組替議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "承認待機補充候補台帳作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-fifteenth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
       "id": "company-os-one-hundred-fourth-ordinary-sitting",
       "status": "adopted",
       "date": "2026-04-05",
@@ -5399,6 +5682,72 @@
     },
     {
       "number": 0,
+      "id": "company-os-one-hundred-ninth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Open the return-record artifact for approval branches.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-tenth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
       "id": "company-os-one-hundred-second-ordinary-sitting",
       "status": "adopted",
       "date": "2026-04-05",
@@ -5452,6 +5801,71 @@
       "result": [
         "`台帳標準列雛形作成議案` was adopted",
         "the one-hundred-third ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-seventh-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Run `discussion-2` on the approval-request artifact.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-eighth ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`承認要求票雛形作成議案` reached `discussion-2`",
+        "the one-hundred-eighth ordinary sitting was opened"
       ]
     },
     {
@@ -5518,6 +5932,72 @@
     },
     {
       "number": 0,
+      "id": "company-os-one-hundred-tenth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Narrow the approval-return record enough for adoption.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-eleventh ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
       "id": "company-os-one-hundred-third-ordinary-sitting",
       "status": "motion-open",
       "date": "2026-04-05",
@@ -5570,6 +6050,150 @@
         {
           "mode": "procedural",
           "item": "confirm the one-hundred-fourth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-thirteenth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Open the candidate-refill artifact for approval waits.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認待機優先度組替議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認待機補充候補台帳作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-fourteenth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-twelfth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Advance the priority reshuffle artifact for approval waits.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認返却記録雛形作成議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "承認待機優先度組替議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-thirteenth ordinary sitting agenda"
         }
       ],
       "result": []
@@ -6303,7 +6927,7 @@
       "Owner": "project-management-office",
       "Status": "rollout-active",
       "Next handoff": "four active PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6314,7 +6938,7 @@
       "Owner": "assembly-secretariat",
       "Status": "rollout-active",
       "Next handoff": "committee-to-execution handoff watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6325,7 +6949,7 @@
       "Owner": "independent-audit-firm",
       "Status": "rollout-active",
       "Next handoff": "founder-office / assembly",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6336,7 +6960,7 @@
       "Owner": "research-intelligence",
       "Status": "rollout-active",
       "Next handoff": "assembly-secretariat",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6347,7 +6971,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "first external PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6358,7 +6982,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "second external PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6369,7 +6993,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "third external PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6380,7 +7004,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "fourth external PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6390,8 +7014,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "approval request template and four active PJ watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next handoff": "approval-wait refill and four active PJ watch",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6402,7 +7026,7 @@
       "Owner": "assembly-secretariat",
       "Status": "adopted",
       "Next handoff": "autonomous meeting watch",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6412,41 +7036,8 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval request template",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-frontmatter-template-draft",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "template set completed",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-heading-template-draft",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "data-knowledge",
-      "Status": "adopted",
-      "Next handoff": "template set completed",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-standard-columns-template-draft",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "engineering",
-      "Status": "adopted",
-      "Next handoff": "approval request template",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next handoff": "approval-wait refill",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6456,21 +7047,1465 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval request template",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next handoff": "approval-wait refill",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Priority": "next",
       "Item": "approval-request-template-draft",
       "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "assembly-secretariat",
+      "Status": "adopted",
+      "Next handoff": "approval-wait refill",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-return-record-template-draft",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "data-knowledge",
+      "Status": "adopted",
+      "Next handoff": "approval-wait refill",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-wait-priority-reshuffle",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "project-management-office",
+      "Status": "adopted",
+      "Next handoff": "approval-wait refill",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-wait-candidate-refill-ledger",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-2",
+      "Owner": "internal-tools-enablement",
+      "Status": "active",
+      "Next handoff": "assembly-secretariat / project-management-office",
+      "Next sitting": "one-hundred-fourteenth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-wait-review",
+      "Type": "operating",
       "Agenda mode": "discussion",
       "Cycle stage": "discussion-1",
-      "Owner": "assembly-secretariat",
+      "Owner": "security-risk-compliance",
       "Status": "active",
-      "Next handoff": "founder-office / project-management-office / data-knowledge",
-      "Next sitting": "one-hundred-sixth ordinary sitting"
+      "Next handoff": "founder-office / assembly-secretariat / project-management-office",
+      "Next sitting": "one-hundred-fifteenth ordinary sitting"
     }
   ],
+  "motions": {
+    "ai-bulletin-intake-motion": {
+      "id": "ai-bulletin-intake-motion",
+      "title": "AI Bulletin Intake Motion",
+      "status": "adopted",
+      "owner": "research-intelligence",
+      "risk": "low",
+      "goal": [
+        "Define a lighter route from AI academic bulletins to operating change or formal petition."
+      ],
+      "proposed_action": [
+        "classify bulletin items as `monitor`, `trial`, or `petition`",
+        "send `trial` items to ODL backlog review",
+        "send `petition` items to the assembly secretariat with source summary attached"
+      ],
+      "why": [
+        "the bulletin already contains decision-useful signals",
+        "intake is still ad hoc"
+      ],
+      "discussion_1": [
+        "intake classes `monitor / trial / petition` are accepted as the base pattern",
+        "`trial` should route to ODL backlog review",
+        "send to `discussion-2` with intake ownership and reporting format"
+      ],
+      "discussion_2": [
+        "accepted artifact set: `ai-bulletin-intake-board`",
+        "deliberation should decide whether assembly secretariat or research-intelligence owns the first classification pass"
+      ],
+      "deliberation": [
+        "adopted with rollout owner `research-intelligence`",
+        "first-pass classifier: `research-intelligence`",
+        "supporting rule: `ai-bulletin-intake-rule`"
+      ]
+    },
+    "audit-fast-path-motion": {
+      "id": "audit-fast-path-motion",
+      "title": "Audit Fast Path Motion",
+      "status": "adopted",
+      "owner": "independent-audit-firm",
+      "risk": "low",
+      "goal": [
+        "Shorten the route from audit finding to recognized improvement motion."
+      ],
+      "proposed_action": [
+        "classify audit findings as `watch`, `route`, or `urgent`",
+        "auto-open a draft motion for `route` findings",
+        "require chair review on `urgent` findings before the next ordinary sitting"
+      ],
+      "why": [
+        "audit reports already surface useful issues",
+        "the conversion step into action is still too manual"
+      ],
+      "discussion_1": [
+        "triage classes `watch / route / urgent` are accepted as the base pattern",
+        "`route` should open a draft motion automatically",
+        "send to `discussion-2` with routing ownership and timing"
+      ],
+      "discussion_2": [
+        "accepted artifact set: `audit-routing-board`",
+        "deliberation should decide auto-open timing and chair review boundary"
+      ],
+      "deliberation": [
+        "adopted with rollout owner `independent-audit-firm`",
+        "supporting rule: `audit-finding-routing-rule`"
+      ]
+    },
+    "committee-execution-bridge-motion": {
+      "id": "committee-execution-bridge-motion",
+      "title": "Committee Execution Bridge Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "low",
+      "goal": [
+        "Tighten the handoff from committee findings into execution lanes so findings do not stall after review."
+      ],
+      "proposed_action": [
+        "require each committee finding to name one executor and one deadline",
+        "add a handoff field to committee outputs",
+        "send binding findings directly to the responsible lane owner"
+      ],
+      "why": [
+        "review authority exists, but post-review execution is still loose",
+        "binding findings should move work, not only describe it"
+      ],
+      "discussion_1": [
+        "committee findings need an executor, deadline, and handoff target",
+        "binding findings should update the receiving lane directly",
+        "send to `discussion-2` with a minimal output schema"
+      ],
+      "discussion_2": [
+        "accepted artifact set: `issue-committee-finding-handoff`",
+        "deliberation should only decide which committees must use the handoff pattern first"
+      ],
+      "deliberation": [
+        "adopted with rollout owner `assembly-secretariat`",
+        "supporting rule: `committee-finding-handoff-rule`"
+      ]
+    },
+    "decision-template-normalization-motion": {
+      "id": "decision-template-normalization-motion",
+      "title": "Decision Template Normalization Motion",
+      "status": "adopted",
+      "owner": "data-knowledge",
+      "risk": "low",
+      "goal": [
+        "Normalize short-form ruling templates so decisions stay readable and compact."
+      ],
+      "proposed_action": [
+        "standardize one short Japanese decision pattern",
+        "apply it first to operating decisions",
+        "keep legal meaning while reducing noise"
+      ],
+      "why": [
+        "consistency in rulings improves meeting speed",
+        "compressed readable decisions support traceability"
+      ],
+      "discussion_1": [
+        "keep the legal field set unchanged while shortening the visible body",
+        "first target is ordinary sitting and operating rulings only",
+        "accepted artifact set: `decisions/templates/operating-ruling-short-ja.md`",
+        "send to `discussion-2` with migration boundary and fallback rule"
+      ],
+      "discussion_2": [
+        "the short Japanese pattern should apply only to ordinary operating rulings at first",
+        "constitutional, founder-veto, personnel discipline, and high-risk release rulings should stay on the full template",
+        "accepted artifact set: `internal-rules/operating-ruling-short-ja-rule.md`",
+        "deliberation should decide adoption scope and fallback trigger"
+      ],
+      "deliberation": [
+        "adopted for ordinary sitting rulings, committee operating rulings, and low-risk officer rulings only",
+        "full ruling template remains mandatory for excluded scope and any compression risk",
+        "supporting artifact: `internal-rules/operating-ruling-short-ja-rule.md`"
+      ]
+    },
+    "department-steward-seating-wave-motion": {
+      "id": "department-steward-seating-wave-motion",
+      "title": "Department Steward Seating Wave Motion",
+      "status": "adopted",
+      "owner": "people-talent",
+      "risk": "medium",
+      "goal": [
+        "Run a structured next wave of steward seating for departments that are active in ordinary operation but still acting or undefined."
+      ],
+      "proposed_action": [
+        "classify departments by immediate need",
+        "seat high-use stewards first",
+        "defer low-use departments until a live workload exists"
+      ],
+      "why": [
+        "acting arrangements are useful for bootstrap",
+        "ordinary operation needs cleaner stewardship over time"
+      ],
+      "discussion_1": [
+        "immediate seating should focus on departments already carrying ordinary governance load",
+        "a wave model is preferred over one large staffing motion",
+        "accepted artifact set: `ledgers/department-steward-seating-board.md`",
+        "send to `discussion-2` with wave-1 criteria and confidence-review entry point"
+      ],
+      "discussion_2": [
+        "wave-1 should confirm stewards only for departments already carrying ordinary governance load",
+        "the preferred route is confirmation of existing acting lines rather than a broad new staffing wave",
+        "accepted artifact set: `ledgers/department-steward-wave-1-slate.md`",
+        "deliberation should decide whether wave-1 is adopted now and whether wave-2 needs a trigger condition"
+      ],
+      "deliberation": [
+        "adopted for wave-1 only",
+        "wave-2 starts only when a second non-`company-os` lane becomes `active` or the Founder directs acceleration",
+        "supporting artifact: `ledgers/department-steward-wave-1-slate.md`"
+      ]
+    },
+    "exploration-incubation-department-expansion-motion": {
+      "id": "exploration-incubation-department-expansion-motion",
+      "title": "Exploration Incubation Department Expansion Motion",
+      "status": "adopted",
+      "owner": "organizational-development-learning",
+      "risk": "medium",
+      "goal": [
+        "Create a lawful department that can originate and incubate new project options without directly opening lanes."
+      ],
+      "proposed_action": [
+        "establish `exploration-incubation` as a new department",
+        "delegate bounded project origination and incubation authority",
+        "add the project origination rule, SOP, and board as operating assets",
+        "require all promoted ideas to use the existing readiness-screen and onboarding path"
+      ],
+      "why": [
+        "Company OS can already operate multiple lanes and now needs a separate place to create future options",
+        "origination should be productive without bypassing activation governance"
+      ],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": [
+        "adopted as a department expansion with bounded authority only",
+        "`exploration-incubation` may originate and incubate ideas, but may not activate lanes directly"
+      ]
+    },
+    "formpilot-activation-execution-motion": {
+      "id": "formpilot-activation-execution-motion",
+      "title": "FormPilot Activation Execution Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Execute the first lawful seat and PJ activation for `FormPilot` after the execution bundle has been accepted."
+      ],
+      "proposed_action": [
+        "accept the initial `FormPilot` unit-owner seating motion",
+        "accept the bounded `FormPilot` start packet",
+        "name the first `FormPilot` reviewer and approval path",
+        "record the bounded rollback note",
+        "move `FormPilot` from `seat_state: unseated` to `seated`",
+        "move `lane-formpilot` from `not-activated` to `active` within the bounded outbound-sales automation MVP scope"
+      ],
+      "why": [
+        "the preparation bundle, activation review path, execution threshold, and execution bundle are now all in place",
+        "the remaining step is execution of the first bounded fourth-project activation"
+      ],
+      "discussion_1": [
+        "execution should stay bounded to the outbound-sales automation MVP only",
+        "accepted artifact set: `ledgers/formpilot-execution-bundle-board.md`",
+        "send to `discussion-2` with no broader expansion"
+      ],
+      "discussion_2": [
+        "execution should include seat acceptance, packet acceptance, reviewer naming, approval-path acceptance, rollback-note recording, and PJ-state activation",
+        "`oem`, `shift`, and `jouzou` remain active and continue under watch",
+        "deliberation should decide whether the bounded fourth-project activation goes live now"
+      ],
+      "deliberation": [
+        "adopted as the first bounded fourth-project activation",
+        "`FormPilot` moves to `seat_state: seated` and `lane_state: active`",
+        "supporting artifact: `ledgers/formpilot-activation-execution-board.md`"
+      ]
+    },
+    "formpilot-activation-execution-threshold-motion": {
+      "id": "formpilot-activation-execution-threshold-motion",
+      "title": "FormPilot Activation Execution Threshold Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Define the minimum threshold that must be met before any later bounded execution motion may move `FormPilot` beyond `not-activated`."
+      ],
+      "proposed_action": [
+        "require the `oem`, `shift`, and `jouzou` active-project watch to remain free of critical exception",
+        "require the bounded `FormPilot` seat route, packet, reviewer route, and approval path to remain current",
+        "require PMO and Security, Risk, and Compliance to confirm that a fourth active project remains out of scope until a later explicit decision"
+      ],
+      "why": [
+        "an activation-review path alone should not trigger execution",
+        "fourth-project sequencing should stay slower and more bounded than the third lane"
+      ],
+      "discussion_1": [
+        "this motion should define readiness thresholds only and should not activate `FormPilot`",
+        "accepted artifact set: `ledgers/formpilot-activation-review-checklist.md`",
+        "discussion should stay limited to the minimum lawful execution threshold"
+      ],
+      "discussion_2": [
+        "execution threshold should stay limited to watch, checklist, PMO capacity, and security posture",
+        "this motion must not authorize seat execution or PJ activation",
+        "accepted artifact set: `ledgers/formpilot-execution-threshold-board.md`",
+        "deliberation should decide whether the minimum threshold is narrow enough to support only later execution-bundle preparation"
+      ],
+      "deliberation": [
+        "adopted as the minimum lawful execution threshold for `FormPilot`",
+        "`FormPilot` remains `not-activated`",
+        "the next lawful step is execution-bundle preparation only"
+      ]
+    },
+    "formpilot-activation-review-motion": {
+      "id": "formpilot-activation-review-motion",
+      "title": "FormPilot Activation Review Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Request the first formal activation review for `FormPilot` once the bounded preparation bundle is in force."
+      ],
+      "proposed_action": [
+        "confirm the `FormPilot` unit-owner seat route is ready for lawful seating",
+        "confirm the bounded start packet, reviewer route, and approval path are accepted",
+        "authorize a later activation review check without switching `FormPilot` to `active` yet"
+      ],
+      "why": [
+        "`FormPilot` is now the next bounded candidate after triple-PJ stability",
+        "the bounded preparation bundle is now available",
+        "the next lawful step is a formal activation review path that still keeps `FormPilot` out of activation"
+      ],
+      "discussion_1": [
+        "the first `FormPilot` activation review path should remain bounded and keep `FormPilot` without a PJ",
+        "accepted artifact set: `units/FormPilot.md`",
+        "send to `discussion-2` with the minimum activation-review checklist only"
+      ],
+      "discussion_2": [
+        "the first `FormPilot` activation review path should remain bounded and keep `FormPilot` without a PJ",
+        "the minimum activation-review checklist should stay current across seat, packet, reviewer, and approval path",
+        "deliberation should decide whether the next lawful step is an execution threshold only"
+      ],
+      "deliberation": [
+        "adopted as the first bounded `FormPilot` activation-review path",
+        "`FormPilot` remains unseated and without a PJ",
+        "the next lawful step is a separate execution-threshold motion only"
+      ]
+    },
+    "formpilot-execution-bundle-preparation-motion": {
+      "id": "formpilot-execution-bundle-preparation-motion",
+      "title": "FormPilot Execution Bundle Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the smallest lawful execution bundle for `FormPilot` after the execution threshold has been adopted."
+      ],
+      "proposed_action": [
+        "prepare one bounded seat-execution step for the initial `FormPilot` unit-owner line",
+        "prepare one bounded reviewer-confirmation step",
+        "prepare one bounded approval and rollback note for a later execution motion"
+      ],
+      "why": [
+        "threshold adoption should lead to reusable execution artifacts, not immediate activation",
+        "the next lawful step is preparation of a bounded execution bundle only"
+      ],
+      "discussion_1": [
+        "this motion should prepare an execution bundle only and should not activate `FormPilot`",
+        "accepted artifact set: `ledgers/formpilot-execution-threshold-board.md`",
+        "discussion should stay limited to the smallest repeatable execution bundle"
+      ],
+      "discussion_2": [
+        "the execution bundle should name one seat-execution motion, one reviewer-confirmation step, one approval-path acceptance step, and one rollback note",
+        "`FormPilot` remains `not-activated` until a separate execution motion is adopted",
+        "accepted artifact set: `ledgers/formpilot-execution-bundle-board.md` and `proposals/operations/formpilot-unit-owner-seating-motion.md`",
+        "deliberation should decide whether the smallest lawful execution bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the smallest lawful execution bundle for `FormPilot`",
+        "`FormPilot` remains `not-activated` and does not enter activation in this motion",
+        "supporting artifacts: `ledgers/formpilot-execution-bundle-board.md` and `proposals/operations/formpilot-unit-owner-seating-motion.md`"
+      ]
+    },
+    "formpilot-onboarding-preparation-motion": {
+      "id": "formpilot-onboarding-preparation-motion",
+      "title": "FormPilot Onboarding Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the bounded onboarding bundle for `FormPilot` as the next candidate without opening a fourth active lane."
+      ],
+      "proposed_action": [
+        "define the shortest lawful seat route for `FormPilot`",
+        "draft the first bounded start packet for the outbound-sales automation MVP scope",
+        "prepare reviewer and approval routes without activating the lane"
+      ],
+      "why": [
+        "readiness screening shows `FormPilot` is viable but incomplete",
+        "preparation-only work preserves the current triple-lane operating limit"
+      ],
+      "discussion_1": [
+        "`FormPilot` should stay in preparation only while `oem`, `shift`, and `jouzou` remain the active lanes",
+        "accepted artifact set: `ledgers/formpilot-readiness-screen-board.md`",
+        "discussion should stay limited to one bounded preparation bundle"
+      ],
+      "discussion_2": [
+        "the preparation bundle should include one seat route, one bounded start packet, and one concrete review/approval route",
+        "`FormPilot` remains without a lane while `oem`, `shift`, and `jouzou` remain the active lanes",
+        "accepted artifact set: `ledgers/formpilot-seat-route-board.md`, `recruiting/formpilot-unit-owner-start-packet.md`, and `ledgers/formpilot-review-approval-route.md`",
+        "deliberation should decide whether the bounded `FormPilot` preparation bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the bounded `FormPilot` preparation bundle",
+        "`FormPilot` remains unseated and does not enter activation in this motion",
+        "supporting artifacts: `ledgers/formpilot-seat-route-board.md`, `recruiting/formpilot-unit-owner-start-packet.md`, and `ledgers/formpilot-review-approval-route.md`"
+      ]
+    },
+    "formpilot-unit-owner-seating-motion": {
+      "id": "formpilot-unit-owner-seating-motion",
+      "title": "FormPilot Unit Owner Seating Motion",
+      "status": "draft",
+      "owner": "people-talent",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "fourth-candidate-readiness-screen-motion": {
+      "id": "fourth-candidate-readiness-screen-motion",
+      "title": "Fourth Candidate Readiness Screen Motion",
+      "status": "adopted",
+      "owner": "portfolio-strategy",
+      "risk": "medium",
+      "goal": [
+        "Run a bounded readiness screen for `FormPilot` as the fourth candidate without opening a new lane."
+      ],
+      "proposed_action": [
+        "check whether `FormPilot` still fits the next bounded onboarding candidate profile",
+        "identify the minimum seat, packet, reviewer, and approval prerequisites",
+        "keep `FormPilot` in screening only"
+      ],
+      "why": [
+        "after triple-lane stability, the next pressure is candidate sequencing for a possible fourth lane",
+        "screening is cheaper and safer than premature activation work"
+      ],
+      "discussion_1": [
+        "this motion should screen only and should not open a fourth lane",
+        "accepted artifact set: `units/registry.md`, `ledgers/parallel-operations-board.md`, and `C:/agent/codex/FormPilot/README.md`",
+        "discussion should stay limited to the minimum readiness screen"
+      ],
+      "discussion_2": [
+        "the screen should decide only whether `FormPilot` merits a preparation-only path",
+        "`FormPilot` remains out of activation and does not receive a lane in this motion",
+        "deliberation should decide whether the next bounded path is preparation only"
+      ],
+      "deliberation": [
+        "adopted as the fourth-candidate readiness screen",
+        "`FormPilot` is limited to a preparation-only path",
+        "no fourth lane opens in this motion"
+      ]
+    },
+    "jouzou-activation-execution-motion": {
+      "id": "jouzou-activation-execution-motion",
+      "title": "Jouzou Activation Execution Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Execute the first lawful seat and lane activation for `jouzou` after the execution bundle has been accepted."
+      ],
+      "proposed_action": [
+        "accept the initial `jouzou` unit-owner seating motion",
+        "accept the bounded `jouzou` start packet",
+        "name the first `jouzou` reviewer and approval path",
+        "record the bounded rollback note",
+        "move `jouzou` from `seat_state: unseated` to `seated`",
+        "move `lane-jouzou` from `ready` to `active` within the bounded planning and quote workflow scope"
+      ],
+      "why": [
+        "the preparation bundle, activation review path, execution threshold, and execution bundle are now all in place",
+        "the remaining step is execution of the first bounded third-lane activation"
+      ],
+      "discussion_1": [
+        "execution should stay bounded to the planning and quote workflow only",
+        "accepted artifact set: `ledgers/jouzou-execution-bundle-board.md`",
+        "send to `discussion-2` with no broader expansion"
+      ],
+      "discussion_2": [
+        "execution should include seat acceptance, packet acceptance, reviewer naming, approval-path acceptance, rollback-note recording, and lane-state activation",
+        "`oem` and `shift` remain the first two active lanes and continue under watch",
+        "deliberation should decide whether the bounded third-lane activation goes live now"
+      ],
+      "deliberation": [
+        "adopted as the first bounded third external activation",
+        "`jouzou` moves to `seat_state: seated` and `lane_state: active`",
+        "supporting artifact: `ledgers/jouzou-activation-execution-board.md`"
+      ]
+    },
+    "jouzou-activation-execution-threshold-motion": {
+      "id": "jouzou-activation-execution-threshold-motion",
+      "title": "Jouzou Activation Execution Threshold Motion",
+      "status": "motion-open",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Define the minimum threshold that must be met before any later bounded execution motion may move `jouzou` beyond `ready`."
+      ],
+      "proposed_action": [
+        "require the `oem` and `shift` active-lane watch to remain free of critical exception",
+        "require the bounded `jouzou` seat route, packet, reviewer route, and approval path to remain current",
+        "require PMO and Security, Risk, and Compliance to confirm that a third active lane is still out of scope until a later explicit decision"
+      ],
+      "why": [
+        "an activation-review path alone should not trigger execution",
+        "third-lane sequencing should stay slower and more bounded than the second lane"
+      ],
+      "discussion_1": [
+        "this motion should define readiness thresholds only and should not activate `jouzou`",
+        "accepted artifact set: `ledgers/jouzou-activation-review-checklist.md`",
+        "discussion should stay limited to the minimum lawful execution threshold"
+      ],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "jouzou-activation-review-motion": {
+      "id": "jouzou-activation-review-motion",
+      "title": "Jouzou Activation Review Motion",
+      "status": "motion-open",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Request the first formal activation review for `jouzou` once the bounded preparation bundle is in force."
+      ],
+      "proposed_action": [
+        "confirm the `jouzou` unit-owner seat route is ready for lawful seating",
+        "confirm the bounded start packet, reviewer route, and approval path are accepted",
+        "authorize a later activation review check without switching `jouzou` to `active` yet"
+      ],
+      "why": [
+        "`jouzou` is now the next bounded candidate after dual-lane stability",
+        "the bounded preparation bundle is now available",
+        "the next lawful step is a formal activation review path that still keeps `jouzou` in `ready`"
+      ],
+      "discussion_1": [
+        "the first `jouzou` activation review path should remain bounded and keep `jouzou` in `ready`",
+        "accepted artifact set: `units/jouzou.md`",
+        "send to `discussion-2` with the minimum activation-review checklist only"
+      ],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "jouzou-execution-bundle-preparation-motion": {
+      "id": "jouzou-execution-bundle-preparation-motion",
+      "title": "Jouzou Execution Bundle Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the smallest lawful execution bundle for `jouzou` after the execution threshold has been adopted."
+      ],
+      "proposed_action": [
+        "prepare one bounded seat-execution step for the initial `jouzou` unit-owner line",
+        "prepare one bounded reviewer-confirmation step",
+        "prepare one bounded approval and rollback note for a later execution motion"
+      ],
+      "why": [
+        "threshold adoption should lead to reusable execution artifacts, not immediate activation",
+        "the next lawful step is preparation of a bounded execution bundle only"
+      ],
+      "discussion_1": [
+        "this motion should prepare an execution bundle only and should not activate `jouzou`",
+        "accepted artifact set: `ledgers/jouzou-activation-review-checklist.md`",
+        "discussion should stay limited to the smallest repeatable execution bundle"
+      ],
+      "discussion_2": [
+        "the execution bundle should name one seat-execution motion, one reviewer-confirmation step, one approval-path acceptance step, and one rollback note",
+        "`jouzou` remains `ready` until a separate execution motion is adopted",
+        "accepted artifact set: `ledgers/jouzou-execution-bundle-board.md` and `ledgers/jouzou-seat-route-board.md`",
+        "deliberation should decide whether the smallest lawful execution bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the smallest lawful execution bundle for `jouzou`",
+        "`jouzou` remains `ready` and does not enter activation in this motion",
+        "supporting artifacts: `ledgers/jouzou-execution-bundle-board.md` and `ledgers/jouzou-seat-route-board.md`"
+      ]
+    },
+    "jouzou-onboarding-preparation-motion": {
+      "id": "jouzou-onboarding-preparation-motion",
+      "title": "Jouzou Onboarding Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the bounded onboarding bundle for `jouzou` as the next candidate without opening a third active lane."
+      ],
+      "proposed_action": [
+        "define the shortest lawful seat route for `jouzou`",
+        "draft the first bounded start packet for the planning and quote workflow scope",
+        "prepare reviewer and approval routes without activating the lane"
+      ],
+      "why": [
+        "readiness screening shows `jouzou` is viable but incomplete",
+        "preparation-only work preserves the current dual-lane operating limit"
+      ],
+      "discussion_1": [
+        "`jouzou` should stay in preparation only while `oem` and `shift` remain the active lanes",
+        "accepted artifact set: `ledgers/jouzou-readiness-screen-board.md`",
+        "discussion should stay limited to one bounded preparation bundle"
+      ],
+      "discussion_2": [
+        "the preparation bundle should include one seat route, one bounded start packet, and one concrete review/approval route",
+        "`jouzou` remains `ready` while `oem` and `shift` remain the active lanes",
+        "accepted artifact set: `ledgers/jouzou-seat-route-board.md`, `recruiting/jouzou-unit-owner-start-packet.md`, and `ledgers/jouzou-review-approval-route.md`",
+        "deliberation should decide whether the bounded `jouzou` preparation bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the bounded `jouzou` preparation bundle",
+        "`jouzou` remains `ready` and does not enter execution in this motion",
+        "supporting artifacts: `ledgers/jouzou-seat-route-board.md`, `recruiting/jouzou-unit-owner-start-packet.md`, and `ledgers/jouzou-review-approval-route.md`"
+      ]
+    },
+    "oem-activation-execution-motion": {
+      "id": "oem-activation-execution-motion",
+      "title": "OEM Activation Execution Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Execute the first lawful seat and lane activation for `oem` after the activation review path has been accepted."
+      ],
+      "proposed_action": [
+        "accept the initial `oem` unit-owner seating motion",
+        "accept the bounded `oem` start packet",
+        "name the first `oem` reviewer and approval path",
+        "move `oem` from `seat_state: unseated` to `seated`",
+        "move `lane-oem` from `ready` to `active` within the bounded static-tool scope"
+      ],
+      "why": [
+        "the preparation bundle and activation review path are now both in place",
+        "the remaining step is execution of the first bounded activation"
+      ],
+      "discussion_1": [
+        "execution should stay bounded to the static OEM estimate tool only",
+        "accepted artifact set: `ledgers/oem-activation-execution-board.md`",
+        "send to `discussion-2` with no broader expansion"
+      ],
+      "discussion_2": [
+        "execution should include seat acceptance, packet acceptance, reviewer naming, approval-path acceptance, and lane-state activation",
+        "`shift` remains the fallback and does not enter execution here",
+        "deliberation should decide whether the bounded activation goes live now"
+      ],
+      "deliberation": [
+        "adopted as the first bounded external activation",
+        "`oem` moves to `seat_state: seated` and `lane_state: active`",
+        "supporting artifact: `ledgers/oem-activation-execution-board.md`"
+      ]
+    },
+    "oem-activation-review-motion": {
+      "id": "oem-activation-review-motion",
+      "title": "OEM Activation Review Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Request the first formal activation review for `oem` once the bounded preparation bundle is in force."
+      ],
+      "proposed_action": [
+        "confirm the `oem` unit-owner seat route is ready for lawful seating",
+        "confirm the bounded start packet, reviewer route, and approval path are accepted",
+        "authorize a later activation review check without switching `oem` to `active` yet"
+      ],
+      "why": [
+        "`oem` is the chosen first external onboarding candidate",
+        "the bounded preparation bundle is now available",
+        "the next lawful step is a formal activation review path"
+      ],
+      "discussion_1": [
+        "the first activation review path should remain bounded and keep `oem` in `ready`",
+        "accepted artifact set: `units/oem.md` and `ledgers/oem-activation-review-checklist.md`",
+        "send to `discussion-2` with the minimum activation-review checklist only"
+      ],
+      "discussion_2": [
+        "the first activation review path is limited to seat acceptance, packet acceptance, reviewer naming, and approval-path confirmation",
+        "no switch to `active` occurs inside this motion",
+        "deliberation should decide whether this bounded review path becomes the authorized next step"
+      ],
+      "deliberation": [
+        "adopted as the authorized first `oem` activation review path",
+        "`oem` remains `ready` until a separate execution motion accepts the seat and lane activation",
+        "supporting artifacts: `units/oem.md` and `ledgers/oem-activation-review-checklist.md`"
+      ]
+    },
+    "oem-onboarding-preparation-motion": {
+      "id": "oem-onboarding-preparation-motion",
+      "title": "OEM Onboarding Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the lawful seat and activation packet required to move `oem` from `ready` to a formal activation review."
+      ],
+      "proposed_action": [
+        "define the shortest lawful seat route for `oem`",
+        "draft the first mission packet for `oem`",
+        "name a reviewer and approval path for risky work",
+        "prepare a bounded activation review packet instead of activating immediately"
+      ],
+      "why": [
+        "`oem` is now the first chosen external onboarding candidate",
+        "the gate still requires seat, packet, reviewer, and approval path before activation"
+      ],
+      "discussion_1": [
+        "the first preparation wave should stay narrow and stop before activation",
+        "`oem` can use a single seat route, one bounded start packet, and one low/medium risk approval path",
+        "accepted artifact set: `ledgers/oem-seat-route-board.md`, `recruiting/oem-unit-owner-start-packet.md`, and `ledgers/oem-review-approval-route.md`",
+        "send to `discussion-2` with the minimum lawful preparation bundle only"
+      ],
+      "discussion_2": [
+        "the preparation bundle should include one seat motion draft, one bounded start packet, and one concrete review/approval route",
+        "`oem` should remain `ready` until a later activation review confirms the gate",
+        "accepted artifact set: `proposals/operations/oem-unit-owner-seating-motion.md` and `ledgers/oem-activation-review-bundle.md`",
+        "deliberation should decide whether the bounded preparation bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the bounded preparation bundle for `oem`",
+        "`oem` remains `ready` until a later activation review is approved and the gate is satisfied",
+        "supporting artifacts: `proposals/operations/oem-unit-owner-seating-motion.md` and `ledgers/oem-activation-review-bundle.md`"
+      ]
+    },
+    "oem-unit-owner-seating-motion": {
+      "id": "oem-unit-owner-seating-motion",
+      "title": "OEM Unit Owner Seating Motion",
+      "status": "draft",
+      "owner": "people-talent",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "organizational-subdivision-v1-motion": {
+      "id": "organizational-subdivision-v1-motion",
+      "title": "Organizational Subdivision V1 Motion",
+      "status": "adopted",
+      "owner": "organizational-development-learning",
+      "risk": "medium",
+      "goal": [
+        "Allow Company OS to scale below the department layer by adding lawful divisions and sections with explicit delegation records."
+      ],
+      "proposed_action": [
+        "adopt the department -> division -> section layer model",
+        "add the organizational scaling rule and SOP",
+        "create a subdivision registry and delegation register",
+        "record the first approved divisions and sections for research, incubation, and lane watch work"
+      ],
+      "why": [
+        "concurrent operation has outgrown a department-only model",
+        "finer delegation is needed without losing traceability or constitutional control"
+      ],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": [
+        "adopted as the first subdivision package",
+        "scaling must remain explicit, reviewable, and reversible"
+      ]
+    },
+    "record-normalization-motion": {
+      "id": "record-normalization-motion",
+      "title": "Record Normalization Motion",
+      "status": "superseded",
+      "owner": "data-knowledge",
+      "risk": "low",
+      "goal": [
+        "Normalize Japanese records so short reports and operating notes remain readable and consistent."
+      ],
+      "proposed_action": [],
+      "why": [
+        "some current records contain mojibake or mixed encoding output",
+        "unreadable records weaken auditability and meeting quality",
+        "short Japanese reporting is already a declared standard"
+      ],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "shift-activation-execution-motion": {
+      "id": "shift-activation-execution-motion",
+      "title": "Shift Activation Execution Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Execute the first lawful seat and lane activation for `shift` after the execution bundle has been accepted."
+      ],
+      "proposed_action": [
+        "accept the initial `shift` unit-owner seating motion",
+        "accept the bounded `shift` start packet",
+        "name the first `shift` reviewer and approval path",
+        "record the bounded rollback note",
+        "move `shift` from `seat_state: unseated` to `seated`",
+        "move `lane-shift` from `ready` to `active` within the bounded planning and scheduling scope"
+      ],
+      "why": [
+        "the preparation bundle, activation review path, execution threshold, and execution bundle are now all in place",
+        "the remaining step is execution of the first bounded second-lane activation"
+      ],
+      "discussion_1": [
+        "execution should stay bounded to the MVP planning and scheduling flow only",
+        "accepted artifact set: `ledgers/shift-activation-execution-board.md`",
+        "send to `discussion-2` with no broader expansion"
+      ],
+      "discussion_2": [
+        "execution should include seat acceptance, packet acceptance, reviewer naming, approval-path acceptance, rollback-note recording, and lane-state activation",
+        "`oem` remains the first lane and continues under watch",
+        "deliberation should decide whether the bounded second-lane activation goes live now"
+      ],
+      "deliberation": [
+        "adopted as the first bounded second external activation",
+        "`shift` moves to `seat_state: seated` and `lane_state: active`",
+        "supporting artifact: `ledgers/shift-activation-execution-board.md`"
+      ]
+    },
+    "shift-activation-execution-threshold-motion": {
+      "id": "shift-activation-execution-threshold-motion",
+      "title": "Shift Activation Execution Threshold Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Define the minimum threshold that must be met before any later bounded execution motion may move `shift` beyond `ready`."
+      ],
+      "proposed_action": [
+        "require the `oem` first-lane watch to remain free of critical exception",
+        "require the bounded `shift` seat route, packet, reviewer route, and approval path to remain current",
+        "require PMO and Security, Risk, and Compliance to confirm that a second active lane can be watched without overloading the control path"
+      ],
+      "why": [
+        "an activation-review path alone should not trigger execution",
+        "second-lane sequencing should stay bounded and auditable"
+      ],
+      "discussion_1": [
+        "this motion should define readiness thresholds only and should not activate `shift`",
+        "accepted artifact set: `ledgers/oem-first-lane-watch-board.md` and `ledgers/shift-activation-review-checklist.md`",
+        "discussion should stay limited to the minimum lawful execution threshold"
+      ],
+      "discussion_2": [
+        "the threshold must require a clean `oem` watch signal, a current `shift` activation-review checklist, and an explicit PMO plus Security, Risk, and Compliance capacity confirmation",
+        "this motion still does not seat or activate `shift`",
+        "accepted artifact set: `ledgers/shift-execution-threshold-board.md`",
+        "deliberation should decide only whether the minimum threshold is sufficient to gate any later execution bundle"
+      ],
+      "deliberation": [
+        "adopted as the minimum threshold for any later bounded `shift` execution motion",
+        "`shift` remains `ready`",
+        "no seat execution or lane activation is authorized by this motion",
+        "supporting artifact: `ledgers/shift-execution-threshold-board.md`"
+      ]
+    },
+    "shift-activation-review-motion": {
+      "id": "shift-activation-review-motion",
+      "title": "Shift Activation Review Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Request the first formal activation review for `shift` once the bounded preparation bundle is in force."
+      ],
+      "proposed_action": [
+        "confirm the `shift` unit-owner seat route is ready for lawful seating",
+        "confirm the bounded start packet, reviewer route, and approval path are accepted",
+        "authorize a later activation review check without switching `shift` to `active` yet"
+      ],
+      "why": [
+        "`shift` is the standing second external candidate",
+        "the bounded preparation bundle is now available",
+        "the next lawful step is a formal activation review path that still keeps `shift` in `ready`"
+      ],
+      "discussion_1": [
+        "the first `shift` activation review path should remain bounded and keep `shift` in `ready`",
+        "accepted artifact set: `units/shift.md` and `ledgers/shift-activation-review-checklist.md`",
+        "send to `discussion-2` with the minimum activation-review checklist only"
+      ],
+      "discussion_2": [
+        "the first activation review path is limited to seat acceptance, packet acceptance, reviewer naming, and approval-path confirmation",
+        "`oem` remains the active first lane and `shift` stays `ready`",
+        "deliberation should decide whether this bounded review path becomes the authorized next step"
+      ],
+      "deliberation": [
+        "adopted as the authorized first `shift` activation review path",
+        "`shift` remains `ready` until a separate execution motion accepts the seat and any later lane activation",
+        "supporting artifacts: `units/shift.md` and `ledgers/shift-activation-review-checklist.md`"
+      ]
+    },
+    "shift-execution-bundle-preparation-motion": {
+      "id": "shift-execution-bundle-preparation-motion",
+      "title": "Shift Execution Bundle Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the smallest lawful execution bundle for `shift` after the execution threshold has been adopted."
+      ],
+      "proposed_action": [
+        "prepare one bounded seat-execution step for the initial `shift` unit-owner line",
+        "prepare one bounded reviewer-confirmation step",
+        "prepare one bounded approval and rollback note for a later execution motion"
+      ],
+      "why": [
+        "threshold adoption should lead to reusable execution artifacts, not immediate activation",
+        "the next lawful step is preparation of a bounded execution bundle only"
+      ],
+      "discussion_1": [
+        "this motion should prepare an execution bundle only and should not activate `shift`",
+        "accepted artifact set: `ledgers/shift-execution-threshold-board.md`",
+        "discussion should stay limited to the smallest repeatable execution bundle"
+      ],
+      "discussion_2": [
+        "the execution bundle should name one seat-execution motion, one reviewer-confirmation step, one approval-path acceptance step, and one rollback note",
+        "`shift` remains `ready` until a separate execution motion is adopted",
+        "accepted artifact set: `ledgers/shift-execution-bundle-board.md` and `proposals/operations/shift-unit-owner-seating-motion.md`",
+        "deliberation should decide whether the smallest lawful execution bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the smallest lawful execution bundle for `shift`",
+        "`shift` remains `ready` and does not enter activation in this motion",
+        "supporting artifacts: `ledgers/shift-execution-bundle-board.md` and `proposals/operations/shift-unit-owner-seating-motion.md`"
+      ]
+    },
+    "shift-onboarding-preparation-motion": {
+      "id": "shift-onboarding-preparation-motion",
+      "title": "Shift Onboarding Preparation Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Prepare the bounded onboarding bundle for `shift` as the second external candidate while `oem` runs in watch mode."
+      ],
+      "proposed_action": [
+        "define the shortest lawful seat route for `shift`",
+        "draft the first bounded start packet for the MVP planning scope",
+        "prepare reviewer and approval routes without activating the lane"
+      ],
+      "why": [
+        "`shift` is the standing fallback and natural second candidate",
+        "the company OS should prove that onboarding is repeatable across more than one unit"
+      ],
+      "discussion_1": [
+        "`shift` should stay in preparation only while `oem` remains the active first lane",
+        "accepted artifact set: `ledgers/shift-onboarding-preparation-board.md`",
+        "send to `discussion-2` with one bounded preparation bundle only"
+      ],
+      "discussion_2": [
+        "the preparation bundle should include one seat route, one bounded start packet, and one concrete review/approval route",
+        "`shift` remains `ready` while `oem` is the active first lane",
+        "accepted artifact set: `ledgers/shift-seat-route-board.md`, `recruiting/shift-unit-owner-start-packet.md`, and `ledgers/shift-review-approval-route.md`",
+        "deliberation should decide whether the bounded `shift` preparation bundle is sufficient to proceed"
+      ],
+      "deliberation": [
+        "adopted as the bounded `shift` preparation bundle",
+        "`shift` remains `ready` and does not enter execution in this motion",
+        "supporting artifacts: `ledgers/shift-seat-route-board.md`, `recruiting/shift-unit-owner-start-packet.md`, and `ledgers/shift-review-approval-route.md`"
+      ]
+    },
+    "shift-unit-owner-seating-motion": {
+      "id": "shift-unit-owner-seating-motion",
+      "title": "Shift Unit Owner Seating Motion",
+      "status": "draft",
+      "owner": "people-talent",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "standard-organization-package-motion": {
+      "id": "standard-organization-package-motion",
+      "title": "Standard Organization Package Motion",
+      "status": "adopted",
+      "owner": "organizational-development-learning",
+      "risk": "medium",
+      "goal": [
+        "Fill the missing departments needed for a standard operating company structure without disturbing the existing constitutional operating model."
+      ],
+      "proposed_action": [
+        "add Product Management, Sales and Revenue, Marketing and Growth, Business Operations, Procurement and Vendor Management, and Information Systems",
+        "place each new department into the registry, delegation matrix, and work-allocation board",
+        "assign bounded initial work and escalation routes to each new department"
+      ],
+      "why": [
+        "Company OS already covers governance and execution well, but still lacks several standard business functions",
+        "adding the missing functions now makes later project growth more realistic and less founder-dependent"
+      ],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": [
+        "adopted as the standard organization package",
+        "new departments become active but start with bounded initial scopes"
+      ]
+    },
+    "third-candidate-readiness-screen-motion": {
+      "id": "third-candidate-readiness-screen-motion",
+      "title": "Third Candidate Readiness Screen Motion",
+      "status": "motion-open",
+      "owner": "portfolio-strategy",
+      "risk": "medium",
+      "goal": [
+        "Run a bounded readiness screen for `jouzou` as the third candidate without opening a new lane."
+      ],
+      "proposed_action": [
+        "check whether `jouzou` still fits the next bounded onboarding candidate profile",
+        "identify the minimum seat, packet, reviewer, and approval prerequisites",
+        "keep `jouzou` in screening only"
+      ],
+      "why": [
+        "after dual-lane stability, the next pressure is candidate sequencing",
+        "screening is cheaper and safer than premature activation work"
+      ],
+      "discussion_1": [
+        "this motion should screen only and should not open a third lane",
+        "accepted artifact set: `units/jouzou.md` and `ledgers/parallel-operations-board.md`",
+        "discussion should stay limited to the minimum readiness screen"
+      ],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "unit-activation-gate-motion": {
+      "id": "unit-activation-gate-motion",
+      "title": "Unit Activation Gate Motion",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Create a stricter gate that separates unit registration from activation into live operating lanes."
+      ],
+      "proposed_action": [
+        "require mission packet presence for `active` lane entry",
+        "require named owner, reviewer, and approval path",
+        "downgrade incomplete lanes to `ready` or `blocked`"
+      ],
+      "why": [
+        "active status is currently too broad",
+        "lane readiness needs the same clarity as seat readiness",
+        "PMO needs a lawful gate to prevent sloppy activation"
+      ],
+      "discussion_1": [
+        "keep the gate tied to the separate unit-state model",
+        "add explicit check for lawful seat readiness or approved bootstrap exception",
+        "send to `discussion-2` with proposed gate fields"
+      ],
+      "discussion_2": [
+        "accepted artifact set: `unit-state-model-rule` and `run-unit-activation-review`",
+        "deliberation should only decide adoption timing and rollout scope"
+      ],
+      "deliberation": [
+        "adopted with rollout owner `project-management-office`",
+        "supporting rule: `unit-activation-gate-rule`"
+      ]
+    },
+    "unit-onboarding-priority-motion": {
+      "id": "unit-onboarding-priority-motion",
+      "title": "Unit Onboarding Priority Motion",
+      "status": "adopted",
+      "owner": "portfolio-strategy",
+      "risk": "medium",
+      "goal": [
+        "Choose which non-`company-os` unit should enter the first formal activation wave."
+      ],
+      "proposed_action": [
+        "compare `oem`, `shift`, and `jouzou` as the first activation candidates",
+        "rank by mission clarity, seat readiness, risk, and approval complexity",
+        "open one preferred onboarding route instead of spreading capacity across all ready lanes"
+      ],
+      "why": [
+        "parallel-ready lanes now exist but no lawful priority has been chosen",
+        "first activation should be narrow enough to test the gate without diffusing ownership"
+      ],
+      "discussion_1": [
+        "`oem` is the narrowest first candidate because the mission is explicit, the surface area is small, and approval complexity appears lowest",
+        "`shift` and `jouzou` remain viable but should follow after one activation gate pass is proven",
+        "accepted artifact set: `ledgers/unit-onboarding-priority-board.md`",
+        "send to `discussion-2` with one recommended first candidate and one fallback candidate"
+      ],
+      "discussion_2": [
+        "`oem` stays the first candidate if seat, mission packet, reviewer, and approval path can be prepared in one bounded wave",
+        "`shift` remains the fallback if `oem` misses the seat or packet gate",
+        "accepted artifact set: `ledgers/unit-onboarding-prerequisites-board.md`",
+        "deliberation should decide whether `oem` is formally chosen and whether `shift` is the standing fallback"
+      ],
+      "deliberation": [
+        "adopted with `oem` as the first external onboarding candidate",
+        "`shift` is recorded as the standing fallback if `oem` misses the bounded preparation wave",
+        "supporting artifact: `ledgers/unit-onboarding-prerequisites-board.md`"
+      ]
+    },
+    "unit-state-separation-motion": {
+      "id": "unit-state-separation-motion",
+      "title": "Unit State Separation Motion",
+      "status": "superseded",
+      "owner": "organizational-development-learning",
+      "risk": "medium",
+      "goal": [
+        "Separate `registered unit` from `active operating lane` so seat status, mission-packet readiness, and execution status stop collapsing into one field."
+      ],
+      "proposed_action": [],
+      "why": [
+        "current registry marks many units as active before lawful activation",
+        "parallel-operation rules already require clearer gating",
+        "assembly readability is weaker than it should be"
+      ],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "dual-lane-stability-review": {
+      "id": "dual-lane-stability-review",
+      "title": "Dual Lane Stability Review",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Verify that simultaneous `oem` and `shift` operation remains bounded, watchable, and free of immediate overload."
+      ],
+      "proposed_action": [
+        "review the first checkpoint for both active external lanes",
+        "confirm PMO, reviewer, approval, and seat continuity are intact",
+        "name the next structural pressure without opening a third lane"
+      ],
+      "why": [
+        "two active lanes change the operating burden of the company OS",
+        "the next step should be evidence-based and bounded"
+      ],
+      "discussion_1": [
+        "review should stay limited to the first dual-lane checkpoint",
+        "accepted artifact set: `ledgers/oem-first-lane-watch-board.md`, `ledgers/shift-second-lane-watch-board.md`, and `ledgers/dual-lane-stability-board.md`",
+        "discussion should identify only the next pressure, not a direct third activation"
+      ],
+      "discussion_2": [
+        "the review should confirm dual-lane stability, preserve bounded operation, and open only a readiness screen for the next candidate",
+        "no third lane may activate inside this review",
+        "deliberation should decide whether the first dual-lane checkpoint is stable enough to proceed to screening"
+      ],
+      "deliberation": [
+        "adopted as the first dual-lane stability checkpoint",
+        "`oem` and `shift` remain active under watch",
+        "the next structural pressure is narrowed to `jouzou` readiness screening only"
+      ]
+    },
+    "four-project-stability-review": {
+      "id": "four-project-stability-review",
+      "title": "Four Project Stability Review",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Verify that `oem`, `shift`, `jouzou`, and `FormPilot` can remain simultaneously active under lawful watch."
+      ],
+      "proposed_action": [
+        "review watch posture across all four active PJ",
+        "confirm PMO control capacity and low/medium risk enforceability remain intact",
+        "keep any fifth candidate out of activation while four-project stability is being established"
+      ],
+      "why": [
+        "`FormPilot` becomes the fourth active PJ in this cycle",
+        "stability should be reviewed before further expansion"
+      ],
+      "discussion_1": [
+        "this review should stay bounded to watch posture, capacity, and control enforcement",
+        "accepted artifact set: `ledgers/four-project-stability-board.md`",
+        "discussion should not open a fifth active PJ"
+      ],
+      "discussion_2": [
+        "the review should confirm four active PJ remain within PMO capacity and low/medium control posture",
+        "no fifth active PJ should be opened during this cycle",
+        "deliberation should decide whether four-project operation is stable enough to remain the new baseline"
+      ],
+      "deliberation": [
+        "adopted as the first four-project stability checkpoint",
+        "`oem`, `shift`, `jouzou`, and `FormPilot` remain active under watch",
+        "no fifth active PJ is opened in this motion"
+      ]
+    },
+    "triple-lane-stability-review": {
+      "id": "triple-lane-stability-review",
+      "title": "Triple Lane Stability Review",
+      "status": "active",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [
+        "Verify that simultaneous `oem`, `shift`, and `jouzou` operation remains bounded, watchable, and free of immediate overload."
+      ],
+      "proposed_action": [
+        "review the first checkpoint for all three active external lanes",
+        "confirm PMO, reviewer, approval, and seat continuity are intact",
+        "name the next structural pressure without opening a fourth lane"
+      ],
+      "why": [
+        "three active lanes change the operating burden of the company OS again",
+        "the next step should stay evidence-based and bounded"
+      ],
+      "discussion_1": [
+        "review should stay limited to the first triple-lane checkpoint",
+        "accepted artifact set: `ledgers/oem-first-lane-watch-board.md`, `ledgers/shift-second-lane-watch-board.md`, `ledgers/jouzou-third-lane-watch-board.md`, and `ledgers/triple-lane-stability-board.md`",
+        "discussion should identify only the next pressure, not a direct fourth activation"
+      ],
+      "discussion_2": [
+        "the review should confirm triple-lane stability, preserve bounded operation, and open only a readiness screen for the next candidate",
+        "no fourth lane may activate inside this review",
+        "deliberation should decide whether the first triple-lane checkpoint is stable enough to proceed to screening"
+      ],
+      "deliberation": [
+        "adopted as the first triple-lane stability checkpoint",
+        "`oem`, `shift`, and `jouzou` remain active under watch",
+        "the next structural pressure is narrowed to `FormPilot` readiness screening only"
+      ]
+    },
+    "motion-ledger-frontmatter-template-draft": {
+      "id": "motion-ledger-frontmatter-template-draft",
+      "title": "台帳frontmatter雛形作成議案",
+      "status": "adopted",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-ledger-standard-columns-template-draft": {
+      "id": "motion-ledger-standard-columns-template-draft",
+      "title": "台帳標準列雛形作成議案",
+      "status": "adopted",
+      "owner": "engineering",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-ledger-heading-template-draft": {
+      "id": "motion-ledger-heading-template-draft",
+      "title": "台帳見出し雛形作成議案",
+      "status": "motion-open",
+      "owner": "data-knowledge",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-ledger-template-standard-draft": {
+      "id": "motion-ledger-template-standard-draft",
+      "title": "台帳雛形標準案作成議案",
+      "status": "adopted",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-ledger-template-implementation-packet-kickoff": {
+      "id": "motion-ledger-template-implementation-packet-kickoff",
+      "title": "台帳雛形補助実装束着手議案",
+      "status": "adopted",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-ledger-template-helper-kickoff": {
+      "id": "motion-ledger-template-helper-kickoff",
+      "title": "台帳雛形補助着手議案",
+      "status": "adopted",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-branch-drill": {
+      "id": "motion-approval-branch-drill",
+      "title": "承認分岐模擬訓練議案",
+      "status": "adopted",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-branch-operations": {
+      "id": "motion-approval-branch-operations",
+      "title": "承認分岐運用議案",
+      "status": "adopted",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-wait-review": {
+      "id": "motion-approval-wait-review",
+      "title": "承認待機中棚卸議案",
+      "status": "motion-open",
+      "owner": "security-risk-compliance",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-wait-priority-reshuffle": {
+      "id": "motion-approval-wait-priority-reshuffle",
+      "title": "承認待機優先度組替議案",
+      "status": "adopted",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-wait-candidate-refill-ledger": {
+      "id": "motion-approval-wait-candidate-refill-ledger",
+      "title": "承認待機補充候補台帳作成議案",
+      "status": "motion-open",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-request-template-draft": {
+      "id": "motion-approval-request-template-draft",
+      "title": "承認要求票雛形作成議案",
+      "status": "adopted",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-approval-return-record-template-draft": {
+      "id": "motion-approval-return-record-template-draft",
+      "title": "承認返却記録雛形作成議案",
+      "status": "adopted",
+      "owner": "data-knowledge",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "japanese-naming-migration-policy-motion": {
+      "id": "japanese-naming-migration-policy-motion",
+      "title": "日本語命名移行方針議案",
+      "status": "adopted",
+      "owner": "data-knowledge",
+      "risk": "low",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-autonomous-meeting-operations": {
+      "id": "motion-autonomous-meeting-operations",
+      "title": "自動会議運用議案",
+      "status": "adopted",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-development-fix-parallel-operations": {
+      "id": "motion-development-fix-parallel-operations",
+      "title": "開発修正並行運用議案",
+      "status": "adopted",
+      "owner": "engineering",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
+    "motion-internal-tools-prioritization-review": {
+      "id": "motion-internal-tools-prioritization-review",
+      "title": "内部ツール改善優先化レビュー",
+      "status": "adopted",
+      "owner": "internal-tools-enablement",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    }
+  },
   "departments": [
     {
       "Department": "founder-office",
@@ -7028,35 +9063,35 @@
       "Actor": "Founder Office",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "sovereign check over the active improvement batch and approval-request boundaries",
+      "Current Work": "sovereign check over the active improvement batch and approval-wait review boundaries",
       "Next Handoff": "assembly"
     },
     {
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-fifth ordinary sitting completed and one-hundred-sixth sitting opened",
-      "Next Handoff": "one-hundred-sixth ordinary sitting"
+      "Current Work": "one-hundred-fourteenth ordinary sitting completed and one-hundred-fifteenth sitting opened",
+      "Next Handoff": "one-hundred-fifteenth ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-request template packet",
+      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-wait review packet",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and keep the approval-branch drill lessons connected to live PJ watch",
+      "Current Work": "monitor four active PJ and keep approval-wait refill connected to live PJ watch",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "maintain the adopted ledger template set and support approval-request fields",
+      "Current Work": "maintain the adopted ledger template set and support approval-wait artifact reuse",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -7070,7 +9105,7 @@
       "Actor": "Security, Risk, and Compliance",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep branch-trigger boundaries aligned with real risk while the request template is prepared",
+      "Current Work": "keep branch-trigger boundaries aligned with real risk while approval-wait review is narrowed",
       "Next Handoff": "founder-office / release-review-committee"
     },
     {
@@ -7105,7 +9140,7 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep the template set reusable while approval-request artifacts are opened",
+      "Current Work": "keep the template set reusable while approval-wait refill artifacts are opened",
       "Next Handoff": "engineering / security-risk-compliance"
     }
   ],
@@ -7113,182 +9148,62 @@
     {
       "Department": "founder-office",
       "Current assignment": "keep sovereign alignment across the active improvement batch",
-      "Deliverable": "founder decision lane and approval-request boundary check",
+      "Deliverable": "founder decision lane and approval-wait review boundary check",
       "Status": "active",
       "Next handoff": "assembly"
     },
     {
       "Department": "assembly-secretariat",
       "Current assignment": "run the autonomous ordinary sitting loop and maintain rollout watch across active motions",
-      "Deliverable": "one-hundred-sixth sitting packet, approval-request template packet, and four-active-PJ watch note",
+      "Deliverable": "one-hundred-fifteenth sitting packet, approval-wait review packet, and four-active-PJ watch note",
       "Status": "active",
       "Next handoff": "all active owners"
     },
     {
       "Department": "project-management-office",
-      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support the approval-request template",
-      "Deliverable": "four-PJ watch note and approval-request packet",
+      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support approval-wait refill",
+      "Deliverable": "four-PJ watch note and approval-wait refill packet",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
     },
     {
       "Department": "engineering",
       "Current assignment": "support executable operating artifacts and technical implementation constraints",
-      "Deliverable": "adopted template set upkeep and approval-request support note",
+      "Deliverable": "adopted template set upkeep and approval-wait artifact support note",
       "Status": "active",
       "Next handoff": "PMO / internal-tools-enablement"
     },
     {
       "Department": "security-risk-compliance",
       "Current assignment": "maintain key custody and watch the concrete active-PJ approval paths",
-      "Deliverable": "branch-trigger boundary note and approval-request boundary note",
+      "Deliverable": "branch-trigger boundary note and approval-wait review boundary note",
       "Status": "active",
       "Next handoff": "founder-office / release-review-committee"
     },
     {
       "Department": "data-knowledge",
       "Current assignment": "apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration",
-      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-request record support",
+      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-wait artifact support",
       "Status": "active",
       "Next handoff": "assembly-secretariat"
     },
     {
       "Department": "internal-tools-enablement",
       "Current assignment": "support tooling and automation for boards, ledgers, and recurring loops",
-      "Deliverable": "template set upkeep and approval-request support",
+      "Deliverable": "template set upkeep and approval-wait refill support",
       "Status": "active",
       "Next handoff": "engineering / security-risk-compliance"
     }
   ],
-  "commits": [
-    {
-      "hash": "f4c6074",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:35:31 +0900",
-      "message": "Adopt approval branch drill and open request template"
-    },
-    {
-      "hash": "80e266c",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:31:19 +0900",
-      "message": "Restore UI design authority and capture dashboard CSS knowledge"
-    },
-    {
-      "hash": "f960e38",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:25:02 +0900",
-      "message": "feat: complete UI rewrite - meeting-centric integrated dashboard with Assembly/Org/Projects/Finance tabs"
-    },
-    {
-      "hash": "294d158",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 01:23:09 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "19c2c04",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:22:25 +0900",
-      "message": "Adopt ledger columns template and open branch drill"
-    },
-    {
-      "hash": "8001c04",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 01:05:56 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "4d8f506",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:05:36 +0900",
-      "message": "Add approval branch operations and continue auto meetings"
-    },
-    {
-      "hash": "fd9a68a",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 00:58:49 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "768138b",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 09:58:28 +0900",
-      "message": "Add autonomous meeting operations and continue ledger artifacts"
-    },
-    {
-      "hash": "6339299",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 00:50:39 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "df983d7",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 09:50:24 +0900",
-      "message": "Advance ledger implementation packet to first artifact draft"
-    },
-    {
-      "hash": "1b2008b",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 14:31:51 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "836b829",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 23:31:24 +0900",
-      "message": "Advance ledger template standard to implementation packet"
-    },
-    {
-      "hash": "c2d3956",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 14:08:59 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "4a9c5e8",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 23:08:46 +0900",
-      "message": "Prioritize internal tools after four-project baseline"
-    },
-    {
-      "hash": "2d12858",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 14:05:22 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "af05000",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 23:05:09 +0900",
-      "message": "Adopt four-project stability and open tooling prioritization"
-    },
-    {
-      "hash": "ea466de",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 14:01:33 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "7549a06",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 23:01:20 +0900",
-      "message": "Activate FormPilot and open four-project stability review"
-    },
-    {
-      "hash": "378f987",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 13:56:01 +0000",
-      "message": "ci: update status.json [skip ci]"
-    }
-  ],
+  "commits": [],
   "stats": {
-    "total_sittings": 105,
+    "total_sittings": 114,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 18,
+    "total_motions": 19,
+    "total_proposals": 55,
     "completed_motions": 2
   },
-  "generated_at": "2026-04-05 10:35:31 +0900"
+  "generated_at": ""
 }

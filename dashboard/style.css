@@ -254,6 +254,30 @@ body {
 }
 .modal-close:hover { background: var(--bg-hover); color: var(--text-primary); }
 
+/* ====== Modal Discussion Styles ====== */
+.modal-section { margin-bottom: 14px; }
+.modal-section ul { padding-left: 18px; margin: 4px 0; }
+.modal-section li { margin-bottom: 4px; font-size: 12px; line-height: 1.6; }
+.discussion-box {
+  background: var(--bg-deep); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 12px; margin-bottom: 10px;
+  border-left: 3px solid var(--yellow);
+}
+.deliberation-box {
+  background: var(--bg-deep); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 12px; margin-bottom: 10px;
+  border-left: 3px solid var(--green);
+}
+.modal-meta {
+  display: flex; gap: 12px; flex-wrap: wrap; padding-top: 10px;
+  border-top: 1px solid var(--border); font-size: 11px; color: var(--text-muted);
+}
+.modal-meta span { background: var(--bg-hover); padding: 2px 8px; border-radius: 4px; }
+
+/* ====== Clickable items ====== */
+.clickable { cursor: pointer; transition: color var(--transition); }
+.clickable:hover { color: var(--accent); text-decoration: underline; }
+
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }

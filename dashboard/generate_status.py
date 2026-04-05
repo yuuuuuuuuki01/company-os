@@ -143,6 +143,32 @@ units = parse_board('units/registry.md', ['Unit', 'Seat state'])
 activities = parse_board('ledgers/current-activity-board.md', ['Actor', 'Current Work'])
 work_allocation = parse_board('ledgers/department-work-allocation-board.md', ['Department', 'Current assignment'])
 
+# Parse individual motions (non-sitting proposals)
+motions = {}
+for f in glob.glob('proposals/operations/*-motion.md') + glob.glob('proposals/operations/*-review.md') + glob.glob('proposals/operations/*議案.md') + glob.glob('proposals/operations/*レビュー.md'):
+    if 'ordinary-sitting' in f:
+        continue
+    fm, body = parse_frontmatter(f)
+    mid = fm.get('id', os.path.basename(f).replace('.md', ''))
+    motions[mid] = {
+        'id': mid,
+        'title': extract_section(body, '')[0] if body.strip().startswith('#') else mid,
+        'status': fm.get('status', ''),
+        'owner': fm.get('owner', ''),
+        'risk': fm.get('risk', ''),
+        'goal': extract_section(body, 'Goal'),
+        'proposed_action': extract_section(body, 'Proposed action'),
+        'why': extract_section(body, 'Why'),
+        'discussion_1': extract_section(body, 'Discussion-1 note'),
+        'discussion_2': extract_section(body, 'Discussion-2 note'),
+        'deliberation': extract_section(body, 'Deliberation result'),
+    }
+    # Also extract title from first H1 line
+    for line in body.split('\n'):
+        if line.startswith('# '):
+            motions[mid]['title'] = line.lstrip('# ').strip()
+            break
+
 # Commits
 try:
     log = subprocess.check_output(['git', 'log', '-20', '--pretty=format:%h|%an|%ci|%s'], text=True).strip().split('\n')
@@ -154,6 +180,7 @@ result = {
     'sittings': sittings,
     'rulings': {str(k): v for k, v in rulings.items()},
     'improvement_board': improvement_items,
+    'motions': motions,
     'departments': departments,
     'officeholders': officeholders,
     'units': units,
@@ -166,6 +193,7 @@ result = {
         'total_units': len(units),
         'active_units': len([u for u in units if u.get('Lane state') == 'active']),
         'total_motions': len(improvement_items),
+        'total_proposals': len(motions),
         'completed_motions': len([i for i in improvement_items if 'complete' in i.get('Status','').lower() or 'closed' in i.get('Cycle stage','').lower()])
     },
     'generated_at': commits[0]['date'] if commits else ''

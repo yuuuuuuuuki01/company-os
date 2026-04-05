@@ -162,7 +162,7 @@ function renderTimeline() {
     const statusClass = s.status === "adopted" ? "adopted" : "motion-open";
     const agendaHtml = (s.agenda || []).map(a => {
       const modeClass = a.mode.startsWith("discussion") ? "discussion" : a.mode === "deliberation" ? "deliberation" : a.mode === "report" ? "report" : "procedural";
-      return `<div class="agenda-item"><span class="agenda-mode mode-${modeClass}">${ja("mode", a.mode)}</span><span class="agenda-name">${a.item}</span></div>`;
+      return `<div class="agenda-item"><span class="agenda-mode mode-${modeClass}">${ja("mode", a.mode)}</span><span class="agenda-name clickable" onclick="showMotion('${a.item.replace(/'/g, "\\'")}')">${a.item}</span></div>`;
     }).join("");
     const resultHtml = (s.result || []).map(r => `<div class="result-item">${r}</div>`).join("");
     const rulingBtn = ruling ? `<div style="margin-top:8px"><button class="card ruling-btn" onclick="showRuling(${s.number})" style="width:100%;padding:8px;font-size:11px;color:var(--accent);border-color:var(--accent)">📖 裁定を表示</button></div>` : "";
@@ -357,17 +357,64 @@ window.showRuling = function(num) {
 
 window.showMotion = function(name) {
   const item = (DATA.improvement_board || []).find(i => i.Item === name);
-  if (!item) return;
-  openModal(name, `
-    <h3>種別</h3><p>${item.Type || ""}</p>
-    <h3>優先度</h3><p>${item.Priority || ""}</p>
-    <h3>審議モード</h3><p>${item["Agenda mode"] || ""}</p>
-    <h3>サイクル</h3><p>${item["Cycle stage"] || ""}</p>
-    <h3>オーナー</h3><p>${item.Owner || ""}</p>
-    <h3>ステータス</h3><p>${item.Status || ""}</p>
-    <h3>次のハンドオフ</h3><p>${item["Next handoff"] || ""}</p>
-    <h3>次の会議</h3><p>${item["Next sitting"] || ""}</p>
-  `);
+  // Try to find the detailed motion data
+  const motion = DATA.motions ? (DATA.motions[name] || Object.values(DATA.motions).find(m => m.title === name || m.id === name)) : null;
+
+  let body = "";
+
+  if (motion) {
+    // Full discussion detail view
+    const renderList = (arr) => arr && arr.length ? arr.map(l => `<li>${l}</li>`).join("") : "<li>—</li>";
+
+    body = `
+      <div class="modal-section">
+        <h3>📌 目的</h3>
+        <ul>${renderList(motion.goal)}</ul>
+      </div>
+      <div class="modal-section">
+        <h3>📝 提案内容</h3>
+        <ul>${renderList(motion.proposed_action)}</ul>
+      </div>
+      <div class="modal-section">
+        <h3>❓ 理由</h3>
+        <ul>${renderList(motion.why)}</ul>
+      </div>
+      <div class="modal-section discussion-box">
+        <h3>💬 討議-1</h3>
+        <ul>${renderList(motion.discussion_1)}</ul>
+      </div>
+      <div class="modal-section discussion-box">
+        <h3>💬 討議-2</h3>
+        <ul>${renderList(motion.discussion_2)}</ul>
+      </div>
+      <div class="modal-section deliberation-box">
+        <h3>⚖️ 採決結果</h3>
+        <ul>${renderList(motion.deliberation)}</ul>
+      </div>
+      <div class="modal-meta">
+        <span>オーナー: ${ja("dept", motion.owner)}</span>
+        <span>ステータス: ${ja("status", motion.status)}</span>
+        <span>リスク: ${motion.risk}</span>
+      </div>
+    `;
+  } else if (item) {
+    // Fallback: improvement board metadata only
+    body = `
+      <h3>種別</h3><p>${item.Type || ""}</p>
+      <h3>優先度</h3><p>${item.Priority || ""}</p>
+      <h3>審議モード</h3><p>${item["Agenda mode"] || ""}</p>
+      <h3>サイクル</h3><p>${item["Cycle stage"] || ""}</p>
+      <h3>オーナー</h3><p>${ja("dept", item.Owner || "")}</p>
+      <h3>ステータス</h3><p>${ja("status", item.Status || "")}</p>
+      <h3>次のハンドオフ</h3><p>${item["Next handoff"] || ""}</p>
+      <h3>次の会議</h3><p>${item["Next sitting"] || ""}</p>
+    `;
+  } else {
+    body = "<p>議案の詳細データが見つかりませんでした。</p>";
+  }
+
+  const title = motion ? motion.title : name;
+  openModal(title, body);
 };
 
 // ====== Init ======

@@ -31,6 +31,7 @@ Preserve measurement, record integrity, summaries, memory retention rules, and i
 - enforce retention formats and record completeness
 - maintain approval ledgers and decision-trace indexes
 - publish compact reporting standards
+- register routine work replacements and keep script-related records legible
 
 ## Stop power
 

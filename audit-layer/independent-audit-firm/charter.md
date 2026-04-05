@@ -29,6 +29,8 @@ Issue an objective assessment of whether Company OS operations conform to consti
 - material irregularity notice
 - remediation recommendation
 - rolling audit opinion
+- script audit opinion
+- script misuse or omission notice
 
 ## Reporting standard
 

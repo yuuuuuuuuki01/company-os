@@ -29,6 +29,7 @@ Build and maintain internal tooling, automation, templates, and enablement syste
 - maintain internal automation assets
 - publish reusable templates and toolchains
 - improve operating ergonomics for lawful work
+- scriptify routine low-risk work when scope, exception boundary, and audit target are explicit
 
 ## Stop power
 

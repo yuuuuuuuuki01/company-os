@@ -1,6 +1,24 @@
 {
   "sittings": [
     {
+      "number": 148,
+      "id": "company-os-one-hundred-forty-eighth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 147,
+      "id": "company-os-one-hundred-forty-seventh-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 143,
       "id": "company-os-one-hundred-forty-third-ordinary-sitting",
       "status": "motion-open",
@@ -7505,6 +7523,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "147": {
+      "ruling": "`非稼働事業初回審査束議案` を discussion-1 で受理し、対象を `timetree-export`, `kanai-kagamibiraki-proposal`, `oem_release` の3件に限定したまま discussion-2 へ送る。",
+      "reason": "先頭3件は low / medium であり、high-risk gate capacity を消費せずに lawful review opening を試せるため。",
+      "executor": "assembly-secretariat, portfolio-strategy, project-management-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "15": {
       "ruling": "第十五回定例会は `oem` の bounded preparation bundle を採択した。",
       "reason": "seat motion, start packet, reviewer route, approval path がそろい、activation review 前の必要条件が制度上まとまったため。",
@@ -8547,6 +8572,17 @@
       "Status": "adopted",
       "Next handoff": "project-management-office / people-talent / business-owner seats",
       "Next sitting": "one-hundred-forty-sixth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "inactive-business-initial-review-packet",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "portfolio-strategy",
+      "Status": "active",
+      "Next handoff": "assembly-secretariat / project-management-office / people-talent",
+      "Next sitting": "one-hundred-forty-seventh ordinary sitting"
     }
   ],
   "motions": {
@@ -10774,8 +10810,8 @@
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-forty-fourth ordinary sitting completed and automation bundles moved into chained rollout",
-      "Next Handoff": "next implementation batch"
+      "Current Work": "one-hundred-forty-seventh ordinary sitting opened to carry the inactive-business first review packet into formal review",
+      "Next Handoff": "one-hundred-forty-eighth ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
@@ -11545,17 +11581,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:15:52 +0900",
-      "message": "feat: 部署カードへボトムアップ上申と進行中の活動を追加して可視化"
+      "date": "2026-04-05 13:18:09 +0900",
+      "message": "Open inactive business first review packet"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:15:52 +0900",
-      "message": "feat: 部署カードへボトムアップ上申と進行中の活動を追加して可視化"
+      "date": "2026-04-05 13:18:09 +0900",
+      "message": "Open inactive business first review packet"
     }
   ],
   "commits": [
+    {
+      "hash": "50ff569",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:18:09 +0900",
+      "message": "Open inactive business first review packet"
+    },
+    {
+      "hash": "02be70a",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:16:01 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "7501a87",
       "author": "yuuuuuuuuki01",
@@ -11663,29 +11711,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:28:29 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "70681c0",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:28:16 +0900",
-      "message": "Add chained automation bundle rollout"
-    },
-    {
-      "hash": "305695e",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:23:17 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 142,
+    "total_sittings": 144,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 38,
+    "total_motions": 39,
     "total_proposals": 74,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:15:52 +0900"
+  "generated_at": "2026-04-05 13:18:09 +0900"
 }

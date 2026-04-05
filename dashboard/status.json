@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 161,
+      "id": "company-os-one-hundred-sixty-first-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 160,
       "id": "company-os-one-hundred-sixtieth-ordinary-sitting",
       "status": "motion-open",
@@ -7414,6 +7423,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "160": {
+      "ruling": "`credential-ledger 高リスク審査着手議案` を deliberation で採択し、bounded opening を formal review opening として開始する。",
+      "reason": "opening 範囲を `seat / auth boundary / encryption boundary / secret boundary` に限定し、branch 条件も先に切り分けているため、本流を止めずに high-risk screening を開始できるため。",
+      "executor": "security-risk-compliance, assembly-secretariat, release-review-committee",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "56": {
       "ruling": "`jouzou` activation execution を discussion-2 まで進めた。",
       "reason": "seat, packet, reviewer, approval, rollback の最小 execution 束が揃い、deliberation の条件を満たしたため。",
@@ -8813,12 +8829,23 @@
       "Priority": "urgent",
       "Item": "credential-ledger-high-risk-screen-opening",
       "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "security-risk-compliance",
+      "Status": "adopted",
+      "Next handoff": "assembly-secretariat / release-review-committee",
+      "Next sitting": "one-hundred-sixtieth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "point-high-risk-screen-prep",
+      "Type": "operating",
       "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Cycle stage": "discussion-1",
       "Owner": "security-risk-compliance",
       "Status": "active",
       "Next handoff": "assembly-secretariat / release-review-committee",
-      "Next sitting": "one-hundred-sixtieth ordinary sitting"
+      "Next sitting": "one-hundred-sixty-first ordinary sitting"
     }
   ],
   "motions": {
@@ -9998,6 +10025,19 @@
         "`oem` and `shift` remain active under watch",
         "the next structural pressure is narrowed to `jouzou` readiness screening only"
       ]
+    },
+    "motion-point-high-risk-screen-prep": {
+      "id": "motion-point-high-risk-screen-prep",
+      "title": "Poin-T 高リスク審査準備議案",
+      "status": "motion-open",
+      "owner": "security-risk-compliance",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
     },
     "motion-ledger-template-standard-draft": {
       "id": "motion-ledger-template-standard-draft",
@@ -11869,17 +11909,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:53:15 +0900",
-      "message": "Advance credential-ledger opening to discussion two"
+      "date": "2026-04-05 13:57:56 +0900",
+      "message": "Open credential-ledger screening and prep Poin-T"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:53:15 +0900",
-      "message": "Advance credential-ledger opening to discussion two"
+      "date": "2026-04-05 13:57:56 +0900",
+      "message": "Open credential-ledger screening and prep Poin-T"
     }
   ],
   "commits": [
+    {
+      "hash": "7e0d003",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:57:56 +0900",
+      "message": "Open credential-ledger screening and prep Poin-T"
+    },
+    {
+      "hash": "b655768",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:53:32 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "ef47038",
       "author": "yuuuuuuuuki01",
@@ -11987,29 +12039,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:26:02 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "f4d5a55",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:25:40 +0900",
-      "message": "Adopt first inactive business review packet"
-    },
-    {
-      "hash": "a7940e2",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:24:01 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 156,
+    "total_sittings": 157,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 43,
-    "total_proposals": 78,
+    "total_motions": 44,
+    "total_proposals": 79,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:53:15 +0900"
+  "generated_at": "2026-04-05 13:57:56 +0900"
 }

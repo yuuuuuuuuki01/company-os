@@ -5220,8 +5220,364 @@
     },
     {
       "number": 0,
-      "id": "company-os-one-hundredth-ordinary-sitting",
+      "id": "company-os-one-hundred-fifth-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Deliberate the approval-branch drill and decide the first reusable drill artifact.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "deliberation",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-sixth ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`承認分岐模擬訓練議案` was adopted",
+        "the one-hundred-sixth ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-first-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Run `discussion-2` on the ledger standard columns draft.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-second ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`台帳標準列雛形作成議案` reached `discussion-2`",
+        "the one-hundred-second ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-fourth-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Run `discussion-2` on the approval-branch drill.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "discussion-2",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-fifth ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`承認分岐模擬訓練議案` reached `discussion-2`",
+        "the one-hundred-fifth ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-second-ordinary-sitting",
+      "status": "adopted",
+      "date": "2026-04-05",
+      "goal": "Deliberate the ledger standard columns draft and decide the third concrete artifact.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "deliberation",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-third ordinary sitting agenda"
+        }
+      ],
+      "result": [
+        "`台帳標準列雛形作成議案` was adopted",
+        "the one-hundred-third ordinary sitting was opened"
+      ]
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-sixth-ordinary-sitting",
       "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Open the first reusable approval-request artifact.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認要求票雛形作成議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-seventh ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundred-third-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "Open the first validation motion for approval-branch live drills.",
+      "agenda": [
+        {
+          "mode": "report",
+          "item": "unit-activation-gate-motion"
+        },
+        {
+          "mode": "report",
+          "item": "committee-execution-bridge-motion"
+        },
+        {
+          "mode": "report",
+          "item": "audit-fast-path-motion"
+        },
+        {
+          "mode": "report",
+          "item": "ai-bulletin-intake-motion"
+        },
+        {
+          "mode": "report",
+          "item": "four-project-stability-review"
+        },
+        {
+          "mode": "report",
+          "item": "台帳frontmatter雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳見出し雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "台帳標準列雛形作成議案"
+        },
+        {
+          "mode": "report",
+          "item": "自動会議運用議案"
+        },
+        {
+          "mode": "report",
+          "item": "承認分岐運用議案"
+        },
+        {
+          "mode": "discussion-1",
+          "item": "承認分岐模擬訓練議案"
+        },
+        {
+          "mode": "procedural",
+          "item": "confirm the one-hundred-fourth ordinary sitting agenda"
+        }
+      ],
+      "result": []
+    },
+    {
+      "number": 0,
+      "id": "company-os-one-hundredth-ordinary-sitting",
+      "status": "adopted",
       "date": "2026-04-05",
       "goal": "Open the third concrete artifact while the autonomous and approval-branch loops both remain active.",
       "agenda": [
@@ -5270,7 +5626,10 @@
           "item": "confirm the one-hundred-first ordinary sitting agenda"
         }
       ],
-      "result": []
+      "result": [
+        "`台帳標準列雛形作成議案` reached `discussion-1`",
+        "the one-hundred-first ordinary sitting was opened"
+      ]
     }
   ],
   "rulings": {
@@ -5555,9 +5914,9 @@
       "founder_veto": false
     },
     "0": {
-      "ruling": "`台帳雛形補助実装束着手議案` を採択し、次を `台帳frontmatter雛形作成議案` に進める。",
-      "reason": "実装束の範囲と境界が十分に狭くなり、第1成果物を frontmatter 雛形に固定する妥当性が確認できたため。",
-      "executor": "internal-tools-enablement, engineering, data-knowledge, assembly-secretariat",
+      "ruling": "`台帳標準列雛形作成議案` を discussion-1 まで進めた。",
+      "reason": "3つ目の concrete artifact として、台帳の読みやすさと共通運用に最も効く最小単位だったため。",
+      "executor": "engineering, data-knowledge, assembly-secretariat",
       "minority_view": "なし",
       "founder_veto": false
     },
@@ -5944,7 +6303,7 @@
       "Owner": "project-management-office",
       "Status": "rollout-active",
       "Next handoff": "four active PJ watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -5955,7 +6314,7 @@
       "Owner": "assembly-secretariat",
       "Status": "rollout-active",
       "Next handoff": "committee-to-execution handoff watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -5966,7 +6325,7 @@
       "Owner": "independent-audit-firm",
       "Status": "rollout-active",
       "Next handoff": "founder-office / assembly",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -5977,40 +6336,7 @@
       "Owner": "research-intelligence",
       "Status": "rollout-active",
       "Next handoff": "assembly-secretariat",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "department-steward-seating-wave-motion",
-      "Type": "staffing",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "people-talent",
-      "Status": "adopted",
-      "Next handoff": "next confidence review",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "decision-template-normalization-motion",
-      "Type": "operating",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "data-knowledge",
-      "Status": "adopted",
-      "Next handoff": "short ruling watch under four-PJ load",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "unit-onboarding-priority-motion",
-      "Type": "structural",
-      "Agenda mode": "report",
-      "Cycle stage": "closed",
-      "Owner": "portfolio-strategy",
-      "Status": "completed",
-      "Next handoff": "oem route active",
-      "Next sitting": "completed in twenty-first ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6021,7 +6347,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "first external PJ watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6032,7 +6358,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "second external PJ watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6043,7 +6369,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "third external PJ watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6054,7 +6380,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "fourth external PJ watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6064,63 +6390,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "ledger standard columns draft and dual-loop watch",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "internal-tools-prioritization-review",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "ledger standard columns draft and dual-loop watch",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-template-helper-kickoff",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "ledger standard columns draft and dual-loop watch",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-template-standard-draft",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "ledger standard columns draft and dual-loop watch",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-template-implementation-packet-kickoff",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "ledger standard columns draft and dual-loop watch",
-      "Next sitting": "one-hundredth ordinary sitting"
-    },
-    {
-      "Priority": "next",
-      "Item": "ledger-frontmatter-template-draft",
-      "Type": "tooling",
-      "Agenda mode": "report",
-      "Cycle stage": "watch",
-      "Owner": "internal-tools-enablement",
-      "Status": "adopted",
-      "Next handoff": "ledger standard columns draft",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next handoff": "approval request template and four active PJ watch",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6131,7 +6402,7 @@
       "Owner": "assembly-secretariat",
       "Status": "adopted",
       "Next handoff": "autonomous meeting watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6141,8 +6412,19 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval branch watch",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next handoff": "approval request template",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "ledger-frontmatter-template-draft",
+      "Type": "tooling",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "internal-tools-enablement",
+      "Status": "adopted",
+      "Next handoff": "template set completed",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
@@ -6152,19 +6434,41 @@
       "Cycle stage": "watch",
       "Owner": "data-knowledge",
       "Status": "adopted",
-      "Next handoff": "ledger standard columns draft",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next handoff": "template set completed",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     },
     {
       "Priority": "next",
       "Item": "ledger-standard-columns-template-draft",
       "Type": "tooling",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "engineering",
+      "Status": "adopted",
+      "Next handoff": "approval request template",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-branch-drill",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "assembly-secretariat",
+      "Status": "adopted",
+      "Next handoff": "approval request template",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-request-template-draft",
+      "Type": "operating",
       "Agenda mode": "discussion",
       "Cycle stage": "discussion-1",
-      "Owner": "engineering",
+      "Owner": "assembly-secretariat",
       "Status": "active",
-      "Next handoff": "data-knowledge / assembly-secretariat",
-      "Next sitting": "one-hundredth ordinary sitting"
+      "Next handoff": "founder-office / project-management-office / data-knowledge",
+      "Next sitting": "one-hundred-sixth ordinary sitting"
     }
   ],
   "departments": [
@@ -6724,78 +7028,50 @@
       "Actor": "Founder Office",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "sovereign check over the active improvement batch",
+      "Current Work": "sovereign check over the active improvement batch and approval-request boundaries",
       "Next Handoff": "assembly"
     },
     {
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "ninety-ninth ordinary sitting completed and one-hundredth sitting opened",
-      "Next Handoff": "one-hundredth ordinary sitting"
+      "Current Work": "one-hundred-fifth ordinary sitting completed and one-hundred-sixth sitting opened",
+      "Next Handoff": "one-hundred-sixth ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop, branch approval-needed items, and prepare the one-hundredth packet",
+      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-request template packet",
       "Next Handoff": "improvement board"
-    },
-    {
-      "Actor": "Department Allocation",
-      "Layer": "governance",
-      "Status": "active",
-      "Current Work": "all departments carry explicit assignments and next handoffs",
-      "Next Handoff": "department-work-allocation-board"
-    },
-    {
-      "Actor": "Independent Audit Firm",
-      "Layer": "audit",
-      "Status": "active",
-      "Current Work": "operate watch, route, and urgent triage on new findings",
-      "Next Handoff": "founder-office / assembly"
-    },
-    {
-      "Actor": "AI Academic Institute",
-      "Layer": "institution",
-      "Status": "active",
-      "Current Work": "weekly AI bulletin and source monitoring",
-      "Next Handoff": "formal petition if needed"
-    },
-    {
-      "Actor": "People and Talent",
-      "Layer": "department",
-      "Status": "active",
-      "Current Work": "watch the seated `oem`, `shift`, `jouzou`, and `FormPilot` unit-owner lines",
-      "Next Handoff": "personnel-committee / PMO"
-    },
-    {
-      "Actor": "Data and Knowledge",
-      "Layer": "department",
-      "Status": "active",
-      "Current Work": "apply short ruling scope, maintain the adopted ledger heading template, and support the standard columns draft",
-      "Next Handoff": "assembly-secretariat"
-    },
-    {
-      "Actor": "Security, Risk, and Compliance",
-      "Layer": "department",
-      "Status": "active",
-      "Current Work": "watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` low/medium risk paths",
-      "Next Handoff": "release-review-committee"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and support autonomous plus approval-branch watch while the standard columns draft proceeds",
+      "Current Work": "monitor four active PJ and keep the approval-branch drill lessons connected to live PJ watch",
+      "Next Handoff": "assembly-secretariat"
+    },
+    {
+      "Actor": "Data and Knowledge",
+      "Layer": "department",
+      "Status": "active",
+      "Current Work": "maintain the adopted ledger template set and support approval-request fields",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Engineering",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "run company-os development fixes in parallel with the governance loop and support the standard columns draft",
+      "Current Work": "maintain the adopted ledger template set and watch for column drift in active ledgers",
       "Next Handoff": "quality-assurance / internal-tools-enablement"
+    },
+    {
+      "Actor": "Security, Risk, and Compliance",
+      "Layer": "department",
+      "Status": "active",
+      "Current Work": "keep branch-trigger boundaries aligned with real risk while the request template is prepared",
+      "Next Handoff": "founder-office / release-review-committee"
     },
     {
       "Actor": "OEM Unit",
@@ -6829,132 +7105,109 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "watch autonomous and approval-branch operations while handing off to the standard columns draft",
+      "Current Work": "keep the template set reusable while approval-request artifacts are opened",
       "Next Handoff": "engineering / security-risk-compliance"
-    },
-    {
-      "Actor": "UI Visual Execution Lane",
-      "Layer": "external-specialist",
-      "Status": "active",
-      "Current Work": "Gemini handles UI artifact production only",
-      "Next Handoff": "internal design review"
     }
   ],
   "work_allocation": [
     {
       "Department": "founder-office",
       "Current assignment": "keep sovereign alignment across the active improvement batch",
-      "Deliverable": "founder decision lane and reserved-power check",
+      "Deliverable": "founder decision lane and approval-request boundary check",
       "Status": "active",
       "Next handoff": "assembly"
     },
     {
       "Department": "assembly-secretariat",
-      "Current assignment": "run the autonomous ordinary sitting loop, branch approval-needed items, and maintain rollout watch across active motions",
-      "Deliverable": "one-hundredth sitting packet, autonomous-and-approval-branch watch note, and four-active-PJ watch note",
+      "Current assignment": "run the autonomous ordinary sitting loop and maintain rollout watch across active motions",
+      "Deliverable": "one-hundred-sixth sitting packet, approval-request template packet, and four-active-PJ watch note",
       "Status": "active",
       "Next handoff": "all active owners"
     },
     {
-      "Department": "constitutional-affairs",
-      "Current assignment": "review unit-state and activation changes for compatibility",
-      "Deliverable": "constitutional review note on state, gate, and rollout compliance",
-      "Status": "active",
-      "Next handoff": "constitutional review committee"
-    },
-    {
       "Department": "project-management-office",
-      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support autonomous plus approval-branch watch while the standard columns draft proceeds",
-      "Deliverable": "four-PJ watch note and standard-columns packet",
+      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support the approval-request template",
+      "Deliverable": "four-PJ watch note and approval-request packet",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
     },
     {
       "Department": "engineering",
       "Current assignment": "support executable operating artifacts and technical implementation constraints",
-      "Deliverable": "standard-columns draft package and implementation note",
+      "Deliverable": "adopted template set upkeep and approval-request support note",
       "Status": "active",
       "Next handoff": "PMO / internal-tools-enablement"
     },
     {
-      "Department": "quality-assurance",
-      "Current assignment": "define how governance artifacts are checked before adoption",
-      "Deliverable": "lightweight acceptance checklist for development fixes",
-      "Status": "active",
-      "Next handoff": "directorate / release-review-committee"
-    },
-    {
-      "Department": "release-operations",
-      "Current assignment": "keep release gating posture aligned with new work streams",
-      "Deliverable": "low/medium development-fix release boundary note",
-      "Status": "active",
-      "Next handoff": "release-review-committee"
-    },
-    {
       "Department": "security-risk-compliance",
-      "Current assignment": "maintain key custody and watch the concrete `oem`, `shift`, `jouzou`, and `FormPilot` active-PJ approval paths",
-      "Deliverable": "risk note for four-PJ watch and approval-branch boundary",
+      "Current assignment": "maintain key custody and watch the concrete active-PJ approval paths",
+      "Deliverable": "branch-trigger boundary note and approval-request boundary note",
       "Status": "active",
       "Next handoff": "founder-office / release-review-committee"
     },
     {
-      "Department": "people-talent",
-      "Current assignment": "reflect wave-1 steward confirmations and watch the seated `oem`, `shift`, `jouzou`, and `FormPilot` unit-owner lines",
-      "Deliverable": "officeholder confirmation note and four-PJ seat confidence note",
-      "Status": "active",
-      "Next handoff": "personnel-committee"
-    },
-    {
       "Department": "data-knowledge",
       "Current assignment": "apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration",
-      "Deliverable": "adopted ledger heading template, live ledger upkeep, and standard-columns support",
+      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-request record support",
       "Status": "active",
       "Next handoff": "assembly-secretariat"
     },
     {
       "Department": "internal-tools-enablement",
       "Current assignment": "support tooling and automation for boards, ledgers, and recurring loops",
-      "Deliverable": "autonomous-and-approval-branch watch plus standard-columns support",
+      "Deliverable": "template set upkeep and approval-request support",
       "Status": "active",
       "Next handoff": "engineering / security-risk-compliance"
     }
   ],
   "commits": [
     {
+      "hash": "f4c6074",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 10:35:31 +0900",
+      "message": "Adopt approval branch drill and open request template"
+    },
+    {
+      "hash": "80e266c",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 10:31:19 +0900",
+      "message": "Restore UI design authority and capture dashboard CSS knowledge"
+    },
+    {
+      "hash": "f960e38",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 10:25:02 +0900",
+      "message": "feat: complete UI rewrite - meeting-centric integrated dashboard with Assembly/Org/Projects/Finance tabs"
+    },
+    {
+      "hash": "294d158",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 01:23:09 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
+    {
       "hash": "19c2c04",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 10:22:25 +0900",
-      "message": "Adopt ledger columns template and open branch drill",
-      "dept": "data-knowledge"
+      "message": "Adopt ledger columns template and open branch drill"
     },
     {
       "hash": "8001c04",
       "author": "github-actions[bot]",
       "date": "2026-04-05 01:05:56 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
+      "message": "ci: update status.json [skip ci]"
     },
     {
       "hash": "4d8f506",
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 10:05:36 +0900",
-<<<<<<< Updated upstream
-      "message": "Add approval branch operations and continue auto meetings",
-      "dept": "data-knowledge"
-=======
       "message": "Add approval branch operations and continue auto meetings"
->>>>>>> Stashed changes
     },
     {
       "hash": "fd9a68a",
       "author": "github-actions[bot]",
       "date": "2026-04-05 00:58:49 +0000",
-<<<<<<< Updated upstream
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-=======
       "message": "ci: update status.json [skip ci]"
->>>>>>> Stashed changes
     },
     {
       "hash": "768138b",
@@ -7027,215 +7280,15 @@
       "author": "github-actions[bot]",
       "date": "2026-04-04 13:56:01 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "0d9244f",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 22:55:45 +0900",
-      "message": "Add parallel development fix operating loop"
-    },
-    {
-      "hash": "6995ba7",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 13:44:11 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "a7af00e",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 22:43:55 +0900",
-      "message": "Advance FormPilot to activation execution review"
-    },
-    {
-      "hash": "df2decc",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 13:36:57 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "bee6024",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 22:36:44 +0900",
-      "message": "Advance FormPilot toward execution bundle preparation"
-    },
-    {
-      "hash": "6b62392",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 13:18:25 +0000",
-<<<<<<< Updated upstream
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "2362995",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 22:18:13 +0900",
-      "message": "Adopt Japanese naming policy for files",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "9c7a09b",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 13:13:26 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "01b9506",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 22:13:12 +0900",
-      "message": "Add standard business departments",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "7cad8d7",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 12:48:17 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "094a6ac",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 21:48:04 +0900",
-      "message": "Advance FormPilot preparation to activation review",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "e53dda3",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 12:20:31 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "c754863",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-04 21:20:17 +0900",
-      "message": "Advance FormPilot screening and subdivision work",
-      "dept": "data-knowledge"
-    },
-    {
-      "hash": "32a1251",
-      "author": "github-actions[bot]",
-      "date": "2026-04-04 11:25:48 +0000",
-      "message": "ci: update status.json [skip ci]",
-      "dept": "data-knowledge"
-    }
-  ],
-  "tasks": {
-    "total": 19,
-    "done": 2,
-    "active": 17,
-    "pending": 0,
-    "items": [
-      {
-        "label": "record-normalization-motion",
-        "status": "done"
-      },
-      {
-        "label": "unit-state-separation-motion",
-        "status": "done"
-      },
-      {
-        "label": "unit-activation-gate-motion",
-        "status": "active"
-      },
-      {
-        "label": "committee-execution-bridge-motion",
-        "status": "active"
-      },
-      {
-        "label": "audit-fast-path-motion",
-        "status": "active"
-      },
-      {
-        "label": "ai-bulletin-intake-motion",
-        "status": "active"
-      },
-      {
-        "label": "department-steward-seating-wave-motion",
-        "status": "active"
-      },
-      {
-        "label": "decision-template-normalization-motion",
-        "status": "active"
-      },
-      {
-        "label": "oem-activation-execution-motion",
-        "status": "active"
-      },
-      {
-        "label": "shift-activation-execution-motion",
-        "status": "active"
-      },
-      {
-        "label": "jouzou-activation-execution-motion",
-        "status": "active"
-      },
-      {
-        "label": "formpilot-activation-execution-motion",
-        "status": "active"
-      },
-      {
-        "label": "four-project-stability-review",
-        "status": "active"
-      },
-      {
-        "label": "autonomous-meeting-operations",
-        "status": "active"
-      },
-      {
-        "label": "approval-branch-operations",
-        "status": "active"
-      },
-      {
-        "label": "ledger-frontmatter-template-draft",
-        "status": "active"
-      },
-      {
-        "label": "ledger-heading-template-draft",
-        "status": "active"
-      },
-      {
-        "label": "ledger-standard-columns-template-draft",
-        "status": "active"
-      },
-      {
-        "label": "approval-branch-drill",
-        "status": "active"
-      }
-    ]
-  },
-  "activities": {
-    "Founder Office": "sovereign check over the active improvement batch and branch-return boundaries",
-    "Assembly": "one-hundred-second ordinary sitting completed and one-hundred-third sitting opened",
-    "Assembly Secretariat": "run the autonomous ordinary sitting loop, branch approval-needed items, and prepare the approval-branch drill packet",
-    "Department Allocation": "all departments carry explicit assignments and next handoffs",
-    "Project Management Office": "monitor four active PJ and support the approval-branch drill while keeping the four active PJ stable",
-    "Data and Knowledge": "maintain the adopted ledger templates and support the approval-branch drill record shape",
-    "Engineering": "maintain the adopted ledger templates and watch for column drift in active ledgers",
-    "Security, Risk, and Compliance": "define what a real branch trigger would look like without invoking secrets or high-risk execution",
-    "OEM Unit": "first external PJ is active under bounded static-tool scope",
-    "Shift Unit": "second external PJ is active under bounded planning and scheduling scope",
-    "Jouzou Unit": "third external PJ is active under bounded planning and quote workflow scope",
-    "FormPilot Unit": "fourth external PJ is active under bounded outbound-sales automation MVP scope",
-    "Internal Tools and Enablement": "keep the template set reusable while the branch drill is designed"
-  },
-  "generated_at": "2026-04-05 10:22:25 +0900"
-}
-=======
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 99,
+    "total_sittings": 105,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 23,
-    "completed_motions": 3
+    "total_motions": 18,
+    "completed_motions": 2
   },
-  "generated_at": "2026-04-05 10:05:36 +0900"
+  "generated_at": "2026-04-05 10:35:31 +0900"
 }
->>>>>>> Stashed changes

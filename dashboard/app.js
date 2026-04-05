@@ -4,6 +4,104 @@
 
 let DATA = null;
 
+// ====== 日本語名マッピング ======
+const JA = {
+  // --- 部署 ---
+  dept: {
+    "founder-office": "創業者室",
+    "assembly-secretariat": "議会事務局",
+    "constitutional-affairs": "憲法審査部",
+    "portfolio-strategy": "ポートフォリオ戦略部",
+    "project-management-office": "PMO（プロジェクト管理室）",
+    "directorate": "ディレクター室",
+    "product-management": "プロダクト管理部",
+    "product-service-design": "プロダクト・サービス設計部",
+    "engineering": "エンジニアリング部",
+    "quality-assurance": "品質保証部",
+    "release-operations": "リリース運用部",
+    "security-risk-compliance": "セキュリティ・リスク・コンプライアンス部",
+    "people-talent": "人事部",
+    "finance-treasury": "財務部",
+    "procurement-vendor-management": "調達・ベンダー管理部",
+    "legal-policy": "法務・政策部",
+    "organizational-development-learning": "組織開発・学習部",
+    "research-intelligence": "リサーチ・インテリジェンス部",
+    "exploration-incubation": "探索・インキュベーション部",
+    "business-operations": "事業運営部",
+    "sales-revenue": "営業・売上部",
+    "marketing-growth": "マーケティング・グロース部",
+    "communications-brand": "広報・ブランド部",
+    "business-development-partnerships": "事業開発・パートナーシップ部",
+    "customer-success-support": "カスタマーサクセス・サポート部",
+    "data-knowledge": "データ・ナレッジ部",
+    "internal-tools-enablement": "内部ツール推進部",
+    "information-systems": "情報システム部",
+    "organizational-scaling": "組織スケーリング部",
+  },
+  // --- 役職 ---
+  office: {
+    "assembly-chair": "議長",
+    "floor-clerk": "議事記録担当",
+    "constitutional-guardian": "憲法守護官",
+    "project-manager": "プロジェクトマネージャー",
+    "director": "ディレクター",
+    "unit-owner": "ユニットオーナー",
+    "department-steward": "部署スチュワード",
+    "personnel-committee-member": "人事委員会委員",
+    "personnel-committee-chair": "人事委員会委員長",
+    "constitutional-review-committee-member": "憲法審査委員会委員",
+    "constitutional-review-committee-chair": "憲法審査委員会委員長",
+    "release-review-committee-member": "リリース審査委員会委員",
+    "release-review-committee-chair": "リリース審査委員会委員長",
+  },
+  // --- アジェンダモード ---
+  mode: {
+    "report": "報告",
+    "discussion-1": "討議-1",
+    "discussion-2": "討議-2",
+    "discussion": "討議",
+    "deliberation": "採決",
+    "procedural": "手続",
+  },
+  // --- ステータス ---
+  status: {
+    "adopted": "採択済",
+    "motion-open": "審議中",
+    "rollout-active": "展開中",
+    "reported-complete": "完了報告済",
+    "active": "活動中",
+    "ready": "準備完了",
+    "seated": "着任",
+    "pending-election": "選任待ち",
+    "unseated": "未着任",
+    "not-activated": "未稼働",
+    "watch": "監視中",
+    "closed": "完了",
+  },
+  // --- ユニット ---
+  unit: {
+    "company-os": "Company OS",
+    "oem": "OEM見積ツール",
+    "shift": "SHIFT",
+    "jouzou": "醸造",
+    "FormPilot": "FormPilot",
+    "Poin-T": "Poin-T",
+    "credential-ledger": "資格台帳",
+    "kanai-kagamibiraki-proposal": "金井鏡開き提案",
+    "oem_release": "OEMリリース",
+    "saigai": "災害",
+    "shift_backup": "SHIFTバックアップ",
+    "timetree-export": "TimeTreeエクスポート",
+    "tumugi": "紬",
+    "zenken": "全研",
+  },
+};
+
+// ヘルパー：英語キーから日本語名を取得（見つからなければ原文を返す）
+function ja(category, key) {
+  return JA[category]?.[key] || key;
+}
+
 // ====== Data Fetching ======
 async function fetchStatus() {
   try {
@@ -64,7 +162,7 @@ function renderTimeline() {
     const statusClass = s.status === "adopted" ? "adopted" : "motion-open";
     const agendaHtml = (s.agenda || []).map(a => {
       const modeClass = a.mode.startsWith("discussion") ? "discussion" : a.mode === "deliberation" ? "deliberation" : a.mode === "report" ? "report" : "procedural";
-      return `<div class="agenda-item"><span class="agenda-mode mode-${modeClass}">${a.mode}</span><span class="agenda-name">${a.item}</span></div>`;
+      return `<div class="agenda-item"><span class="agenda-mode mode-${modeClass}">${ja("mode", a.mode)}</span><span class="agenda-name">${a.item}</span></div>`;
     }).join("");
     const resultHtml = (s.result || []).map(r => `<div class="result-item">${r}</div>`).join("");
     const rulingBtn = ruling ? `<div style="margin-top:8px"><button class="card ruling-btn" onclick="showRuling(${s.number})" style="width:100%;padding:8px;font-size:11px;color:var(--accent);border-color:var(--accent)">📖 裁定を表示</button></div>` : "";
@@ -73,7 +171,7 @@ function renderTimeline() {
       <div class="card sitting-card" data-num="${s.number}">
         <div class="sitting-card-header">
           <span class="sitting-number">#${s.number}</span>
-          <span class="sitting-status ${statusClass}">${s.status}</span>
+          <span class="sitting-status ${statusClass}">${ja("status", s.status)}</span>
           <span class="sitting-date">${s.date || ""}</span>
         </div>
         <div class="sitting-goal">${s.goal || ""}</div>
@@ -117,7 +215,7 @@ function renderTracker() {
               <span class="motion-status-dot ${groupColors[key]}"></span>
               <span class="motion-name">${m.Item || ""}</span>
             </div>
-            <div class="motion-owner">${m.Owner || ""} · ${m["Next sitting"] || ""}</div>
+            <div class="motion-owner">${ja("dept", m.Owner || "")} · ${m["Next sitting"] || ""}</div>
           </div>
         `).join("")}
       </div>
@@ -151,7 +249,7 @@ function renderDepartments() {
     const icon = icons[id] || "🏢";
     return `
       <div class="card dept-card">
-        <div class="dept-name">${icon} ${id}</div>
+        <div class="dept-name">${icon} ${ja("dept", id)}</div>
         <div class="dept-steward">${d.Steward || ""}</div>
         <div class="dept-stop">${d["Stop power"] || ""}</div>
       </div>
@@ -168,9 +266,9 @@ function renderOfficeholders() {
 
   el.innerHTML = holders.slice(0, 20).map(h => `
     <div class="oh-row">
-      <span class="oh-office">${h.Office || ""}</span>
+      <span class="oh-office">${ja("office", h.Office || "")}</span>
       <span class="oh-holder">${h.Holder || ""}</span>
-      <span class="oh-status">${h.Status || ""}</span>
+      <span class="oh-status">${ja("status", h.Status || "")}</span>
     </div>
   `).join("");
 }
@@ -184,7 +282,7 @@ function renderWorkAllocation() {
 
   el.innerHTML = work.slice(0, 15).map(w => `
     <div class="work-row">
-      <div class="work-dept">${w.Department || ""}</div>
+      <div class="work-dept">${ja("dept", w.Department || "")}</div>
       <div class="work-task">${w["Current assignment"] || ""}</div>
     </div>
   `).join("");
@@ -199,20 +297,22 @@ function renderUnits() {
   if (!units.length) { el.innerHTML = '<div class="empty-state"><span class="empty-icon">🔷</span><p>ユニットデータなし</p></div>'; return; }
 
   el.innerHTML = units.map(u => {
+    const unitName = u.Unit || "";
     const lane = (u["Lane state"] || "not-activated").toLowerCase();
     const laneClass = lane === "active" ? "lane-active" : lane === "ready" ? "lane-ready" : "lane-not-activated";
-    const laneLabel = lane === "active" ? "Active" : lane === "ready" ? "Ready" : "Not activated";
+    const seat = (u["Seat state"] || "").toLowerCase();
+    const owner = (u["Owner status"] || "").toLowerCase();
 
     return `
       <div class="card unit-card">
         <div class="unit-card-header">
-          <span class="unit-name">${u.Unit || ""}</span>
-          <span class="unit-lane-badge ${laneClass}">${laneLabel}</span>
+          <span class="unit-name">${ja("unit", unitName)}</span>
+          <span class="unit-lane-badge ${laneClass}">${ja("status", lane)}</span>
         </div>
         <div class="unit-meta">
-          <div class="unit-meta-row"><span class="unit-meta-label">Seat</span><span class="unit-meta-value">${u["Seat state"] || ""}</span></div>
-          <div class="unit-meta-row"><span class="unit-meta-label">Risk</span><span class="unit-meta-value">${u["Default risk"] || ""}</span></div>
-          <div class="unit-meta-row"><span class="unit-meta-label">Owner</span><span class="unit-meta-value">${u["Owner status"] || ""}</span></div>
+          <div class="unit-meta-row"><span class="unit-meta-label">着席</span><span class="unit-meta-value">${ja("status", seat)}</span></div>
+          <div class="unit-meta-row"><span class="unit-meta-label">リスク</span><span class="unit-meta-value">${u["Default risk"] || ""}</span></div>
+          <div class="unit-meta-row"><span class="unit-meta-label">オーナー</span><span class="unit-meta-value">${ja("status", owner)}</span></div>
         </div>
       </div>
     `;

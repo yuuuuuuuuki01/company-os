@@ -11405,8 +11405,8 @@
       "Actor": "Internal Tools and Enablement",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "build the first scriptification implementation bundle for review packet issuance and automation review carry-forward while keeping CLI-first entrypoints current",
-      "Next Handoff": "independent-audit-firm / data-knowledge"
+      "Current Work": "repair and verify the CLI-first entrypoints for `status`, `review-open`, and `script-audit-sample` while keeping the first scriptification bundle active for review packet issuance and automation review carry-forward",
+      "Next Handoff": "independent-audit-firm / data-knowledge / assembly-secretariat"
     }
   ],
   "work_allocation": [
@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 18:10:40 +0900",
-      "message": "Add initial scriptification implementation bundle"
+      "date": "2026-04-05 21:25:31 +0900",
+      "message": "Repair company-os CLI summaries"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 18:10:40 +0900",
-      "message": "Add initial scriptification implementation bundle"
+      "date": "2026-04-05 21:25:31 +0900",
+      "message": "Repair company-os CLI summaries"
     }
   ],
   "commits": [
+    {
+      "hash": "a1921bd",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 21:25:31 +0900",
+      "message": "Repair company-os CLI summaries"
+    },
+    {
+      "hash": "bcc6644",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 09:11:00 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "b67693b",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:13:02 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "528fb20",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:12:44 +0900",
-      "message": "Add automation heartbeat layers and review loop"
-    },
-    {
-      "hash": "144a6f6",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 05:02:43 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 18:10:40 +0900"
+  "generated_at": "2026-04-05 21:25:31 +0900"
 }

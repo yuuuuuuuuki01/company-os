@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 152,
+      "id": "company-os-one-hundred-fifty-second-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 151,
       "id": "company-os-one-hundred-fifty-first-ordinary-sitting",
       "status": "motion-open",
@@ -8110,6 +8119,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "151": {
+      "ruling": "`常時稼働運用議案` を discussion-2 に進め、post-push handoff 必須、pending review 常備、停止条件限定の3点を維持したまま deliberation へ送る。",
+      "reason": "24時間運転に近づくには、push 後停止を避けるだけでなく、active と pending の両棚を空にしない標準動作が必要なため。",
+      "executor": "assembly-secretariat, project-management-office, portfolio-strategy",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "103": {
       "ruling": "`承認分岐模擬訓練議案` を discussion-1 まで進めた。",
       "reason": "自律運転の次段として、承認待ちで全体停止しない運用を模擬訓練で検証する価値が高かったため。",
@@ -8636,12 +8652,12 @@
       "Priority": "urgent",
       "Item": "continuous-operations",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "assembly-secretariat",
       "Status": "active",
       "Next handoff": "project-management-office / portfolio-strategy",
-      "Next sitting": "one-hundred-fifty-first ordinary sitting"
+      "Next sitting": "one-hundred-fifty-second ordinary sitting"
     }
   ],
   "motions": {
@@ -11653,17 +11669,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:25:40 +0900",
-      "message": "Adopt first inactive business review packet"
+      "date": "2026-04-05 13:27:23 +0900",
+      "message": "Advance continuous operations to deliberation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:25:40 +0900",
-      "message": "Adopt first inactive business review packet"
+      "date": "2026-04-05 13:27:23 +0900",
+      "message": "Advance continuous operations to deliberation"
     }
   ],
   "commits": [
+    {
+      "hash": "8a4d3e3",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:27:23 +0900",
+      "message": "Advance continuous operations to deliberation"
+    },
+    {
+      "hash": "f29bbea",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:26:02 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "f4d5a55",
       "author": "yuuuuuuuuki01",
@@ -11771,22 +11799,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:53:12 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "9863cc8",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:52:59 +0900",
-      "message": "Add active and inactive business readiness work"
-    },
-    {
-      "hash": "16de000",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:49:34 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 147,
+    "total_sittings": 148,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -11795,5 +11811,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:25:40 +0900"
+  "generated_at": "2026-04-05 13:27:23 +0900"
 }

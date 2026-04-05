@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 21:43:51 +0900",
-      "message": "Document scriptification verification"
+      "date": "2026-04-05 21:46:25 +0900",
+      "message": "Document CLI ledger in English"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 21:43:51 +0900",
-      "message": "Document scriptification verification"
+      "date": "2026-04-05 21:46:25 +0900",
+      "message": "Document CLI ledger in English"
     }
   ],
   "commits": [
+    {
+      "hash": "9a986f5",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 21:46:25 +0900",
+      "message": "Document CLI ledger in English"
+    },
+    {
+      "hash": "516a139",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 12:44:03 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "006ead0",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 05:52:53 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "ab82b16",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 14:52:38 +0900",
-      "message": "Add CLI launch entrypoints"
-    },
-    {
-      "hash": "1a22148",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 05:45:14 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 21:43:51 +0900"
+  "generated_at": "2026-04-05 21:46:25 +0900"
 }

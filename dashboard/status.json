@@ -1,6 +1,33 @@
 {
   "sittings": [
     {
+      "number": 132,
+      "id": "company-os-one-hundred-thirty-second-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 131,
+      "id": "company-os-one-hundred-thirty-first-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
+      "number": 130,
+      "id": "company-os-one-hundred-thirtieth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 129,
       "id": "company-os-one-hundred-twenty-ninth-ordinary-sitting",
       "status": "motion-open",
@@ -7071,6 +7098,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "130": {
+      "ruling": "`承認待機返却遅延エスカレーション議案` を採択し、次を `承認待機返却遅延是正追跡議案` に進める。",
+      "reason": "返却遅延の上申経路を残す最小雛形が整ったため、次は上申後の是正追跡を定める流れが自然だったため。",
+      "executor": "founder-office, security-risk-compliance, assembly-secretariat",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "25": {
       "ruling": "第二十五回会議で `shift-activation-review-motion` を discussion-1 まで進めた。",
       "reason": "`shift` preparation bundle 採択後の次の合法的な段階が bounded activation review path の整理であるため。",
@@ -7274,6 +7308,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "131": {
+      "ruling": "`承認待機返却遅延是正追跡議案` を discussion-1 まで進めた。",
+      "reason": "`remediation_owner`、`remediation_status`、`next_check_at` を分けて記録する方向が十分に収束できたため。",
+      "executor": "security-risk-compliance, founder-office, assembly-secretariat",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "96": {
       "ruling": "`台帳frontmatter雛形作成議案` と `自動会議運用議案` を採択した。",
       "reason": "frontmatter 雛形は bounded artifact として十分に小さく、通常会議の自動運用も Founder 返却条件を明示したうえで運用可能と判断できたため。",
@@ -7355,6 +7396,13 @@
       "ruling": "`承認返却記録雛形作成議案` を discussion-2 まで進めた。",
       "reason": "`branch_id`、`approval_result`、`resumed_items`、`dropped_items` の必須性が十分に収束できたため。",
       "executor": "data-knowledge, assembly-secretariat, founder-office, project-management-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
+    "129": {
+      "ruling": "`承認待機返却遅延エスカレーション議案` を discussion-2 まで進めた。",
+      "reason": "`overdue_since`、`current_owner`、`escalation_target`、`escalation_at` の最小項目が十分に収束できたため。",
+      "executor": "founder-office, security-risk-compliance, assembly-secretariat",
       "minority_view": "なし",
       "founder_veto": false
     },
@@ -7909,7 +7957,7 @@
       "Owner": "project-management-office",
       "Status": "rollout-active",
       "Next handoff": "four active PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7920,7 +7968,7 @@
       "Owner": "assembly-secretariat",
       "Status": "rollout-active",
       "Next handoff": "committee-to-execution handoff watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7931,7 +7979,7 @@
       "Owner": "independent-audit-firm",
       "Status": "rollout-active",
       "Next handoff": "founder-office / assembly",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7942,7 +7990,7 @@
       "Owner": "research-intelligence",
       "Status": "rollout-active",
       "Next handoff": "assembly-secretariat",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7953,7 +8001,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "first external PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7964,7 +8012,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "second external PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7975,7 +8023,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "third external PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7986,7 +8034,7 @@
       "Owner": "project-management-office",
       "Status": "adopted",
       "Next handoff": "fourth external PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -7996,8 +8044,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation and four active PJ watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking and four active PJ watch",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8008,7 +8056,7 @@
       "Owner": "assembly-secretariat",
       "Status": "adopted",
       "Next handoff": "autonomous meeting watch",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8018,8 +8066,8 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8029,8 +8077,8 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8040,8 +8088,8 @@
       "Cycle stage": "watch",
       "Owner": "assembly-secretariat",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8051,8 +8099,8 @@
       "Cycle stage": "watch",
       "Owner": "data-knowledge",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8062,8 +8110,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8073,8 +8121,8 @@
       "Cycle stage": "watch",
       "Owner": "internal-tools-enablement",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8084,8 +8132,8 @@
       "Cycle stage": "watch",
       "Owner": "security-risk-compliance",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8095,8 +8143,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8106,8 +8154,8 @@
       "Cycle stage": "watch",
       "Owner": "project-management-office",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8117,8 +8165,8 @@
       "Cycle stage": "watch",
       "Owner": "data-knowledge",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
@@ -8128,19 +8176,30 @@
       "Cycle stage": "watch",
       "Owner": "security-risk-compliance",
       "Status": "adopted",
-      "Next handoff": "approval-wait delay escalation",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Priority": "next",
       "Item": "approval-wait-return-delay-escalation",
       "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "watch",
+      "Owner": "founder-office",
+      "Status": "adopted",
+      "Next handoff": "approval-wait remediation tracking",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
+    },
+    {
+      "Priority": "next",
+      "Item": "approval-wait-return-delay-remediation-tracking",
+      "Type": "operating",
       "Agenda mode": "discussion",
       "Cycle stage": "discussion-1",
-      "Owner": "founder-office",
+      "Owner": "security-risk-compliance",
       "Status": "active",
-      "Next handoff": "assembly-secretariat / security-risk-compliance",
-      "Next sitting": "one-hundred-twenty-ninth ordinary sitting"
+      "Next handoff": "founder-office / assembly-secretariat",
+      "Next sitting": "one-hundred-thirty-second ordinary sitting"
     }
   ],
   "motions": {
@@ -9373,6 +9432,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-approval-wait-return-delay-remediation-tracking": {
+      "id": "motion-approval-wait-return-delay-remediation-tracking",
+      "title": "承認待機返却遅延是正追跡議案",
+      "status": "motion-open",
+      "owner": "security-risk-compliance",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-approval-wait-priority-reshuffle": {
       "id": "motion-approval-wait-priority-reshuffle",
       "title": "承認待機優先度組替議案",
@@ -9441,7 +9513,7 @@
     "motion-approval-wait-return-delay-escalation": {
       "id": "motion-approval-wait-return-delay-escalation",
       "title": "承認待機返却遅延エスカレーション議案",
-      "status": "motion-open",
+      "status": "adopted",
       "owner": "founder-office",
       "risk": "medium",
       "goal": [],
@@ -10165,35 +10237,35 @@
       "Actor": "Founder Office",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "sovereign check over the active improvement batch and approval-wait return-delay escalation boundaries",
+      "Current Work": "sovereign check over the active improvement batch and approval-wait delay-remediation boundaries",
       "Next Handoff": "assembly"
     },
     {
       "Actor": "Assembly",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "one-hundred-twenty-eighth ordinary sitting completed and one-hundred-twenty-ninth sitting opened",
-      "Next Handoff": "one-hundred-twenty-ninth ordinary sitting"
+      "Current Work": "one-hundred-thirty-first ordinary sitting completed and one-hundred-thirty-second sitting opened",
+      "Next Handoff": "one-hundred-thirty-second ordinary sitting"
     },
     {
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-wait return-delay escalation packet",
+      "Current Work": "run the autonomous ordinary sitting loop and prepare the approval-wait delay-remediation packet",
       "Next Handoff": "improvement board"
     },
     {
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ and keep approval-wait delay escalation connected to live PJ watch",
+      "Current Work": "monitor four active PJ and keep approval-wait delay remediation connected to live PJ watch",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Data and Knowledge",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "maintain the adopted ledger template set and support approval-wait borrow and return artifacts",
+      "Current Work": "maintain the adopted ledger template set and support approval-wait delay artifacts",
       "Next Handoff": "assembly-secretariat"
     },
     {
@@ -10207,7 +10279,7 @@
       "Actor": "Security, Risk, and Compliance",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "keep branch-trigger boundaries aligned with real risk while return confirmation is reused for delay escalation",
+      "Current Work": "keep branch-trigger boundaries aligned with real risk while delay escalation is reused for remediation tracking",
       "Next Handoff": "founder-office / release-review-committee"
     },
     {
@@ -10250,21 +10322,21 @@
     {
       "Department": "founder-office",
       "Current assignment": "keep sovereign alignment across the active improvement batch",
-      "Deliverable": "founder decision lane and approval-wait return-delay escalation boundary check",
+      "Deliverable": "founder decision lane and approval-wait delay-remediation boundary check",
       "Status": "active",
       "Next handoff": "assembly"
     },
     {
       "Department": "assembly-secretariat",
       "Current assignment": "run the autonomous ordinary sitting loop and maintain rollout watch across active motions",
-      "Deliverable": "one-hundred-twenty-ninth sitting packet, approval-wait return-delay escalation packet, and four-active-PJ watch note",
+      "Deliverable": "one-hundred-thirty-second sitting packet, approval-wait delay-remediation packet, and four-active-PJ watch note",
       "Status": "active",
       "Next handoff": "all active owners"
     },
     {
       "Department": "project-management-office",
-      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support approval-wait delay escalation",
-      "Deliverable": "four-PJ watch note and approval-wait delay-escalation packet",
+      "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and support approval-wait delay remediation",
+      "Deliverable": "four-PJ watch note and approval-wait delay-remediation packet",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
     },
@@ -10278,14 +10350,14 @@
     {
       "Department": "security-risk-compliance",
       "Current assignment": "maintain key custody and watch the concrete active-PJ approval paths",
-      "Deliverable": "branch-trigger boundary note and return-confirmation-to-delay-escalation boundary note",
+      "Deliverable": "branch-trigger boundary note and delay-escalation-to-remediation boundary note",
       "Status": "active",
       "Next handoff": "founder-office / release-review-committee"
     },
     {
       "Department": "data-knowledge",
       "Current assignment": "apply the short Japanese ruling pattern to ordinary operating decisions and drive Japanese file naming migration",
-      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-wait borrow/return support",
+      "Deliverable": "adopted ledger template set, live ledger upkeep, and approval-wait delay support",
       "Status": "active",
       "Next handoff": "assembly-secretariat"
     },
@@ -10324,17 +10396,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 11:47:59 +0900",
-      "message": "fix: generate_status.pyで92回以降の議会が0回目として処理されていたバグを修正"
+      "date": "2026-04-05 11:49:38 +0900",
+      "message": "Advance approval wait delay escalation and remediation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 11:47:59 +0900",
-      "message": "fix: generate_status.pyで92回以降の議会が0回目として処理されていたバグを修正"
+      "date": "2026-04-05 11:49:38 +0900",
+      "message": "Advance approval wait delay escalation and remediation"
     }
   ],
   "commits": [
+    {
+      "hash": "ca5cda0",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 11:49:38 +0900",
+      "message": "Advance approval wait delay escalation and remediation"
+    },
+    {
+      "hash": "4d99774",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 02:48:59 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "af27568",
       "author": "yuuuuuuuuki01",
@@ -10442,29 +10526,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 01:05:56 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "4d8f506",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 10:05:36 +0900",
-      "message": "Add approval branch operations and continue auto meetings"
-    },
-    {
-      "hash": "fd9a68a",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 00:58:49 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 128,
+    "total_sittings": 131,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 24,
-    "total_proposals": 60,
+    "total_motions": 25,
+    "total_proposals": 61,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 11:47:59 +0900"
+  "generated_at": "2026-04-05 11:49:38 +0900"
 }

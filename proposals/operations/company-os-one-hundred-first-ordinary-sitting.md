@@ -1,5 +1,5 @@
 ---
-id: company-os-one-hundredth-ordinary-sitting
+id: company-os-one-hundred-first-ordinary-sitting
 layer: proposal
 status: adopted
 owner: assembly-secretariat
@@ -11,11 +11,11 @@ created_at: 2026-04-05
 updated_at: 2026-04-05
 ---
 
-# Company OS One-Hundredth Ordinary Sitting
+# Company OS One-Hundred-First Ordinary Sitting
 
 ## Goal
 
-Open the third concrete artifact while the autonomous and approval-branch loops both remain active.
+Run `discussion-2` on the ledger standard columns draft.
 
 ## Agenda
 
@@ -28,15 +28,15 @@ Open the third concrete artifact while the autonomous and approval-branch loops 
 7. report: `台帳見出し雛形作成議案`
 8. report: `自動会議運用議案`
 9. report: `承認分岐運用議案`
-10. discussion-1: `台帳標準列雛形作成議案`
-11. confirm the one-hundred-first ordinary sitting agenda
+10. discussion-2: `台帳標準列雛形作成議案`
+11. confirm the one-hundred-second ordinary sitting agenda
 
 ## Definition of done
 
-- the third concrete artifact is narrowed enough for `discussion-2`
+- the third concrete artifact is narrowed enough for deliberation
 - both loops remain within low/medium bounds
 
 ## Result
 
-- `台帳標準列雛形作成議案` reached `discussion-1`
-- the one-hundred-first ordinary sitting was opened
+- `台帳標準列雛形作成議案` reached `discussion-2`
+- the one-hundred-second ordinary sitting was opened

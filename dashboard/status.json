@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 155,
+      "id": "company-os-one-hundred-fifty-fifth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 154,
       "id": "company-os-one-hundred-fifty-fourth-ordinary-sitting",
       "status": "motion-open",
@@ -7661,6 +7670,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "154": {
+      "ruling": "`非稼働事業次順位審査束議案` を discussion-2 で維持し、`tumugi`, `shift_backup` の2件を second low/medium review packet として deliberation に送る。",
+      "reason": "両件とも bundle-issued 条件を満たし、high-risk gate と衝突せずに pending review 補充を続けられるため。",
+      "executor": "assembly-secretariat, portfolio-strategy, project-management-office",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "33": {
       "ruling": "第三十三回会議で bounded `shift` execution bundle を採択した。",
       "reason": "execution threshold を満たした上で、activation 前に最小の実行束だけを確定する方が制度として安定するため。",
@@ -8695,12 +8711,12 @@
       "Priority": "urgent",
       "Item": "inactive-business-second-review-packet",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "portfolio-strategy",
       "Status": "active",
       "Next handoff": "assembly-secretariat / project-management-office / people-talent / directorate",
-      "Next sitting": "one-hundred-fifty-fourth ordinary sitting"
+      "Next sitting": "one-hundred-fifty-fifth ordinary sitting"
     }
   ],
   "motions": {
@@ -11725,17 +11741,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:34:45 +0900",
-      "message": "Prepare second inactive business review packet"
+      "date": "2026-04-05 13:35:55 +0900",
+      "message": "Advance second inactive review packet to deliberation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:34:45 +0900",
-      "message": "Prepare second inactive business review packet"
+      "date": "2026-04-05 13:35:55 +0900",
+      "message": "Advance second inactive review packet to deliberation"
     }
   ],
   "commits": [
+    {
+      "hash": "8666a18",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:35:55 +0900",
+      "message": "Advance second inactive review packet to deliberation"
+    },
+    {
+      "hash": "5461edd",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:35:03 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "0b28064",
       "author": "yuuuuuuuuki01",
@@ -11843,22 +11871,10 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:10:17 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "40fd6ca",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:10:00 +0900",
-      "message": "Add business kickoff and screening notes"
-    },
-    {
-      "hash": "fa8624b",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:04:17 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 150,
+    "total_sittings": 151,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
@@ -11867,5 +11883,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:34:45 +0900"
+  "generated_at": "2026-04-05 13:35:55 +0900"
 }

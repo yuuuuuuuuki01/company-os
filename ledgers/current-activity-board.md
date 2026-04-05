@@ -29,5 +29,5 @@ updated_at: 2026-04-05
 | Shift Unit | unit | active | MVP boundary and verification-route improvement under the business triad | reviewer / PMO |
 | Jouzou Unit | unit | active | import validation and quote-workflow acceptance improvement under the business triad | reviewer / PMO |
 | FormPilot Unit | unit | active | review queue and provider-boundary hardening under the business triad | reviewer / PMO |
-| Pending Business Pool | portfolio | active | prepare seats and packets for inactive businesses without over-activating them | portfolio-strategy / people-talent |
+| Pending Business Pool | portfolio | active | prepare seats, notes, and screening order for inactive businesses without over-activating them | portfolio-strategy / people-talent / project-management-office |
 | Internal Tools and Enablement | department | active | build the adopted automation helper bundles and prepare queued bundles for automatic promotion | engineering / security-risk-compliance |

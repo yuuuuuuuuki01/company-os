@@ -8935,23 +8935,23 @@
       "Priority": "urgent",
       "Item": "token-efficient-execution",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "internal-tools-enablement",
       "Status": "active",
       "Next handoff": "all department stewards / data-knowledge / internal-tools-enablement",
-      "Next sitting": "第百六十九回通常会議"
+      "Next sitting": "第百七十一回通常会議"
     },
     {
       "Priority": "urgent",
       "Item": "routine-work-scriptification",
       "Type": "operating",
-      "Agenda mode": "discussion",
-      "Cycle stage": "discussion-2",
+      "Agenda mode": "deliberation",
+      "Cycle stage": "deliberation",
       "Owner": "internal-tools-enablement",
       "Status": "active",
       "Next handoff": "independent-audit-firm / data-knowledge / internal-tools-enablement",
-      "Next sitting": "第百七十回通常会議"
+      "Next sitting": "第百七十二回通常会議"
     }
   ],
   "motions": {
@@ -12061,17 +12061,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 15:08:54 +0900",
-      "message": "Adopt automation heartbeat layers"
+      "date": "2026-04-05 17:47:14 +0900",
+      "message": "Move token and scriptification motions to deliberation"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 15:08:54 +0900",
-      "message": "Adopt automation heartbeat layers"
+      "date": "2026-04-05 17:47:14 +0900",
+      "message": "Move token and scriptification motions to deliberation"
     }
   ],
   "commits": [
+    {
+      "hash": "71818e4",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 17:47:14 +0900",
+      "message": "Move token and scriptification motions to deliberation"
+    },
+    {
+      "hash": "ad692ec",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 06:09:43 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "76fa609",
       "author": "yuuuuuuuuki01",
@@ -12179,18 +12191,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 04:53:32 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "ef47038",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 13:53:15 +0900",
-      "message": "Advance credential-ledger opening to discussion two"
-    },
-    {
-      "hash": "c466df0",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 04:52:33 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12203,5 +12203,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 15:08:54 +0900"
+  "generated_at": "2026-04-05 17:47:14 +0900"
 }

@@ -22,9 +22,10 @@ updated_at: 2026-04-05
 | Project Management Office | department | active | monitor four active PJ and support the approval-branch drill while keeping the four active PJ stable | assembly-secretariat |
 | Data and Knowledge | department | active | maintain the adopted ledger templates and support the approval-branch drill record shape | assembly-secretariat |
 | Engineering | department | active | maintain the adopted ledger templates and watch for column drift in active ledgers | quality-assurance / internal-tools-enablement |
+| Product and Service Design | department | active | resume lawful UI acceptance and convert the current dashboard CSS into reusable design knowledge | directorate / internal-tools-enablement |
 | Security, Risk, and Compliance | department | active | define what a real branch trigger would look like without invoking secrets or high-risk execution | founder-office / release-review-committee |
 | OEM Unit | unit | active | first external PJ is active under bounded static-tool scope | reviewer / PMO |
 | Shift Unit | unit | active | second external PJ is active under bounded planning and scheduling scope | reviewer / PMO |
 | Jouzou Unit | unit | active | third external PJ is active under bounded planning and quote workflow scope | reviewer / PMO |
 | FormPilot Unit | unit | active | fourth external PJ is active under bounded outbound-sales automation MVP scope | reviewer / PMO |
-| Internal Tools and Enablement | department | active | keep the template set reusable while the branch drill is designed | engineering / security-risk-compliance |
+| Internal Tools and Enablement | department | active | keep the template set reusable while the branch drill is designed and hand off dashboard implementation context to Product and Service Design | engineering / security-risk-compliance |

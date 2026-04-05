@@ -20,3 +20,4 @@ updated_at: 2026-04-04
 | ei-opportunity-division | division | exploration-incubation | opportunity scanning, hypothesis shaping, and incubation brief ownership | Department Steward (acting) | next confidence review | active |
 | ei-incubation-section | section | ei-opportunity-division | bounded incubation brief drafting and sponsor routing | Section Chief (acting) | next confidence review | active |
 | pmo-lane-watch-section | section | project-management-office | continuous active-lane watch and escalation packet upkeep | PMO Steward (acting) | next confidence review | active |
+| psd-ui-visual-section | section | product-service-design | UI execution acceptance, dashboard pattern learning, and visual system upkeep | Section Chief (acting) | next confidence review | active |

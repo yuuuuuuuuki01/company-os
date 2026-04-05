@@ -33,6 +33,8 @@ Own product framing, user journey design, information architecture, interaction 
 - maintain design critique skillsets and drills
 - run design capability loops with Directorate and ODL
 - sponsor bounded external design execution lanes
+- accept bounded UI outputs from lawful external specialist lanes
+- maintain reusable dashboard and CSS design knowledge
 
 ## Stop power
 

@@ -20,3 +20,4 @@ updated_at: 2026-04-04
 | ei-opportunity-division | maintain origination slate and shape bounded hypotheses | incubation slate, sponsor fit note, and FormPilot-adjacent opportunity framing | active | exploration-incubation / portfolio-strategy |
 | ei-incubation-section | draft incubation briefs for the strongest ideas | bounded incubation brief set and FormPilot execution-bundle support brief | active | ei-opportunity-division |
 | pmo-lane-watch-section | keep three active PJ watchable and package escalations early | PJ watch packet, overload note, and FormPilot execution-bundle prep packet | active | project-management-office / assembly-secretariat |
+| psd-ui-visual-section | accept bounded UI outputs and convert current dashboard CSS into reusable design knowledge | UI acceptance note and dashboard CSS knowledge memo | active | product-service-design / directorate |

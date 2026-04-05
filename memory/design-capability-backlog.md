@@ -20,3 +20,5 @@ updated_at: 2026-04-03
 - improve critique vocabulary so reviews become actionable
 - separate metaphor from state readability in themed UIs
 - record reusable design lessons after each major pass
+- keep a reusable knowledge set for current dashboard CSS patterns
+- restore lawful UI acceptance inside Product and Service Design while execution stays bounded

@@ -15,4 +15,4 @@ updated_at: 2026-04-03
 
 | Lane | Specialist | Sponsor | Scope | Status | Reviewer | Acceptance Owner | Next Handoff |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| ui-visual-execution | gemini | product-service-design | UI artifact production only | active | directorate | founder-office | internal design review |
+| ui-visual-execution | gemini | product-service-design | UI artifact production and bounded visual refresh | active | directorate | product-service-design | internal design review |

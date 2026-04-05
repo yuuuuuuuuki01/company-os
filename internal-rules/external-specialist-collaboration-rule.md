@@ -49,3 +49,5 @@ Every external specialist lane must have:
 ## Acceptance rule
 
 External output becomes effective only after a lawful internal owner accepts, records, and routes it through the required approval path.
+
+For bounded UI work, the sponsoring design department may serve as the acceptance owner when governance, release, and high-risk approval powers remain internal.

@@ -1,6 +1,15 @@
 {
   "sittings": [
     {
+      "number": 150,
+      "id": "company-os-one-hundred-fiftieth-ordinary-sitting",
+      "status": "motion-open",
+      "date": "2026-04-05",
+      "goal": "",
+      "agenda": [],
+      "result": []
+    },
+    {
       "number": 149,
       "id": "company-os-one-hundred-forty-ninth-ordinary-sitting",
       "status": "motion-open",
@@ -7539,6 +7548,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "150": {
+      "ruling": "`常時稼働運用議案` を discussion-1 で受理し、push は停止点ではなく通過点とする原則を維持したまま discussion-2 へ送る。",
+      "reason": "24時間常時稼働に近づくには、high-risk branch 以外で owner が自発停止しない運転を標準化する必要があるため。",
+      "executor": "assembly-secretariat, project-management-office, portfolio-strategy",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "147": {
       "ruling": "`非稼働事業初回審査束議案` を discussion-1 で受理し、対象を `timetree-export`, `kanai-kagamibiraki-proposal`, `oem_release` の3件に限定したまま discussion-2 へ送る。",
       "reason": "先頭3件は low / medium であり、high-risk gate capacity を消費せずに lawful review opening を試せるため。",
@@ -8599,6 +8615,17 @@
       "Status": "active",
       "Next handoff": "assembly-secretariat / project-management-office / people-talent",
       "Next sitting": "one-hundred-forty-ninth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "continuous-operations",
+      "Type": "operating",
+      "Agenda mode": "discussion",
+      "Cycle stage": "discussion-1",
+      "Owner": "assembly-secretariat",
+      "Status": "active",
+      "Next handoff": "project-management-office / portfolio-strategy",
+      "Next sitting": "one-hundred-fiftieth ordinary sitting"
     }
   ],
   "motions": {
@@ -9805,6 +9832,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-continuous-operations": {
+      "id": "motion-continuous-operations",
+      "title": "常時稼働運用議案",
+      "status": "motion-open",
+      "owner": "assembly-secretariat",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "motion-business-work-and-discussion": {
       "id": "motion-business-work-and-discussion",
       "title": "事業並行改善運用議案",
@@ -10833,8 +10873,8 @@
       "Actor": "Assembly Secretariat",
       "Layer": "governance",
       "Status": "active",
-      "Current Work": "run the autonomous ordinary sitting loop under work-first limits and auto-promote queued automation bundles without waiting for new selection meetings",
-      "Next Handoff": "improvement board"
+      "Current Work": "run the autonomous ordinary sitting loop under work-first and continuous-operations limits so push never becomes a stop point",
+      "Next Handoff": "improvement board / next review opening"
     },
     {
       "Actor": "Project Management Office",
@@ -10917,7 +10957,7 @@
       "Actor": "Pending Business Pool",
       "Layer": "portfolio",
       "Status": "active",
-      "Current Work": "prepare seats, notes, and screening order for inactive businesses without over-activating them",
+      "Current Work": "keep review-ready items stocked and advance the first inactive-business review packet without over-activating the queue",
       "Next Handoff": "portfolio-strategy / people-talent / project-management-office"
     },
     {
@@ -11597,17 +11637,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 13:19:33 +0900",
-      "message": "Advance inactive review packet to deliberation"
+      "date": "2026-04-05 13:23:40 +0900",
+      "message": "Add continuous operations flow"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 13:19:33 +0900",
-      "message": "Advance inactive review packet to deliberation"
+      "date": "2026-04-05 13:23:40 +0900",
+      "message": "Add continuous operations flow"
     }
   ],
   "commits": [
+    {
+      "hash": "168fb43",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 13:23:40 +0900",
+      "message": "Add continuous operations flow"
+    },
+    {
+      "hash": "03d0e36",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 04:19:53 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "01f8695",
       "author": "yuuuuuuuuki01",
@@ -11715,29 +11767,17 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 03:39:51 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "135080e",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 12:38:36 +0900",
-      "message": "Add collaboration growth and business-owner structure"
-    },
-    {
-      "hash": "b8c0e91",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 03:32:41 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
-    "total_sittings": 145,
+    "total_sittings": 146,
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 39,
-    "total_proposals": 74,
+    "total_motions": 40,
+    "total_proposals": 75,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 13:19:33 +0900"
+  "generated_at": "2026-04-05 13:23:40 +0900"
 }

@@ -10626,7 +10626,7 @@
     },
     "motion-automation-issues-omnibus": {
       "id": "motion-automation-issues-omnibus",
-      "title": "自動化運用課題一括決定議案",
+      "title": "閾ｪ蜍募喧驕狗畑隱ｲ鬘御ｸ諡ｬ豎ｺ螳夊ｭｰ譯・",
       "status": "motion-open",
       "owner": "assembly-secretariat",
       "risk": "medium",
@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 23:07:02 +0900",
-      "message": "Add approval gate section"
+      "date": "2026-04-05 23:18:55 +0900",
+      "message": "Add automation note and gate to omnibus motion"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 23:07:02 +0900",
-      "message": "Add approval gate section"
+      "date": "2026-04-05 23:18:55 +0900",
+      "message": "Add automation note and gate to omnibus motion"
     }
   ],
   "commits": [
+    {
+      "hash": "95d3888",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 23:18:55 +0900",
+      "message": "Add automation note and gate to omnibus motion"
+    },
+    {
+      "hash": "b7249a4",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 14:07:13 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "e315128",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 12:46:36 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "9a986f5",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 21:46:25 +0900",
-      "message": "Document CLI ledger in English"
-    },
-    {
-      "hash": "516a139",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 12:44:03 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 23:07:02 +0900"
+  "generated_at": "2026-04-05 23:18:55 +0900"
 }

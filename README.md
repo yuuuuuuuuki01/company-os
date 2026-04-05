@@ -81,6 +81,15 @@ Inside the constitutional layer, `Purpose`, `Vision`, `Mission`, and `Values` ar
 - `dashboard/`: local source files for the visual console
 - `docs/`: GitHub Pages publishing copy
 
+## CLI Launch
+
+- `bin/company-os.cmd status`
+- `bin/company-os.cmd light-watch`
+- `bin/company-os.cmd portfolio`
+- `bin/company-os.cmd tactical`
+
+These commands provide short Japanese status output so the chat can trigger work while the terminal carries the next operational slice.
+
 ## Amendment thresholds
 
 - `sops/` and `internal-rules/`: simple majority

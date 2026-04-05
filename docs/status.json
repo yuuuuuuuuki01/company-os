@@ -7267,6 +7267,13 @@
       "minority_view": "なし",
       "founder_veto": false
     },
+    "146": {
+      "ruling": "`事業並行改善運用議案` を採択し、active 事業は triad で作業を進め、inactive 事業は portfolio 台帳で観測しながら必要 seat と packet を整える。",
+      "reason": "active だけを見ると文脈が偏るため、portfolio 全体を見ながら必要な事業だけを段階的に前進させる必要がある。",
+      "executor": "project-management-office, directorate, portfolio-strategy, people-talent",
+      "minority_view": "なし",
+      "founder_veto": false
+    },
     "56": {
       "ruling": "`jouzou` activation execution を discussion-2 まで進めた。",
       "reason": "seat, packet, reviewer, approval, rollback の最小 execution 束が揃い、deliberation の条件を満たしたため。",
@@ -8518,6 +8525,17 @@
       "Status": "adopted",
       "Next handoff": "project-management-office / directorate / people-talent / portfolio-strategy",
       "Next sitting": "one-hundred-forty-fifth ordinary sitting"
+    },
+    {
+      "Priority": "urgent",
+      "Item": "business-work-and-discussion",
+      "Type": "operating",
+      "Agenda mode": "report",
+      "Cycle stage": "rollout-active",
+      "Owner": "project-management-office",
+      "Status": "adopted",
+      "Next handoff": "portfolio-strategy / directorate / people-talent / active and pending businesses",
+      "Next sitting": "one-hundred-forty-sixth ordinary sitting"
     }
   ],
   "motions": {
@@ -9724,6 +9742,19 @@
       "discussion_2": [],
       "deliberation": []
     },
+    "motion-business-work-and-discussion": {
+      "id": "motion-business-work-and-discussion",
+      "title": "事業並行改善運用議案",
+      "status": "motion-open",
+      "owner": "project-management-office",
+      "risk": "medium",
+      "goal": [],
+      "proposed_action": [],
+      "why": [],
+      "discussion_1": [],
+      "discussion_2": [],
+      "deliberation": []
+    },
     "japanese-naming-migration-policy-motion": {
       "id": "japanese-naming-migration-policy-motion",
       "title": "日本語命名移行方針議案",
@@ -10733,14 +10764,14 @@
       "Actor": "Project Management Office",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "monitor four active PJ, enforce work-first meeting allowance, and keep the automation bundle chain advancing",
+      "Current Work": "monitor four active PJ, enforce work-first meeting allowance, and run business triads against active improvement work",
       "Next Handoff": "assembly-secretariat"
     },
     {
       "Actor": "Portfolio Strategy",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "assign business-owner seats by business and keep the business triad coherent with unit ownership",
+      "Current Work": "keep business-owner seats assigned by business and manage active/pending/dormant portfolio transitions",
       "Next Handoff": "assembly-secretariat / PMO"
     },
     {
@@ -10775,36 +10806,43 @@
       "Actor": "People and Talent",
       "Layer": "department",
       "Status": "active",
-      "Current Work": "open trainee seats for all departments and major offices while keeping context packets narrow",
+      "Current Work": "open trainee seats for all departments and major offices while keeping context packets narrow and shadow packets reusable",
       "Next Handoff": "assembly-secretariat / personnel-committee"
     },
     {
       "Actor": "OEM Unit",
       "Layer": "unit",
       "Status": "active",
-      "Current Work": "first external PJ is active under bounded static-tool scope",
+      "Current Work": "bounded persistence and export improvement under the business triad",
       "Next Handoff": "reviewer / PMO"
     },
     {
       "Actor": "Shift Unit",
       "Layer": "unit",
       "Status": "active",
-      "Current Work": "second external PJ is active under bounded planning and scheduling scope",
+      "Current Work": "MVP boundary and verification-route improvement under the business triad",
       "Next Handoff": "reviewer / PMO"
     },
     {
       "Actor": "Jouzou Unit",
       "Layer": "unit",
       "Status": "active",
-      "Current Work": "third external PJ is active under bounded planning and quote workflow scope",
+      "Current Work": "import validation and quote-workflow acceptance improvement under the business triad",
       "Next Handoff": "reviewer / PMO"
     },
     {
       "Actor": "FormPilot Unit",
       "Layer": "unit",
       "Status": "active",
-      "Current Work": "fourth external PJ is active under bounded outbound-sales automation MVP scope",
+      "Current Work": "review queue and provider-boundary hardening under the business triad",
       "Next Handoff": "reviewer / PMO"
+    },
+    {
+      "Actor": "Pending Business Pool",
+      "Layer": "portfolio",
+      "Status": "active",
+      "Current Work": "prepare seats and packets for inactive businesses without over-activating them",
+      "Next Handoff": "portfolio-strategy / people-talent"
     },
     {
       "Actor": "Internal Tools and Enablement",
@@ -10832,9 +10870,23 @@
     {
       "Department": "project-management-office",
       "Current assignment": "watch the active `oem`, `shift`, `jouzou`, and `FormPilot` PJ under the adopted control posture and supply agenda seeds from delivery friction",
-      "Deliverable": "four-PJ watch note and PJ watch automation bundle kickoff note",
+      "Deliverable": "four-PJ watch note, active-business improvement packet, and portfolio transition note",
       "Status": "active",
       "Next handoff": "assembly-secretariat / constitutional-review-committee"
+    },
+    {
+      "Department": "portfolio-strategy",
+      "Current assignment": "keep business-owner seats assigned and align active and inactive businesses in one portfolio view",
+      "Deliverable": "portfolio transition note and business-owner seat upkeep",
+      "Status": "active",
+      "Next handoff": "project-management-office / directorate"
+    },
+    {
+      "Department": "directorate",
+      "Current assignment": "keep quality and conceptual coherence aligned inside each active business triad",
+      "Deliverable": "business quality note and acceptance boundaries for active businesses",
+      "Status": "active",
+      "Next handoff": "project-management-office / portfolio-strategy"
     },
     {
       "Department": "engineering",
@@ -10863,6 +10915,13 @@
       "Deliverable": "automation helper bundle plan for meeting replenishment, PJ watch, and exception routing",
       "Status": "active",
       "Next handoff": "engineering / security-risk-compliance"
+    },
+    {
+      "Department": "people-talent",
+      "Current assignment": "open trainee seats across all departments and major offices with bounded packets",
+      "Deliverable": "trainee staffing packet set and shadow-seat rollout note",
+      "Status": "active",
+      "Next handoff": "department stewards / major offices"
     }
   ],
   "approval_branches": [
@@ -10892,17 +10951,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 12:38:36 +0900",
-      "message": "Add collaboration growth and business-owner structure"
+      "date": "2026-04-05 12:49:22 +0900",
+      "message": "Add portfolio-wide business triad operations"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 12:38:36 +0900",
-      "message": "Add collaboration growth and business-owner structure"
+      "date": "2026-04-05 12:49:22 +0900",
+      "message": "Add portfolio-wide business triad operations"
     }
   ],
   "commits": [
+    {
+      "hash": "780ea70",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-05 12:49:22 +0900",
+      "message": "Add portfolio-wide business triad operations"
+    },
+    {
+      "hash": "a0ada34",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 03:39:51 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "135080e",
       "author": "yuuuuuuuuki01",
@@ -11010,18 +11081,6 @@
       "author": "yuuuuuuuuki01",
       "date": "2026-04-05 11:49:38 +0900",
       "message": "Advance approval wait delay escalation and remediation"
-    },
-    {
-      "hash": "4d99774",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 02:48:59 +0000",
-      "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "af27568",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 11:47:59 +0900",
-      "message": "fix: generate_status.pyで92回以降の議会が0回目として処理されていたバグを修正"
     }
   ],
   "stats": {
@@ -11029,10 +11088,10 @@
     "total_departments": 28,
     "total_units": 14,
     "active_units": 5,
-    "total_motions": 36,
-    "total_proposals": 72,
+    "total_motions": 37,
+    "total_proposals": 73,
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 12:38:36 +0900"
+  "generated_at": "2026-04-05 12:49:22 +0900"
 }

@@ -12085,17 +12085,29 @@
     {
       "name": "main",
       "upstream": "origin/main",
-      "date": "2026-04-05 23:20:49 +0900",
-      "message": "Add CLI prompt templates and autonomous execution rule"
+      "date": "2026-04-09 21:36:46 +0900",
+      "message": "Add thread split operating model"
     },
     {
       "name": "origin/main",
       "upstream": "",
-      "date": "2026-04-05 23:20:49 +0900",
-      "message": "Add CLI prompt templates and autonomous execution rule"
+      "date": "2026-04-09 21:36:46 +0900",
+      "message": "Add thread split operating model"
     }
   ],
   "commits": [
+    {
+      "hash": "0da3981",
+      "author": "yuuuuuuuuki01",
+      "date": "2026-04-09 21:36:46 +0900",
+      "message": "Add thread split operating model"
+    },
+    {
+      "hash": "5b892b1",
+      "author": "github-actions[bot]",
+      "date": "2026-04-05 14:21:03 +0000",
+      "message": "ci: update status.json [skip ci]"
+    },
     {
       "hash": "410e56d",
       "author": "yuuuuuuuuki01",
@@ -12203,18 +12215,6 @@
       "author": "github-actions[bot]",
       "date": "2026-04-05 13:10:23 +0000",
       "message": "ci: update status.json [skip ci]"
-    },
-    {
-      "hash": "1ccea78",
-      "author": "yuuuuuuuuki01",
-      "date": "2026-04-05 22:10:11 +0900",
-      "message": "Add automation note to approval wait template"
-    },
-    {
-      "hash": "c509236",
-      "author": "github-actions[bot]",
-      "date": "2026-04-05 12:49:43 +0000",
-      "message": "ci: update status.json [skip ci]"
     }
   ],
   "stats": {
@@ -12227,5 +12227,5 @@
     "completed_motions": 2,
     "open_approvals": 0
   },
-  "generated_at": "2026-04-05 23:20:49 +0900"
+  "generated_at": "2026-04-09 21:36:46 +0900"
 }
